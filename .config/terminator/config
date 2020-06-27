@@ -1,0 +1,246 @@
+[global_config]
+  window_state = maximise
+  borderless = True
+  extra_styling = False
+  title_transmit_bg_color = "#8f5902"
+  title_receive_bg_color = "#c4a000"
+  enabled_plugins = APTURLHandler, SearchPlugin
+  suppress_multiple_term_dialog = True
+[keybindings]
+[profiles]
+  [[default]]
+    background_color = "#282828"
+    background_darkness = 0.87
+    background_type = transparent
+    cursor_color = "#aaaaaa"
+    font = Terminus Bold 18
+    foreground_color = "#ebdbb2"
+    show_titlebar = False
+    scrollback_infinite = True
+    palette = "#282828:#cc241d:#98971a:#d79921:#458588:#b16286:#689d6a:#a89984:#928374:#fb4934:#b8bb26:#fabd2f:#83a598:#d3869b:#8ec07c:#ebdbb2"
+    use_system_font = False
+    copy_on_selection = True
+  [[ash]]
+    background_color = "#282828"
+    background_darkness = 0.87
+    background_type = transparent
+    cursor_color = "#aaaaaa"
+    font = Terminus Bold 18
+    foreground_color = "#ebdbb2"
+    show_titlebar = False
+    scrollback_infinite = True
+    palette = "#282828:#cc241d:#98971a:#d79921:#458588:#b16286:#689d6a:#a89984:#928374:#fb4934:#b8bb26:#fabd2f:#83a598:#d3869b:#8ec07c:#ebdbb2"
+    use_custom_command = True
+    custom_command = ssh Ash
+    use_system_font = False
+    copy_on_selection = True
+  [[ga]]
+    background_color = "#282828"
+    background_darkness = 0.87
+    background_type = transparent
+    cursor_color = "#aaaaaa"
+    font = Terminus Bold 18
+    foreground_color = "#ebdbb2"
+    show_titlebar = False
+    scrollback_infinite = True
+    palette = "#282828:#cc241d:#98971a:#d79921:#458588:#b16286:#689d6a:#a89984:#928374:#fb4934:#b8bb26:#fabd2f:#83a598:#d3869b:#8ec07c:#ebdbb2"
+    use_custom_command = True
+    custom_command = ssh lapg
+    use_system_font = False
+    copy_on_selection = True
+  [[na]]
+    background_color = "#282828"
+    background_darkness = 0.87
+    background_type = transparent
+    cursor_color = "#aaaaaa"
+    font = Terminus Bold 18
+    foreground_color = "#ebdbb2"
+    show_titlebar = False
+    scrollback_infinite = True
+    palette = "#282828:#cc241d:#98971a:#d79921:#458588:#b16286:#689d6a:#a89984:#928374:#fb4934:#b8bb26:#fabd2f:#83a598:#d3869b:#8ec07c:#ebdbb2"
+    use_custom_command = True
+    custom_command = ssh lapn
+    use_system_font = False
+    copy_on_selection = True
+  [[na2]]
+    background_color = "#282828"
+    background_darkness = 0.87
+    background_type = transparent
+    cursor_color = "#aaaaaa"
+    font = Terminus Bold 18
+    foreground_color = "#ebdbb2"
+    show_titlebar = False
+    scrollback_infinite = True
+    palette = "#282828:#cc241d:#98971a:#d79921:#458588:#b16286:#689d6a:#a89984:#928374:#fb4934:#b8bb26:#fabd2f:#83a598:#d3869b:#8ec07c:#ebdbb2"
+    use_custom_command = True
+    custom_command = ssh lapo
+    use_system_font = False
+    copy_on_selection = True
+  [[news]]
+    background_color = "#282828"
+    background_darkness = 0.87
+    background_type = transparent
+    cursor_color = "#aaaaaa"
+    font = Terminus Bold 18
+    foreground_color = "#ebdbb2"
+    show_titlebar = False
+    scrollback_infinite = True
+    palette = "#282828:#cc241d:#98971a:#d79921:#458588:#b16286:#689d6a:#a89984:#928374:#fb4934:#b8bb26:#fabd2f:#83a598:#d3869b:#8ec07c:#ebdbb2"
+    use_custom_command = True
+    custom_command = news; zsh
+    use_system_font = False
+    copy_on_selection = True
+  [[pb]]
+    background_color = "#282828"
+    background_darkness = 0.87
+    background_type = transparent
+    cursor_color = "#aaaaaa"
+    font = Terminus Bold 18
+    foreground_color = "#ebdbb2"
+    show_titlebar = False
+    scrollback_infinite = True
+    exit_action = hold
+    palette = "#282828:#cc241d:#98971a:#d79921:#458588:#b16286:#689d6a:#a89984:#928374:#fb4934:#b8bb26:#fabd2f:#83a598:#d3869b:#8ec07c:#ebdbb2"
+    use_custom_command = True
+    custom_command = ssh eyepi
+    use_system_font = False
+    copy_on_selection = True
+  [[pi]]
+    background_color = "#282828"
+    background_darkness = 0.87
+    background_type = transparent
+    cursor_color = "#aaaaaa"
+    font = Terminus Bold 18
+    foreground_color = "#ebdbb2"
+    show_titlebar = False
+    scrollback_infinite = True
+    palette = "#282828:#cc241d:#98971a:#d79921:#458588:#b16286:#689d6a:#a89984:#928374:#fb4934:#b8bb26:#fabd2f:#83a598:#d3869b:#8ec07c:#ebdbb2"
+    use_custom_command = True
+    custom_command = ssh pi
+    use_system_font = False
+    copy_on_selection = True
+  [[nDesk]]
+    background_color = "#282828"
+    background_darkness = 0.87
+    background_type = transparent
+    cursor_color = "#aaaaaa"
+    font = Terminus Bold 18
+    foreground_color = "#ebdbb2"
+    show_titlebar = False
+    scrollback_infinite = True
+    palette = "#282828:#cc241d:#98971a:#d79921:#458588:#b16286:#689d6a:#a89984:#928374:#fb4934:#b8bb26:#fabd2f:#83a598:#d3869b:#8ec07c:#ebdbb2"
+    use_custom_command = True
+    custom_command = ssh deskn
+    use_system_font = False
+    copy_on_selection = True
+[layouts]
+  [[default]]
+    [[[child0]]]
+      fullscreen = False
+      last_active_term = 14b5f37b-7063-466e-9023-35fbc279fcdc
+      last_active_window = True
+      maximised = True
+      order = 0
+      parent = ""
+      position = 1920:0
+      size = 2560, 1375
+      title = /usr/bin/zsh
+      type = Window
+    [[[child1]]]
+      order = 0
+      parent = child0
+      position = 1340
+      ratio = 0.52446183953
+      type = HPaned
+    [[[child11]]]
+      order = 1
+      parent = child7
+      position = 276
+      ratio = 0.338650306748
+      type = VPaned
+    [[[child13]]]
+      order = 1
+      parent = child11
+      position = 271
+      ratio = 0.503717472119
+      type = VPaned
+    [[[child2]]]
+      order = 0
+      parent = child1
+      position = 467
+      ratio = 0.340875912409
+      type = VPaned
+    [[[child4]]]
+      order = 1
+      parent = child2
+      position = 558
+      ratio = 0.618625277162
+      type = VPaned
+    [[[child7]]]
+      order = 1
+      parent = child1
+      position = 554
+      ratio = 0.404379562044
+      type = VPaned
+    [[[child8]]]
+      order = 0
+      parent = child7
+      position = 272
+      ratio = 0.495446265938
+      type = VPaned
+    [[[terminal10]]]
+      order = 1
+      parent = child8
+      profile = na
+      type = Terminal
+      uuid = fdffd76e-f86b-4fdc-ba9a-6fd6f6ed8430
+    [[[terminal12]]]
+      order = 0
+      parent = child11
+      profile = na2
+      type = Terminal
+      uuid = fa349432-d8c1-435d-b49b-dd70a9927f68
+    [[[terminal14]]]
+      order = 0
+      parent = child13
+      profile = nDesk
+      type = Terminal
+      uuid = 9fe1e981-cff3-4f97-b402-b2a2790368ae
+    [[[terminal15]]]
+      order = 1
+      parent = child13
+      profile = pi
+      type = Terminal
+      uuid = 5f9dbf03-2a41-431f-b477-93b9452f1da7
+    [[[terminal3]]]
+      order = 0
+      parent = child2
+      profile = default
+      type = Terminal
+      uuid = 14b5f37b-7063-466e-9023-35fbc279fcdc
+    [[[terminal5]]]
+      order = 0
+      parent = child4
+      profile = news
+      type = Terminal
+      uuid = 1759c060-0238-4a28-aff8-d0cbeea3d15c
+    [[[terminal6]]]
+      order = 1
+      parent = child4
+      profile = ash
+      type = Terminal
+      uuid = a85acd96-468a-4178-bfb9-7e37b5032111
+    [[[terminal9]]]
+      order = 0
+      parent = child8
+      profile = ga
+      type = Terminal
+      uuid = 7fb3ddeb-ce87-44bf-a2ec-b5e0059bfcde
+  [[single]]
+    [[[window0]]]
+      type = Window
+      parent = ""
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+[plugins]

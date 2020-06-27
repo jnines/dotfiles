@@ -1,0 +1,7 @@
+#!/bin/sh
+
+pulseaudio -k && 
+sleep 1 &&
+pulseaudio --start && 
+kquitapp5 plasmashell && 
+plasmashell

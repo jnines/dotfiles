@@ -1,0 +1,44 @@
+# Ctrl+o for lf
+lfcd () {
+    tmp="$(mktemp)"
+    lf -last-dir-path="$tmp" "$@"
+    if [ -f "$tmp" ]; then
+        dir="$(cat "$tmp")"
+        rm -f "$tmp" >/dev/null
+        [ -d "$dir" ] && [ "$dir" != "$(pwd)" ] && cd "$dir"
+    fi
+}
+bindkey -s '^o' 'lfcd\n' 
+
+# LS when cd
+cd() { 
+    builtin cd "$1" && ls; 
+}
+
+# Make and cd to
+mkcd () {
+    mkdir -pv -- "$1" &&
+    cd -P -- "$1"
+}
+
+# Rsync diffs
+rdiff () {
+    rsync -naivh --delete "$1" "$2" > "$HOME"/Desktop/diffs.txt
+}
+
+# FZF cd including hidden directories
+cf () {
+#  local file
+
+  file="$(locate -Ai -0 $@ | grep -z -vE '~$' | fzf --read0 -0 -1)"
+
+  if [[ -n $file ]]
+  then
+     if [[ -d $file ]]
+     then
+        cd $file
+     else
+        cd ${file:h}
+     fi
+  fi
+}
