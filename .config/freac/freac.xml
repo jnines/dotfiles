@@ -4,11 +4,11 @@
   <section name="Settings">
    <value name="LastOutputDirectory1">/data/nMusic/</value>
    <value name="Language">internal</value>
-   <value name="StartCount">17</value>
+   <value name="StartCount">20</value>
    <value name="WindowPosX">739</value>
    <value name="WindowPosY">250</value>
-   <value name="WindowSizeX">1014</value>
-   <value name="WindowSizeY">685</value>
+   <value name="WindowSizeX">737</value>
+   <value name="WindowSizeY">503</value>
    <value name="Encoder">fdkaac-enc</value>
    <value name="ShowTips">0</value>
    <value name="NextTip">1</value>
@@ -84,11 +84,11 @@
    <value name="ReplaceExistingComments">0</value>
   </section>
   <section name="Donate">
-   <value name="StartCount">17</value>
+   <value name="StartCount">20</value>
    <value name="ShowAgain">0</value>
   </section>
   <section name="Joblist">
-   <value name="FieldSizes">120,616,50,80,100</value>
+   <value name="FieldSizes">120,341,50,80,100</value>
    <value name="Fields">&lt;artist&gt;,&lt;title&gt;,&lt;track&gt;,&lt;time&gt;,&lt;bytes&gt;</value>
   </section>
   <section name="FDKAAC">
@@ -356,8 +356,8 @@
    <value name="CDDBManageCacheSizeY">653</value>
    <value name="CDDBSubmitSizeX">1008</value>
    <value name="CDDBSubmitSizeY">653</value>
-   <value name="CDDBMultiMatchSizeX">1008</value>
-   <value name="CDDBMultiMatchSizeY">660</value>
+   <value name="CDDBMultiMatchSizeX">733</value>
+   <value name="CDDBMultiMatchSizeY">480</value>
   </section>
  </configuration>
 </ConfigFile>
