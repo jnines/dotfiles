@@ -1,6 +1,7 @@
 alias locate='locate -i'
 alias up=''
 alias v='nvim'
+alias sv='sudoedit'
 alias al='nvim "$HOME"/.config/.zsh/.aliasrc'
 alias nano='nano -c'
 alias nvidia-settings='sudo nvidia-settings --config="$HOME/.config/nvidia/settings/.nvidia-settings-rc"'
