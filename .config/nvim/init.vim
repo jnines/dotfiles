@@ -36,4 +36,5 @@ inoremap <C-z> <esc>:wq<CR>
 nnoremap <leader><leader><leader> :q!<CR>
 nnoremap <leader>u :UndotreeShow<CR>
 
-autocmd BufWritePre * :call TrimWhitespace()
+autocmd BufWritePre * %s/\s\+$//e
+autocmd BufWritepre * %s/\n\+\%$//e
