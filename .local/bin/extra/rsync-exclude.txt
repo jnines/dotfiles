@@ -354,3 +354,4 @@ old
 Downloads
 .local/share/lutris
 go
+.config/syncthing/index-v0.14.0.db
