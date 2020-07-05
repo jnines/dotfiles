@@ -1,6 +1,6 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
-sink=$(pactl list short sinks | grep pci | awk '{print $1}')
+sink=$(pactl list short sinks | awk '/pci/{print $1}')
 spm=$(pactl list sinks | grep '^[[:space:]]Mute:' | head -n $(( sink + 1 )) | tail -n 1 | awk '{gsub("Mute:","");gsub(/^[ \t]+|[ \t]+$/, ""); print}')
 
     if [ "$spm" == yes ]; then

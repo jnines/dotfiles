@@ -1,7 +1,6 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
-mic=$(amixer get Capture | awk -F [ '/]/{gsub(/ /,"",$0);gsub("]","",$0); print $3 }')
-
+mic=$(amixer get Capture | awk '/\[/{gsub(/\[|\]/,"");print $5}')
     if [[ "$mic" == on ]]; then
         echo "|iconName=mic-on bash='amixer set Capture nocap' onclick=bash"
     else

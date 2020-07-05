@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
-temp=$(sensors | grep -oP 'Tdie.*?\+\K[0-9.]+') 
-echo "${temp%%.*}° | color=red bash='/usr/bin/ksysguard' onclick=bash"
+temp=$(sensors | awk '/Tdie:/{gsub("+","");print $2}')
+echo "${temp%%.*}° | color=red iconName=amd bash='/usr/bin/ksysguard' onclick=bash"

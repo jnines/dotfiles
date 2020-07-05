@@ -6,6 +6,8 @@
   title_receive_bg_color = "#c4a000"
   enabled_plugins = APTURLHandler, SearchPlugin
   suppress_multiple_term_dialog = True
+  title_use_system_font = False
+  title_font = Terminus Bold 18
 [keybindings]
 [profiles]
   [[default]]
@@ -13,7 +15,7 @@
     background_darkness = 0.87
     background_type = transparent
     cursor_color = "#aaaaaa"
-    font = Terminus Bold 18
+    font = Source Code Pro Medium 16
     foreground_color = "#ebdbb2"
     show_titlebar = False
     scrollback_infinite = True
@@ -25,7 +27,7 @@
     background_darkness = 0.87
     background_type = transparent
     cursor_color = "#aaaaaa"
-    font = Terminus Bold 18
+    font = Source Code Pro Medium 16
     foreground_color = "#ebdbb2"
     show_titlebar = False
     scrollback_infinite = True
@@ -39,7 +41,7 @@
     background_darkness = 0.87
     background_type = transparent
     cursor_color = "#aaaaaa"
-    font = Terminus Bold 18
+    font = Source Code Pro Medium 16
     foreground_color = "#ebdbb2"
     show_titlebar = False
     scrollback_infinite = True
@@ -53,7 +55,7 @@
     background_darkness = 0.87
     background_type = transparent
     cursor_color = "#aaaaaa"
-    font = Terminus Bold 18
+    font = Source Code Pro Medium 16
     foreground_color = "#ebdbb2"
     show_titlebar = False
     scrollback_infinite = True
@@ -67,7 +69,7 @@
     background_darkness = 0.87
     background_type = transparent
     cursor_color = "#aaaaaa"
-    font = Terminus Bold 18
+    font = Source Code Pro Medium 16
     foreground_color = "#ebdbb2"
     show_titlebar = False
     scrollback_infinite = True
@@ -81,7 +83,7 @@
     background_darkness = 0.87
     background_type = transparent
     cursor_color = "#aaaaaa"
-    font = Terminus Bold 18
+    font = Source Code Pro Medium 16
     foreground_color = "#ebdbb2"
     show_titlebar = False
     scrollback_infinite = True
@@ -95,7 +97,7 @@
     background_darkness = 0.87
     background_type = transparent
     cursor_color = "#aaaaaa"
-    font = Terminus Bold 18
+    font = Source Code Pro Medium 16
     foreground_color = "#ebdbb2"
     show_titlebar = False
     scrollback_infinite = True
@@ -110,7 +112,7 @@
     background_darkness = 0.87
     background_type = transparent
     cursor_color = "#aaaaaa"
-    font = Terminus Bold 18
+    font = Source Code Pro Medium 16
     foreground_color = "#ebdbb2"
     show_titlebar = False
     scrollback_infinite = True
@@ -124,7 +126,7 @@
     background_darkness = 0.87
     background_type = transparent
     cursor_color = "#aaaaaa"
-    font = Terminus Bold 18
+    font = Source Code Pro Medium 16
     foreground_color = "#ebdbb2"
     show_titlebar = False
     scrollback_infinite = True

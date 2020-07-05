@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
 battery=$("$HOME"/.local/bin/git/headset/HeadsetControl/build/headsetcontrol -c -b)
 
