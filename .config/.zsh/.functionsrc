@@ -42,3 +42,7 @@ cf () {
      fi
   fi
 }
+
+servercp() {
+        rsync -vaPz -e ssh "$@" "$srvurl"
+}
