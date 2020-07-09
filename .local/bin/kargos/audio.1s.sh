@@ -6,7 +6,7 @@ spm=$(pactl list sinks | grep '^[[:space:]]Mute:' | head -n $(( sink + 1 )) | ta
     if [ "$spm" == yes ]; then
         sp="|iconName=audio-off bash='pactl set-sink-mute ${sink} 0' onclick=bash"
     else
-        sp="|iconName=audio-on bash='pactl set-sink-mute ${sink} 1' onclick=bash"
+        sp="|iconName=audio-on size=14 bash='pactl set-sink-mute ${sink} 1' onclick=bash"
     fi
     
 echo "${sp}"
