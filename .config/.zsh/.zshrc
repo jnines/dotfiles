@@ -6,8 +6,9 @@ stty stop undef
 # Colors
 autoload -U colors && colors
 
-PROMPT="%B% %F{58}┌%F{yellow}[%F{white}%~%F{yellow}] 
+PROMPT="%B% %F{58}┌%F{yellow}[%F{white}%~%F{yellow}]
 %F{58}└╼%F{166}$%b%f "
+
 
 RPROMPT="%F{green}%@, %W%f"
 

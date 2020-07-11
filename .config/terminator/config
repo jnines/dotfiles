@@ -37,7 +37,7 @@
     use_system_font = False
     copy_on_selection = True
   [[ga]]
-    background_color = "#282828"
+    background_color = "#111111"
     background_darkness = 0.87
     background_type = transparent
     cursor_color = "#aaaaaa"
@@ -65,7 +65,7 @@
     use_system_font = False
     copy_on_selection = True
   [[na2]]
-    background_color = "#282828"
+    background_color = "#111111"
     background_darkness = 0.87
     background_type = transparent
     cursor_color = "#aaaaaa"
@@ -79,7 +79,7 @@
     use_system_font = False
     copy_on_selection = True
   [[news]]
-    background_color = "#282828"
+    background_color = "#111111"
     background_darkness = 0.87
     background_type = transparent
     cursor_color = "#aaaaaa"
@@ -93,7 +93,7 @@
     use_system_font = False
     copy_on_selection = True
   [[pb]]
-    background_color = "#282828"
+    background_color = "#111111"
     background_darkness = 0.87
     background_type = transparent
     cursor_color = "#aaaaaa"
@@ -122,7 +122,7 @@
     use_system_font = False
     copy_on_selection = True
   [[nDesk]]
-    background_color = "#282828"
+    background_color = "#111111"
     background_darkness = 0.87
     background_type = transparent
     cursor_color = "#aaaaaa"
