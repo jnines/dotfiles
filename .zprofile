@@ -1,6 +1,6 @@
 #!/bin/zsh
 
-# Adds `~/.local/bin` to $PATH
+# $PATH:$PATH=HTAP$
 export PATH=$PATH:"$HOME/.local/bin"
 export PATH=$PATH:"$HOME/.local/bin/evil-software"
 

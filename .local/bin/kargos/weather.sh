@@ -9,7 +9,7 @@ mapfile -t precip < <(sed '16q;d' "$wfile" | grep -wo "[0-9]*%" | sed 's/%//g')
     else
         day="🌞"
     fi
-    
+
     if [ "${precip[2]}" -ge 25 ] || [ "${precip[3]}" -ge 25 ]; then
         night="🌧"
     else
