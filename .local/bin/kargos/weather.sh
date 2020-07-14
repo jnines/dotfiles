@@ -15,4 +15,4 @@ mapfile -t precip < <(sed '16q;d' "$wfile" | grep -wo "[0-9]*%" | sed 's/%//g')
     else
         night="🌙"
     fi
-echo "<body>${current}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;${day}${tday[1]}&nbsp;&nbsp;${night}${tday[0]}</body> | size=15 bash='curl -fs "wttr.in/?1" > /home/jason/.local/share/weather' onclick=bash"
+echo "<body>${current}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;${day}${tday[1]}&nbsp;&nbsp;${night}${tday[0]}</body> | size=15 refresh=true bash='curl -fs "wttr.in/?1" > /home/jason/.local/share/weather' onclick=bash"
