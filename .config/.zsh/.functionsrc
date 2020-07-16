@@ -1,3 +1,21 @@
+# Modify keybinds based on mode
+if (( ${+terminfo[smkx]} )) && (( ${+terminfo[rmkx]} )); then
+    function zle-line-init () {
+        echoti smkx
+    }
+    function zle-line-finish () {
+        echoti rmkx
+    }
+    zle -N zle-line-init
+    zle -N zle-line-finish
+fi
+
+# Prompt Vi Mode
+function zle-line-init zle-keymap-select {
+    VIMODE="${${KEYMAP/vicmd/"%F{red}NORMAL"}/(main|viins)/"%F{yellow}INSERT"}"
+    zle reset-prompt
+}
+
 # Ctrl+o for lf
 lfcd () {
     tmp="$(mktemp)"
@@ -23,7 +41,7 @@ mkcd () {
 
 # Rsync diffs
 rdiff () {
-    rsync -naivh --delete "$1" "$2" > "$HOME"/Desktop/diffs.txt
+    rsync -naivh --delete "$1" "$2" > "$HOME"/diffs.txt
 }
 
 # FZF cd including hidden directories
@@ -42,12 +60,8 @@ cf () {
   fi
 }
 
+# Like scp, but not
 servercp() {
         rsync -vaPz -e ssh "$@" "$srvurl"
 }
 
-# ZSH autocd with ls
-#function chpwd() {
-#    emulate -LR zsh
-#    ls
-#}
