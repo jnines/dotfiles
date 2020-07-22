@@ -29,3 +29,6 @@ export PYTHONHISTORY="${XDG_CACHE_HOME:-$HOME/.cache}/python/history"
 
 # Stop DDOS'ing my logs
 export QT_LOGGING_RULES="*=false"
+
+# ...Probably a bad idea
+export WINEESYNC=1

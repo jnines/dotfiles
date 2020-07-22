@@ -21,6 +21,7 @@ alias cp='cp -Rvi --preserve=timestamps'
 alias mkdir='mkdir -pv'
 alias less='less -R'
 
+alias ya='news && yay'
 alias upmir='sudo reflector -l 200 -n 10 -p http --sort rate --save /etc/pacman.d/mirrorlist && sudo sed -i '/gigenet/d' /etc/pacman.d/mirrorlist'
 alias SS='sudo systemctl'
 alias sp='sudo pacman'
@@ -43,6 +44,7 @@ alias ytdla='cd /1tb/Downloads; youtube-dl --no-mtime --prefer-ffmpeg --extract-
 
 alias gd='/usr/bin/git --git-dir=$HOME/.local/bin/git/dotfiles --work-tree=$HOME'
 alias gda='gd add -u && gd commit -m "..." && gd push'
+alias gds='gd status'
 alias gitup='cd "$HOME"/.local/bin/git/fake-home && git pull && cd "$HOME"/.local/bin/git/headset/HeadsetControl && git pull && cd "$HOME"/.local/bin/git/tkg/nvidia-all && git pull && cd "$HOME"/.local/bin/git/tkg/linux-tkg && git pull'
 
 alias ..='cd ..'
