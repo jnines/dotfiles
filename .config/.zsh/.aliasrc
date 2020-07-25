@@ -20,6 +20,7 @@ alias mv='mv -iv'
 alias cp='cp -Rvi --preserve=timestamps'
 alias mkdir='mkdir -pv'
 alias less='less -R'
+alias wget='wget --hsts-file="$XDG_CACHE_HOME/wget-hsts'
 
 alias ya='news && yay'
 alias upmir='sudo reflector -l 200 -n 10 -p http --sort rate --save /etc/pacman.d/mirrorlist && sudo sed -i '/gigenet/d' /etc/pacman.d/mirrorlist'
@@ -36,7 +37,7 @@ alias ruefi='sudo systemctl reboot --firmware-setup'
 
 alias rkde='kquitapp5 plasmashell && plasmashell > /dev/null 2>&1 & disown'
 alias fkde='sudo cp "$HOME"/.local/bin/extra/tasks.svgz /usr/share/plasma/desktoptheme/default/widgets/tasks.svgz && rkde'
-alias pulse='pulseaudio -k && sleep 1 && pulseaudio --start && rkde'
+alias pulse='pulseaudio -k && sleep 1 && pulseaudio --start'
 alias kcache='rm "$HOME"/.config/Trolltech.conf && kbuildsycoca5 --noincremental'
 
 alias ytdl='cd /1tb/ex; youtube-dl --no-mtime --external-downloader aria2c --external-downloader-args "-c -j 5 -x 10 --summary-interval=0" $1'
