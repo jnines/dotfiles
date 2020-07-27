@@ -26,7 +26,7 @@ export GNUPGHOME="${XDG_DATA_HOME:-$HOME/.local/share}/.gnupg"
 export CUDA_CACHE_PATH="${XDG_CONFIG_HOME:-$HOME/.cache}/.nv"
 export PARALLEL_HOME="${XDG_CONFIG_HOME:-$HOME/.config}/parallel"
 export PYTHONHISTORY="${XDG_CACHE_HOME:-$HOME/.cache}/python/history"
-alias wget='wget --hsts-file="$XDG_CACHE_HOME/wget-hsts'
+
 # Stop DDOS'ing my logs
 export QT_LOGGING_RULES="*=false"
 
