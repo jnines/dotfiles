@@ -26,3 +26,4 @@ key[PageDown]="$terminfo[knp]"
 
 bindkey '^ ' autosuggest-accept
 bindkey -M viins '^v' vi-cmd-mode
+bindkey -v

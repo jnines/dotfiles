@@ -17,7 +17,7 @@ setopt transient_rprompt
 PROMPT='%B% %F{58}┌%F{yellow}[%F{white}%~%F{yellow}] ${vcs_info_msg_0_}
 %F{58}└╼%F{166}$%b%f '
 
-RPROMPT='${VIMODE} %F{green}%@, %W%f'
+RPROMPT='${VIMODE}'
 
 # Tab Completion
 autoload -U compinit

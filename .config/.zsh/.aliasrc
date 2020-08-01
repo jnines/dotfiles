@@ -54,5 +54,4 @@ alias ....='cd ../../..'
 
 alias wclass='xprop WM_CLASS'
 alias myphone='scrcpy -s e43a8543'
-alias vomit='neofetch | lolcat'
 alias fucking='sudo'
