@@ -1,7 +1,8 @@
 #!/bin/bash
 
-nplaying=$(/usr/bin/quodlibet --print-playing | sed 's/\.[^.]*$//')
-
+if [[ -n $(pgrep quodlibet) ]]; then
+    nplaying=$(/usr/bin/quodlibet --print-playing | sed 's/\.[^.]*$//')
+fi
     if [[ -n "$nplaying" ]]; then
         echo "<body>${nplaying}&nbsp;&nbsp;&nbsp;&nbsp;</body>|iconName=audio-player size=13 color=grey bash='/usr/bin/quodlibet --show-window' onclick=bash"
     else
