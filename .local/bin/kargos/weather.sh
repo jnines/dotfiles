@@ -1,7 +1,8 @@
 #!/bin/bash
 
 wfile="$HOME"/.local/share/weather
-current=$(curl -fs "wttr.in/?format=%c%t/%f" | sed -e 's/F//g;s/+//g;s/ //')
+current=$(curl -fs wttr.in/41.55,-93.58?format=%c%t/%f | sed -e 's/F//g;s/+//g;s/ //')
+# If for some reason you use this, you need to replace the "41.55,-93.58", twice in this script, with your approximate location.
 mapfile -t tday < <(sed '13q;d' "$wfile" | grep -o "m\\([-+]\\)*[0-9]\\+" | sort -n -t 'm' -k 2n | sed -e 1b -e '$!d' | tr 'm' ' ')
 mapfile -t precip < <(sed '16q;d' "$wfile" | grep -wo "[0-9]*%" | sed 's/%//g')
     if [ "${precip[0]}" -ge 25 ] || [ "${precip[1]}" -ge 25 ]; then
@@ -19,5 +20,5 @@ mapfile -t precip < <(sed '16q;d' "$wfile" | grep -wo "[0-9]*%" | sed 's/%//g')
 if [[ "${current}" =~ "Sorry"* ]]; then
     echo "<body>* ${day}${tday[1]}°&nbsp;&nbsp;${night}${tday[0]}°</body> | size=15 refresh=true"
 else
-    echo "<body>${current}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;${day}${tday[1]}°&nbsp;&nbsp;${night}${tday[0]}°</body> | size=15 refresh=true bash='curl -fs "wttr.in/?1" > /home/jason/.local/share/weather' onclick=bash"
+    echo "<body>${current}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;${day}${tday[1]}°&nbsp;&nbsp;${night}${tday[0]}°</body> | size=15 refresh=true bash='curl -fs wttr.in/41.55,-93.58?1 > /home/jason/.local/share/weather' onclick=bash"
 fi
