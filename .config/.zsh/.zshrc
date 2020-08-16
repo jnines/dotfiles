@@ -37,6 +37,9 @@ setopt no_prompt_cr
 [ -f "$HOME/.config/.zsh/.functionsrc" ] && source "$HOME/.config/.zsh/.functionsrc"
 [ -f "$HOME/.config/.zsh/.sshrc" ] && source "$HOME/.config/.zsh/.sshrc"
 
+# mapfile
+zmodload zsh/mapfile
+
 # Auto cd
 setopt auto_cd
 setopt cdablevars
