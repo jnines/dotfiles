@@ -7,7 +7,7 @@ alias zrc='nvim "$HOME"/.config/.zsh/.zshrc'
 alias func='nvim "$HOME"/.config/.zsh/.functionsrc'
 alias sshrc='nvim "$HOME"/.config/.zsh/.sshrc'
 alias nano='nano -c'
-alias nvidia-settings='sudo nvidia-settings --config="$HOME/.config/nvidia/settings/.nvidia-settings-rc"'
+alias nvidia-settings='sudo nvidia-settings --config="$HOME"/.config/nvidia/settings/.nvidia-settings-rc'
 
 alias ls='ls -xtsAhl --color=auto --group-directories-first'
 alias ll='ls -Alh --color=auto --group-directories-first'
