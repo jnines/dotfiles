@@ -8,6 +8,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'vim-syntastic/syntastic'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'tpope/vim-commentary'
 
 call plug#end()
 
