@@ -17,7 +17,7 @@ mapfile -t precip < <(sed '16q;d' "$wfile" | grep -wo "[0-9]*%" | sed 's/%//g')
         night="🌙"
     fi
 
-if [[ "${current}" =~ "Sorry"* ]]; then
+if [[ "${current}" =~ "Sorry"* ]] || [[ "${current}" =~ "Unknown"* ]]; then
     echo "<body>* ${day}${tday[1]}°&nbsp;&nbsp;${night}${tday[0]}°</body> | size=15 refresh=true"
 else
     echo "<body>${current}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;${day}${tday[1]}°&nbsp;&nbsp;${night}${tday[0]}°</body> | size=15 refresh=true bash='curl -fs wttr.in/$lat,$lon?1 > $HOME/.local/share/weather' onclick=bash"
