@@ -32,5 +32,3 @@ export QT_LOGGING_RULES="*=false"
 
 # ...Probably a bad idea
 export WINEESYNC=1
-
-export MOZ_X11_EGL=1
