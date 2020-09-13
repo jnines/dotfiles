@@ -1,7 +1,7 @@
 #!/bin/bash
 source "$HOME"/.config/weather.rc
 wfile="$HOME"/.local/share/weather_owm
-curl -fs "https://api.openweathermap.org/data/2.5/onecall?lat=$lat&lon=$lon&exclude=minutely&units=imperial&APPID=$appid" | jq '.' > "$wfile"
+curl -fs "https://api.openweathermap.org/data/2.5/onecall?lat=$lat&lon=$lon&exclude=minutely,hourly&units=imperial&APPID=$appid" | jq '.' > "$wfile"
 trim=('.*' '"' '"')
 IFS=$'\n'
 mapfile -t wtrd < <( jq '.current.weather[0].icon, .current.temp, .current.feels_like, .daily[0].temp.max, .daily[0].temp.min' "$wfile" )
@@ -24,6 +24,6 @@ case ${wtrd[0]} in
       *) cur="❗" ;;
     esac
 
-echo "${cur} ${wtrd[1]}°/${wtrd[2]}° ${wtrd[3]}°${wtrd[4]}° | size=14 refresh=true"
+echo "${cur} ${wtrd[1]}°/${wtrd[2]}° ${wtrd[3]}°${wtrd[4]}° | size=15 refresh=true"
 
 unset IFS
