@@ -5,3 +5,4 @@ Red="$(tput setaf 1)"
 deR="$(tput sgr0)"
 echo "$Red $(wget ${feed} -O - 2>/dev/null |
     xmlstarlet sel -T -t -v '/rss/channel/lastBuildDate' -n -v '/rss/channel/item[1]/title') $deR"
+echo "https://www.archlinux.org"
