@@ -32,3 +32,6 @@ export QT_LOGGING_RULES="*=false"
 
 # ...Probably a bad idea
 export WINEESYNC=1
+
+# Nvidia Caches
+export __GL_SHADER_DISK_CACHE_SIZE=26843531856
