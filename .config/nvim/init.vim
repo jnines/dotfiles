@@ -73,7 +73,7 @@ nnoremap <leader>l :wincmd l<CR>
 nnoremap <F2> :Lexplore <CR>
 
 inoremap <C-z> <esc>:wq<CR>
-
+inoremap <C-w> <esc>:w<CR>
 
 " COC stuff
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
