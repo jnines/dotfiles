@@ -10,6 +10,8 @@
   title_use_system_font = False
   title_font = Terminus Bold 18
 [keybindings]
+  broadcast_off = <Alt>o
+  broadcast_all = <Alt>a
 [profiles]
   [[default]]
     background_color = "#232323"
@@ -177,20 +179,20 @@
       type = VPaned
       parent = child1
       order = 1
-      position = 1026
-      ratio = 0.7312900926585887
+      position = 1049
+      ratio = 0.7476835352815395
     [[[child8]]]
       type = VPaned
       parent = child7
       order = 0
-      position = 679
-      ratio = 0.6650342801175319
+      position = 694
+      ratio = 0.6647509578544061
     [[[child9]]]
       type = VPaned
       parent = child8
       order = 0
-      position = 378
-      ratio = 0.5608308605341247
+      position = 334
+      ratio = 0.4847605224963715
     [[[terminal10]]]
       type = Terminal
       parent = child9
