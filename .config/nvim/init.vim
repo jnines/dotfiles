@@ -65,7 +65,7 @@ let g:syntastic_mode_map = {
     \ "passive_filetypes": ["perl"]}
 
 nnoremap <C-z> :wq<CR>
-nnoremap <leader>w :w<CR>
+nnoremap <C-w> :w<CR>
 nnoremap <leader><leader><leader> :q!<CR>
 nnoremap <leader>u :UndotreeShow<CR>
 nnoremap <A-s> :%s//gI<Left><Left><Left>
