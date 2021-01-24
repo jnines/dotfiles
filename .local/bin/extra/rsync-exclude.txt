@@ -158,7 +158,7 @@ Thumbs.db
 .mozilla/firefox/*/Cache
 # in case Fx crashes dumps will be stored in this
 .mozilla/firefox/*/minidumps
-# session-specific 
+# session-specific
 .mozilla/firefox/*/.parentlock
 # phishing database, recreated
 .mozilla/firefox/*/urlclassifier3.sqlite
@@ -183,7 +183,7 @@ Thumbs.db
 .mozilla/seamonkey/*/Cache
 # in case Fx crashes dumps will be stored in this
 .mozilla/seamonkey/*/minidumps
-# session-specific 
+# session-specific
 .mozilla/seamonkey/*/.parentlock
 # blacklisted extensions
 .mozilla/seamonkey/*/blocklist.xml
@@ -346,12 +346,20 @@ nohup.out
 .ccache/tmp
 
 # ZeroNet
-ZeroBundle/ZeroNet/data 
+ZeroBundle/ZeroNet/data
 
 old
 .hplip
 .cache
 Downloads
+NoMachine
 .local/share/lutris
+.zoom
+.qt
+.pki
+.nx
+.directory
 go
 .config/syncthing/index-v0.14.0.db
+.local/bin/git/headset
+.local/bin/git/tkg

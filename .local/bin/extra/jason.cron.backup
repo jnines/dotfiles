@@ -1,0 +1,6 @@
+@reboot /home/jason/.local/bin/nvled.sh
+1 0,6,12,18 * * *  /usr/bin/rsync -aq --exclude-from=/home/jason/.local/bin/extra/rsync-exclude.txt /home/jason /data/.bak
+1 0,6,12,18 * * * sudo /usr/bin/rsync -aq /etc/ /data/.bak/jason/etc && sudo chown -R jason:users /data/bin/jason/etc
+1 13 1 * * /bin/sh /home/jason/.local/bin/mrsync
+1 12 1 * * /usr/bin/pacman -Qqe > /home/jason/.local/installed_"$(date +%m.%d.%Y)".txt
+1 12 1 * * /usr/bin/cp /var/spool/cron/jason /home/jason/.local/bin/extra/jason.cron.backup
