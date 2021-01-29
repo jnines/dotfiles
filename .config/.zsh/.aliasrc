@@ -22,6 +22,7 @@ alias cp='cp -Rvi --preserve=timestamps'
 alias mkdir='mkdir -pv'
 alias less='less -R'
 alias wget='wget --hsts-file="$XDG_CACHE_HOME/wget-hsts'
+alias cat='bat --paging=never --theme=gruvbox'
 
 alias ya='news && yay'
 alias upmir='sudo reflector -l 200 -n 10 -c "United States" -p https --sort rate --save /etc/pacman.d/mirrorlist && sudo sed -i -e '/gigenet/d' -e '/osbeck/d' /etc/pacman.d/mirrorlist'

@@ -5,4 +5,3 @@ sleep 1 &&
 pulseaudio --start &&
 kquitapp5 plasmashell &&
 plasmashell
-pulseaudio --start
