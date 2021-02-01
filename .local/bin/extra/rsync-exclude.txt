@@ -361,5 +361,8 @@ NoMachine
 .directory
 go
 .config/syncthing/index-v0.14.0.db
+.local/share/syncthing
 .local/bin/git/headset
 .local/bin/git/tkg
+.config/discord
+.mozilla/storage
