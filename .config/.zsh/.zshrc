@@ -49,6 +49,8 @@ HISTSIZE=10000
 SAVEHIST=10000
 HISTFILE=~/.cache/zsh/.zshistory
 setopt histignoredups
+setopt inc_append_history
+setopt share_history
 
 # Load zsh-syntax-highlighting; should be last.
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh 2>/dev/null

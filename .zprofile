@@ -6,6 +6,7 @@ export PATH=$PATH:"$HOME/.local/bin/evil-software"
 
 # Defaults:
 export EDITOR="nvim"
+export DIFFPROG="nvim -d"
 export TERMINAL="terminator"
 export BROWSER="firefox"
 
