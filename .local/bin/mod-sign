@@ -1,0 +1,41 @@
+#!/bin/bash
+##########################################################
+#~ # Modules list
+modules=(
+nzxt-kraken2
+nvidia
+nvidia-drm
+nvidia-uvm
+nvidia-modeset
+it87
+)
+# src directory
+kSrc="$HOME/.local/bin/git/tkg/linux-tkg/src"
+###########################################################
+echo "Is this a new major/minor kernel?"
+select yn in "Yes" "No"
+do
+    case $yn in
+        exit) break ;;
+        Yes ) read -rp "What kernal version?: " -e kTkg && break;;
+        No )  kTkg="tkg" && break;;
+    esac
+done
+
+alg="sha512"
+privKey=$(find "$kSrc"/linux*/certs/signing_key.pem)
+pubKey=$(find "$kSrc"/linux*/certs/signing_key.x509)
+signFile=$(find "$kSrc"/linux*/scripts/sign-file)
+export PATH=$PATH:"${signFile%/sign-file}"
+echo Finding "${modules[@]}"
+for i in "${modules[@]}"; do
+    modulesW+=( "$(find /usr/lib/modules/*"$kTkg"*/kernel/drivers/*/ -name "${i}.*")" )
+done
+
+for i in "${modulesW[@]}"; do
+    sudo /usr/bin/xz -d "${i}" &&
+    sudo strip --strip-debug "${i%.xz}" &&
+    sudo "$signFile" "$alg" "$privKey" "$pubKey" "${i%.xz}" &&
+    echo Signing "${i}"
+    sudo /usr/bin/xz "${i%.xz}"
+done
