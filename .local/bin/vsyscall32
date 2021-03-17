@@ -1,0 +1,11 @@
+#!/bin/bash
+
+vSys=$(sysctl abi.vsyscall32)
+
+if [[ $vSys == "abi.vsyscall32 = 1" ]]; then
+    sudo sh -c 'sysctl -w abi.vsyscall32=0'
+    zenity --info --text="Vsyscall32 Off, Play League"
+else
+    sudo sh -c 'sysctl -w abi.vsyscall32=1'
+    zenity --info --text="Vsyscall32 On, Back to Normal"
+fi
