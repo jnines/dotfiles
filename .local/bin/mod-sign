@@ -12,16 +12,11 @@ it87
 # src directory
 kSrc="$HOME/.local/bin/git/tkg/linux-tkg/src"
 ###########################################################
-echo "Is this a new major/minor kernel?"
-select yn in "Yes" "No"
-do
-    case $yn in
-        exit) break ;;
-        Yes ) read -rp "What kernal version?: " -e kTkg && break;;
-        No )  kTkg="tkg" && break;;
-    esac
-done
-
+if [[ $1 == "-n" ]]; then
+    kTkg="$2"
+else
+    kTkg="tkg"
+fi
 alg="sha512"
 privKey=$(find "$kSrc"/linux*/certs/signing_key.pem)
 pubKey=$(find "$kSrc"/linux*/certs/signing_key.x509)
