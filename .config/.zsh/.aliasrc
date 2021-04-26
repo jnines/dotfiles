@@ -44,6 +44,8 @@ alias kcache='rm "$HOME"/.config/Trolltech.conf && kbuildsycoca5 --noincremental
 alias ytdl='cd /1tb/ex; youtube-dl --no-mtime --external-downloader aria2c --external-downloader-args "-c -j 5 -x 10 --summary-interval=0" $1'
 alias ytdla='cd /1tb/Downloads; youtube-dl --no-mtime --prefer-ffmpeg --extract-audio --audio-format mp3 --external-downloader aria2c --external-downloader-args "-c -j 5 -x 10 --summary-interval=0" "$@"'
 
+alias valh='/usr/bin/rsync -a --delete /home/jason/.config/unity3d/IronGate/Valheim /data/.bak/'
+
 alias gd='/usr/bin/git --git-dir=$HOME/.local/bin/git/dotfiles --work-tree=$HOME'
 alias gda='gd add -u && gd commit -m "..." && gd push'
 alias gds='gd status'
