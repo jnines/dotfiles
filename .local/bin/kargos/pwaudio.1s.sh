@@ -11,9 +11,6 @@ battery=$("$HOME"/.local/bin/git/headset/HeadsetControl/build/headsetcontrol -c 
         hdset="${battery}% | bash='$HOME/.local/bin/git/headset/HeadsetControl/build/headsetcontrol -l 0' onclick=bash"
     fi
 
-
-# spm=$(pactl list sinks | grep '^[[:space:]]Mute:' | head -n $(( sink + 1 )) | tail -n 1 | awk '{gsub("Mute:","");gsub(/^[ \t]+|[ \t]+$/, ""); print}')
-
     if [ -z "$dSink" ]; then
         sp="$hdset bash='pactl set-default-sink $speakers' onclick=bash"
     else
