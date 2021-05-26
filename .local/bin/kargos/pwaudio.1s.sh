@@ -14,7 +14,7 @@ battery=$("$HOME"/.local/bin/git/headset/HeadsetControl/build/headsetcontrol -c 
     if [ -z "$dSink" ]; then
         sp="$hdset bash='pactl set-default-sink $speakers' onclick=bash"
     else
-        sp="|iconName=audio-on size=14 bash='pactl set-default-sink $headset' onclick=bash"
+        sp="|iconName=audio-speakers size=14 bash='pactl set-default-sink $headset' onclick=bash"
     fi
 
 echo "${sp}"
