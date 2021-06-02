@@ -43,6 +43,11 @@ set statusline+=%*
 set shortmess+=c
 set signcolumn=yes
 
+setglobal commentstring=#\ %s
+augroup comments
+  autocmd!
+  autocmd FileType c,cpp,cs,java,arduino setlocal commentstring=//\ %s
+augroup END
 
 colorscheme gruvbox
 set background=dark

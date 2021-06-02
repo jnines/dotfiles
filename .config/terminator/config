@@ -18,7 +18,7 @@
 [profiles]
   [[default]]
     background_color = "#1d1202"
-    background_darkness = 0.95
+    background_darkness = 0.9
     background_type = transparent
     cursor_color = "#aaaaaa"
     font = Source Code Pro Medium 16
@@ -31,7 +31,7 @@
     copy_on_selection = True
   [[ash]]
     background_color = "#1d1202"
-    background_darkness = 0.95
+    background_darkness = 0.9
     background_type = transparent
     cursor_color = "#aaaaaa"
     font = Source Code Pro Medium 16
@@ -46,7 +46,7 @@
     copy_on_selection = True
   [[ga]]
     background_color = "#1d1202"
-    background_darkness = 0.95
+    background_darkness = 0.9
     background_type = transparent
     cursor_color = "#aaaaaa"
     font = Source Code Pro Medium 16
@@ -61,7 +61,7 @@
     copy_on_selection = True
   [[na]]
     background_color = "#1d1202"
-    background_darkness = 0.95
+    background_darkness = 0.9
     background_type = transparent
     cursor_color = "#aaaaaa"
     font = Source Code Pro Medium 16
@@ -76,7 +76,7 @@
     copy_on_selection = True
   [[news]]
     background_color = "#1d1202"
-    background_darkness = 0.95
+    background_darkness = 0.9
     background_type = transparent
     cursor_color = "#aaaaaa"
     font = Source Code Pro Medium 16
@@ -89,7 +89,7 @@
     copy_on_selection = True
   [[pb]]
     background_color = "#1d1202"
-    background_darkness = 0.95
+    background_darkness = 0.9
     background_type = transparent
     cursor_color = "#aaaaaa"
     font = Source Code Pro Medium 16
@@ -105,7 +105,7 @@
     copy_on_selection = True
   [[nDesk]]
     background_color = "#1d1202"
-    background_darkness = 0.95
+    background_darkness = 0.9
     background_type = transparent
     cursor_color = "#aaaaaa"
     font = Source Code Pro Medium 16
@@ -120,7 +120,7 @@
     copy_on_selection = True
   [[pi]]
     background_color = "#1d1202"
-    background_darkness = 0.95
+    background_darkness = 0.9
     background_type = transparent
     cursor_color = "#aaaaaa"
     font = Source Code Pro Medium 16

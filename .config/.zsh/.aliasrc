@@ -2,6 +2,7 @@ alias locate='locate -i'
 alias up=''
 alias v='nvim'
 alias sv='sudoedit'
+alias sve='sudo nvim'
 alias al='nvim "$HOME"/.config/.zsh/.aliasrc'
 alias zshrc='nvim "$HOME"/.config/.zsh/.zshrc'
 alias funcrc='nvim "$HOME"/.config/.zsh/.functionsrc'
@@ -50,6 +51,9 @@ alias gd='/usr/bin/git --git-dir=$HOME/.local/bin/git/dotfiles --work-tree=$HOME
 alias gda='gd add -u && gd commit -m "..." && gd push'
 alias gds='gd status'
 alias gitup='cd "$HOME"/.local/bin/git/fake-home && git pull && cd "$HOME"/.local/bin/git/headset/HeadsetControl && git pull && cd "$HOME"/.local/bin/git/tkg/nvidia-all && git pull && cd "$HOME"/.local/bin/git/tkg/linux-tkg && git pull'
+
+alias lconf='meld $HOME/.config/frogminer/linux-tkg.cfg $HOME/.local/bin/git/tkg/linux-tkg/customization.cfg'
+alias nconf='meld $HOME/.config/frogminer/nvidia-all.cfg $HOME/.local/bin/git/tkg/nvidia-all/customization.cfg'
 
 alias ..='cd ..'
 alias ...='cd ../..'
