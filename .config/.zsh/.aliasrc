@@ -37,13 +37,15 @@ alias sdb='sudo updatedb'
 alias srb='sudo reboot'
 alias ruefi='sudo systemctl reboot --firmware-setup'
 
-alias rkde='kquitapp5 plasmashell && plasmashell > /dev/null 2>&1 & disown'
+alias rkde='kquitapp5 plasmashell ; plasmashell > /dev/null 2>&1 & disown'
 alias fkde='sudo cp "$HOME"/.local/bin/extra/tasks.svgz /usr/share/plasma/desktoptheme/default/widgets/tasks.svgz && sudo cp "$HOME"/.local/bin/extra/panel-background.svgz /usr/share/plasma/desktoptheme/default/widgets/panel-background.svgz && rkde'
 alias pulse='pulseaudio -k && sleep 1 && pulseaudio --start'
 alias kcache='rm "$HOME"/.config/Trolltech.conf && kbuildsycoca5 --noincremental'
 
 alias ytdl='cd /1tb/ex; youtube-dl --no-mtime --external-downloader aria2c --external-downloader-args "-c -j 5 -x 10 --summary-interval=0" $1'
 alias ytdla='cd /1tb/Downloads; youtube-dl --no-mtime --prefer-ffmpeg --extract-audio --audio-format mp3 --external-downloader aria2c --external-downloader-args "-c -j 5 -x 10 --summary-interval=0" "$@"'
+
+alias headset='/home/jason/.local/bin/git/headset/HeadsetControl/build/headsetcontrol -l 0'
 
 alias valh='/usr/bin/rsync -a --delete /home/jason/.config/unity3d/IronGate/Valheim /data/.bak/'
 
