@@ -32,8 +32,7 @@ export WINEPREFIX="${XDG_DATA_HOME:-$HOME/.local/share}/wineprefixes/default"
 # Stop DDOS'ing my logs
 export QT_LOGGING_RULES="*=false"
 
-# ...Probably a bad idea
-export WINEESYNC=1
+export WINEFSYNC=1
 
 # Nvidia Caches
 export __GL_SHADER_DISK_CACHE=1
