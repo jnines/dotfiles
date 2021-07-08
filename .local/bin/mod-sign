@@ -3,6 +3,7 @@
 #~ # Modules list
 modules=(
 nzxt-kraken2
+nzxt-smartdevice
 nvidia
 nvidia-drm
 nvidia-uvm
@@ -28,9 +29,9 @@ for i in "${modules[@]}"; do
 done
 
 for i in "${modulesW[@]}"; do
-    sudo /usr/bin/xz -d "${i}" &&
-    sudo strip --strip-debug "${i%.xz}" &&
-    sudo "$signFile" "$alg" "$privKey" "$pubKey" "${i%.xz}" &&
+    sudo /usr/bin/zstd -dq --rm "${i}" &&
+    sudo strip --strip-debug "${i%.zst}" &&
+    sudo "$signFile" "$alg" "$privKey" "$pubKey" "${i%.zst}" &&
     echo Signing "${i}"
-    sudo /usr/bin/xz "${i%.xz}"
+    sudo /usr/bin/zstd -q --rm "${i%.zst}"
 done
