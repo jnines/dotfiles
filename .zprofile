@@ -7,7 +7,7 @@ export PATH=$PATH:"$HOME/.local/bin/evil-software"
 # Defaults:
 export EDITOR="nvim"
 export DIFFPROG="nvim -d"
-export TERMINAL="terminator"
+export TERMINAL="alacritty"
 export BROWSER="firefox"
 
 # Get Out:
