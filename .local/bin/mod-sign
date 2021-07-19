@@ -8,6 +8,7 @@ nvidia
 nvidia-drm
 nvidia-uvm
 nvidia-modeset
+nvidia-peermem
 it87
 )
 # src directory
