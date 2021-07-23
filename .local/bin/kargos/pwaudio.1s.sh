@@ -1,7 +1,7 @@
 #!/bin/bash
 
 speakers=$(pactl list short sinks | awk '/pci/{print $1}')
-headset=$(pactl list short sinks | awk '/usb/{print $1}')
+headset=$(pactl list short sinks | awk '/Corsair/{print $1}')
 dSink=$(pactl info | grep "alsa_output.pci")
 battery=$("$HOME"/.local/bin/git/headset/HeadsetControl/build/headsetcontrol -c -b)
 
