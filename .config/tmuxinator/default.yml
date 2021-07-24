@@ -8,7 +8,6 @@ windows:
         - #local
         - ash:
           - ssh Ash
-          - vpnip
         - lg:
           - ssh lapg
         - na:
