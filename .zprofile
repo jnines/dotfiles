@@ -35,6 +35,7 @@ export NPM_CONFIG_USERCONFIG="${XDG_CONFIG_HOME:-$HOME/.config}/npm/npmrc"
 export QT_LOGGING_RULES="*=false"
 
 export WINEFSYNC=1
+export VKD3D_CONFIG=upload_hvv
 
 # Nvidia Caches
 export __GL_SHADER_DISK_CACHE=1
