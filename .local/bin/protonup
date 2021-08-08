@@ -1,0 +1,11 @@
+#!/bin/bash
+
+mapfile pge< <(curl -s https://api.github.com/repos/GloriousEggroll/proton-ge-custom/releases/latest | grep -Eo "https://.*\.tar\.gz|https://.*\.sha512sum")
+pgev=$(awk -F '/' '{print $NF}' <<<"${pge[1]}")
+cd /tmp || exit;
+for i in ${pge[@]%$'\r'}; do
+    /usr/bin/curl -fLJO "$i"
+done
+/usr/bin/sha512sum -c "${pgev%.tar.gz}.sha512sum" &&
+/usr/bin/tar -xzf "${pgev}" &&
+/usr/bin/mv "${pgev%.tar.gz}" "$HOME"/.local/share/Steam/compatibilitytools.d
