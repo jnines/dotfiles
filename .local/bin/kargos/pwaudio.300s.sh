@@ -4,7 +4,6 @@ speakers=$(pactl list short sinks | awk '/pci/{print $1}')
 aInterface=$(pactl list short sinks | awk '/Burr/{print $1}')
 bT=$(pactl list short sinks | awk '/bluez/{print $1}')
 dSink=$(pactl info | grep "Default Sink" | cut -d ":" -f 2)
-#~ aIicon="| iconName=preferences-desktop-sound"
 
 if [ -z "$bT" ]; then
 
