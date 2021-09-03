@@ -51,6 +51,7 @@ HISTFILE=~/.cache/zsh/.zshistory
 setopt histignoredups
 setopt inc_append_history
 setopt share_history
+setopt hist_ignore_all_dups
 
 # Load zsh-syntax-highlighting; should be last.
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh 2>/dev/null
