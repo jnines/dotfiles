@@ -6,8 +6,8 @@ export PATH=$PATH:"$HOME/.local/bin/evil-software"
 export PATH=$PATH:"$HOME/.local/bin/git/bin"
 
 # Defaults:
-export EDITOR="nvim"
-export DIFFPROG="nvim -d"
+export EDITOR="lvim"
+export DIFFPROG="lvim -d"
 export TERMINAL="alacritty"
 export BROWSER="firefox"
 
