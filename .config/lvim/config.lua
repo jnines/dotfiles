@@ -40,6 +40,7 @@ lvim.builtin.which_key.mappings["r"] = {
   w = { "<cmd>lua require('spectre').open_visual({select_word=true})<cr>", "Replace Word" },
   f = { "<cmd>lua require('spectre').open_file_search()<cr>", "Replace Buffer" },
 }
+lvim.builtin.which_key.mappings["m"] = { "<cmd>MinimapToggle<cr>", "Minimap" }
 
 -- TODO: User Config for predefined plugins
 -- After changing plugin config exit and reopen LunarVim, Run :PackerInstall :PackerCompile
@@ -68,7 +69,7 @@ lvim.lang.yaml.formatters = {{ exe = "prettier" }}
 lvim.lang.python.formatters = {{ exe = "black" }}
 
 lvim.lang.sh.linters = {{ exe = "shellcheck"}}
-lvim.lang.javascript.linters = {{ "eslint" }}
+lvim.lang.javascript.linters = {{ exe = "eslint" }}
 lvim.lang.javascriptreact.linters = lvim.lang.javascript.linters
 lvim.lang.typescript.linters = {{ exe = "eslint" }}
 lvim.lang.typescriptreact.linters = lvim.lang.typescript.linters
@@ -84,9 +85,11 @@ lvim.plugins = {
        -- cmd = {"Minimap", "MinimapClose", "MinimapToggle", "MinimapRefresh", "MinimapUpdateHighlight"},
        config = function ()
         vim.cmd ("let g:minimap_width = 15")
-        vim.cmd ("let g:minimap_auto_start = 1")
+        vim.cmd ("let g:minimap_auto_start = 0")
         vim.cmd ("let g:minimap_auto_start_win_enter = 1")
         vim.cmd ("let g:minimap_highlight_search = 1")
+        vim.cmd ("let g:minimap_highlight_range = 3")
+        vim.cmd ("let g:minimap_git_colors = 1")
       end,
     },
     {
