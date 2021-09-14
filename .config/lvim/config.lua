@@ -7,14 +7,17 @@ lvim.colorscheme = "gruvbox"
 lvim.leader = "space"
 -- add your own keymapping
 lvim.keys.normal_mode["<C-s>"] = ":w<cr>"
-lvim.keys.insert_mode["<C-s>"] = "<escape>:w<cr>"
 lvim.keys.normal_mode["<C-z>"] = ":wq<cr>"
-lvim.keys.insert_mode["<C-z>"] = "<escape>:wq<cr>"
 lvim.keys.normal_mode["<C-q>"] = ":q!<cr>"
+lvim.keys.normal_mode["Y"] = "Yg_"
+
+lvim.keys.insert_mode["<C-s>"] = "<escape>:w<cr>"
+lvim.keys.insert_mode["<C-z>"] = "<escape>:wq<cr>"
 lvim.keys.insert_mode[","] = ",<c-g>u"
 lvim.keys.insert_mode["."] = ".<c-g>u"
 lvim.keys.insert_mode["!"] = "!<c-g>u"
 lvim.keys.insert_mode["?"] = "?<c-g>u"
+lvim.keys.insert_mode["{"] = "{<c-g>u"
 
 -- Change Telescope navigation to use j and k for navigation and n and p for history in both input and normal mode.
 lvim.builtin.telescope.on_config_done = function()
