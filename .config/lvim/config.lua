@@ -11,6 +11,10 @@ lvim.keys.insert_mode["<C-s>"] = "<escape>:w<cr>"
 lvim.keys.normal_mode["<C-z>"] = ":wq<cr>"
 lvim.keys.insert_mode["<C-z>"] = "<escape>:wq<cr>"
 lvim.keys.normal_mode["<C-q>"] = ":q!<cr>"
+lvim.keys.insert_mode[","] = ",<c-g>u"
+lvim.keys.insert_mode["."] = ".<c-g>u"
+lvim.keys.insert_mode["!"] = "!<c-g>u"
+lvim.keys.insert_mode["?"] = "?<c-g>u"
 
 -- Change Telescope navigation to use j and k for navigation and n and p for history in both input and normal mode.
 lvim.builtin.telescope.on_config_done = function()
