@@ -10,7 +10,7 @@ alias sshrc='lvim "$HOME"/.config/.zsh/.sshrc'
 alias nano='nano -c'
 alias nvidia-settings='sudo nvidia-settings --config="$HOME"/.config/nvidia/settings/.nvidia-settings-rc'
 
-alias ls='ls -xtsAhl --color=auto --group-directories-first'
+alias ls='ls -xsAhl --color=auto --group-directories-first'
 alias ll='ls -Alh --color=auto --group-directories-first'
 alias lx='ls -lXBh --color=auto'
 alias grep='grep --color=auto'
