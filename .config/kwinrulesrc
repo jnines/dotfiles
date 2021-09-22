@@ -1,0 +1,1091 @@
+[$Version]
+update_info=kwinrules.upd:replace-placement-string-to-enum
+
+[1]
+Description=Application settings for vivaldi-stable
+clientmachinematch=0
+opacityactive=100
+opacityactiverule=2
+opacityinactive=100
+opacityinactiverule=2
+position=1950,0
+positionrule=3
+wmclass=vivaldi-stable
+wmclassmatch=1
+
+[10]
+Description=Window settings for thunderbird
+clientmachinematch=0
+position=2218,220
+positionrule=3
+size=1962,1022
+sizerule=3
+types=1
+windowrole=3pane
+windowrolematch=1
+wmclass=mail thunderbird
+wmclasscomplete=true
+wmclassmatch=1
+
+[11]
+Description=Window settings for gimp-2.10
+clientmachinematch=0
+position=2650,424
+positionrule=3
+types=32
+windowrole=file-jpeg
+windowrolematch=1
+wmclass=file-jpeg gimp-2.10
+wmclasscomplete=true
+wmclassmatch=1
+
+[12]
+Description=Window settings for gimp-2.10
+clientmachinematch=0
+position=2425,489
+positionrule=3
+titlematch=1
+types=32
+wmclass=gimp-2.10
+wmclassmatch=1
+
+[13]
+Description=Window settings for gimp-2.10
+clientmachinematch=0
+position=1952,0
+positionrule=3
+size=2528,1408
+sizerule=3
+types=32
+windowrole=gimp-file-export
+windowrolematch=1
+wmclass=gimp-2.10
+wmclassmatch=1
+
+[14]
+Description=Window settings for lutris
+clientmachinematch=0
+position=1952,0
+positionrule=3
+size=680,1407
+sizerule=3
+title=Lutris
+titlematch=1
+types=1
+wmclass=lutris
+wmclassmatch=1
+
+[15]
+Description=Application settings for alacritty
+clientmachinematch=0
+desktop=1
+desktoprule=3
+maximizehoriz=true
+maximizehorizrule=3
+maximizevert=true
+maximizevertrule=3
+noborder=true
+noborderrule=2
+position=1952,0
+positionrule=3
+wmclass=alacritty
+wmclassmatch=1
+
+[16]
+Description=Application settings for steam_app_1145360
+clientmachinematch=0
+desktop=1
+desktoprule=3
+opacityactive=100
+opacityactiverule=2
+position=1920,0
+positionrule=3
+wmclass=hades.exe steam_app_1145360
+wmclasscomplete=true
+wmclassmatch=1
+
+[17]
+Description=Window settings for dolphin
+clientmachinematch=0
+desktop=1
+desktoprule=3
+position=2801,560
+positionrule=3
+size=518,643
+sizerule=3
+title=Properties for games — Dolphin
+titlematch=2
+types=32
+wmclass=dolphin
+wmclassmatch=1
+
+[18]
+Description=Window settings for dolphin
+clientmachinematch=0
+position=2875,439
+positionrule=3
+size=518,643
+sizerule=3
+title=Properties for cached — Dolphin
+titlematch=1
+types=32
+wmclass=dolphin
+wmclassmatch=1
+
+[19]
+Description=Window settings for virt-manager
+clientmachinematch=0
+opacityactive=100
+opacityactiverule=2
+opacityinactive=100
+opacityinactiverule=2
+title=Arch-R on QEMU/KVM
+titlematch=1
+types=1
+wmclass=virt-manager
+wmclassmatch=1
+
+[2]
+Description=Window settings for systemsettings
+clientmachinematch=0
+opacityactive=100
+opacityactiverule=2
+types=32
+wmclass=systemsettings5 systemsettings
+wmclasscomplete=true
+wmclassmatch=1
+
+[20]
+Description=Window settings for kcmshell5
+clientmachinematch=0
+opacityactive=100
+opacityactiverule=2
+opacityinactive=100
+opacityinactiverule=2
+title=Connections — System Settings Module
+titlematch=1
+types=32
+wmclass=kcmshell5
+wmclassmatch=1
+
+[21]
+Description=Application settings for brave-browser
+clientmachinematch=0
+opacityactive=100
+opacityactiverule=2
+opacityinactive=100
+opacityinactiverule=2
+wmclass=brave-browser
+wmclassmatch=1
+
+[22]
+Description=Window settings for virt-manager
+clientmachinematch=0
+opacityactive=100
+opacityactiverule=2
+opacityinactive=100
+opacityinactiverule=2
+title=Kubuntu on QEMU/KVM
+titlematch=1
+types=1
+wmclass=virt-manager
+wmclassmatch=1
+
+[23]
+Description=Application settings for superliminal.x86_64
+clientmachinematch=0
+opacityactive=100
+opacityactiverule=2
+opacityinactive=100
+opacityinactiverule=2
+wmclass=superliminal.x86_64
+wmclassmatch=1
+
+[24]
+Description=Window settings for geany
+clientmachinematch=0
+position=611,324
+positionrule=3
+size=678,679
+sizerule=3
+title=Find in Files
+titlematch=1
+types=32
+wmclass=geany
+wmclassmatch=1
+
+[25]
+Description=Window settings for bluegriffon
+clientmachinematch=0
+position=2663,464
+positionrule=3
+size=868,627
+sizerule=3
+types=1
+windowrole=bluegriffon-prefs
+windowrolematch=1
+wmclass=bluegriffon-prefs bluegriffon
+wmclasscomplete=true
+wmclassmatch=1
+
+[26]
+Description=Application settings for darksiders3-win64-shipping.exe
+clientmachinematch=0
+opacityactive=100
+opacityactiverule=2
+opacityinactive=100
+opacityinactiverule=2
+wmclass=darksiders3-win64-shipping.exe
+wmclassmatch=1
+
+[27]
+Description=Window settings for geany
+clientmachinematch=0
+position=450,750
+positionrule=3
+size=646,374
+sizerule=3
+title=Replace
+titlematch=1
+types=32
+wmclass=geany
+wmclassmatch=1
+
+[28]
+Description=Window settings for geany
+clientmachinematch=0
+position=369,918
+positionrule=1
+size=678,301
+sizerule=1
+title=Find
+titlematch=1
+types=32
+wmclass=geany
+wmclassmatch=1
+
+[29]
+Description=Application settings for virt-viewer
+clientmachinematch=0
+opacityactive=100
+opacityactiverule=2
+opacityinactive=100
+opacityinactiverule=2
+position=0,206
+positionrule=1
+size=1920,1054
+sizerule=1
+wmclass=virt-viewer
+wmclassmatch=1
+
+[3]
+Description=Application settings for draw.io
+clientmachinematch=0
+opacityactive=100
+opacityactiverule=2
+wmclass=draw.io
+wmclassmatch=1
+
+[30]
+Description=virt-viewer
+clientmachinematch=0
+opacityactive=100
+opacityactiverule=2
+opacityinactive=100
+opacityinactiverule=2
+position=0,206
+positionrule=3
+size=1920,1054
+sizerule=3
+title=Win10 (1) - Virt Viewer
+titlematch=2
+types=1
+wmclass=virt-viewer
+wmclassmatch=1
+
+[31]
+Description=Window settings for virt-manager
+clientmachinematch=0
+noborder=true
+noborderrule=2
+opacityactive=100
+opacityactiverule=2
+opacityinactive=100
+opacityinactiverule=2
+position=0,206
+positionrule=3
+size=1920,1054
+sizerule=3
+title=win2k12r2 on QEMU/KVM
+titlematch=1
+types=1
+wmclass=virt-manager
+wmclassmatch=1
+
+[32]
+Description=Window settings for virt-manager
+clientmachinematch=0
+noborder=true
+noborderrule=2
+opacityactive=100
+opacityactiverule=2
+opacityinactive=100
+opacityinactiverule=2
+position=0,206
+positionrule=3
+size=1920,1054
+sizerule=3
+title=Win10 on QEMU/KVM
+titlematch=2
+types=1
+wmclass=virt-manager
+wmclassmatch=1
+
+[33]
+Description=Window settings for virt-manager
+clientmachinematch=0
+position=2567,318
+positionrule=3
+size=1145,927
+sizerule=3
+title=archlinux on QEMU/KVM
+titlematch=1
+types=1
+wmclass=virt-manager
+wmclassmatch=1
+
+[34]
+Description=Window settings for virt-manager
+clientmachinematch=0
+position=2661,391
+positionrule=3
+size=1086,939
+sizerule=3
+title=Ubuntu-Server on QEMU/KVM
+titlematch=1
+types=1
+wmclass=virt-manager
+wmclassmatch=1
+
+[35]
+Description=Window settings for virt-manager
+clientmachinematch=0
+position=3054,384
+positionrule=3
+size=808,642
+sizerule=3
+title=QEMU/KVM Connection Details
+titlematch=1
+types=1
+wmclass=virt-manager
+wmclassmatch=1
+
+[36]
+Description=Window settings for virt-manager
+clientmachinematch=0
+position=2465,475
+positionrule=3
+size=1083,752
+sizerule=3
+title=Virtual Machine Manager
+titlematch=1
+types=1
+wmclass=virt-manager
+wmclassmatch=1
+
+[37]
+Description=Window settings for geany
+clientmachinematch=0
+screen=1
+screenrule=3
+title=weather.sh - /home/jason/.local/bin/kargos - Geany
+types=1
+wmclass=geany
+wmclassmatch=1
+
+[38]
+Description=Application settings for geany
+clientmachinematch=0
+desktop=1
+desktoprule=3
+position=0,206
+positionrule=3
+size=1920,1054
+sizerule=3
+wmclass=geany
+wmclassmatch=1
+
+[39]
+Description=Application settings for geany
+clientmachinematch=0
+screen=1
+screenrule=4
+wmclass=geany
+wmclasscomplete=true
+wmclassmatch=1
+
+[4]
+Description=Window settings for firefox
+clientmachinematch=0
+maximizehoriz=true
+maximizehorizrule=3
+maximizevert=true
+maximizevertrule=3
+position=1950,0
+positionrule=3
+size=2530,1408
+sizerule=3
+types=1
+windowrole=browser
+windowrolematch=1
+wmclass=navigator firefox
+wmclasscomplete=true
+wmclassmatch=1
+
+[40]
+Description=Application settings for steam_app_1172380
+clientmachinematch=0
+opacityactive=100
+opacityactiverule=2
+types=1
+wmclass=starwarsjedifallenorder.exe
+wmclasscomplete=true
+wmclassmatch=1
+
+[41]
+Description=Settings for indianaepicgamestore-win64-shipping.exe
+clientmachine=localhost
+clientmachinematch=0
+opacityactive=100
+opacityactiverule=2
+opacityinactive=100
+opacityinactiverule=2
+title=The Outer Worlds
+wmclass=indianaepicgamestore-win64-shipping.exe
+wmclassmatch=1
+
+[42]
+Description=Application settings for hacknet.bin.x86_64
+clientmachine=localhost
+clientmachinematch=0
+opacityactive=100
+opacityactiverule=2
+opacityinactive=100
+opacityinactiverule=2
+wmclass=hacknet.bin.x86_64
+wmclassmatch=1
+
+[43]
+Description=Application settings for ksp.x86_64
+clientmachine=localhost
+clientmachinematch=0
+opacityactive=100
+opacityactiverule=2
+opacityinactive=100
+opacityinactiverule=2
+wmclass=ksp.x86_64
+wmclassmatch=1
+
+[44]
+Description=Application settings for nxplayer.bin
+clientmachine=localhost
+clientmachinematch=0
+opacityactive=100
+opacityactiverule=2
+opacityinactive=100
+opacityinactiverule=2
+wmclass=nxplayer.bin
+wmclassmatch=1
+
+[45]
+Description=Application settings for filament-linux-shipping
+clientmachine=localhost
+clientmachinematch=0
+opacityactive=100
+opacityactiverule=2
+wmclass=filament-linux-shipping
+wmclassmatch=1
+
+[46]
+Description=Application settings for zoom
+clientmachine=localhost
+clientmachinematch=0
+opacityactive=100
+opacityactiverule=2
+wmclass=zoom
+wmclassmatch=1
+
+[47]
+Description=Window settings for gimp-2.10
+clientmachine=localhost
+clientmachinematch=0
+position=2827,355
+positionrule=3
+size=691,791
+sizerule=3
+title=Quit GIMP
+types=32
+windowrole=gimp-message-dialog
+windowrolematch=1
+wmclass=gimp-2.10
+wmclassmatch=1
+
+[48]
+Description=Window settings for gimp-2.10
+clientmachine=localhost
+clientmachinematch=0
+position=2804,379
+positionrule=3
+size=679,804
+sizerule=3
+title=Export Image as PNG
+types=32
+windowrole=file-png
+windowrolematch=1
+wmclass=file-png gimp-2.10
+wmclasscomplete=true
+wmclassmatch=1
+
+[49]
+Description=Firefox
+clientmachine=localhost
+clientmachinematch=0
+maximizehoriz=true
+maximizehorizrule=3
+maximizevert=true
+maximizevertrule=3
+title=GroupSpeedDial - Mozilla Firefox
+types=3
+wmclass=firefox
+wmclassmatch=1
+
+[5]
+Description=Application settings for valheim.x86_64
+clientmachinematch=0
+opacityactive=100
+opacityactiverule=2
+wmclass=valheim.x86_64
+wmclassmatch=1
+
+[50]
+Description=Application settings for dungeons3.x86_64
+clientmachine=localhost
+clientmachinematch=0
+opacityactive=100
+opacityactiverule=2
+opacityinactive=100
+opacityinactiverule=2
+wmclass=dungeons3.x86_64
+wmclassmatch=1
+
+[51]
+Description=Application settings for steam_app_351920
+clientmachine=localhost
+clientmachinematch=0
+opacityactive=100
+opacityactiverule=2
+wmclass=cm3.exe steam_app_351920
+wmclasscomplete=true
+wmclassmatch=1
+
+[52]
+Description=Window settings for dolphin
+clientmachinematch=0
+opacityactive=90
+opacityactiverule=2
+position=2436,347
+positionrule=3
+size=1189,907
+sizerule=3
+types=1
+windowrole=dolphin#1
+windowrolematch=1
+wmclass=dolphin
+wmclassmatch=1
+
+[53]
+Description=Application settings for libreoffice-draw
+clientmachine=localhost
+clientmachinematch=0
+opacityactive=100
+opacityactiverule=2
+wmclass=libreoffice libreoffice-draw
+wmclasscomplete=true
+wmclassmatch=1
+
+[54]
+Description=Window settings for notepadqq
+clientmachine=localhost
+clientmachinematch=0
+opacityactive=100
+opacityactiverule=2
+title=new 1 - Notepadqq
+types=1
+wmclass=notepadqq-bin notepadqq
+wmclasscomplete=true
+wmclassmatch=1
+
+[55]
+Description=Window settings for libreoffice-writer
+clientmachine=localhost
+clientmachinematch=0
+opacityactive=100
+opacityactiverule=2
+title=5-31-19.docx - LibreOffice Writer
+types=1
+wmclass=libreoffice libreoffice-writer
+wmclasscomplete=true
+wmclassmatch=1
+
+[56]
+Description=Application settings for shotcut
+clientmachine=localhost
+clientmachinematch=0
+opacityactive=100
+opacityactiverule=2
+screen=0
+wmclass=shotcut
+wmclassmatch=1
+
+[57]
+Description=Settings for swtor.exe
+clientmachine=localhost
+clientmachinematch=0
+opacityactive=100
+opacityactiverule=2
+title=Star Wars™: The Old Republic™
+wmclass=steam_proton
+wmclassmatch=1
+
+[58]
+Description=Settings for borderlandspresequel
+clientmachine=localhost
+clientmachinematch=0
+opacityactive=100
+opacityactiverule=2
+title=Borderlands: The Pre-Sequel
+wmclass=borderlandspresequel
+wmclassmatch=1
+
+[59]
+Description=Settings for wine
+clientmachine=localhost
+clientmachinematch=0
+opacityactive=100
+opacityactiverule=2
+title=Epic Games Launcher
+wmclass=wine
+wmclassmatch=1
+
+[6]
+Description=Application settings for plasma-systemmonitor
+clientmachinematch=0
+position=218,290
+positionrule=3
+wmclass=plasma-systemmonitor
+wmclassmatch=1
+
+[60]
+Description=Settings for lutris
+clientmachine=localhost
+clientmachinematch=0
+opacityactive=100
+opacityactiverule=2
+title=Lutris
+wmclass=lutris
+wmclassmatch=1
+
+[61]
+Description=Application settings for teamviewer
+clientmachine=localhost
+opacityactive=100
+opacityactiverule=2
+opacityinactive=100
+opacityinactiverule=2
+wmclass=teamviewer
+wmclassmatch=1
+
+[62]
+Description=Window settings for dolphin
+clientmachine=localhost
+position=2898,624
+positionrule=3
+title=Properties for etc-dnsmasq.d — Dolphin
+types=32
+wmclass=dolphin
+wmclassmatch=1
+
+[63]
+Description=Window settings for dolphin
+clientmachine=localhost
+position=2382,337
+positionrule=3
+title=Properties for etc — Dolphin
+titlematch=1
+types=32
+wmclass=dolphin
+wmclassmatch=1
+
+[64]
+Description=Application settings for dolphin
+fullscreenrule=3
+maximizehorizrule=3
+maximizevertrule=3
+opacityactive=66
+opacityactiverule=2
+opacityinactive=77
+opacityinactiverule=2
+position=2656,367
+positionrule=3
+size=1189,799
+sizerule=3
+wmclass=dolphin
+wmclassmatch=1
+
+[65]
+Description=Application settings for quodlibet
+clientmachine=localhost
+position=235,279
+positionrule=3
+size=1255,863
+sizerule=3
+wmclass=io.github.quodlibet.quodlibet quodlibet
+wmclasscomplete=true
+wmclassmatch=1
+
+[66]
+Description=Window settings for inkscape
+clientmachine=localhost
+position=1920,0
+positionrule=3
+size=2560,1404
+sizerule=3
+title=tasks.svg - Inkscape
+titlematch=1
+types=1
+wmclass=inkscape
+wmclassmatch=1
+
+[67]
+Description=Application settings for spectacle
+clientmachine=localhost
+position=109,302
+positionrule=3
+size=1024,453
+sizerule=3
+wmclass=spectacle
+wmclassmatch=1
+
+[68]
+Description=Application settings for fre:ac
+clientmachine=localhost
+position=735,212
+positionrule=3
+size=1016,702
+sizerule=3
+wmclass=fre:ac
+wmclassmatch=1
+
+[69]
+Description=NV Settings
+clientmachine=localhost
+desktop=1
+desktoprule=3
+position=2561,172
+positionrule=3
+size=1032,800
+sizerule=3
+title=NVIDIA X Server Settings
+wmclass=nvidia-settings
+wmclassmatch=1
+
+[7]
+Description=Application settings for transistor.bin.x86_64
+clientmachinematch=0
+opacityactive=100
+opacityactiverule=2
+wmclass=transistor.bin.x86_64
+wmclassmatch=1
+
+[70]
+Description=Skanlite
+clientmachine=localhost
+position=2593,341
+positionrule=3
+size=920,856
+sizerule=3
+title=Hewlett-Packard Officejet_Pro_6830 - Skanlite
+wmclass=skanlite
+wmclassmatch=1
+
+[71]
+Description=Application settings for pavucontrol
+clientmachine=localhost
+position=2570,343
+positionrule=3
+size=1076,719
+sizerule=3
+wmclass=pavucontrol
+wmclassmatch=1
+
+[72]
+Description=Application settings for smplayer
+clientmachine=localhost
+opacityactive=100
+opacityactiverule=2
+opacityinactive=100
+opacityinactiverule=2
+position=3630,0
+positionrule=3
+size=854,1404
+sizerule=3
+wmclass=smplayer
+wmclassmatch=1
+
+[73]
+Description=Settings for firefox
+clientmachine=localhost
+opacityactive=100
+opacityactiverule=2
+opacityinactive=100
+opacityinactiverule=2
+title=Tutorials/Force Transparency And Blur - KDE UserBase Wiki - Mozilla Firefox
+wmclass=firefox
+wmclassmatch=1
+
+[74]
+Description=Window settings for terminator
+clientmachine=localhost
+opacityactive=75
+opacityactiverule=2
+title=jason@archbox:~
+titlematch=1
+types=1
+wmclass=terminator
+wmclassmatch=1
+
+[75]
+Description=Thunderbird
+clientmachine=localhost
+desktop=1
+desktoprule=3
+opacityactive=99
+opacityactiverule=2
+opacityinactive=99
+opacityinactiverule=2
+position=2289,219
+positionrule=3
+size=1673,896
+sizerule=3
+title=Inbox - Yahoo - Mozilla Thunderbird
+wmclass=thunderbird
+wmclassmatch=1
+
+[76]
+Description=Application settings for gimp-2.10
+clientmachine=localhost
+opacityactive=100
+opacityactiverule=2
+position=1920,0
+positionrule=3
+size=2560,1404
+sizerule=3
+wmclass=gimp-2.10
+wmclassmatch=1
+
+[77]
+Description=Application settings for inkscape
+opacityactive=100
+opacityactiverule=2
+wmclass=inkscape
+wmclassmatch=1
+
+[78]
+Description=Discord
+clientmachine=localhost
+desktop=1
+desktoprule=3
+position=-4,265
+positionrule=3
+size=948,755
+sizerule=3
+title=#general - Discord
+wmclass=discord
+wmclassmatch=1
+
+[79]
+Description=Application settings for geany
+opacityactive=80
+opacityactiverule=2
+position=3082,264
+positionrule=3
+types=1
+wmclass=geany
+wmclassmatch=1
+
+[8]
+Description=Window settings for inkscape
+clientmachinematch=0
+position=2522,442
+positionrule=3
+types=32
+wmclass=org.inkscape.inkscape inkscape
+wmclasscomplete=true
+wmclassmatch=1
+
+[80]
+Description=Meld
+clientmachine=localhost
+desktop=1
+desktoprule=3
+position=2395,170
+positionrule=3
+size=1425,1072
+sizerule=3
+title=New comparison
+wmclass=meld
+wmclassmatch=1
+
+[81]
+Description=Window settings for evolution
+clientmachine=localhost
+opacityactive=95
+opacityactiverule=2
+position=2279,244
+positionrule=3
+size=1686,960
+sizerule=3
+title=Inbox — Evolution
+types=1
+windowrole=eshellwindow-94472946960352
+windowrolematch=1
+wmclass=evolution
+wmclassmatch=1
+
+[82]
+Description=Window settings for fre:ac
+clientmachine=localhost
+opacityactive=100
+opacityactiverule=2
+title=fre:ac - free audio converter v1.1 Alpha
+titlematch=1
+types=1
+wmclass=fre:ac
+wmclassmatch=1
+
+[83]
+Description=Steam Games
+clientmachine=localhost
+opacityactive=100
+opacityactiverule=2
+opacityinactive=100
+opacityinactiverule=2
+title=Warframe
+wmclass=steam_app
+wmclassmatch=2
+
+[84]
+Description=Application settings for qimgv
+clientmachine=localhost
+opacityactive=100
+opacityactiverule=2
+opacityinactive=100
+opacityinactiverule=2
+position=3629,0
+positionrule=3
+size=855,1406
+sizerule=3
+title=850682_Wallpaper2.jpg
+wmclass=qimgv
+wmclassmatch=1
+
+[85]
+Description=Application settings for terminator
+position=1952,0
+positionrule=3
+types=1
+wmclass=terminator
+wmclassmatch=1
+
+[86]
+Description=Everything
+clientmachine=localhost
+opacityactive=90
+opacityactiverule=2
+title=share — Dolphin
+types=509
+wmclass=dolphin
+
+[87]
+Description=Start
+clientmachine=localhost
+screenrule=2
+title=Plasma
+titlematch=1
+types=1
+wmclass=plasmashell plasmashell
+wmclasscomplete=true
+wmclassmatch=1
+
+[88]
+Description=Konsole
+clientmachine=localhost
+position=2311,327
+positionrule=3
+size=1338,829
+sizerule=3
+title=Downloads : bash — Konsole
+wmclass=konsole
+wmclassmatch=1
+
+[89]
+Description=Application settings for ksysguard
+opacityactive=100
+opacityactiverule=2
+position=144,330
+positionrule=3
+size=1411,703
+sizerule=3
+wmclass=ksysguard
+wmclassmatch=1
+
+[9]
+Description=Window settings for inkscape
+clientmachinematch=0
+position=1956,0
+positionrule=3
+size=2528,1404
+sizerule=3
+types=1
+wmclass=org.inkscape.inkscape inkscape
+wmclasscomplete=true
+wmclassmatch=1
+
+[90]
+Description=Steam Friends
+desktop=1
+desktoprule=3
+fsplevel=3
+fsplevelrule=2
+opacityactive=99
+opacityactiverule=2
+position=2401,501
+positionrule=3
+size=1021,782
+sizerule=3
+wmclass=steam
+wmclassmatch=1
+
+[91]
+Description=Settings
+opacityactive=98
+opacityactiverule=2
+position=2639,440
+positionrule=3
+size=1032,742
+sizerule=3
+wmclass=systemsettings
+wmclassmatch=1
+
+[General]
+count=91
