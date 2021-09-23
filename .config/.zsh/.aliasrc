@@ -1,7 +1,7 @@
 alias locate='locate -i'
 alias up=''
 alias v='lvim'
-alias uv='lvim +LvimCacheReset +PackerUpdate'
+alias uv='cd $HOME/.local/share/lunarvim/lvim && git pull && lvim +LvimCacheReset +PackerUpdate'
 alias sv='sudoedit'
 alias sve='sudo lvim'
 alias al='lvim "$HOME"/.config/.zsh/.aliasrc'
