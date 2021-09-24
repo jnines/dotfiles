@@ -9,6 +9,7 @@ alias zshrc='lvim "$HOME"/.config/.zsh/.zshrc'
 alias funcrc='lvim "$HOME"/.config/.zsh/.functionsrc'
 alias sshrc='lvim "$HOME"/.config/.zsh/.sshrc'
 alias nano='nano -c'
+alias shellcheck='shellcheck -x'
 alias nvidia-settings='sudo nvidia-settings --config="$HOME"/.config/nvidia/settings/.nvidia-settings-rc'
 
 alias ls='ls -xsAhl --color=auto --group-directories-first'

@@ -1,0 +1,104 @@
+Height 1440=752
+MenuBar=Disabled
+State=AAAA/wAAAAD9AAAAAwAAAAAAAADMAAACyvwCAAAAAfsAAAAUAHAAbABhAGMAZQBzAEQAbwBjAGsBAAAAJgAAAsoAAABdAQAAAwAAAAEAAABpAAAC0PwCAAAAAvsAAAAWAGYAbwBsAGQAZQByAHMARABvAGMAawAAAAAmAAAC0AAAAAoBAAAD+wAAABAAaQBuAGYAbwBEAG8AYwBrAAAAAd8AAAEhAAAACgEAAAMAAAADAAAAAAAAAAD8AQAAAAH7AAAAGAB0AGUAcgBtAGkAbgBhAGwARABvAGMAawAAAAAA/////wAAAAoBAAADAAADZgAAAsoAAAAEAAAABAAAAAgAAAAI/AAAAAEAAAACAAAAAQAAABYAbQBhAGkAbgBUAG8AbwBsAEIAYQByAQAAAAD/////AAAAAAAAAAA=
+Width 2560=1075
+
+[CompactMode]
+FontWeight=50
+
+[DetailsMode]
+FontWeight=50
+
+[FoldersPanel]
+HiddenFilesShown=true
+
+[General]
+AutoExpandFolders=true
+BrowseThroughArchives=true
+ConfirmClosingMultipleTabs=false
+FilterBar=true
+GlobalViewProps=false
+RememberOpenedTabs=false
+ShowFullPath=true
+Version=201
+ViewPropsTimestamp=2019,11,12,18,59,1
+
+[IconsMode]
+FontWeight=50
+IconSize=48
+PreviewSize=112
+TextWidthIndex=0
+
+[KPropertiesDialog]
+DP-2 DP-0 Height 1080=600
+DP-2 DP-0 Height 1440=756
+DP-2 DP-0 Height 1920x1080=600
+DP-2 DP-0 Height 2560x1440=756
+DP-2 DP-0 Width 1920=510
+DP-2 DP-0 Width 1920x1080=510
+DP-2 DP-0 Width 2560=1181
+DP-2 DP-0 Width 2560x1440=1181
+DP-4 DP-0 Height 1920x1080=600
+DP-4 DP-0 Height 2560x1440=768
+DP-4 DP-0 Width 1920x1080=510
+DP-4 DP-0 Width 2560x1440=1189
+Height 1080=570
+Height 1440=749
+Width 1920=489
+Width 2560=1183
+
+[MainWindow]
+DP-2 DP-0 Height 1080=864
+DP-2 DP-0 Height 1440=864
+DP-2 DP-0 Height 1920x1080=864
+DP-2 DP-0 Height 2560x1440=864
+DP-2 DP-0 Width 1920=1181
+DP-2 DP-0 Width 1920x1080=1181
+DP-2 DP-0 Width 2560=1181
+DP-2 DP-0 Width 2560x1440=1181
+DP-2 DP-0 XPosition=2440
+DP-2 DP-0 XPosition 1920x1080=373
+DP-2 DP-0 XPosition 2560x1440=2440
+DP-2 DP-0 YPosition=386
+DP-2 DP-0 YPosition 1920x1080=335
+DP-2 DP-0 YPosition 2560x1440=386
+DP-4 DP-0 Height 1920x1080=876
+DP-4 DP-0 Height 2560x1440=876
+DP-4 DP-0 Width 1920x1080=1189
+DP-4 DP-0 Width 2560x1440=1189
+DP-4 DP-0 XPosition 1920x1080=513
+DP-4 DP-0 XPosition 2560x1440=2436
+DP-4 DP-0 YPosition 1920x1080=292
+DP-4 DP-0 YPosition 2560x1440=378
+Height 1080=749
+Height 1440=749
+MenuBar=Disabled
+RestorePositionForNextInstance=false
+State=AAAA/wAAAAD9AAAAAwAAAAAAAACRAAADPvwCAAAAAfsAAAAUAHAAbABhAGMAZQBzAEQAbwBjAGsBAAAALgAAAz4AAABdAQAAAwAAAAEAAACwAAADPvwCAAAAAvsAAAAWAGYAbwBsAGQAZQByAHMARABvAGMAawAAAAAuAAABgQAAAAoBAAAD+wAAABAAaQBuAGYAbwBEAG8AYwBrAQAAAC4AAAM+AAABEwEAAAMAAAADAAAAAAAAAAD8AQAAAAH7AAAAGAB0AGUAcgBtAGkAbgBhAGwARABvAGMAawAAAAAA/////wAAAAoBAAADAAADYgAAAz4AAAAEAAAABAAAAAgAAAAI/AAAAAEAAAACAAAAAQAAABYAbQBhAGkAbgBUAG8AbwBsAEIAYQByAQAAAAD/////AAAAAAAAAAA=
+ToolBarsMovable=Disabled
+Width 1920=1181
+Width 2560=1181
+
+[Open-with settings]
+CompletionMode=1
+History=gea,bra,ark,not
+
+[PlacesPanel]
+IconSize=16
+
+[PreviewSettings]
+Plugins=appimagethumbnail,audiothumbnail,comicbookthumbnail,djvuthumbnail,ebookthumbnail,exrthumbnail,directorythumbnail,fontthumbnail,imagethumbnail,jpegthumbnail,kraorathumbnail,windowsexethumbnail,windowsimagethumbnail,opendocumentthumbnail,svgthumbnail,ffmpegthumbs
+
+[SettingsDialog]
+DP-2 DP-0 Height 1440=756
+DP-2 DP-0 Width 2560=1181
+DP-4 DP-0 Height 2560x1440=768
+DP-4 DP-0 Width 2560x1440=1189
+Height 1440=749
+Width 2560=1183
+
+[ViewPropertiesDialog]
+DP-2 DP-0 Height 1440=742
+DP-2 DP-0 Width 2560=414
+Height 1440=478
+Width 2560=395
