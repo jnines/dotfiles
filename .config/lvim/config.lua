@@ -3,6 +3,14 @@ lvim.log.level = "warn"
 lvim.format_on_save = true
 lvim.colorscheme = "gruvbox"
 
+lvim.autocommands.custom_groups = {
+  {
+    "BufWritePre",
+    "*",
+    ":silent lua vim.lsp.buf.formatting_seq_sync()",
+  },
+}
+
 -- keymappings [view all the defaults by pressing <leader>Lk]
 lvim.leader = "space"
 -- add your own keymapping
@@ -55,6 +63,7 @@ lvim.builtin.dashboard.active = true
 lvim.builtin.terminal.active = true
 lvim.builtin.nvimtree.side = "left"
 lvim.builtin.nvimtree.show_icons.git = 0
+lvim.builtin.autopairs.active = true
 
 -- if you don't want all the parsers change this to a table of the ones you want
 lvim.builtin.treesitter.ensure_installed = "maintained"
@@ -66,9 +75,9 @@ lvim.lsp.diagnostics.virtual_text = false
 
 -- set a formatter if you want to override the default lsp one (if it exists)
 lvim.lang.sh.formatters = {{ exe = "shfmt" }}
-lvim.lang.javascript.formatters = {{ exe = "prettier" }}
-lvim.lang.javascriptreact.formatters = lvim.lang.javascript.formatters
-lvim.lang.typescript.formatters = {{ exe = "prettier" }}
+lvim.lang.javascript.formatters = {{ exe = "prettier_d_slim" }}
+-- lvim.lang.javascriptreact.formatters = lvim.lang.javascript.formatters
+-- lvim.lang.typescript.formatters = {{ exe = "prettier_d_slim" }}
 lvim.lang.css.formatters = {{ exe = "prettier" }}
 lvim.lang.html.formatters = {{ exe = "prettier" }}
 lvim.lang.json.formatters = {{ exe = "prettier" }}
@@ -76,9 +85,9 @@ lvim.lang.yaml.formatters = {{ exe = "prettier" }}
 lvim.lang.python.formatters = {{ exe = "black" }}
 
 lvim.lang.sh.linters = {{ exe = "shellcheck"}}
-lvim.lang.javascript.linters = {{ exe = "eslint" }}
+lvim.lang.javascript.linters = {{ exe = "eslint_d" }}
 lvim.lang.javascriptreact.linters = lvim.lang.javascript.linters
-lvim.lang.typescript.linters = {{ exe = "eslint" }}
+lvim.lang.typescript.linters = {{ exe = "eslint_d" }}
 lvim.lang.typescriptreact.linters = lvim.lang.typescript.linters
 lvim.lang.html.linters = {{ exe = "vale" }}
 lvim.lang.python.linters = {{ exe = "flake8" }}

@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -xe
 
 mapfile pge< <(curl -s https://api.github.com/repos/GloriousEggroll/proton-ge-custom/releases/latest | grep -Eo "https://.*\.tar\.gz|https://.*\.sha512sum")
 pgev=$(awk -F '/' '{print $NF}' <<<"${pge[1]}")
@@ -7,10 +7,12 @@ cd /tmp || exit;
 for i in "${pge[@]}"; do
     wget -Nq $i
 done &&
+if [[ $(/usr/bin/pgrep steam) ]]; then
+    /usr/bin/pkill steam
+fi &&
 /usr/bin/sha512sum -c "${pgev%.tar.gz}.sha512sum" > /dev/null &&
 /usr/bin/tar -xzf "${pgev}" &&
 /usr/bin/mv "${pgev%.tar.gz}" "$HOME"/.local/share/Steam/compatibilitytools.d &&
-/usr/bin/pkill steam &&
-/usr/bin/sleep 5 &&
-"$HOME"/.local/bin/steam %U -console > /dev/null 2>&1 & disown &&
-exit 0
+sleep 3
+"$HOME"/.local/bin/steam %U -console > /dev/null 2>&1 & disown
+exit
