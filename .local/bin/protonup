@@ -1,4 +1,4 @@
-#!/bin/bash -xe
+#!/bin/bash
 
 mapfile pge< <(curl -s https://api.github.com/repos/GloriousEggroll/proton-ge-custom/releases/latest | grep -Eo "https://.*\.tar\.gz|https://.*\.sha512sum")
 pgev=$(awk -F '/' '{print $NF}' <<<"${pge[1]}")
