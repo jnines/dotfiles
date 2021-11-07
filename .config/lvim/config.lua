@@ -77,24 +77,21 @@ lvim.builtin.treesitter.highlight.enabled = true
 lvim.lsp.diagnostics.virtual_text = false
 
 -- set a formatter if you want to override the default lsp one (if it exists)
-lvim.lang.sh.formatters = {{ exe = "shfmt" }}
-lvim.lang.javascript.formatters = {{ exe = "prettier_d_slim" }}
--- lvim.lang.javascriptreact.formatters = lvim.lang.javascript.formatters
--- lvim.lang.typescript.formatters = {{ exe = "prettier_d_slim" }}
-lvim.lang.css.formatters = {{ exe = "prettier" }}
-lvim.lang.html.formatters = {{ exe = "prettier" }}
-lvim.lang.json.formatters = {{ exe = "prettier" }}
-lvim.lang.yaml.formatters = {{ exe = "prettier" }}
-lvim.lang.python.formatters = {{ exe = "black" }}
+local formatters = require "lvim.lsp.null-ls.formatters"
+formatters.setup {
+  { exe = "black" },
+  { exe = "prettier" },
+  { exe = "shfmt"},
+}
 
-lvim.lang.sh.linters = {{ exe = "shellcheck"}}
-lvim.lang.javascript.linters = {{ exe = "eslint_d" }}
-lvim.lang.javascriptreact.linters = lvim.lang.javascript.linters
-lvim.lang.typescript.linters = {{ exe = "eslint_d" }}
-lvim.lang.typescriptreact.linters = lvim.lang.typescript.linters
-lvim.lang.html.linters = {{ exe = "vale" }}
-lvim.lang.python.linters = {{ exe = "flake8" }}
-lvim.lang.lua.linters = {{ exe = "luacheck" }}
+local linters = require "lvim.lsp.null-ls.linters"
+linters.setup {
+  { exe = "eslint_d" },
+  { exe = "shellcheck" },
+  { exe = "vale" },
+  { exe = "flake8" },
+  { exe = "luacheck" },
+}
 
 -- Additional Plugins
 lvim.plugins = {
