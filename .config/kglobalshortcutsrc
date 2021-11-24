@@ -26,12 +26,17 @@ display=Display\tMeta+P,Display\tMeta+P,Switch Display
 
 [khotkeys]
 _k_friendly_name=Custom Shortcuts Service
+{081cc7dd-9bad-4a16-b2b7-87d3f76a988c}=Ctrl+Num+8,none,Volume Up
+{1ca9bc12-580e-4f6f-8620-c2aef161c654}=Ctrl+Num+2,none,Volume Down
+{34ca30c0-2317-46bc-bb93-5d0e7cbef32c}=Ctrl+Num+5,none,Play/Pause
 {4158bcd9-eb6e-434d-a0d7-71a4e2a04a89}=Meta+F,none,Firefox
+{462e1912-fc60-4863-af02-caca5c2c77d9}=Ctrl+Num+4,none,Skip Back
 {5b2a7f53-e223-4c8d-a5e2-f70cddc59398}=Meta+Return,none,AlacS
 {64c08a8d-bb4e-40cd-8221-98cb28808461}=Meta+Num++,none,Alacrity Multi
 {71f3e654-22bb-4a2d-a2b4-a2e6c1c3b353}=Meta+Num+/,none,KSysGuard
 {b7810751-2139-4daa-ac81-3fa7e1473e62}=Meta+Ctrl+Num++,none,Alacritty Single
 {ba06da6f-e9e5-46c0-9e1f-ceb4dd80d8c7}=Meta+Num+*,none,System Settings
+{c3855e64-ac8f-4374-a822-b8d3be0ac619}=Ctrl+Num+6,none,Skip forward
 {ca68164c-0e4a-481e-9037-0cafaf67b6f3}=Meta+Num+-,none,Kill Tmux
 {d03619b6-9b3c-48cc-9d9c-a2aadb485550}=,none,Search
 

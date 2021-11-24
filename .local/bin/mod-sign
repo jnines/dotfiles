@@ -26,7 +26,9 @@ signFile=$(find "$kSrc"/linux*/scripts/sign-file)
 export PATH=$PATH:"${signFile%/sign-file}"
 echo Finding "${modules[@]}"
 for i in "${modules[@]}"; do
-    modulesW+=( "$(find /usr/lib/modules/*"$kTkg"*/kernel/drivers/*/ -name "${i}.*")" )
+    #~ modulesW+=( "$(find /usr/lib/modules/*"$kTkg"*/kernel/drivers/*/ -name "${i}.*")" )
+    modulesW+=( "$(find /usr/lib/modules/*"$kTkg"*/*/ -name "${i}.*")" )
+
 done
 
 for i in "${modulesW[@]}"; do
