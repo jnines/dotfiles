@@ -11,6 +11,7 @@ alias sshrc='lvim "$HOME"/.config/.zsh/.sshrc'
 alias nano='nano -c'
 alias shellcheck='shellcheck -x'
 alias nvidia-settings='sudo nvidia-settings --config="$HOME"/.config/nvidia/settings/.nvidia-settings-rc'
+alias podc='pcd sync && pcd ls 1 | tail -n 1 ; pcd ls 2 | tail -n 1'
 
 alias ls='ls -xsAhl --color=auto --group-directories-first'
 alias ll='ls -Alh --color=auto --group-directories-first'
