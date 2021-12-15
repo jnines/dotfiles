@@ -3,13 +3,13 @@ lvim.log.level = "warn"
 lvim.format_on_save = true
 lvim.colorscheme = "gruvbox"
 
-lvim.autocommands.custom_groups = {
-  {
-    "BufWritePre",
-    "*",
-    ":silent lua vim.lsp.buf.formatting_seq_sync()",
-  },
-}
+-- lvim.autocommands.custom_groups = {
+--   {
+--     "BufWritePre",
+--     "*",
+--     ":silent lua vim.lsp.buf.formatting_seq_sync()",
+--   },
+-- }
 
 -- keymappings [view all the defaults by pressing <leader>Lk]
 lvim.leader = "space"
@@ -80,7 +80,9 @@ lvim.lsp.diagnostics.virtual_text = false
 local formatters = require "lvim.lsp.null-ls.formatters"
 formatters.setup {
   { exe = "black" },
-  { exe = "prettier" },
+  { exe = "prettier",
+    args = { "--no-semi", "--single-quote", "--jsx-single-quote" },
+  },
   { exe = "shfmt"},
 }
 

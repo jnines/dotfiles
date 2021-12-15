@@ -1,4 +1,0 @@
-#!/bin/bash
-
-# Turn off LEDs
-nvidia-settings --assign GPULogoBrightness=0
