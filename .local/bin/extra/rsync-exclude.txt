@@ -1,4 +1,4 @@
-# Home
+# Home and general
 .cache
 .xsession-errors
 .Xauthority
@@ -7,6 +7,10 @@
 .pki
 .zoom
 .directory
+satisfactory-mod-manager-gui
+vivaldi
+lspinstall
+lsp_servers
 
 # .config
 .config/discord
@@ -28,8 +32,12 @@
 .local/share/syncthing
 .local/bin/git/headset
 .local/bin/git/tkg
+.local/bin/*.AppImage
 .local/share/data
+.local/share/flatpak
 .local/share/wineprefixes
+.local/share/npm
+.local/share/lunarvim/site/
 
 # .mozilla
 .mozilla/firefox/*/storage
