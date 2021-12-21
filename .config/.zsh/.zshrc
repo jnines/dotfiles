@@ -1,6 +1,9 @@
 # Changing mode takes too long
 export KEYTIMEOUT=1
 
+# De-Highlight paste
+zle_highlight=('paste:none')
+
 # Disable Ctrl+s
 stty stop undef
 
@@ -21,6 +24,7 @@ RPROMPT='${VIMODE}'
 
 # Tab Completion
 autoload -U compinit
+setopt menucomplete
 zstyle ':completion:*' menu select
 zstyle ':completion::complete:*' gain-privileges 1
 zmodload zsh/complist
