@@ -15,4 +15,5 @@ fi &&
 /usr/bin/mv "${pgev%.tar.gz}" "$HOME"/.local/share/Steam/compatibilitytools.d &&
 sleep 3
 "$HOME"/.local/bin/steam %U -console > /dev/null 2>&1 & disown
+/usr/bin/dolphin "$HOME"/.local/share/Steam/compatibilitytools.d/ &
 exit
