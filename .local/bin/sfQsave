@@ -1,0 +1,25 @@
+#!/bin/bash
+
+### Time to delay before closing out of menu
+sleepTime="5"
+###
+
+xdo=$(which xdotool)
+$xdo search --name Satisfactory \
+key Escape \
+mousemove --window %1 300 300 \
+sleep 0.2 \
+click 1 \
+sleep 0.2 \
+mousemove --window %1 1300 300 \
+click 1 \
+sleep 0.2 \
+mousemove --window %1 2400 1340 \
+click 1 \
+sleep 0.2 \
+mousemove --window %1 1100 850 \
+click 1 \
+sleep $sleepTime \
+key Escape \
+key Escape \
+key Escape
