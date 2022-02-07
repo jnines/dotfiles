@@ -5,7 +5,7 @@ sleepTime="5"
 ###
 
 xdo=$(which xdotool)
-$xdo search --name Satisfactory \
+$xdo search --onlyvisible --classname steam_app_526870 \
 key Escape \
 mousemove --window %1 300 300 \
 sleep 0.2 \

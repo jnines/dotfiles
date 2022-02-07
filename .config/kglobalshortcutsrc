@@ -233,6 +233,7 @@ _launch=Meta+.,Meta+.,Emoji Selector
 ActiveWindowScreenShot=Meta+Print,Meta+Print,Capture Active Window
 CurrentMonitorScreenShot=Ctrl+Shift+Print,none,Capture Current Monitor
 FullScreenScreenShot=Print,Shift+Print,Capture Entire Desktop
+OpenWithoutScreenshot=none,none,Launch Spectacle without capturing
 RectangularRegionScreenShot=Meta+Shift+Print,Meta+Shift+Print,Capture Rectangular Region
 WindowUnderCursorScreenShot=none,Meta+Ctrl+Print,Capture Window Under Cursor
 _k_friendly_name=Spectacle
