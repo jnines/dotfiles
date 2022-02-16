@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# Move git LICENSE to declutter ~
+if [ ! -f "$HOME"/LICENSE ]; then
+  mv "$HOME"/.local/LICENSE "$HOME"/LICENSE
+else
+  mv "$HOME"/LICENSE "$HOME"/.local/LICENSE
+fi
