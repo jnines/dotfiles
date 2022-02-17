@@ -12,7 +12,8 @@ nvidia-peermem
 it87
 )
 # src directory
-kSrc="$HOME/.local/bin/git/tkg/linux-tkg/src"
+certDir="$HOME/.local/certs"
+#~ kSrc="$HOME/.local/bin/git/tkg/linux-tkg/src"
 ###########################################################
 if [[ $1 == "-n" ]]; then
     kTkg="$2"
@@ -20,14 +21,13 @@ else
     kTkg="tkg"
 fi
 alg="sha512"
-privKey=$(find "$kSrc"/linux*/certs/signing_key.pem)
-pubKey=$(find "$kSrc"/linux*/certs/signing_key.x509)
-signFile=$(find "$kSrc"/linux*/scripts/sign-file)
+privKey="$certDir/signing_key.pem"
+pubKey="$certDir/signing_key.x509"
+signFile="$certDir/sign-file"
 export PATH=$PATH:"${signFile%/sign-file}"
 echo Finding "${modules[@]}"
 for i in "${modules[@]}"; do
-    #~ modulesW+=( "$(find /usr/lib/modules/*"$kTkg"*/kernel/drivers/*/ -name "${i}.*")" )
-    modulesW+=( "$(find /usr/lib/modules/*"$kTkg"*/*/ -name "${i}.*")" )
+    modulesW+=( "$(find /usr/lib/modules/*"$kTkg"*/updates/dkms/ -name "${i}.*")" )
 
 done
 
