@@ -2,6 +2,6 @@
 
 kDir="$HOME/.local/bin/git/tkg/linux-tkg"
 cd "$kDir" || exit &&
-/usr/bin/makepkg -si &&
+/usr/bin/makepkg -fsi &&
 /usr/bin/find /tmp/makepkg \( -name 'signing_key.pem' -o -name 'signing_key.x509' -o -name 'sign-file' \) -exec mv -t "$HOME"/.local/certs/ {} +
 sudo rm -r /tmp/makepkg
