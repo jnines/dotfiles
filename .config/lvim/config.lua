@@ -1,7 +1,7 @@
 -- general
 lvim.log.level = "warn"
 lvim.format_on_save = false
-lvim.colorscheme = "gruvbox"
+lvim.colorscheme = "gruvbox-material"
 
 -- lvim.autocommands.custom_groups = {
 --   {
@@ -75,6 +75,7 @@ lvim.builtin.treesitter.highlight.enabled = true
 
 -- generic LSP settings
 lvim.lsp.diagnostics.virtual_text = false
+vim.cmd [[autocmd! CursorHold,CursorHoldI * lua vim.diagnostic.open_float(nil, {focus=false})]]
 
 -- set a formatter if you want to override the default lsp one (if it exists)
 local formatters = require "lvim.lsp.null-ls.formatters"
@@ -144,5 +145,5 @@ lvim.plugins = {
       cmd = "TroubleToggle",
     },
     { "tpope/vim-repeat" },
-    { "gruvbox-community/gruvbox" },
+    { "sainnhe/gruvbox-material" },
 }
