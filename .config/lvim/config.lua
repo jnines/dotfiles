@@ -1,15 +1,7 @@
 -- general
 lvim.log.level = "warn"
 lvim.format_on_save = false
-lvim.colorscheme = "gruvbox-material"
-
--- lvim.autocommands.custom_groups = {
---   {
---     "BufWritePre",
---     "*",
---     ":silent lua vim.lsp.buf.formatting_seq_sync()",
---   },
--- }
+lvim.colorscheme = "gruvbox"
 
 -- keymappings [view all the defaults by pressing <leader>Lk]
 lvim.leader = "space"
@@ -62,7 +54,8 @@ lvim.builtin.which_key.mappings["m"] = { "<cmd>MinimapToggle<cr>", "Minimap" }
 
 -- TODO: User Config for predefined plugins
 -- After changing plugin config exit and reopen LunarVim, Run :PackerInstall :PackerCompile
-lvim.builtin.dashboard.active = true
+lvim.builtin.alpha.active = true
+lvim.builtin.alpha.mode = "dashboard"
 lvim.builtin.terminal.active = true
 lvim.builtin.nvimtree.side = "left"
 lvim.builtin.nvimtree.show_icons.git = 0
@@ -145,5 +138,5 @@ lvim.plugins = {
       cmd = "TroubleToggle",
     },
     { "tpope/vim-repeat" },
-    { "sainnhe/gruvbox-material" },
+    { "gruvbox-community/gruvbox" },
 }
