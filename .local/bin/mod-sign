@@ -1,15 +1,15 @@
 #!/bin/bash
 ##########################################################
+#~ nzxt-kraken2
+#~ nzxt-smartdevice
+#~ it87
 #~ # Modules list
 modules=(
-nzxt-kraken2
-nzxt-smartdevice
 nvidia
 nvidia-drm
 nvidia-uvm
 nvidia-modeset
 nvidia-peermem
-it87
 )
 # src directory
 certDir="$HOME/.local/certs"
