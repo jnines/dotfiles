@@ -3,17 +3,21 @@
 mapfile pge< <(curl -s https://api.github.com/repos/GloriousEggroll/proton-ge-custom/releases/latest | grep -Eo "https://.*\.tar\.gz|https://.*\.sha512sum")
 pgev=$(awk -F '/' '{print $NF}' <<<"${pge[1]}")
 cd /tmp || exit;
-
+echo "Downloading"
 for i in "${pge[@]}"; do
     wget -Nq $i
 done &&
 if [[ $(/usr/bin/pgrep steam) ]]; then
+    echo "Killing Steam"
     /usr/bin/pkill steam
 fi &&
+echo "Comparing sha512sum"
 /usr/bin/sha512sum -c "${pgev%.tar.gz}.sha512sum" > /dev/null &&
+echo "Moving and decompressing"
 /usr/bin/tar -xzf "${pgev}" &&
 /usr/bin/mv "${pgev%.tar.gz}" "$HOME"/.local/share/Steam/compatibilitytools.d &&
 sleep 3
+echo "Restarting Steam"
 "$HOME"/.local/bin/steam %U -console > /dev/null 2>&1 & disown
 /usr/bin/dolphin "$HOME"/.local/share/Steam/compatibilitytools.d/ &
 exit
