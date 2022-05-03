@@ -32,6 +32,7 @@ export PARALLEL_HOME="${XDG_CONFIG_HOME:-$HOME/.config}/parallel"
 export PYTHONHISTORY="${XDG_CACHE_HOME:-$HOME/.cache}/python/history"
 export WINEPREFIX="${XDG_DATA_HOME:-$HOME/.local/share}/wineprefixes/default"
 export NPM_CONFIG_USERCONFIG="${XDG_CONFIG_HOME:-$HOME/.config}/npm/npmrc"
+export VSCODE_PORTABLE="$XDG_DATA_HOME"/vscode
 
 # Stop DDOS'ing my logs
 export QT_LOGGING_RULES="*=false"

@@ -62,7 +62,8 @@ lvim.builtin.nvimtree.show_icons.git = 0
 lvim.builtin.autopairs.active = true
 
 -- if you don't want all the parsers change this to a table of the ones you want
-lvim.builtin.treesitter.ensure_installed = "maintained"
+-- lvim.builtin.treesitter.ensure_installed = "maintained"
+lvim.builtin.treesitter.ensure_installed = { "json", "css", "javascript", "bash", "typescript", "vim", "php", "html", "yaml", "python", "perl" }
 lvim.builtin.treesitter.ignore_install = { "haskell" }
 lvim.builtin.treesitter.highlight.enabled = true
 
