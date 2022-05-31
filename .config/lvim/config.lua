@@ -1,7 +1,6 @@
--- general
 lvim.log.level = "warn"
 lvim.format_on_save = false
-lvim.colorscheme = "gruvbox"
+lvim.colorscheme = "gruvbox-material"
 
 -- keymappings [view all the defaults by pressing <leader>Lk]
 lvim.leader = "space"
@@ -52,18 +51,31 @@ lvim.builtin.which_key.mappings["r"] = {
 }
 lvim.builtin.which_key.mappings["m"] = { "<cmd>MinimapToggle<cr>", "Minimap" }
 
--- TODO: User Config for predefined plugins
--- After changing plugin config exit and reopen LunarVim, Run :PackerInstall :PackerCompile
 lvim.builtin.alpha.active = true
 lvim.builtin.alpha.mode = "dashboard"
+lvim.builtin.notify.active = true
 lvim.builtin.terminal.active = true
-lvim.builtin.nvimtree.side = "left"
-lvim.builtin.nvimtree.show_icons.git = 0
-lvim.builtin.autopairs.active = true
+lvim.builtin.nvimtree.setup.view.side = "left"
+lvim.builtin.nvimtree.setup.renderer.icons.show.git = false
+-- lvim.builtin.autopairs.active = true
+
 
 -- if you don't want all the parsers change this to a table of the ones you want
--- lvim.builtin.treesitter.ensure_installed = "maintained"
-lvim.builtin.treesitter.ensure_installed = { "json", "css", "javascript", "bash", "typescript", "vim", "php", "html", "yaml", "python", "perl" }
+lvim.builtin.treesitter.ensure_installed = {
+  "bash",
+  "c",
+  "javascript",
+  "json",
+  "lua",
+  "python",
+  "typescript",
+  "tsx",
+  "css",
+  "rust",
+  "java",
+  "yaml",
+}
+
 lvim.builtin.treesitter.ignore_install = { "haskell" }
 lvim.builtin.treesitter.highlight.enabled = true
 
@@ -71,7 +83,8 @@ lvim.builtin.treesitter.highlight.enabled = true
 lvim.lsp.diagnostics.virtual_text = false
 vim.cmd [[autocmd! CursorHold,CursorHoldI * lua vim.diagnostic.open_float(nil, {focus=false})]]
 
--- set a formatter if you want to override the default lsp one (if it exists)
+
+-- -- set a formatter, this will override the language server formatting capabilities (if it exists)
 local formatters = require "lvim.lsp.null-ls.formatters"
 formatters.setup {
   { exe = "black" },
@@ -81,6 +94,7 @@ formatters.setup {
   { exe = "shfmt"},
 }
 
+-- -- set additional linters
 local linters = require "lvim.lsp.null-ls.linters"
 linters.setup {
   { exe = "eslint_d" },
@@ -92,52 +106,45 @@ linters.setup {
 
 -- Additional Plugins
 lvim.plugins = {
-    {
-      'wfxr/minimap.vim',
-       run = "cargo install --locked code-minimap",
-       -- cmd = {"Minimap", "MinimapClose", "MinimapToggle", "MinimapRefresh", "MinimapUpdateHighlight"},
-       config = function ()
-        vim.cmd ("let g:minimap_width = 15")
-        vim.cmd ("let g:minimap_auto_start = 0")
-        vim.cmd ("let g:minimap_auto_start_win_enter = 1")
-        vim.cmd ("let g:minimap_highlight_search = 1")
-        vim.cmd ("let g:minimap_highlight_range = 3")
-        vim.cmd ("let g:minimap_git_colors = 1")
-      end,
-    },
-    {
-      "nacro90/numb.nvim",
-       event = "BufRead",
-       config = function()
-       require("numb").setup {
-         show_numbers = true, -- Enable 'number' for the window while peeking
-         show_cursorline = true, -- Enable 'cursorline' for the window while peeking
-       }
-       end,
-    },
-    {
-     "lukas-reineke/indent-blankline.nvim",
-      event = "BufRead",
-      setup = function()
-        vim.g.indentLine_enabled = 1
-        vim.g.indent_blankline_char = "▏"
-        vim.g.indent_blankline_filetype_exclude = {"help", "terminal", "dashboard"}
-        vim.g.indent_blankline_buftype_exclude = {"terminal"}
-        vim.g.indent_blankline_show_trailing_blankline_indent = false
-        vim.g.indent_blankline_show_first_indent_level = false
-      end
-    },
-    {
-      "windwp/nvim-spectre",
-      event = "BufRead",
-      config = function()
-        require("spectre").setup()
-      end,
-    },
-    {
-      "folke/trouble.nvim",
-      cmd = "TroubleToggle",
-    },
-    { "tpope/vim-repeat" },
-    { "gruvbox-community/gruvbox" },
+  {
+    'wfxr/minimap.vim',
+     run = "cargo install --locked code-minimap",
+     -- cmd = {"Minimap", "MinimapClose", "MinimapToggle", "MinimapRefresh", "MinimapUpdateHighlight"},
+     config = function ()
+      vim.cmd ("let g:minimap_width = 15")
+      vim.cmd ("let g:minimap_auto_start = 0")
+      vim.cmd ("let g:minimap_auto_start_win_enter = 1")
+      vim.cmd ("let g:minimap_highlight_search = 1")
+      vim.cmd ("let g:minimap_highlight_range = 3")
+      vim.cmd ("let g:minimap_git_colors = 1")
+    end,
+  },
+  {
+    "nacro90/numb.nvim",
+     event = "BufRead",
+     config = function()
+     require("numb").setup {
+       show_numbers = true, -- Enable 'number' for the window while peeking
+       show_cursorline = true, -- Enable 'cursorline' for the window while peeking
+     }
+     end,
+  },
+  {
+    "lukas-reineke/indent-blankline.nvim",
+     event = "BufRead",
+     setup = function()
+       vim.g.indentLine_enabled = 1
+       vim.g.indent_blankline_char = "▏"
+       vim.g.indent_blankline_filetype_exclude = {"help", "terminal", "dashboard"}
+       vim.g.indent_blankline_buftype_exclude = {"terminal"}
+       vim.g.indent_blankline_show_trailing_blankline_indent = false
+       vim.g.indent_blankline_show_first_indent_level = false
+     end
+   },
+   {
+    "folke/trouble.nvim",
+    cmd = "TroubleToggle",
+  },
+  { "tpope/vim-repeat" },
+  { "sainnhe/gruvbox-material" }
 }
