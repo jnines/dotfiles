@@ -4,6 +4,7 @@
 export PATH=$PATH:"$HOME/.local/bin"
 export PATH=$PATH:"$HOME/.local/bin/evil-software"
 export PATH=$PATH:"$HOME/.local/bin/git/bin"
+export PATH=$PATH:"$HOME/.local/share/npm/bin"
 
 # Defaults:
 export EDITOR="lvim"
@@ -32,6 +33,7 @@ export PARALLEL_HOME="${XDG_CONFIG_HOME:-$HOME/.config}/parallel"
 export PYTHONHISTORY="${XDG_CACHE_HOME:-$HOME/.cache}/python/history"
 export WINEPREFIX="${XDG_DATA_HOME:-$HOME/.local/share}/wineprefixes/default"
 export NPM_CONFIG_USERCONFIG="${XDG_CONFIG_HOME:-$HOME/.config}/npm/npmrc"
+export NODE_REPL_HISTORY="${XDG_CACHE_HOME:-$HOME/.cache}/.node_repl_history"
 export VSCODE_PORTABLE="$XDG_DATA_HOME"/vscode
 
 # Stop DDOS'ing my logs
