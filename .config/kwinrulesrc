@@ -1,23 +1,74 @@
 [$Version]
 update_info=kwinrules.upd:replace-placement-string-to-enum,kwinrules.upd:use-virtual-desktop-ids
 
+[0325d1f2-8984-4566-b534-188cb513d0d7]
+Description=Application settings for kpat
+clientmachine=localhost
+position=1950,0
+positionrule=3
+size=798,669
+sizerule=3
+wmclass=kpat
+wmclassmatch=1
+
 [1]
-Description=Application settings for libreoffice-calc
+Description=Application settings for kpat
 clientmachine=localhost
 clientmachinematch=0
 opacityactive=99
-opacityactiverule=2
 opacityinactive=95
-opacityinactiverule=2
 position=1950,0
-size=2530,1408
+positionrule=3
+size=798,669
+sizerule=3
 title=Klondike
 windowrole=browser
-wmclass=libreoffice libreoffice-calc
-wmclasscomplete=true
+wmclass=kpat
 wmclassmatch=1
 
 [10]
+Description=Application settings for vivaldi-stable
+clientmachine=localhost
+clientmachinematch=0
+maximizehoriz=true
+maximizevert=true
+opacityactive=100
+opacityactiverule=2
+opacityinactive=100
+opacityinactiverule=2
+position=1950,0
+positionrule=3
+size=2530,1408
+title=GWE
+windowrole=browser
+wmclass=vivaldi-stable
+wmclassmatch=1
+
+[100]
+Description=Settings
+clientmachine=localhost
+opacityactive=98
+opacityactiverule=2
+position=2639,440
+positionrule=3
+size=1032,742
+sizerule=3
+title=Downloads : bash — Konsole
+wmclass=systemsettings
+wmclassmatch=1
+
+[102fec91-16c3-41e2-91ea-999139db838e]
+Description=Window settings for gwe
+clientmachine=localhost
+minimize=true
+minimizerule=3
+title=GWE
+titlematch=1
+types=1
+wmclass=gwe
+wmclassmatch=1
+
+[11]
 Description=Window settings for systemsettings
 clientmachine=localhost
 clientmachinematch=0
@@ -34,18 +85,7 @@ wmclass=systemsettings5 systemsettings
 wmclasscomplete=true
 wmclassmatch=1
 
-[102fec91-16c3-41e2-91ea-999139db838e]
-Description=Window settings for gwe
-clientmachine=localhost
-minimize=true
-minimizerule=3
-title=GWE
-titlematch=1
-types=1
-wmclass=gwe
-wmclassmatch=1
-
-[11]
+[12]
 Description=Application settings for draw.io
 clientmachine=localhost
 clientmachinematch=0
@@ -60,7 +100,7 @@ windowrole=browser
 wmclass=draw.io
 wmclassmatch=1
 
-[12]
+[13]
 Description=Window settings for firefox
 clientmachine=localhost
 clientmachinematch=0
@@ -81,7 +121,7 @@ wmclass=navigator firefox
 wmclasscomplete=true
 wmclassmatch=1
 
-[13]
+[14]
 Description=Application settings for valheim.x86_64
 clientmachinematch=0
 opacityactive=100
@@ -93,9 +133,13 @@ windowrole=browser
 wmclass=valheim.x86_64
 wmclassmatch=1
 
-[14]
+[15]
 Description=Application settings for plasma-systemmonitor
 clientmachinematch=0
+desktops=11a325ef-ca2c-4f0f-852f-b561e4199a3c
+maximizehoriz=true
+maximizevert=true
+noborder=true
 opacityactive=100
 position=218,290
 positionrule=3
@@ -105,7 +149,7 @@ windowrole=browser
 wmclass=plasma-systemmonitor
 wmclassmatch=1
 
-[15]
+[16]
 Description=Application settings for transistor.bin.x86_64
 clientmachinematch=0
 desktops=11a325ef-ca2c-4f0f-852f-b561e4199a3c
@@ -121,7 +165,7 @@ windowrole=3pane
 wmclass=transistor.bin.x86_64
 wmclassmatch=1
 
-[16]
+[17]
 Description=Window settings for inkscape
 clientmachinematch=0
 desktops=11a325ef-ca2c-4f0f-852f-b561e4199a3c
@@ -139,7 +183,7 @@ wmclass=org.inkscape.inkscape inkscape
 wmclasscomplete=true
 wmclassmatch=1
 
-[17]
+[18]
 Description=Window settings for inkscape
 clientmachinematch=0
 desktops=11a325ef-ca2c-4f0f-852f-b561e4199a3c
@@ -158,7 +202,7 @@ wmclass=org.inkscape.inkscape inkscape
 wmclasscomplete=true
 wmclassmatch=1
 
-[18]
+[19]
 Description=Window settings for thunderbird
 clientmachinematch=0
 desktops=11a325ef-ca2c-4f0f-852f-b561e4199a3c
@@ -166,6 +210,7 @@ maximizehoriz=true
 maximizevert=true
 noborder=true
 opacityactive=100
+opacityinactive=100
 position=2218,220
 positionrule=3
 size=1962,1022
@@ -178,7 +223,24 @@ wmclass=mail thunderbird
 wmclasscomplete=true
 wmclassmatch=1
 
-[19]
+[2]
+Description=Application settings for libreoffice-calc
+clientmachine=localhost
+clientmachinematch=0
+minimize=true
+opacityactive=99
+opacityactiverule=2
+opacityinactive=95
+opacityinactiverule=2
+position=1950,0
+size=2530,1408
+title=Klondike
+windowrole=browser
+wmclass=libreoffice libreoffice-calc
+wmclasscomplete=true
+wmclassmatch=1
+
+[20]
 Description=Window settings for gimp-2.10
 clientmachinematch=0
 desktops=11a325ef-ca2c-4f0f-852f-b561e4199a3c
@@ -198,22 +260,7 @@ wmclass=file-jpeg gimp-2.10
 wmclasscomplete=true
 wmclassmatch=1
 
-[2]
-Description=Application settings for okular
-clientmachine=localhost
-clientmachinematch=0
-minimize=true
-opacityactive=98
-opacityactiverule=2
-opacityinactive=95
-position=1950,0
-size=2530,1408
-title=Klondike
-windowrole=browser
-wmclass=okular
-wmclassmatch=1
-
-[20]
+[21]
 Description=Window settings for gimp-2.10
 clientmachinematch=0
 desktops=11a325ef-ca2c-4f0f-852f-b561e4199a3c
@@ -232,7 +279,18 @@ windowrole=gimp-file-export
 wmclass=gimp-2.10
 wmclassmatch=1
 
-[21]
+[21307105-ab88-482d-b2fd-b2745a5bc8ad]
+Description=Window settings for sol
+clientmachine=localhost
+position=1950,0
+positionrule=3
+title=Klondike
+titlematch=1
+types=1
+wmclass=sol
+wmclassmatch=1
+
+[22]
 Description=Window settings for gimp-2.10
 clientmachinematch=0
 desktops=11a325ef-ca2c-4f0f-852f-b561e4199a3c
@@ -252,18 +310,7 @@ windowrolematch=1
 wmclass=gimp-2.10
 wmclassmatch=1
 
-[21307105-ab88-482d-b2fd-b2745a5bc8ad]
-Description=Window settings for sol
-clientmachine=localhost
-position=1950,0
-positionrule=3
-title=Klondike
-titlematch=1
-types=1
-wmclass=sol
-wmclassmatch=1
-
-[22]
+[23]
 Description=Window settings for lutris
 clientmachinematch=0
 desktops=11a325ef-ca2c-4f0f-852f-b561e4199a3c
@@ -283,7 +330,7 @@ windowrole=gimp-file-export
 wmclass=lutris
 wmclassmatch=1
 
-[23]
+[24]
 Description=Application settings for alacritty
 clientmachinematch=0
 desktops=11a325ef-ca2c-4f0f-852f-b561e4199a3c
@@ -304,7 +351,7 @@ windowrole=gimp-file-export
 wmclass=alacritty
 wmclassmatch=1
 
-[24]
+[25]
 Description=Application settings for steam_app_1145360
 clientmachinematch=0
 desktops=11a325ef-ca2c-4f0f-852f-b561e4199a3c
@@ -321,7 +368,7 @@ wmclass=hades.exe steam_app_1145360
 wmclasscomplete=true
 wmclassmatch=1
 
-[25]
+[26]
 Description=Window settings for dolphin
 clientmachinematch=0
 desktops=11a325ef-ca2c-4f0f-852f-b561e4199a3c
@@ -339,7 +386,7 @@ windowrole=gimp-file-export
 wmclass=dolphin
 wmclassmatch=1
 
-[26]
+[27]
 Description=Window settings for dolphin
 clientmachinematch=0
 opacityactive=100
@@ -355,7 +402,7 @@ windowrole=bluegriffon-prefs
 wmclass=dolphin
 wmclassmatch=1
 
-[27]
+[28]
 Description=Window settings for virt-manager
 clientmachinematch=0
 opacityactive=100
@@ -371,7 +418,7 @@ windowrole=bluegriffon-prefs
 wmclass=virt-manager
 wmclassmatch=1
 
-[28]
+[29]
 Description=Window settings for kcmshell5
 clientmachinematch=0
 opacityactive=100
@@ -385,20 +432,6 @@ titlematch=1
 types=32
 windowrole=bluegriffon-prefs
 wmclass=kcmshell5
-wmclassmatch=1
-
-[29]
-Description=Application settings for brave-browser
-clientmachinematch=0
-opacityactive=100
-opacityactiverule=2
-opacityinactive=100
-opacityinactiverule=2
-position=611,324
-size=678,679
-title=Kubuntu on QEMU/KVM
-windowrole=bluegriffon-prefs
-wmclass=brave-browser
 wmclassmatch=1
 
 [2c35874c-398a-4aa3-aecb-3b20689a4ce3]
@@ -425,23 +458,37 @@ wmclass=chromium
 wmclassmatch=1
 
 [3]
-Description=Application settings for code
+Description=Application settings for okular
 clientmachine=localhost
 clientmachinematch=0
-opacityactive=99
+opacityactive=98
 opacityactiverule=2
 opacityinactive=95
-opacityinactiverule=2
 position=1950,0
 size=2530,1408
 title=Klondike
 windowrole=browser
-wmclass=code
+wmclass=okular
 wmclassmatch=1
 
 [30]
+Description=Application settings for brave-browser
+clientmachinematch=0
+opacityactive=100
+opacityactiverule=2
+opacityinactive=100
+opacityinactiverule=2
+position=611,324
+size=678,679
+title=Kubuntu on QEMU/KVM
+windowrole=bluegriffon-prefs
+wmclass=brave-browser
+wmclassmatch=1
+
+[31]
 Description=Window settings for virt-manager
 clientmachinematch=0
+noborder=true
 opacityactive=100
 opacityactiverule=2
 opacityinactive=100
@@ -455,7 +502,7 @@ windowrole=bluegriffon-prefs
 wmclass=virt-manager
 wmclassmatch=1
 
-[31]
+[32]
 Description=Application settings for superliminal.x86_64
 clientmachinematch=0
 noborder=true
@@ -470,7 +517,7 @@ windowrole=bluegriffon-prefs
 wmclass=superliminal.x86_64
 wmclassmatch=1
 
-[32]
+[33]
 Description=Window settings for geany
 clientmachinematch=0
 noborder=true
@@ -487,7 +534,7 @@ windowrole=bluegriffon-prefs
 wmclass=geany
 wmclassmatch=1
 
-[33]
+[34]
 Description=Window settings for bluegriffon
 clientmachinematch=0
 noborder=true
@@ -505,7 +552,7 @@ wmclass=bluegriffon-prefs bluegriffon
 wmclasscomplete=true
 wmclassmatch=1
 
-[34]
+[35]
 Description=Application settings for darksiders3-win64-shipping.exe
 clientmachinematch=0
 noborder=true
@@ -520,7 +567,7 @@ windowrole=bluegriffon-prefs
 wmclass=darksiders3-win64-shipping.exe
 wmclassmatch=1
 
-[35]
+[36]
 Description=Window settings for geany
 clientmachinematch=0
 noborder=true
@@ -537,23 +584,6 @@ windowrole=bluegriffon-prefs
 wmclass=geany
 wmclassmatch=1
 
-[36]
-Description=Window settings for geany
-clientmachinematch=0
-noborder=true
-opacityactive=100
-opacityinactive=100
-position=369,918
-positionrule=1
-size=678,301
-sizerule=1
-title=Find
-titlematch=1
-types=32
-windowrole=bluegriffon-prefs
-wmclass=geany
-wmclassmatch=1
-
 [36985a5e-cd19-4343-ae12-5d960009ee46]
 Description=Application settings for sol
 clientmachine=localhost
@@ -563,9 +593,29 @@ wmclass=sol
 wmclassmatch=1
 
 [37]
+Description=Window settings for geany
+clientmachine=localhost
+clientmachinematch=0
+noborder=true
+opacityactive=100
+opacityinactive=100
+position=369,918
+positionrule=1
+screen=1
+size=678,301
+sizerule=1
+title=Find
+titlematch=1
+types=32
+windowrole=bluegriffon-prefs
+wmclass=geany
+wmclassmatch=1
+
+[38]
 Description=Application settings for virt-viewer
 clientmachine=localhost
 clientmachinematch=0
+desktops=11a325ef-ca2c-4f0f-852f-b561e4199a3c
 noborder=true
 opacityactive=100
 opacityactiverule=2
@@ -581,7 +631,7 @@ windowrole=bluegriffon-prefs
 wmclass=virt-viewer
 wmclassmatch=1
 
-[38]
+[39]
 Description=virt-viewer
 clientmachine=localhost
 clientmachinematch=0
@@ -602,7 +652,24 @@ types=1
 wmclass=virt-viewer
 wmclassmatch=1
 
-[39]
+[4]
+Description=Application settings for code
+clientmachine=localhost
+clientmachinematch=0
+maximizehoriz=true
+maximizevert=true
+opacityactive=99
+opacityactiverule=2
+opacityinactive=99
+opacityinactiverule=2
+position=1950,0
+size=2530,1408
+title=Klondike
+windowrole=browser
+wmclass=code
+wmclassmatch=1
+
+[40]
 Description=Window settings for virt-manager
 clientmachine=localhost
 clientmachinematch=0
@@ -624,24 +691,7 @@ types=1
 wmclass=virt-manager
 wmclassmatch=1
 
-[4]
-Description=Application settings for cyberpunk2077.exe
-clientmachine=localhost
-clientmachinematch=0
-maximizehoriz=true
-maximizevert=true
-opacityactive=100
-opacityactiverule=2
-opacityinactive=100
-opacityinactiverule=2
-position=1950,0
-size=2530,1408
-title=Klondike
-windowrole=browser
-wmclass=cyberpunk2077.exe
-wmclassmatch=1
-
-[40]
+[41]
 Description=Window settings for virt-manager
 clientmachine=localhost
 clientmachinematch=0
@@ -663,7 +713,7 @@ types=1
 wmclass=virt-manager
 wmclassmatch=1
 
-[41]
+[42]
 Description=Window settings for virt-manager
 clientmachine=localhost
 clientmachinematch=0
@@ -681,7 +731,7 @@ types=1
 wmclass=virt-manager
 wmclassmatch=1
 
-[42]
+[43]
 Description=Window settings for virt-manager
 clientmachine=localhost
 clientmachinematch=0
@@ -696,10 +746,11 @@ sizerule=3
 title=Ubuntu-Server on QEMU/KVM
 titlematch=1
 types=1
+windowrole=gimp-message-dialog
 wmclass=virt-manager
 wmclassmatch=1
 
-[43]
+[44]
 Description=Window settings for virt-manager
 clientmachine=localhost
 clientmachinematch=0
@@ -718,7 +769,17 @@ windowrole=gimp-message-dialog
 wmclass=virt-manager
 wmclassmatch=1
 
-[44]
+[4411b01e-8d82-4d56-87db-7fba460821db]
+Description=Application settings for code
+clientmachine=localhost
+opacityactive=99
+opacityactiverule=2
+opacityinactive=95
+opacityinactiverule=2
+wmclass=code
+wmclassmatch=1
+
+[45]
 Description=Window settings for virt-manager
 clientmachine=localhost
 clientmachinematch=0
@@ -737,17 +798,7 @@ windowrole=gimp-message-dialog
 wmclass=virt-manager
 wmclassmatch=1
 
-[4411b01e-8d82-4d56-87db-7fba460821db]
-Description=Application settings for code
-clientmachine=localhost
-opacityactive=99
-opacityactiverule=2
-opacityinactive=95
-opacityinactiverule=2
-wmclass=code
-wmclassmatch=1
-
-[45]
+[46]
 Description=Window settings for geany
 clientmachine=localhost
 clientmachinematch=0
@@ -764,7 +815,7 @@ windowrole=gimp-message-dialog
 wmclass=geany
 wmclassmatch=1
 
-[46]
+[47]
 Description=Application settings for geany
 clientmachine=localhost
 clientmachinematch=0
@@ -782,7 +833,7 @@ windowrole=gimp-message-dialog
 wmclass=geany
 wmclassmatch=1
 
-[47]
+[48]
 Description=Application settings for geany
 clientmachine=localhost
 clientmachinematch=0
@@ -798,10 +849,12 @@ wmclass=geany
 wmclasscomplete=true
 wmclassmatch=1
 
-[48]
+[49]
 Description=Application settings for steam_app_1172380
 clientmachine=localhost
 clientmachinematch=0
+maximizehoriz=true
+maximizevert=true
 opacityactive=100
 opacityactiverule=2
 opacityinactive=100
@@ -814,7 +867,24 @@ wmclass=starwarsjedifallenorder.exe
 wmclasscomplete=true
 wmclassmatch=1
 
-[49]
+[5]
+Description=Application settings for cyberpunk2077.exe
+clientmachine=localhost
+clientmachinematch=0
+maximizehoriz=true
+maximizevert=true
+opacityactive=100
+opacityactiverule=2
+opacityinactive=100
+opacityinactiverule=2
+position=1950,0
+size=2530,1408
+title=Klondike
+windowrole=browser
+wmclass=cyberpunk2077.exe
+wmclassmatch=1
+
+[50]
 Description=Settings for indianaepicgamestore-win64-shipping.exe
 clientmachine=localhost
 clientmachinematch=0
@@ -831,23 +901,7 @@ windowrole=gimp-message-dialog
 wmclass=indianaepicgamestore-win64-shipping.exe
 wmclassmatch=1
 
-[5]
-Description=Application settings for heroic
-clientmachine=localhost
-clientmachinematch=0
-maximizehoriz=true
-maximizevert=true
-opacityactive=100
-opacityactiverule=2
-opacityinactive=95
-position=1950,0
-size=2530,1408
-title=Klondike
-windowrole=browser
-wmclass=heroic
-wmclassmatch=1
-
-[50]
+[51]
 Description=Application settings for hacknet.bin.x86_64
 clientmachine=localhost
 clientmachinematch=0
@@ -864,7 +918,7 @@ windowrole=gimp-message-dialog
 wmclass=hacknet.bin.x86_64
 wmclassmatch=1
 
-[51]
+[52]
 Description=Application settings for ksp.x86_64
 clientmachine=localhost
 clientmachinematch=0
@@ -881,7 +935,7 @@ windowrole=gimp-message-dialog
 wmclass=ksp.x86_64
 wmclassmatch=1
 
-[52]
+[53]
 Description=Application settings for nxplayer.bin
 clientmachine=localhost
 clientmachinematch=0
@@ -898,7 +952,7 @@ windowrole=gimp-message-dialog
 wmclass=nxplayer.bin
 wmclassmatch=1
 
-[53]
+[54]
 Description=Application settings for filament-linux-shipping
 clientmachine=localhost
 clientmachinematch=0
@@ -914,7 +968,7 @@ windowrole=gimp-message-dialog
 wmclass=filament-linux-shipping
 wmclassmatch=1
 
-[54]
+[55]
 Description=Application settings for zoom
 clientmachine=localhost
 clientmachinematch=0
@@ -930,7 +984,7 @@ windowrole=gimp-message-dialog
 wmclass=zoom
 wmclassmatch=1
 
-[55]
+[56]
 Description=Window settings for gimp-2.10
 clientmachine=localhost
 clientmachinematch=0
@@ -940,6 +994,7 @@ opacityactive=100
 opacityinactive=100
 position=2827,355
 positionrule=3
+screen=0
 size=691,791
 sizerule=3
 title=Quit GIMP
@@ -949,7 +1004,7 @@ windowrolematch=1
 wmclass=gimp-2.10
 wmclassmatch=1
 
-[56]
+[57]
 Description=Window settings for gimp-2.10
 clientmachine=localhost
 clientmachinematch=0
@@ -959,7 +1014,6 @@ opacityactive=100
 opacityinactive=100
 position=2804,379
 positionrule=3
-screen=0
 size=679,804
 sizerule=3
 title=Export Image as PNG
@@ -970,7 +1024,18 @@ wmclass=file-png gimp-2.10
 wmclasscomplete=true
 wmclassmatch=1
 
-[57]
+[571fd124-981c-49b6-8f4e-feaa43185f87]
+Description=Application settings for libreoffice-calc
+clientmachine=localhost
+opacityactive=99
+opacityactiverule=2
+opacityinactive=95
+opacityinactiverule=2
+wmclass=libreoffice libreoffice-calc
+wmclasscomplete=true
+wmclassmatch=1
+
+[58]
 Description=Firefox
 clientmachine=localhost
 clientmachinematch=0
@@ -988,18 +1053,7 @@ windowrole=file-png
 wmclass=firefox
 wmclassmatch=1
 
-[571fd124-981c-49b6-8f4e-feaa43185f87]
-Description=Application settings for libreoffice-calc
-clientmachine=localhost
-opacityactive=99
-opacityactiverule=2
-opacityinactive=95
-opacityinactiverule=2
-wmclass=libreoffice libreoffice-calc
-wmclasscomplete=true
-wmclassmatch=1
-
-[58]
+[59]
 Description=Application settings for dungeons3.x86_64
 clientmachine=localhost
 clientmachinematch=0
@@ -1014,7 +1068,23 @@ windowrole=dolphin#1
 wmclass=dungeons3.x86_64
 wmclassmatch=1
 
-[59]
+[6]
+Description=Application settings for heroic
+clientmachine=localhost
+clientmachinematch=0
+maximizehoriz=true
+maximizevert=true
+opacityactive=100
+opacityactiverule=2
+opacityinactive=95
+position=1950,0
+size=2530,1408
+title=Klondike
+windowrole=browser
+wmclass=heroic
+wmclassmatch=1
+
+[60]
 Description=Application settings for steam_app_351920
 clientmachine=localhost
 clientmachinematch=0
@@ -1028,7 +1098,130 @@ wmclass=cm3.exe steam_app_351920
 wmclasscomplete=true
 wmclassmatch=1
 
-[6]
+[61]
+Description=Window settings for dolphin
+clientmachine=localhost
+opacityactive=90
+opacityactiverule=2
+opacityinactive=100
+position=2436,347
+positionrule=3
+size=1189,907
+sizerule=3
+title=new 1 - Notepadqq
+types=1
+windowrole=dolphin#1
+windowrolematch=1
+wmclass=dolphin
+wmclassmatch=1
+
+[62]
+Description=Application settings for libreoffice-draw
+clientmachine=localhost
+opacityactive=100
+opacityactiverule=2
+opacityinactive=100
+position=2898,624
+title=new 1 - Notepadqq
+windowrole=dolphin#1
+wmclass=libreoffice libreoffice-draw
+wmclasscomplete=true
+wmclassmatch=1
+
+[63]
+Description=Window settings for notepadqq
+clientmachine=localhost
+opacityactive=100
+opacityactiverule=2
+opacityinactive=100
+position=2898,624
+title=new 1 - Notepadqq
+types=1
+windowrole=dolphin#1
+wmclass=notepadqq-bin notepadqq
+wmclasscomplete=true
+wmclassmatch=1
+
+[64]
+Description=Window settings for libreoffice-writer
+clientmachine=localhost
+opacityactive=100
+opacityactiverule=2
+opacityinactive=100
+position=2898,624
+size=1189,799
+title=5-31-19.docx - LibreOffice Writer
+types=1
+windowrole=dolphin#1
+wmclass=libreoffice libreoffice-writer
+wmclasscomplete=true
+wmclassmatch=1
+
+[65]
+Description=Application settings for shotcut
+clientmachine=localhost
+opacityactive=100
+opacityactiverule=2
+opacityinactive=100
+position=2898,624
+size=1189,799
+title=Star Wars™: The Old Republic™
+windowrole=dolphin#1
+wmclass=shotcut
+wmclassmatch=1
+
+[66]
+Description=Settings for swtor.exe
+clientmachine=localhost
+opacityactive=100
+opacityactiverule=2
+opacityinactive=100
+position=2898,624
+size=1189,799
+title=Star Wars™: The Old Republic™
+wmclass=steam_proton
+wmclassmatch=1
+
+[67]
+Description=Settings for borderlandspresequel
+clientmachine=localhost
+opacityactive=100
+opacityactiverule=2
+opacityinactive=100
+position=2898,624
+size=1189,799
+title=Borderlands: The Pre-Sequel
+wmclass=borderlandspresequel
+wmclassmatch=1
+
+[68]
+Description=Settings for wine
+clientmachine=localhost
+opacityactive=100
+opacityactiverule=2
+opacityinactive=100
+position=2898,624
+size=1189,799
+skiptaskbar=true
+title=Epic Games Launcher
+wmclass=wine
+wmclassmatch=1
+
+[69]
+Description=Settings for lutris
+clientmachine=localhost
+desktops=11a325ef-ca2c-4f0f-852f-b561e4199a3c
+opacityactive=100
+opacityactiverule=2
+opacityinactive=100
+position=2898,624
+size=1189,799
+skiptaskbar=true
+title=Lutris
+wmclass=lutris
+wmclassmatch=1
+
+[7]
 Description=Application settings for sol
 clientmachine=localhost
 clientmachinematch=0
@@ -1044,126 +1237,7 @@ windowrole=browser
 wmclass=sol
 wmclassmatch=1
 
-[60]
-Description=Window settings for dolphin
-clientmachine=localhost
-clientmachinematch=0
-opacityactive=90
-opacityactiverule=2
-position=2436,347
-positionrule=3
-size=1189,907
-sizerule=3
-title=new 1 - Notepadqq
-types=1
-windowrole=dolphin#1
-windowrolematch=1
-wmclass=dolphin
-wmclassmatch=1
-
-[61]
-Description=Application settings for libreoffice-draw
-clientmachine=localhost
-opacityactive=100
-opacityactiverule=2
-opacityinactive=100
-title=new 1 - Notepadqq
-windowrole=dolphin#1
-wmclass=libreoffice libreoffice-draw
-wmclasscomplete=true
-wmclassmatch=1
-
-[62]
-Description=Window settings for notepadqq
-clientmachine=localhost
-opacityactive=100
-opacityactiverule=2
-opacityinactive=100
-position=2898,624
-title=new 1 - Notepadqq
-types=1
-windowrole=dolphin#1
-wmclass=notepadqq-bin notepadqq
-wmclasscomplete=true
-wmclassmatch=1
-
-[63]
-Description=Window settings for libreoffice-writer
-clientmachine=localhost
-opacityactive=100
-opacityactiverule=2
-opacityinactive=100
-position=2898,624
-title=5-31-19.docx - LibreOffice Writer
-types=1
-windowrole=dolphin#1
-wmclass=libreoffice libreoffice-writer
-wmclasscomplete=true
-wmclassmatch=1
-
-[64]
-Description=Application settings for shotcut
-clientmachine=localhost
-opacityactive=100
-opacityactiverule=2
-opacityinactive=100
-position=2898,624
-size=1189,799
-title=Star Wars™: The Old Republic™
-windowrole=dolphin#1
-wmclass=shotcut
-wmclassmatch=1
-
-[65]
-Description=Settings for swtor.exe
-clientmachine=localhost
-opacityactive=100
-opacityactiverule=2
-opacityinactive=100
-position=2898,624
-size=1189,799
-title=Star Wars™: The Old Republic™
-wmclass=steam_proton
-wmclassmatch=1
-
-[66]
-Description=Settings for borderlandspresequel
-clientmachine=localhost
-opacityactive=100
-opacityactiverule=2
-opacityinactive=100
-position=2898,624
-size=1189,799
-title=Borderlands: The Pre-Sequel
-wmclass=borderlandspresequel
-wmclassmatch=1
-
-[67]
-Description=Settings for wine
-clientmachine=localhost
-opacityactive=100
-opacityactiverule=2
-opacityinactive=100
-position=2898,624
-size=1189,799
-title=Epic Games Launcher
-wmclass=wine
-wmclassmatch=1
-
-[68]
-Description=Settings for lutris
-clientmachine=localhost
-opacityactive=100
-opacityactiverule=2
-opacityinactive=100
-position=2898,624
-size=1189,799
-skiptaskbar=true
-title=Lutris
-wmclass=lutris
-wmclassmatch=1
-
-[69]
+[70]
 Description=Application settings for teamviewer
 clientmachine=localhost
 desktops=11a325ef-ca2c-4f0f-852f-b561e4199a3c
@@ -1178,25 +1252,7 @@ title=Properties for etc-dnsmasq.d — Dolphin
 wmclass=teamviewer
 wmclassmatch=1
 
-[7]
-Description=Window settings for sol
-clientmachine=localhost
-clientmachinematch=0
-maximizehoriz=true
-maximizevert=true
-opacityactive=100
-opacityinactive=95
-position=1950,0
-positionrule=3
-size=2530,1408
-title=Klondike
-titlematch=1
-types=1
-windowrole=browser
-wmclass=sol
-wmclassmatch=1
-
-[70]
+[71]
 Description=Window settings for dolphin
 clientmachine=localhost
 desktops=11a325ef-ca2c-4f0f-852f-b561e4199a3c
@@ -1211,7 +1267,7 @@ types=32
 wmclass=dolphin
 wmclassmatch=1
 
-[71]
+[72]
 Description=Window settings for dolphin
 clientmachine=localhost
 desktops=11a325ef-ca2c-4f0f-852f-b561e4199a3c
@@ -1227,7 +1283,7 @@ types=32
 wmclass=dolphin
 wmclassmatch=1
 
-[72]
+[73]
 Description=Application settings for dolphin
 clientmachine=localhost
 desktops=11a325ef-ca2c-4f0f-852f-b561e4199a3c
@@ -1247,7 +1303,7 @@ title=tasks.svg - Inkscape
 wmclass=dolphin
 wmclassmatch=1
 
-[73]
+[74]
 Description=Application settings for quodlibet
 clientmachine=localhost
 desktops=11a325ef-ca2c-4f0f-852f-b561e4199a3c
@@ -1264,7 +1320,7 @@ wmclass=io.github.quodlibet.quodlibet quodlibet
 wmclasscomplete=true
 wmclassmatch=1
 
-[74]
+[75]
 Description=Window settings for inkscape
 clientmachine=localhost
 desktops=11a325ef-ca2c-4f0f-852f-b561e4199a3c
@@ -1280,7 +1336,7 @@ types=1
 wmclass=inkscape
 wmclassmatch=1
 
-[75]
+[76]
 Description=Application settings for spectacle
 clientmachine=localhost
 desktops=11a325ef-ca2c-4f0f-852f-b561e4199a3c
@@ -1294,7 +1350,7 @@ title=NVIDIA X Server Settings
 wmclass=spectacle
 wmclassmatch=1
 
-[76]
+[77]
 Description=Application settings for fre:ac
 clientmachine=localhost
 desktops=11a325ef-ca2c-4f0f-852f-b561e4199a3c
@@ -1305,10 +1361,11 @@ positionrule=3
 size=1016,702
 sizerule=3
 title=NVIDIA X Server Settings
+windowrole=eshellwindow-94472946960352
 wmclass=fre:ac
 wmclassmatch=1
 
-[77]
+[78]
 Description=NV Settings
 clientmachine=localhost
 desktops=11a325ef-ca2c-4f0f-852f-b561e4199a3c
@@ -1324,7 +1381,7 @@ windowrole=eshellwindow-94472946960352
 wmclass=nvidia-settings
 wmclassmatch=1
 
-[78]
+[79]
 Description=Skanlite
 clientmachine=localhost
 desktops=11a325ef-ca2c-4f0f-852f-b561e4199a3c
@@ -1339,7 +1396,25 @@ windowrole=eshellwindow-94472946960352
 wmclass=skanlite
 wmclassmatch=1
 
-[79]
+[8]
+Description=Window settings for sol
+clientmachine=localhost
+clientmachinematch=0
+maximizehoriz=true
+maximizevert=true
+opacityactive=100
+opacityinactive=95
+position=1950,0
+positionrule=3
+size=2530,1408
+title=Klondike
+titlematch=1
+types=1
+windowrole=browser
+wmclass=sol
+wmclassmatch=1
+
+[80]
 Description=Application settings for pavucontrol
 clientmachine=localhost
 desktops=11a325ef-ca2c-4f0f-852f-b561e4199a3c
@@ -1354,27 +1429,7 @@ windowrole=eshellwindow-94472946960352
 wmclass=pavucontrol
 wmclassmatch=1
 
-[8]
-Description=Application settings for chromium
-clientmachine=localhost
-clientmachinematch=0
-fullscreenrule=3
-maximizehoriz=true
-maximizevert=true
-opacityactive=100
-opacityactiverule=2
-opacityinactive=95
-opacityinactiverule=2
-position=1950,0
-positionrule=3
-size=2530,1408
-sizerule=3
-title=GWE
-windowrole=browser
-wmclass=chromium
-wmclassmatch=1
-
-[80]
+[81]
 Description=Application settings for smplayer
 clientmachine=localhost
 desktops=11a325ef-ca2c-4f0f-852f-b561e4199a3c
@@ -1391,7 +1446,7 @@ windowrole=eshellwindow-94472946960352
 wmclass=smplayer
 wmclassmatch=1
 
-[81]
+[82]
 Description=Settings for firefox
 clientmachine=localhost
 desktops=11a325ef-ca2c-4f0f-852f-b561e4199a3c
@@ -1406,7 +1461,7 @@ windowrole=eshellwindow-94472946960352
 wmclass=firefox
 wmclassmatch=1
 
-[82]
+[83]
 Description=Window settings for terminator
 clientmachine=localhost
 desktops=11a325ef-ca2c-4f0f-852f-b561e4199a3c
@@ -1422,7 +1477,7 @@ windowrole=eshellwindow-94472946960352
 wmclass=terminator
 wmclassmatch=1
 
-[83]
+[84]
 Description=Thunderbird
 clientmachine=localhost
 desktops=11a325ef-ca2c-4f0f-852f-b561e4199a3c
@@ -1440,7 +1495,7 @@ windowrole=eshellwindow-94472946960352
 wmclass=thunderbird
 wmclassmatch=1
 
-[84]
+[85]
 Description=Application settings for gimp-2.10
 clientmachine=localhost
 desktops=11a325ef-ca2c-4f0f-852f-b561e4199a3c
@@ -1454,7 +1509,7 @@ windowrole=eshellwindow-94472946960352
 wmclass=gimp-2.10
 wmclassmatch=1
 
-[85]
+[86]
 Description=Application settings for inkscape
 clientmachine=localhost
 desktops=11a325ef-ca2c-4f0f-852f-b561e4199a3c
@@ -1468,7 +1523,7 @@ windowrole=eshellwindow-94472946960352
 wmclass=inkscape
 wmclassmatch=1
 
-[86]
+[87]
 Description=Discord
 clientmachine=localhost
 desktops=11a325ef-ca2c-4f0f-852f-b561e4199a3c
@@ -1484,7 +1539,7 @@ windowrole=eshellwindow-94472946960352
 wmclass=discord
 wmclassmatch=1
 
-[87]
+[88]
 Description=Application settings for geany
 clientmachine=localhost
 desktops=11a325ef-ca2c-4f0f-852f-b561e4199a3c
@@ -1500,7 +1555,7 @@ windowrole=eshellwindow-94472946960352
 wmclass=geany
 wmclassmatch=1
 
-[88]
+[89]
 Description=Meld
 clientmachine=localhost
 desktops=11a325ef-ca2c-4f0f-852f-b561e4199a3c
@@ -1516,9 +1571,31 @@ windowrole=eshellwindow-94472946960352
 wmclass=meld
 wmclassmatch=1
 
-[89]
+[9]
+Description=Application settings for chromium
+clientmachine=localhost
+clientmachinematch=0
+fullscreenrule=3
+maximizehoriz=true
+maximizevert=true
+opacityactive=100
+opacityactiverule=2
+opacityinactive=100
+opacityinactiverule=2
+position=1950,0
+positionrule=3
+size=2530,1408
+sizerule=3
+title=GWE
+windowrole=browser
+wmclass=chromium
+wmclassmatch=1
+
+[90]
 Description=Window settings for evolution
 clientmachine=localhost
+desktops=11a325ef-ca2c-4f0f-852f-b561e4199a3c
+fsplevel=3
 opacityactive=95
 opacityactiverule=2
 opacityinactive=100
@@ -1533,25 +1610,7 @@ windowrolematch=1
 wmclass=evolution
 wmclassmatch=1
 
-[9]
-Description=Application settings for vivaldi-stable
-clientmachine=localhost
-clientmachinematch=0
-maximizehoriz=true
-maximizevert=true
-opacityactive=100
-opacityactiverule=2
-opacityinactive=100
-opacityinactiverule=2
-position=1950,0
-positionrule=3
-size=2530,1408
-title=GWE
-windowrole=browser
-wmclass=vivaldi-stable
-wmclassmatch=1
-
-[90]
+[91]
 Description=Window settings for fre:ac
 clientmachine=localhost
 desktops=11a325ef-ca2c-4f0f-852f-b561e4199a3c
@@ -1568,7 +1627,7 @@ windowrole=eshellwindow-94472946960352
 wmclass=fre:ac
 wmclassmatch=1
 
-[91]
+[92]
 Description=Steam Games
 clientmachine=localhost
 desktops=11a325ef-ca2c-4f0f-852f-b561e4199a3c
@@ -1584,7 +1643,7 @@ windowrole=eshellwindow-94472946960352
 wmclass=steam_app
 wmclassmatch=2
 
-[92]
+[93]
 Description=Application settings for qimgv
 clientmachine=localhost
 desktops=11a325ef-ca2c-4f0f-852f-b561e4199a3c
@@ -1602,7 +1661,7 @@ windowrole=eshellwindow-94472946960352
 wmclass=qimgv
 wmclassmatch=1
 
-[93]
+[94]
 Description=Application settings for terminator
 clientmachine=localhost
 desktops=11a325ef-ca2c-4f0f-852f-b561e4199a3c
@@ -1617,7 +1676,7 @@ windowrole=eshellwindow-94472946960352
 wmclass=terminator
 wmclassmatch=1
 
-[94]
+[95]
 Description=Everything
 clientmachine=localhost
 desktops=11a325ef-ca2c-4f0f-852f-b561e4199a3c
@@ -1630,7 +1689,7 @@ title=share — Dolphin
 types=509
 wmclass=dolphin
 
-[95]
+[96]
 Description=Start
 clientmachine=localhost
 desktops=11a325ef-ca2c-4f0f-852f-b561e4199a3c
@@ -1646,7 +1705,7 @@ wmclass=plasmashell plasmashell
 wmclasscomplete=true
 wmclassmatch=1
 
-[96]
+[97]
 Description=Konsole
 clientmachine=localhost
 desktops=11a325ef-ca2c-4f0f-852f-b561e4199a3c
@@ -1660,7 +1719,7 @@ title=Downloads : bash — Konsole
 wmclass=konsole
 wmclassmatch=1
 
-[97]
+[98]
 Description=Application settings for ksysguard
 clientmachine=localhost
 desktops=11a325ef-ca2c-4f0f-852f-b561e4199a3c
@@ -1675,7 +1734,7 @@ title=Downloads : bash — Konsole
 wmclass=ksysguard
 wmclassmatch=1
 
-[98]
+[99]
 Description=Steam Friends
 clientmachine=localhost
 desktops=11a325ef-ca2c-4f0f-852f-b561e4199a3c
@@ -1692,22 +1751,9 @@ title=Downloads : bash — Konsole
 wmclass=steam
 wmclassmatch=1
 
-[99]
-Description=Settings
-clientmachine=localhost
-opacityactive=98
-opacityactiverule=2
-position=2639,440
-positionrule=3
-size=1032,742
-sizerule=3
-title=Downloads : bash — Konsole
-wmclass=systemsettings
-wmclassmatch=1
-
 [General]
-count=99
-rules=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99
+count=100
+rules=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100
 
 [be2ea34d-a97d-4329-97e8-90c55d796936]
 Description=Application settings for gwe

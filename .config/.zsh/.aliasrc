@@ -29,7 +29,7 @@ alias wget='wget --hsts-file="$XDG_CACHE_HOME/wget-hsts'
 alias cat='bat --paging=never --theme=gruvbox-dark'
 alias yarn='yarn --use-yarnrc "$XDG_CONFIG_HOME/yarn/config"'
 
-alias upmir='sudo reflector -l 50 -n 10 -c US -p http --ipv4 --sort rate --save /etc/pacman.d/mirrorlist && sudo sed -i -e '/gigenet/d' -e '/osbeck/d' /etc/pacman.d/mirrorlist'
+alias upmir='sudo reflector -l 50 -n 10 -c US -p https --ipv4 --sort rate --save /etc/pacman.d/mirrorlist && sudo sed -i -e '/gigenet/d' -e '/osbeck/d' /etc/pacman.d/mirrorlist'
 alias SS='sudo systemctl'
 alias SP='sudo pacman'
 alias ruseless='sudo pacman -Rsn $(pacman -Qdtq)'
