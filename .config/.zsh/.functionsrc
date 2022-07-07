@@ -35,8 +35,8 @@ cd() {
 
 # Make and cd to
 mkcd () {
-    mkdir -pv -- "$1" &&
-    cd -P -- "$1"
+    mkdir -pv "$1" &&
+    eval cd "\"\$$#\""
 }
 
 # Rsync diffs
