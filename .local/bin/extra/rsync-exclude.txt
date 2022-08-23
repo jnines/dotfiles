@@ -15,6 +15,7 @@ lsp_servers
 # .config
 .config/discord
 .config/BraveSoftware
+.config/heroic
 
 # .local
 .local/share/icons
@@ -38,6 +39,7 @@ lsp_servers
 .local/share/wineprefixes
 .local/share/npm
 .local/share/lunarvim/site/
+.local/share/vscode
 
 # .mozilla
 .mozilla/firefox/*/storage
@@ -56,3 +58,5 @@ lsp_servers
 .mozilla/firefox/*/xpti.dat
 .mozilla/firefox/*/compreg.dat
 .mozilla/firefox/*/pluginreg.dat
+
+Desktop/Dev
