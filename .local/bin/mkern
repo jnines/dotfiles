@@ -1,7 +1,9 @@
 #!/bin/bash
-
+certDir="$HOME/.local/certs"
 kDir="$HOME/.local/bin/git/tkg/linux-tkg"
+/usr/bin/gpg --decrypt-files "${certDir}/kernel_key.pem.gpg" &&
+/usr/bin/sleep 10 &&
 cd "$kDir" || exit &&
 /usr/bin/makepkg -fsi &&
-/usr/bin/find /tmp/makepkg \( -name 'signing_key.pem' -o -name 'signing_key.x509' -o -name 'sign-file' \) -exec mv -t "$HOME"/.local/certs/ {} +
-sudo rm -r /tmp/makepkg
+sudo /usr/bin/rm -r /tmp/makepkg &&
+/usr/bin/rm "${certDir}/kernel_key.pem"

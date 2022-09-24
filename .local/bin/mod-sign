@@ -1,8 +1,5 @@
 #!/bin/bash
 ##########################################################
-#~ nzxt-kraken2
-#~ nzxt-smartdevice
-#~ it87
 #~ # Modules list
 modules=(
 nvidia
@@ -13,16 +10,17 @@ nvidia-peermem
 )
 # src directory
 certDir="$HOME/.local/certs"
-#~ kSrc="$HOME/.local/bin/git/tkg/linux-tkg/src"
 ###########################################################
 if [[ $1 == "-n" ]]; then
     kTkg="$2"
 else
     kTkg="tkg"
 fi
+/usr/bin/gpg --decrypt-files "${certDir}/kernel_key.crt.gpg" "${certDir}/kernel_key.key.gpg" &&
+sleep 10 &&
 alg="sha512"
-privKey="$certDir/signing_key.pem"
-pubKey="$certDir/signing_key.x509"
+privKey="$certDir/kernel_key.key"
+pubKey="$certDir/kernel_key.crt"
 signFile="$certDir/sign-file"
 export PATH=$PATH:"${signFile%/sign-file}"
 echo Finding "${modules[@]}"
@@ -38,3 +36,4 @@ for i in "${modulesW[@]}"; do
     echo Signing "${i}"
     sudo /usr/bin/zstd -q --rm "${i%.zst}"
 done
+/usr/bin/rm "${certDir}/kernel_key.crt" "${certDir}/kernel_key.key"
