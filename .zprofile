@@ -36,6 +36,8 @@ export NPM_CONFIG_USERCONFIG="${XDG_CONFIG_HOME:-$HOME/.config}/npm/npmrc"
 export NODE_REPL_HISTORY="${XDG_CACHE_HOME:-$HOME/.cache}/.node_repl_history"
 export VSCODE_PORTABLE="$XDG_DATA_HOME"/vscode
 
+export GIT_DISCOVERY_ACROSS_FILESYSTEM=1
+
 # Stop DDOS'ing my logs
 export QT_LOGGING_RULES="*=false"
 
