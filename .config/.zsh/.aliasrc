@@ -44,8 +44,8 @@ alias rkde='killall plasmasession && kstart plasmasession > /dev/null 2>&1 & dis
 alias fkde='cp "$HOME"/.local/bin/extra/tasks.svg "$HOME"/.local/share/plasma/desktoptheme/Aritim-Dark-Rounded-Blur/widgets/tasks.svg && rkde' 
 alias kcache='rm "$HOME"/.config/Trolltech.conf && kbuildsycoca5 --noincremental'
 
-alias ytdl='cd /1tb/ex; yt-dlp --no-mtime --external-downloader aria2c --external-downloader-args "-c -j 5 -x 10 --summary-interval=0" $1'
-alias ytdla='cd /1tb/Downloads; yt-dlp --no-mtime --prefer-ffmpeg --extract-audio --audio-format mp3 --external-downloader aria2c --external-downloader-args "-c -j 5 -x 10 --summary-interval=0" "$@"'
+alias yt='cd /1tb/ex; yt-dlp --no-mtime --external-downloader aria2c --external-downloader-args "-c -j 5 -x 10 --summary-interval=0" $1'
+alias yta='cd /1tb/Downloads; yt-dlp --no-mtime --prefer-ffmpeg --extract-audio --audio-format mp3 --external-downloader aria2c --external-downloader-args "-c -j 5 -x 10 --summary-interval=0" "$@"'
 
 alias valh='/usr/bin/rsync -a --delete "$HOME"/.config/unity3d/IronGate/Valheim /data/.bak/'
 

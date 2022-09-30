@@ -2,7 +2,6 @@
 certDir="$HOME/.local/certs"
 kDir="$HOME/.local/bin/git/tkg/linux-tkg"
 /usr/bin/gpg --decrypt-files "${certDir}/kernel_key.pem.gpg" &&
-/usr/bin/sleep 10 &&
 cd "$kDir" || exit &&
 /usr/bin/makepkg -fsi &&
 sudo /usr/bin/rm -r /tmp/makepkg &&

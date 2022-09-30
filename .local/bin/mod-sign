@@ -7,6 +7,7 @@ nvidia-drm
 nvidia-uvm
 nvidia-modeset
 nvidia-peermem
+it87
 )
 # src directory
 certDir="$HOME/.local/certs"
@@ -17,7 +18,6 @@ else
     kTkg="tkg"
 fi
 /usr/bin/gpg --decrypt-files "${certDir}/kernel_key.crt.gpg" "${certDir}/kernel_key.key.gpg" &&
-sleep 10 &&
 alg="sha512"
 privKey="$certDir/kernel_key.key"
 pubKey="$certDir/kernel_key.crt"
