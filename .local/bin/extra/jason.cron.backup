@@ -4,4 +4,4 @@
 1 13 1 * * /bin/sh /home/jason/.local/bin/mrsync
 1 12 1 * * /usr/bin/pacman -Qqe > /home/jason/.local/installed_$(date +\%m.\%d.\%Y).txt
 1 12 1 * * /usr/bin/cp -f /var/spool/cron/jason /home/jason/.local/bin/extra/jason.cron.backup
-@hourly /usr/bin/sed -i '/ytdl/d' /home/jason/.cache.zsh.zshistory
+@hourly /usr/bin/sed -i '/yt/d' /home/jason/.cache/zsh/.zshistory
