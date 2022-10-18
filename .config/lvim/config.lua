@@ -36,12 +36,12 @@ lvim.keys.insert_mode["{"] = "{<c-g>u"
 
 lvim.builtin.which_key.mappings["t"] = {
   name = "+Trouble",
-  r = { "<cmd>Trouble lsp_references<cr>", "References" },
-  f = { "<cmd>Trouble lsp_definitions<cr>", "Definitions" },
-  d = { "<cmd>Trouble document_diagnostics<cr>", "Diagnostics" },
-  q = { "<cmd>Trouble quickfix<cr>", "QuickFix" },
-  l = { "<cmd>Trouble loclist<cr>", "LocationList" },
-  w = { "<cmd>Trouble lsp_workspace_diagnostics<cr>", "Diagnostics" },
+  r = { "<cmd>TroubleToggle lsp_references<cr>", "References" },
+  f = { "<cmd>TroubleToggle lsp_definitions<cr>", "Definitions" },
+  d = { "<cmd>TroubleToggle document_diagnostics<cr>", "Diagnostics" },
+  q = { "<cmd>TroubleToggle quickfix<cr>", "QuickFix" },
+  l = { "<cmd>TroubleToggle loclist<cr>", "LocationList" },
+  w = { "<cmd>TroubleToggle lsp_workspace_diagnostics<cr>", "Diagnostics" },
 }
 lvim.builtin.which_key.mappings["r"] = {
   name = "Replace",
