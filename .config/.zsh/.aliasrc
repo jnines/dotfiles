@@ -40,9 +40,9 @@ alias srb='sudo reboot'
 alias ruefi='sudo systemctl reboot --firmware-setup'
 
 alias rkde='killall plasmasession && kstart plasmasession > /dev/null 2>&1 & disown'
-#alias fkde='sudo cp "$HOME"/.local/bin/extra/tasks.svgz /usr/share/plasma/desktoptheme/default/widgets/tasks.svgz && sudo cp "$HOME"/.local/bin/extra/panel-background.svgz /usr/share/plasma/desktoptheme/default/widgets/panel-background.svgz && rkde' 
 alias fkde='cp "$HOME"/.local/bin/extra/tasks.svg "$HOME"/.local/share/plasma/desktoptheme/Aritim-Dark-Rounded-Blur/widgets/tasks.svg && rkde' 
 alias kcache='rm "$HOME"/.config/Trolltech.conf && kbuildsycoca5 --noincremental'
+alias rnet='/usr/bin/nmcli con up br0\ slave\ 1 && /usr/bin/nmcli con up br0'
 
 alias yt='cd /1tb/ex; yt-dlp --no-mtime --external-downloader aria2c --external-downloader-args "-c -j 5 -x 10 --summary-interval=0" $1'
 alias yta='cd /1tb/Downloads; yt-dlp --no-mtime --prefer-ffmpeg --extract-audio --audio-format mp3 --external-downloader aria2c --external-downloader-args "-c -j 5 -x 10 --summary-interval=0" "$@"'
@@ -52,7 +52,7 @@ alias valh='/usr/bin/rsync -a --delete "$HOME"/.config/unity3d/IronGate/Valheim 
 alias gd='/usr/bin/git --git-dir=$HOME/.local/bin/git/dotfiles --work-tree=$HOME'
 alias gda='gd add -u && gd commit -m "..." && gd push'
 alias gds='gd status'
-alias gitup='cd "$HOME"/.local/bin/git/fake-home && git pull && cd "$HOME"/.local/share/lunarvim/lvim && git pull && cd "$HOME"/.local/bin/git/systray-x && git pull && cd "$HOME"/.local/bin/git/tkg/nvidia-all && git pull && cd "$HOME"/.local/bin/git/tkg/linux-tkg && git pull'
+alias gitup='cd "$HOME"/.local/bin/git/fake-home && git pull && cd "$HOME"/.local/bin/git/systray-x && git pull && cd "$HOME"/.local/bin/git/tkg/nvidia-all && git pull && cd "$HOME"/.local/bin/git/tkg/linux-tkg && git pull'
 
 alias lconf='meld $HOME/.config/frogminer/linux-tkg.cfg $HOME/.local/bin/git/tkg/linux-tkg/customization.cfg'
 alias nconf='meld $HOME/.config/frogminer/nvidia-all.cfg $HOME/.local/bin/git/tkg/nvidia-all/customization.cfg'

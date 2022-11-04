@@ -5,4 +5,5 @@ kDir="$HOME/.local/bin/git/tkg/linux-tkg"
 cd "$kDir" || exit &&
 /usr/bin/makepkg -fsi &&
 sudo /usr/bin/rm -r /tmp/makepkg &&
-/usr/bin/rm "${certDir}/kernel_key.pem"
+/usr/bin/rm "${certDir}/kernel_key.pem" &&
+echo -e "\033[0;31m   *** Remmember to sign modules*** \033[0m"
