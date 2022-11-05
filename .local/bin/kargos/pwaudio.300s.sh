@@ -5,6 +5,10 @@ aInterface=$(pactl list short sinks | awk '/Burr/{print $1}')
 bT=$(pactl list short sinks | awk '/bluez/{print $1}')
 dSink=$(pactl info | grep "Default Sink")
 
+if [[ $dSink =~ "easyeffects_sink" ]]; then
+  pactl set-default-sink $speakers
+fi
+
 if [ -z "$bT" ]; then
 
     if [[ "$dSink" =~ "Burr" ]]; then
