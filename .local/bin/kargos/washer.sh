@@ -6,5 +6,5 @@ washer=$(/usr/bin/curl -s -X GET -H "Authorization: Bearer $token" -H "Content-T
 if [[ -z $washer ]]; then
     echo "| imageURL=$HOME/.local/bin/kargos/washer.png size=15"
 else
-    echo "$(echo "$washer" | awk -F ':' '{print " 0"$1":"$2}') | imageURL=$HOME/.local/bin/kargos/washer.png size=15"
+    echo "$(echo "$washer" | awk -F ':' '{print " 0"$1":"$2}') | imageURL=$HOME/.local/bin/kargos/washer.png size=14"
 fi

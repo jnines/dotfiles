@@ -6,5 +6,5 @@ dryer=$(/usr/bin/curl -s -X GET -H "Authorization: Bearer $token" -H "Content-Ty
 if [[ -z $dryer ]]; then
     echo "| imageURL=$HOME/.local/bin/kargos/dryer.png"
 else
-    echo "$(echo "$dryer" | awk -F ':' '{print " 0"$1":"$2}') | imageURL=$HOME/.local/bin/kargos/washer.png"
+    echo "$(echo "$dryer" | awk -F ':' '{print " 0"$1":"$2}') | imageURL=$HOME/.local/bin/kargos/dryer.png" size=14
 fi
