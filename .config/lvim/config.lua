@@ -41,7 +41,7 @@ lvim.builtin.which_key.mappings["t"] = {
   d = { "<cmd>TroubleToggle document_diagnostics<cr>", "Diagnostics" },
   q = { "<cmd>TroubleToggle quickfix<cr>", "QuickFix" },
   l = { "<cmd>TroubleToggle loclist<cr>", "LocationList" },
-  w = { "<cmd>TroubleToggle lsp_workspace_diagnostics<cr>", "Diagnostics" },
+  w = { "<cmd>TroubleToggle workspace_diagnostics<cr>", "Diagnostics" },
 }
 lvim.builtin.which_key.mappings["r"] = {
   name = "Replace",
@@ -53,17 +53,13 @@ lvim.builtin.which_key.mappings["m"] = { "<cmd>MinimapToggle<cr>", "Minimap" }
 
 lvim.builtin.alpha.active = true
 lvim.builtin.alpha.mode = "dashboard"
--- lvim.builtin.notify.active = true
 lvim.builtin.terminal.active = true
 lvim.builtin.nvimtree.setup.view.side = "left"
 lvim.builtin.nvimtree.setup.renderer.icons.show.git = false
--- lvim.builtin.autopairs.active = true
-
 
 -- if you don't want all the parsers change this to a table of the ones you want
 lvim.builtin.treesitter.ensure_installed = {
   "bash",
-  "c",
   "javascript",
   "json",
   "lua",
@@ -72,7 +68,6 @@ lvim.builtin.treesitter.ensure_installed = {
   "tsx",
   "css",
   "rust",
-  "java",
   "yaml",
 }
 
@@ -80,8 +75,8 @@ lvim.builtin.treesitter.ignore_install = { "haskell" }
 lvim.builtin.treesitter.highlight.enabled = true
 
 -- generic LSP settings
-lvim.lsp.diagnostics.virtual_text = false
-vim.cmd [[autocmd! CursorHold,CursorHoldI * lua vim.diagnostic.open_float(nil, {focus=false})]]
+lvim.lsp.diagnostics.virtual_text = true
+-- vim.cmd [[autocmd! CursorHold,CursorHoldI * lua vim.diagnostic.open_float(nil, {focus=false})]]
 
 
 -- -- set a formatter, this will override the language server formatting capabilities (if it exists)
@@ -129,18 +124,6 @@ lvim.plugins = {
      }
      end,
   },
-  {
-    "lukas-reineke/indent-blankline.nvim",
-     event = "BufRead",
-     setup = function()
-       vim.g.indentLine_enabled = 1
-       vim.g.indent_blankline_char = "▏"
-       vim.g.indent_blankline_filetype_exclude = {"help", "terminal", "dashboard"}
-       vim.g.indent_blankline_buftype_exclude = {"terminal"}
-       vim.g.indent_blankline_show_trailing_blankline_indent = false
-       vim.g.indent_blankline_show_first_indent_level = false
-     end
-   },
    {
     "folke/trouble.nvim",
     cmd = "TroubleToggle",
