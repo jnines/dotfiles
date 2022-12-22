@@ -1,21 +1,3 @@
-# Modify keybinds based on mode
-if (( ${+terminfo[smkx]} )) && (( ${+terminfo[rmkx]} )); then
-    function zle-line-init () {
-        echoti smkx
-    }
-    function zle-line-finish () {
-        echoti rmkx
-    }
-    zle -N zle-line-init
-    zle -N zle-line-finish
-fi
-
-# Prompt Vi Mode
-function zle-line-init zle-keymap-select {
-    VIMODE="${${KEYMAP/vicmd/"%F{red}NORMAL"}/(main|viins)/"%F{yellow}INSERT"}"
-    zle reset-prompt
-}
-
 # Ctrl+o for lf
 lfcd () {
     tmp="$(mktemp)"

@@ -20,8 +20,6 @@ setopt transient_rprompt
 PROMPT='%B% %F{58}┌%F{yellow}[%F{white}%~%F{yellow}] ${vcs_info_msg_0_}
 %F{58}└╼%F{166}$%b%f '
 
-RPROMPT='${VIMODE}'
-
 # Tab Completion
 autoload -U compinit
 setopt menucomplete
@@ -71,10 +69,6 @@ zle -N bracketed-paste bracketed-paste-magic
 # Terminal URL escape
 autoload -Uz url-quote-magic
 zle -N self-insert url-quote-magic
-
-# Binds
-zle -N zle-line-init
-zle -N zle-keymap-select
 
 # Git
 autoload -Uz vcs_info

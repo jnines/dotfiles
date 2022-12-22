@@ -1,4 +1,4 @@
-#@reboot /home/jason/.local/bin/nvled.sh
+# @reboot /usr/bin/pactl set-default-sink alsa_output.pci-0000_0b_00.4.analog-stereo
 1 0,6,12,18 * * *  /usr/bin/rsync -aq --exclude-from=/home/jason/.local/bin/extra/rsync-exclude.txt /home/jason /data/.bak
 1 1,7,13,19 * * * sudo /usr/bin/rsync -aq /etc/ /data/.bak/jason/etc && sudo chown -R jason:users /data/.bak/jason/etc
 1 13 1 * * /bin/sh /home/jason/.local/bin/mrsync
