@@ -11,6 +11,7 @@ satisfactory-mod-manager-gui
 vivaldi
 lspinstall
 lsp_servers
+1g_crucial
 
 # .config
 .config/discord
