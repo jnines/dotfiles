@@ -232,6 +232,7 @@ opacityactiverule=2
 opacityinactive=99
 opacityinactiverule=2
 position=1950,0
+positionrule=3
 size=2530,1408
 title=Klondike
 windowrole=browser
