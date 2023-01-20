@@ -1,12 +1,9 @@
 [ActivityManager]
 _k_friendly_name=Activity Manager
-switch-to-activity-456a6dcb-d18a-4aaf-97a5-de1c08399ad3=none,none,Switch to activity "Default"
+switch-to-activity-f64a1f38-b698-46ae-b6b0-0991f6238aa1=none,none,Switch to activity "Default"
 
 [KDE Keyboard Layout Switcher]
-Switch keyboard layout to English (US)=none,none,Switch keyboard layout to English (US)
-Switch keyboard layout to German=none,none,Switch keyboard layout to German
-Switch keyboard layout to German (QWERTY)=none,none,Switch keyboard layout to German (QWERTY)
-Switch to Next Keyboard Layout=Ctrl+Alt+K,Ctrl+Alt+K,Switch to Next Keyboard Layout
+Switch to Next Keyboard Layout=Meta+Alt+K,none,Switch to Next Keyboard Layout
 _k_friendly_name=Keyboard Layout Switcher
 
 [kaccess]
@@ -26,15 +23,20 @@ display=Display\tMeta+P,Display\tMeta+P,Switch Display
 
 [khotkeys]
 _k_friendly_name=Custom Shortcuts Service
+{07e4e54a-64c3-44c4-b14b-08929f87865b}=none,none,Skip forward
 {081cc7dd-9bad-4a16-b2b7-87d3f76a988c}=Ctrl+Num+8,none,Volume Up
 {1ca9bc12-580e-4f6f-8620-c2aef161c654}=Ctrl+Num+2,none,Volume Down
+{309cc89b-b2c9-46b5-9ce5-7bfc4fea6a03}=none,none,Skip Back
 {34ca30c0-2317-46bc-bb93-5d0e7cbef32c}=Ctrl+Num+5,none,Play/Pause
+{3b390f1d-1cc4-4265-ae54-51de6dff4dd0}=none,none,Volume Down
 {4158bcd9-eb6e-434d-a0d7-71a4e2a04a89}=Ctrl+Alt+?,none,Firefox
 {462e1912-fc60-4863-af02-caca5c2c77d9}=Ctrl+Num+4,none,Skip Back
+{465ecbcc-20ac-4461-8550-9596975907c4}=none,none,Volume Up
 {5afe61a8-9c44-418a-a347-bf1af891b050}=Ctrl+Alt+{,none,sfQsave
 {5b2a7f53-e223-4c8d-a5e2-f70cddc59398}=Meta+Return,none,AlacS
 {64c08a8d-bb4e-40cd-8221-98cb28808461}=Meta+Num++,none,Alacrity Multi
 {71f3e654-22bb-4a2d-a2b4-a2e6c1c3b353}=none,none,KSysGuard
+{7b386ff7-6316-4a27-a072-cbddddb20111}=none,none,Play/Pause
 {b7810751-2139-4daa-ac81-3fa7e1473e62}=Meta+Ctrl+Num++,none,Alacritty Single
 {ba06da6f-e9e5-46c0-9e1f-ceb4dd80d8c7}=Meta+Num+*,none,System Settings
 {c3855e64-ac8f-4374-a822-b8d3be0ac619}=Ctrl+Num+6,none,Skip forward
@@ -48,12 +50,12 @@ decrease_microphone_volume=Microphone Volume Down,Microphone Volume Down,Decreas
 decrease_volume=Volume Down,Volume Down,Decrease Volume
 increase_microphone_volume=Microphone Volume Up,Microphone Volume Up,Increase Microphone Volume
 increase_volume=Volume Up,Volume Up,Increase Volume
-mic_mute=Alt+CapsLock,Microphone Mute\tMeta+Volume Mute,Mute Microphone
+mic_mute=Alt+CapsLock,Microphone Mute,Mute Microphone
 mute=Volume Mute,Volume Mute,Mute
 
 [ksmserver]
 Halt Without Confirmation=Ctrl+Alt+Shift+PgDown,,Halt Without Confirmation
-Lock Session=Meta+L\tCtrl+Alt+L\tScreensaver,Meta+L\tScreensaver,Lock Session
+Lock Session=Ctrl+Alt+L\tMeta+L\tScreensaver,Meta+L\tScreensaver,Lock Session
 Log Out=Ctrl+Alt+Del,Ctrl+Alt+Del,Log Out
 Log Out Without Confirmation=Ctrl+Alt+Shift+Del,,Log Out Without Confirmation
 Reboot Without Confirmation=Ctrl+Alt+Shift+PgUp,,Reboot Without Confirmation
@@ -195,7 +197,6 @@ Window to Next Desktop=none,,Window to Next Desktop
 Window to Next Screen=none,Meta+Shift+Right,Window to Next Screen
 Window to Previous Desktop=none,,Window to Previous Desktop
 Window to Previous Screen=none,Meta+Shift+Left,Window to Previous Screen
-Window to Screen %1=none,none,Switch to Screen 7
 Window to Screen 0=none,,Window to Screen 0
 Window to Screen 1=none,,Window to Screen 1
 Window to Screen 2=none,,Window to Screen 2
@@ -211,11 +212,11 @@ view_zoom_out=Meta+-,Meta+-,Zoom Out
 
 [mediacontrol]
 _k_friendly_name=Media Controller
-mediavolumedown=none,,Media volume down
-mediavolumeup=none,,Media volume up
+mediavolumedown=none,none,Media volume down
+mediavolumeup=none,none,Media volume up
 nextmedia=Media Next,Media Next,Media playback next
 pausemedia=Media Pause,Media Pause,Pause media playback
-playmedia=none,,Play media playback
+playmedia=none,none,Play media playback
 playpausemedia=Media Play,Media Play,Play/Pause media playback
 previousmedia=Media Previous,Media Previous,Media playback previous
 stopmedia=Media Stop,Media Stop,Stop media playback
@@ -231,7 +232,7 @@ _launch=Launch (1),Launch (1),KCalc
 [org.kde.krunner.desktop]
 RunClipboard=Alt+Shift+F2,Alt+Shift+F2,Run command on clipboard contents
 _k_friendly_name=KRunner
-_launch=Meta+Space\tSearch\tAlt+F2,none,KRunner
+_launch=Search\tMeta+Space\tAlt+F2,Alt+Space\tAlt+F2\tSearch,KRunner
 
 [org.kde.plasma.emojier.desktop]
 _k_friendly_name=Emoji Selector
@@ -240,12 +241,12 @@ _launch=Meta+.,Meta+.,Emoji Selector
 [org.kde.spectacle.desktop]
 ActiveWindowScreenShot=Meta+Print,Meta+Print,Capture Active Window
 CurrentMonitorScreenShot=Ctrl+Shift+Print,none,Capture Current Monitor
-FullScreenScreenShot=Print,Shift+Print,Capture Entire Desktop
-OpenWithoutScreenshot=none,none,Launch Spectacle without capturing
+FullScreenScreenShot=none,Shift+Print,Capture Entire Desktop
+OpenWithoutScreenshot=none,none,Launch without taking a screenshot
 RectangularRegionScreenShot=Meta+Shift+Print,Meta+Shift+Print,Capture Rectangular Region
 WindowUnderCursorScreenShot=none,Meta+Ctrl+Print,Capture Window Under Cursor
 _k_friendly_name=Spectacle
-_launch=Meta+Ctrl+Print,Print,Launch Spectacle
+_launch=Meta+Ctrl+Print,Print,Spectacle
 
 [org_kde_powerdevil]
 Decrease Keyboard Brightness=Keyboard Brightness Down,Keyboard Brightness Down,Decrease Keyboard Brightness
@@ -263,7 +264,7 @@ _k_friendly_name=Power Management
 [plasmashell]
 _k_friendly_name=Plasma
 activate task manager entry 1=Meta+1,Meta+1,Activate Task Manager Entry 1
-activate task manager entry 10=Meta+0,Meta+0,Activate Task Manager Entry 10
+activate task manager entry 10=none,Meta+0,Activate Task Manager Entry 10
 activate task manager entry 2=Meta+2,Meta+2,Activate Task Manager Entry 2
 activate task manager entry 3=Meta+3,Meta+3,Activate Task Manager Entry 3
 activate task manager entry 4=Meta+4,Meta+4,Activate Task Manager Entry 4
@@ -272,12 +273,11 @@ activate task manager entry 6=Meta+6,Meta+6,Activate Task Manager Entry 6
 activate task manager entry 7=Meta+7,Meta+7,Activate Task Manager Entry 7
 activate task manager entry 8=Meta+8,Meta+8,Activate Task Manager Entry 8
 activate task manager entry 9=Meta+9,Meta+9,Activate Task Manager Entry 9
-activate widget 158=none,none,Activate Task Manager Widget
-activate widget 186=Alt+F1,none,Activate Application Launcher Widget
-activate widget 189=none,none,Activate Window list Widget
-activate widget 67=none,none,Activate Task Manager Widget
-activate widget 83=none,none,Activate Event Calendar Widget
-activate widget 9=none,none,Activate Digital Clock Widget
+activate widget 28=none,none,Activate Application Launcher Widget
+activate widget 33=none,none,Activate System Tray Widget
+activate widget 4=Alt+F1,none,Activate Application Launcher Widget
+activate widget 49=none,none,Activate Task Manager Widget
+activate widget 53=none,none,Activate Event Calendar Widget
 clear-history=none,,Clear Clipboard History
 clipboard_action=Ctrl+Alt+X,Meta+Ctrl+X,Automatic Action Popup Menu
 cycle-panels=Meta+Alt+P,Meta+Alt+P,Move keyboard focus between panels
@@ -285,8 +285,8 @@ cycleNextAction=none,,Next History Item
 cyclePrevAction=none,,Previous History Item
 edit_clipboard=none,,Edit Contents…
 manage activities=Meta+Q,Meta+Q,Show Activity Switcher
-next activity=Meta+Tab,Meta+Tab,Walk through activities
-previous activity=Meta+Shift+Tab,Meta+Shift+Tab,Walk through activities (Reverse)
+next activity=Meta+Tab,none,Walk through activities
+previous activity=Meta+Shift+Tab,none,Walk through activities (Reverse)
 repeat_action=Ctrl+Alt+R,Meta+Ctrl+R,Manually Invoke Action on Current Clipboard
 show dashboard=Ctrl+F12,Ctrl+F12,Show Desktop
 show-barcode=none,,Show Barcode…
@@ -299,7 +299,8 @@ toggle do not disturb=none,,Toggle do not disturb
 [systemsettings.desktop]
 _k_friendly_name=System Settings
 _launch=Tools,Tools,System Settings
-
-[terminator.desktop]
-_k_friendly_name=Launch Terminator
-_launch=none,none,Launch Terminator
+kcm-kscreen=none,none,Display Configuration
+kcm-lookandfeel=none,none,Global Theme
+kcm-users=none,none,Users
+powerdevilprofilesconfig=none,none,Energy Saving
+screenlocker=none,none,Screen Locking

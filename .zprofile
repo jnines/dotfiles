@@ -2,7 +2,6 @@
 
 # $PATH:$PATH=HTAP$
 export PATH=$PATH:"$HOME/.local/bin"
-export PATH=$PATH:"$HOME/.local/bin/evil-software"
 export PATH=$PATH:"$HOME/.local/bin/git/bin"
 export PATH=$PATH:"$HOME/.local/share/npm/bin"
 
