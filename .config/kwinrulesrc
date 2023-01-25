@@ -2,14 +2,86 @@
 update_info=kwinrules.upd:replace-placement-string-to-enum,kwinrules.upd:use-virtual-desktop-ids
 
 [1]
-Description=Window settings for steam
+Description=Window settings for meld
 clientmachine=localhost
 desktops=64a12e41-2755-4c2d-91c3-c1c526d0aec6
 fsplevel=2
+maximizehoriz=true
+maximizevert=true
 noborder=true
 opacityactive=90
 opacityinactive=90
-position=4180,752
+position=1958,0
+positionrule=3
+size=2522,1404
+sizerule=3
+title=Meld
+types=1
+windowrole=browser
+wmclass=org.gnome.meld meld
+wmclasscomplete=true
+wmclassmatch=1
+
+[10]
+Description=Application settings for smplayer
+clientmachine=localhost
+desktops=64a12e41-2755-4c2d-91c3-c1c526d0aec6
+fsplevel=3
+noborder=true
+opacityactive=90
+opacityinactive=90
+position=3627,0
+positionrule=3
+size=853,1406
+sizerule=3
+title=Friends List
+windowrole=3pane
+wmclass=smplayer
+wmclassmatch=1
+
+[11]
+Description=Application settings for qimgv
+clientmachine=localhost
+desktops=64a12e41-2755-4c2d-91c3-c1c526d0aec6
+fsplevel=3
+noborder=true
+opacityactive=90
+opacityinactive=90
+position=3642,0
+positionrule=3
+size=838,1406
+sizerule=3
+title=Friends List
+windowrole=3pane
+wmclass=qimgv
+wmclassmatch=1
+
+[12]
+Description=Application settings for plasma-systemmonitor
+clientmachine=localhost
+desktops=64a12e41-2755-4c2d-91c3-c1c526d0aec6
+fsplevel=3
+noborder=true
+opacityactive=90
+opacityinactive=90
+position=194,187
+positionrule=3
+size=1437,713
+sizerule=3
+title=Friends List
+windowrole=3pane
+wmclass=plasma-systemmonitor
+wmclassmatch=1
+
+[13]
+Description=Window settings for steam
+clientmachine=localhost
+desktops=64a12e41-2755-4c2d-91c3-c1c526d0aec6
+fsplevel=3
+noborder=true
+opacityactive=90
+opacityinactive=90
+position=4180,751
 positionrule=3
 size=300,650
 sizerule=3
@@ -17,6 +89,114 @@ title=Friends List
 titlematch=1
 types=1
 wmclass=steam
+wmclassmatch=1
+
+[14]
+Description=Application settings for steam
+clientmachine=localhost
+desktops=64a12e41-2755-4c2d-91c3-c1c526d0aec6
+fsplevel=3
+fsplevelrule=2
+noborder=true
+opacityactive=90
+opacityinactive=90
+position=2515,260
+size=1302,1054
+title=Steam
+wmclass=steam
+wmclassmatch=1
+
+[15]
+Description=Window settings for steam
+clientmachine=localhost
+desktops=64a12e41-2755-4c2d-91c3-c1c526d0aec6
+noborder=true
+opacityactive=90
+opacityinactive=90
+placementrule=2
+position=2515,260
+positionrule=3
+size=1302,1054
+sizerule=3
+title=Steam
+titlematch=1
+types=1
+wmclass=steam
+wmclassmatch=1
+
+[16]
+Description=Window settings for geany
+clientmachine=localhost
+desktops=64a12e41-2755-4c2d-91c3-c1c526d0aec6
+noborder=true
+opacityactive=90
+opacityinactive=90
+position=537,580
+positionrule=3
+size=701,267
+sizerule=3
+title=Find
+titlematch=1
+types=32
+wmclass=geany
+wmclassmatch=1
+
+[17]
+Description=Window settings for geany
+clientmachine=localhost
+desktops=64a12e41-2755-4c2d-91c3-c1c526d0aec6
+noborder=true
+opacityactive=90
+opacityinactive=90
+position=0,180
+positionrule=3
+size=1920,1080
+sizerule=3
+title=meld-menu.desktop - /home/jason/.local/share/kservices5/ServiceMenus - Geany
+titlematch=1
+types=1
+wmclass=geany
+wmclassmatch=1
+
+[17412efd-49af-46ee-929d-c6f9db839c75]
+Description=Application settings for sol
+clientmachine=localhost
+size=893,694
+sizerule=3
+wmclass=sol
+wmclassmatch=1
+
+[18]
+Description=Application settings for geany
+clientmachine=localhost
+desktops=64a12e41-2755-4c2d-91c3-c1c526d0aec6
+desktopsrule=3
+noborder=true
+opacityactive=90
+opacityactiverule=2
+opacityinactive=90
+opacityinactiverule=2
+position=1966,0
+size=2514,1404
+title=Alacritty
+wmclass=geany
+wmclassmatch=1
+
+[19]
+Description=Application settings for alacritty
+clientmachine=localhost
+noborder=true
+noborderrule=3
+opacityactive=85
+opacityactiverule=2
+opacityinactive=85
+opacityinactiverule=2
+position=1966,0
+positionrule=3
+size=2514,1404
+sizerule=3
+title=Alacritty
+wmclass=alacritty
 wmclassmatch=1
 
 [190af35b-1257-4b22-a7d6-b6efdfd97d2f]
@@ -33,35 +213,68 @@ wmclass=steam
 wmclassmatch=1
 
 [2]
-Description=Application settings for steam
+Description=Application settings for sol
 clientmachine=localhost
 desktops=64a12e41-2755-4c2d-91c3-c1c526d0aec6
 fsplevel=3
-fsplevelrule=2
+maximizehoriz=true
+maximizevert=true
 noborder=true
 opacityactive=90
 opacityinactive=90
-position=2617,361
-size=1223,923
-title=Steam
-wmclass=steam
+position=1958,0
+positionrule=3
+size=893,694
+sizerule=3
+title=rustdesk
+windowrole=browser
+wmclass=sol
+wmclassmatch=1
+
+[20cd8d1e-d5bf-40a5-bf80-d9860ea25ac7]
+Description=Window settings for thunderbird
+clientmachine=localhost
+position=2258,245
+positionrule=3
+size=1786,1063
+sizerule=3
+title=Inbox - Gmail - Mozilla Thunderbird
+types=1
+windowrole=3pane
+windowrolematch=1
+wmclass=mail thunderbird
+wmclasscomplete=true
+wmclassmatch=1
+
+[23b56d9a-239d-4286-a40d-203b9d6a3f52]
+Description=Application settings for plasma-systemmonitor
+clientmachine=localhost
+position=178,373
+positionrule=3
+size=1437,713
+sizerule=3
+wmclass=plasma-systemmonitor
 wmclassmatch=1
 
 [3]
-Description=Window settings for steam
+Description=Window settings for rustdesk
 clientmachine=localhost
 desktops=64a12e41-2755-4c2d-91c3-c1c526d0aec6
+fsplevel=3
+maximizehoriz=true
+maximizevert=true
 noborder=true
 opacityactive=90
 opacityinactive=90
-position=2617,361
+position=1958,0
 positionrule=3
-size=1223,923
+size=2522,1404
 sizerule=3
-title=Steam
+title=rustdesk
 titlematch=1
 types=1
-wmclass=steam
+windowrole=browser
+wmclass=rustdesk
 wmclassmatch=1
 
 [31e0b747-0dd5-4fa8-bfc9-52a12327e7df]
@@ -81,85 +294,128 @@ wmclass=alacritty
 wmclassmatch=1
 
 [4]
-Description=Window settings for geany
+Description=Window settings for firefox
 clientmachine=localhost
 desktops=64a12e41-2755-4c2d-91c3-c1c526d0aec6
+fsplevel=3
+maximizehoriz=true
+maximizehorizrule=3
+maximizevert=true
+maximizevertrule=3
 noborder=true
 opacityactive=90
 opacityinactive=90
-position=537,580
-positionrule=3
-size=701,267
-sizerule=3
-title=Find
-titlematch=1
-types=32
-wmclass=geany
+position=2384,231
+screenrule=3
+size=1127,955
+title=Home — Mozilla Firefox
+types=1
+windowrole=browser
+windowrolematch=1
+wmclass=navigator firefox
+wmclasscomplete=true
 wmclassmatch=1
 
 [5]
-Description=Window settings for geany
+Description=Window settings for dolphin
 clientmachine=localhost
 desktops=64a12e41-2755-4c2d-91c3-c1c526d0aec6
+fsplevel=3
 noborder=true
 opacityactive=90
 opacityinactive=90
-position=0,180
+position=2384,231
 positionrule=3
-size=1920,1080
+size=1127,955
 sizerule=3
-title=meld-menu.desktop - /home/jason/.local/share/kservices5/ServiceMenus - Geany
-titlematch=1
+title=Desktop — Dolphin
 types=1
-wmclass=geany
-wmclassmatch=1
-
-[6]
-Description=Application settings for geany
-clientmachine=localhost
-desktops=64a12e41-2755-4c2d-91c3-c1c526d0aec6
-desktopsrule=3
-noborder=true
-opacityactive=90
-opacityactiverule=2
-opacityinactive=90
-opacityinactiverule=2
-position=2612,365
-size=1077,879
-title=Alacritty
-wmclass=geany
-wmclassmatch=1
-
-[7]
-Description=Application settings for dolphin
-clientmachine=localhost
-noborder=true
-opacityactive=90
-opacityactiverule=2
-opacityinactive=90
-opacityinactiverule=2
-position=2612,365
-positionrule=3
-size=1077,879
-sizerule=3
-title=Alacritty
+windowrole=dolphin#1
+windowrolematch=1
 wmclass=dolphin
 wmclassmatch=1
 
-[8]
-Description=Application settings for alacritty
+[56deeb8f-1a62-4900-b8c6-06e96819e9df]
+Description=Application settings for smplayer
 clientmachine=localhost
-noborder=true
-noborderrule=3
-opacityactive=85
-opacityactiverule=2
-opacityinactive=75
-opacityinactiverule=2
-position=1920,0
-positionrule=3
-size=2560,1402
+size=853,1398
 sizerule=3
-wmclass=alacritty
+wmclass=smplayer
+wmclassmatch=1
+
+[6]
+Description=Window settings for audacity
+clientmachine=localhost
+desktops=64a12e41-2755-4c2d-91c3-c1c526d0aec6
+fsplevel=3
+noborder=true
+opacityactive=90
+opacityinactive=90
+position=2267,240
+positionrule=3
+size=1620,992
+sizerule=3
+title=Audacity
+titlematch=1
+types=1
+windowrole=3pane
+wmclass=audacity
+wmclassmatch=1
+
+[7]
+Description=Window settings for plasma-systemmonitor
+clientmachine=localhost
+desktops=64a12e41-2755-4c2d-91c3-c1c526d0aec6
+fsplevel=3
+noborder=true
+opacityactive=90
+opacityinactive=90
+position=181,410
+positionrule=3
+size=1437,713
+sizerule=3
+title=Processes — System Monitor
+titlematch=1
+types=1
+windowrole=3pane
+wmclass=plasma-systemmonitor
+wmclassmatch=1
+
+[737c20fc-c8c7-4980-ab33-9b89db5cf519]
+Description=Application settings for sol
+clientmachine=localhost
+position=1958,0
+positionrule=3
+size=893,694
+sizerule=3
+wmclass=sol
+wmclassmatch=1
+
+[7c221b75-1636-4caa-90cb-719fa036c275]
+Description=Application settings for ksysguard
+clientmachine=localhost
+position=120,211
+positionrule=3
+size=1615,770
+sizerule=3
+wmclass=ksysguard
+wmclassmatch=1
+
+[8]
+Description=Application settings for ksysguard
+clientmachine=localhost
+desktops=64a12e41-2755-4c2d-91c3-c1c526d0aec6
+fsplevel=3
+noborder=true
+opacityactive=90
+opacityinactive=90
+position=118,348
+positionrule=3
+size=1615,770
+sizerule=3
+title=Inbox - Gmail - Mozilla Thunderbird
+windowrole=3pane
+wmclass=ksysguard
 wmclassmatch=1
 
 [84da1fd4-2cb7-4058-8390-2b2061494c06]
@@ -175,9 +431,55 @@ types=1
 wmclass=alacritty
 wmclassmatch=1
 
+[8e4593e7-ee97-4340-ad82-2519460af18a]
+Description=Window settings for audacity
+clientmachine=localhost
+position=2267,240
+positionrule=3
+size=1620,992
+sizerule=3
+title=Audacity
+titlematch=1
+types=1
+wmclass=audacity
+wmclassmatch=1
+
+[9]
+Description=Window settings for thunderbird
+clientmachine=localhost
+desktops=64a12e41-2755-4c2d-91c3-c1c526d0aec6
+fsplevel=3
+noborder=true
+opacityactive=90
+opacityinactive=90
+position=2258,245
+positionrule=3
+size=1786,1063
+sizerule=3
+title=Inbox - Gmail - Mozilla Thunderbird
+types=1
+windowrole=3pane
+windowrolematch=1
+wmclass=mail thunderbird
+wmclasscomplete=true
+wmclassmatch=1
+
+[9684482e-88ad-4526-8f7e-6337aa99afdb]
+Description=Window settings for meld
+clientmachine=localhost
+position=1958,0
+positionrule=3
+size=2522,1404
+sizerule=3
+title=Meld
+types=1
+wmclass=org.gnome.meld meld
+wmclasscomplete=true
+wmclassmatch=1
+
 [General]
-count=8
-rules=1,2,3,4,5,6,7,8
+count=19
+rules=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19
 
 [a2490580-4164-4ff6-8848-c25140c7d86e]
 Description=Application settings for geany
@@ -195,6 +497,32 @@ sizerule=3
 wmclass=geany
 wmclassmatch=1
 
+[a374add8-2967-429c-8116-a9022ab0f523]
+Description=Window settings for rustdesk
+clientmachine=localhost
+position=1958,0
+positionrule=3
+size=2522,1404
+sizerule=3
+title=rustdesk
+titlematch=1
+types=1
+wmclass=rustdesk
+wmclassmatch=1
+
+[a4e275b2-36cc-4e24-9179-4d4b77d9213e]
+Description=Window settings for sol
+clientmachine=localhost
+position=1958,0
+positionrule=3
+size=893,694
+sizerule=3
+title=Klondike
+titlematch=1
+types=1
+wmclass=sol
+wmclassmatch=1
+
 [aa8622e4-356b-4baa-a43c-3518fa58caee]
 Description=Window settings for geany
 clientmachine=localhost
@@ -206,6 +534,22 @@ title=meld-menu.desktop - /home/jason/.local/share/kservices5/ServiceMenus - Gea
 titlematch=1
 types=1
 wmclass=geany
+wmclassmatch=1
+
+[ab8580cd-135e-4945-b28e-86f386d4a110]
+Description=Window settings for firefox
+clientmachine=localhost
+maximizehoriz=true
+maximizehorizrule=3
+maximizevert=true
+maximizevertrule=3
+screenrule=3
+title=Home — Mozilla Firefox
+types=1
+windowrole=browser
+windowrolematch=1
+wmclass=navigator firefox
+wmclasscomplete=true
 wmclassmatch=1
 
 [bc3985a7-c31d-4a5f-bfa6-f3064c46f2ce]
@@ -229,6 +573,33 @@ types=1
 wmclass=steam
 wmclassmatch=1
 
+[d85bd2f6-8d64-485c-82fa-7a8cf8dec5e7]
+Description=Window settings for sol
+clientmachine=localhost
+position=1966,0
+positionrule=3
+size=893,694
+sizerule=3
+title=Klondike
+titlematch=1
+types=1
+wmclass=sol
+wmclassmatch=1
+
+[dc780194-da67-4053-9a15-25449a238e7a]
+Description=Window settings for dolphin
+clientmachine=localhost
+position=2384,231
+positionrule=3
+size=1127,955
+sizerule=3
+title=Desktop — Dolphin
+types=1
+windowrole=dolphin#1
+windowrolematch=1
+wmclass=dolphin
+wmclassmatch=1
+
 [e35d2688-6f63-4b23-860e-4cf5f41b0f05]
 Description=Application settings for dolphin
 clientmachine=localhost
@@ -237,6 +608,39 @@ opacityactiverule=2
 opacityinactive=90
 opacityinactiverule=2
 wmclass=dolphin
+wmclassmatch=1
+
+[e9801ee0-b747-421c-85f2-93b076a680a5]
+Description=Application settings for qimgv
+clientmachine=localhost
+position=3609,0
+positionrule=3
+size=853,1400
+sizerule=3
+wmclass=qimgv
+wmclassmatch=1
+
+[eeb576f7-308a-47a5-9a43-d4d5f71338f8]
+Description=Window settings for plasma-systemmonitor
+clientmachine=localhost
+position=181,410
+positionrule=3
+size=1437,713
+sizerule=3
+title=Processes — System Monitor
+titlematch=1
+types=1
+wmclass=plasma-systemmonitor
+wmclassmatch=1
+
+[f35276cc-e13e-420d-959f-f0b54cf7ef67]
+Description=Application settings for sol
+clientmachine=localhost
+position=1920,0
+positionrule=3
+size=893,694
+sizerule=3
+wmclass=sol
 wmclassmatch=1
 
 [f5092614-19ff-42fb-a4af-8432b5aa9ef6]

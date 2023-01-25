@@ -8,6 +8,9 @@ RepeatRate=40
 
 [Mouse]
 X11LibInputXAccelProfileFlat=false
+XLbInptAccelProfileFlat=true
+cursorSize=36
+cursorTheme=Vimix-white-cursors
 
 [Tmp]
 update_info=delete_cursor_old_default_size.upd:DeleteCursorOldDefaultSize

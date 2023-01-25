@@ -12,6 +12,7 @@ vivaldi
 lspinstall
 lsp_servers
 1g_crucial
+Old
 
 # .config
 .config/discord

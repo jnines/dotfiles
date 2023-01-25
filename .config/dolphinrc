@@ -2,8 +2,8 @@
 update_info=dolphin_detailsmodesettings.upd:rename-leading-padding
 
 [General]
+BrowseThroughArchives=true
 ConfirmClosingMultipleTabs=false
-EditableUrl=true
 GlobalViewProps=false
 RememberOpenedTabs=false
 Version=202
@@ -12,20 +12,23 @@ ViewPropsTimestamp=2023,1,18,16,8,3.418
 [IconsMode]
 IconSize=96
 MaximumTextLines=5
-PreviewSize=96
+PreviewSize=112
 TextWidthIndex=0
 
 [KFileDialog Settings]
 Places Icons Auto-resize=false
-Places Icons Static Size=22
+Places Icons Static Size=16
 
 [KPropertiesDialog]
-DP-4 DP-0 Height 2560x1440 DP-4=838
-DP-4 DP-0 Width 2560x1440 DP-4=1077
+DP-4 DP-0 Height 2560x1440 DP-4=594
+DP-4 DP-0 Width 2560x1440 DP-4=564
 
 [MainWindow]
 MenuBar=Disabled
 ToolBarsMovable=Disabled
+
+[PlacesPanel]
+IconSize=16
 
 [PreviewSettings]
 Plugins=appimagethumbnail,audiothumbnail,comicbookthumbnail,cursorthumbnail,djvuthumbnail,ebookthumbnail,exrthumbnail,directorythumbnail,fontthumbnail,imagethumbnail,jpegthumbnail,kraorathumbnail,windowsexethumbnail,windowsimagethumbnail,opendocumentthumbnail,svgthumbnail,ffmpegthumbs

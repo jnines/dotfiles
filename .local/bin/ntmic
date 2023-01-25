@@ -1,4 +1,0 @@
-#!/bin/bash
-
-"$HOME"/.local/bin/noisetorch -i "$(pactl list short sources | awk '/Burr/ && /mono/{print $1}')" &&
-pactl set-default-source "$(pactl list short sources | awk '/NoiseTorch/{print $1}')"
