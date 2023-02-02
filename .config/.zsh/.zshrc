@@ -1,3 +1,5 @@
+_latest_kernel="$(curl -Ls https://kernel.org/releases.json | jq -r '.latest_stable.version')"
+
 # Changing mode takes too long
 export KEYTIMEOUT=1
 
@@ -17,9 +19,10 @@ correct_ignore='_*'
 # Pretties
 setopt prompt_subst
 setopt transient_rprompt
-PROMPT='%B% %F{58}┌%F{yellow}[%F{white}%~%F{yellow}] ${vcs_info_msg_0_}
+PROMPT='%B% %F{58}┌%F{yellow}[%F{white}%~%F{yellow}] ${vcs_info_msg_0_} 
 %F{58}└╼%F{166}$%b%f '
 
+RPROMPT='%F{yellow}Latest Stable: %U%F{white}v$_latest_kernel%u %F{166}%@'
 # Tab Completion
 autoload -U compinit
 setopt menucomplete

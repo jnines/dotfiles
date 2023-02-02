@@ -6,6 +6,7 @@ BrowseThroughArchives=true
 ConfirmClosingMultipleTabs=false
 GlobalViewProps=false
 RememberOpenedTabs=false
+ShowFullPath=true
 Version=202
 ViewPropsTimestamp=2023,1,18,16,8,3.418
 
@@ -20,8 +21,8 @@ Places Icons Auto-resize=false
 Places Icons Static Size=16
 
 [KPropertiesDialog]
-DP-4 DP-0 Height 2560x1440 DP-4=594
-DP-4 DP-0 Width 2560x1440 DP-4=564
+DP-4 DP-0 Height 2560x1440 DP-4=629
+DP-4 DP-0 Width 2560x1440 DP-4=591
 
 [MainWindow]
 MenuBar=Disabled

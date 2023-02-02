@@ -1,4 +1,4 @@
 #!/bin/bash
 #
 /usr/bin/sudo /usr/bin/umount /data/Ash &&
-/usr/bin/systemctl --user --machine=jason@ stop plasma-kwin_x11.service &&
+/usr/bin/systemctl --user stop plasma-kwin_x11.service
