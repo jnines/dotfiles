@@ -1,5 +1,4 @@
-_latest_kernel="$(curl -Ls https://kernel.org/releases.json | jq -r '.latest_stable.version')"
-
+_latest_kernel="$(/usr/bin/cat $HOME/.local/share/kver)"
 # Changing mode takes too long
 export KEYTIMEOUT=1
 
