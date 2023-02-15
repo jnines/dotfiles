@@ -1,4 +1,5 @@
 _latest_kernel="$(/usr/bin/cat $HOME/.local/share/kver)"
+_current_kernel=$(/usr/bin/uname -r | /usr/bin/awk -F '-' '{print $1}')
 # Changing mode takes too long
 export KEYTIMEOUT=1
 
@@ -21,7 +22,13 @@ setopt transient_rprompt
 PROMPT='%B% %F{58}┌%F{yellow}[%F{white}%~%F{yellow}] ${vcs_info_msg_0_} 
 %F{58}└╼%F{166}$%b%f '
 
-RPROMPT='%F{yellow}Latest Stable: %U%F{white}v$_latest_kernel%u %F{166}%@'
+if [[ $_latest_kernel != $_current_kernel ]]; then
+  kColor="red"
+else
+  kColor="white"
+fi
+
+RPROMPT='%F{yellow}Latest Stable: %U%F{$kColor}v$_latest_kernel%u %F{166}%@'
 # Tab Completion
 autoload -U compinit
 setopt menucomplete
@@ -76,5 +83,5 @@ zle -N self-insert url-quote-magic
 autoload -Uz vcs_info
 precmd_vcs_info() { vcs_info }
 precmd_functions+=( precmd_vcs_info )
-zstyle ':vcs_info:git:*' formats '%F{223}%b %F{117}➡ %F{180}%r%f👀'
+zstyle ':vcs_info:git:*' formats '%F{223}%b %F{117}➡ %F{180}%r%f'
 zstyle ':vcs_info:*' enable git

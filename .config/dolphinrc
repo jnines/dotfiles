@@ -1,6 +1,9 @@
 [$Version]
 update_info=dolphin_detailsmodesettings.upd:rename-leading-padding
 
+[CreateDialog]
+LastMimeType=application/zip
+
 [General]
 BrowseThroughArchives=true
 ConfirmClosingMultipleTabs=false
@@ -21,8 +24,8 @@ Places Icons Auto-resize=false
 Places Icons Static Size=16
 
 [KPropertiesDialog]
-DP-4 DP-0 Height 2560x1440 DP-4=629
-DP-4 DP-0 Width 2560x1440 DP-4=591
+DP-4 DP-0 Height 2560x1440 DP-4=574
+DP-4 DP-0 Width 2560x1440 DP-4=536
 
 [MainWindow]
 MenuBar=Disabled

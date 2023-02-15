@@ -1,10 +1,10 @@
 #!/bin/bash
-echo "Downloading/Processing"
-/usr/bin/curl -s https://archlinux.org/mirrorlist/?country=US\&protocol=https\&ip_version=4\&use_mirror_status=on |
- sed 's/## United States/ /; s/^#/ /; /^\s*$/d' > /tmp/mirrorlist &&
+# echo "Downloading/Processing"
+# /usr/bin/curl -s https://archlinux.org/mirrorlist/?country=US\&protocol=https\&ip_version=4\&use_mirror_status=on |
+#  sed 's/## United States/ /; s/^#/ /; /^\s*$/d' > /tmp/mirrorlist &&
 
-echo "Moving"
-sudo /usr/bin/mv /tmp/mirrorlist /etc/pacman.d/mirrorlist
+# echo "Moving"
+# sudo /usr/bin/mv /tmp/mirrorlist /etc/pacman.d/mirrorlist
 
 news=$(/usr/bin/yay -Pw)
 if [ -z "$news" ]; then

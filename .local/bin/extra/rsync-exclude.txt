@@ -13,13 +13,22 @@ lspinstall
 lsp_servers
 1g_crucial
 Old
+node_modules
+.steam
+*back-ovfs
+*backup-crashrecovery*
+*default-release-backup
+pnpm
 
 # .config
 .config/discord
 .config/BraveSoftware
 .config/heroic
+.config/steamtinkerlaunch
+.config/chromium-backup
 
 # .local
+.local/code
 .local/share/icons
 .local/share/Steam
 .local/share/steam-home
@@ -43,7 +52,9 @@ Old
 .local/share/lunarvim/site/
 .local/share/vscode
 
+
 # .mozilla
+.mozilla/firefox/Crash Reports
 .mozilla/firefox/*/storage
 .mozilla/firefox/*/Cache
 .mozilla/firefox/*/minidumps
