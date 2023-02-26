@@ -2,27 +2,45 @@
 update_info=kwinrules.upd:replace-placement-string-to-enum,kwinrules.upd:use-virtual-desktop-ids
 
 [1]
-Description=Window settings for code
+Description=Window settings for firefox
 clientmachine=localhost
 desktops=64a12e41-2755-4c2d-91c3-c1c526d0aec6
 fsplevel=2
 maximizehoriz=true
-maximizehorizrule=3
 maximizevert=true
-maximizevertrule=3
 noborder=true
 opacityactive=90
 opacityinactive=90
-position=1958,0
-size=2522,1404
-title=Welcome
+position=4480,0
+positionrule=3
+size=1080,1920
+sizerule=3
+title=Developer Tools — The Mandalorian - Sonarr — https://ash.lan/sonarr/series/the-mandalorian
 types=1
-windowrole=browser-window
+windowrole=toolbox
 windowrolematch=1
-wmclass=code
+wmclass=devtools firefox
+wmclasscomplete=true
 wmclassmatch=1
 
 [10]
+Description=Application settings for ksysguard
+clientmachine=localhost
+desktops=64a12e41-2755-4c2d-91c3-c1c526d0aec6
+fsplevel=3
+noborder=true
+opacityactive=90
+opacityinactive=90
+position=118,348
+positionrule=3
+size=1615,770
+sizerule=3
+title=Inbox - Gmail - Mozilla Thunderbird
+windowrole=3pane
+wmclass=ksysguard
+wmclassmatch=1
+
+[11]
 Description=Window settings for thunderbird
 clientmachine=localhost
 desktops=64a12e41-2755-4c2d-91c3-c1c526d0aec6
@@ -42,7 +60,7 @@ wmclass=mail thunderbird
 wmclasscomplete=true
 wmclassmatch=1
 
-[11]
+[12]
 Description=Application settings for smplayer
 clientmachine=localhost
 desktops=64a12e41-2755-4c2d-91c3-c1c526d0aec6
@@ -59,7 +77,7 @@ windowrole=3pane
 wmclass=smplayer
 wmclassmatch=1
 
-[12]
+[13]
 Description=Application settings for qimgv
 clientmachine=localhost
 desktops=64a12e41-2755-4c2d-91c3-c1c526d0aec6
@@ -76,7 +94,7 @@ windowrole=3pane
 wmclass=qimgv
 wmclassmatch=1
 
-[13]
+[14]
 Description=Application settings for plasma-systemmonitor
 clientmachine=localhost
 desktops=64a12e41-2755-4c2d-91c3-c1c526d0aec6
@@ -93,7 +111,7 @@ windowrole=3pane
 wmclass=plasma-systemmonitor
 wmclassmatch=1
 
-[14]
+[15]
 Description=Window settings for steam
 clientmachine=localhost
 desktops=64a12e41-2755-4c2d-91c3-c1c526d0aec6
@@ -111,7 +129,7 @@ types=1
 wmclass=steam
 wmclassmatch=1
 
-[15]
+[16]
 Description=Application settings for steam
 clientmachine=localhost
 desktops=64a12e41-2755-4c2d-91c3-c1c526d0aec6
@@ -126,7 +144,7 @@ title=Steam
 wmclass=steam
 wmclassmatch=1
 
-[16]
+[17]
 Description=Window settings for steam
 clientmachine=localhost
 desktops=64a12e41-2755-4c2d-91c3-c1c526d0aec6
@@ -144,7 +162,15 @@ types=1
 wmclass=steam
 wmclassmatch=1
 
-[17]
+[17412efd-49af-46ee-929d-c6f9db839c75]
+Description=Application settings for sol
+clientmachine=localhost
+size=893,694
+sizerule=3
+wmclass=sol
+wmclassmatch=1
+
+[18]
 Description=Window settings for geany
 clientmachine=localhost
 desktops=64a12e41-2755-4c2d-91c3-c1c526d0aec6
@@ -161,21 +187,13 @@ types=32
 wmclass=geany
 wmclassmatch=1
 
-[17412efd-49af-46ee-929d-c6f9db839c75]
-Description=Application settings for sol
-clientmachine=localhost
-size=893,694
-sizerule=3
-wmclass=sol
-wmclassmatch=1
-
-[18]
+[19]
 Description=Window settings for geany
 clientmachine=localhost
 desktops=64a12e41-2755-4c2d-91c3-c1c526d0aec6
 noborder=true
-opacityactive=90
-opacityinactive=90
+opacityactive=95
+opacityinactive=95
 position=0,180
 positionrule=3
 size=1920,1080
@@ -183,22 +201,6 @@ sizerule=3
 title=meld-menu.desktop - /home/jason/.local/share/kservices5/ServiceMenus - Geany
 titlematch=1
 types=1
-wmclass=geany
-wmclassmatch=1
-
-[19]
-Description=Application settings for geany
-clientmachine=localhost
-desktops=64a12e41-2755-4c2d-91c3-c1c526d0aec6
-desktopsrule=3
-noborder=true
-opacityactive=95
-opacityactiverule=2
-opacityinactive=95
-opacityinactiverule=2
-position=1958,0
-size=2522,1404
-title=Alacritty
 wmclass=geany
 wmclassmatch=1
 
@@ -216,6 +218,85 @@ wmclass=steam
 wmclassmatch=1
 
 [2]
+Description=Window settings for code
+clientmachine=localhost
+desktops=64a12e41-2755-4c2d-91c3-c1c526d0aec6
+fsplevel=3
+maximizehoriz=true
+maximizehorizrule=3
+maximizevert=true
+maximizevertrule=3
+noborder=true
+opacityactive=90
+opacityinactive=90
+position=1958,0
+size=2522,1404
+title=Welcome
+types=1
+windowrole=browser-window
+windowrolematch=1
+wmclass=code
+wmclassmatch=1
+
+[20]
+Description=Application settings for geany
+clientmachine=localhost
+desktops=64a12e41-2755-4c2d-91c3-c1c526d0aec6
+desktopsrule=3
+noborder=true
+opacityactive=95
+opacityactiverule=2
+opacityinactive=95
+opacityinactiverule=2
+position=1958,0
+size=2522,1404
+title=Alacritty
+wmclass=geany
+wmclassmatch=1
+
+[20cd8d1e-d5bf-40a5-bf80-d9860ea25ac7]
+Description=Window settings for thunderbird
+clientmachine=localhost
+position=2258,245
+positionrule=3
+size=1786,1063
+sizerule=3
+title=Inbox - Gmail - Mozilla Thunderbird
+types=1
+windowrole=3pane
+windowrolematch=1
+wmclass=mail thunderbird
+wmclasscomplete=true
+wmclassmatch=1
+
+[21]
+Description=Application settings for alacritty
+clientmachine=localhost
+noborder=true
+noborderrule=3
+opacityactive=85
+opacityactiverule=2
+opacityinactive=85
+opacityinactiverule=2
+position=1958,0
+positionrule=3
+size=2522,1404
+sizerule=3
+title=Alacritty
+wmclass=alacritty
+wmclassmatch=1
+
+[23b56d9a-239d-4286-a40d-203b9d6a3f52]
+Description=Application settings for plasma-systemmonitor
+clientmachine=localhost
+position=178,373
+positionrule=3
+size=1437,713
+sizerule=3
+wmclass=plasma-systemmonitor
+wmclassmatch=1
+
+[3]
 Description=Window settings for meld
 clientmachine=localhost
 desktops=64a12e41-2755-4c2d-91c3-c1c526d0aec6
@@ -236,49 +317,23 @@ wmclass=org.gnome.meld meld
 wmclasscomplete=true
 wmclassmatch=1
 
-[20]
+[31e0b747-0dd5-4fa8-bfc9-52a12327e7df]
 Description=Application settings for alacritty
 clientmachine=localhost
 noborder=true
 noborderrule=3
-opacityactive=85
+opacityactive=95
 opacityactiverule=2
-opacityinactive=85
+opacityinactive=95
 opacityinactiverule=2
-position=1958,0
+position=1920,0
 positionrule=3
-size=2522,1404
+size=2560,1402
 sizerule=3
-title=Alacritty
 wmclass=alacritty
 wmclassmatch=1
 
-[20cd8d1e-d5bf-40a5-bf80-d9860ea25ac7]
-Description=Window settings for thunderbird
-clientmachine=localhost
-position=2258,245
-positionrule=3
-size=1786,1063
-sizerule=3
-title=Inbox - Gmail - Mozilla Thunderbird
-types=1
-windowrole=3pane
-windowrolematch=1
-wmclass=mail thunderbird
-wmclasscomplete=true
-wmclassmatch=1
-
-[23b56d9a-239d-4286-a40d-203b9d6a3f52]
-Description=Application settings for plasma-systemmonitor
-clientmachine=localhost
-position=178,373
-positionrule=3
-size=1437,713
-sizerule=3
-wmclass=plasma-systemmonitor
-wmclassmatch=1
-
-[3]
+[4]
 Description=Application settings for sol
 clientmachine=localhost
 desktops=64a12e41-2755-4c2d-91c3-c1c526d0aec6
@@ -297,23 +352,7 @@ windowrole=browser
 wmclass=sol
 wmclassmatch=1
 
-[31e0b747-0dd5-4fa8-bfc9-52a12327e7df]
-Description=Application settings for alacritty
-clientmachine=localhost
-noborder=true
-noborderrule=3
-opacityactive=95
-opacityactiverule=2
-opacityinactive=95
-opacityinactiverule=2
-position=1920,0
-positionrule=3
-size=2560,1402
-sizerule=3
-wmclass=alacritty
-wmclassmatch=1
-
-[4]
+[5]
 Description=Window settings for rustdesk
 clientmachine=localhost
 desktops=64a12e41-2755-4c2d-91c3-c1c526d0aec6
@@ -335,7 +374,15 @@ windowrole=browser
 wmclass=rustdesk
 wmclassmatch=1
 
-[5]
+[56deeb8f-1a62-4900-b8c6-06e96819e9df]
+Description=Application settings for smplayer
+clientmachine=localhost
+size=853,1398
+sizerule=3
+wmclass=smplayer
+wmclassmatch=1
+
+[6]
 Description=Window settings for firefox
 clientmachine=localhost
 desktops=64a12e41-2755-4c2d-91c3-c1c526d0aec6
@@ -358,15 +405,7 @@ wmclass=navigator firefox
 wmclasscomplete=true
 wmclassmatch=1
 
-[56deeb8f-1a62-4900-b8c6-06e96819e9df]
-Description=Application settings for smplayer
-clientmachine=localhost
-size=853,1398
-sizerule=3
-wmclass=smplayer
-wmclassmatch=1
-
-[6]
+[7]
 Description=Window settings for dolphin
 clientmachine=localhost
 desktops=64a12e41-2755-4c2d-91c3-c1c526d0aec6
@@ -383,25 +422,6 @@ types=1
 windowrole=dolphin#1
 windowrolematch=1
 wmclass=dolphin
-wmclassmatch=1
-
-[7]
-Description=Window settings for audacity
-clientmachine=localhost
-desktops=64a12e41-2755-4c2d-91c3-c1c526d0aec6
-fsplevel=3
-noborder=true
-opacityactive=90
-opacityinactive=90
-position=2267,240
-positionrule=3
-size=1620,992
-sizerule=3
-title=Audacity
-titlematch=1
-types=1
-windowrole=3pane
-wmclass=audacity
 wmclassmatch=1
 
 [737c20fc-c8c7-4980-ab33-9b89db5cf519]
@@ -425,22 +445,22 @@ wmclass=ksysguard
 wmclassmatch=1
 
 [8]
-Description=Window settings for plasma-systemmonitor
+Description=Window settings for audacity
 clientmachine=localhost
 desktops=64a12e41-2755-4c2d-91c3-c1c526d0aec6
 fsplevel=3
 noborder=true
 opacityactive=90
 opacityinactive=90
-position=181,410
+position=2267,240
 positionrule=3
-size=1437,713
+size=1620,992
 sizerule=3
-title=Processes — System Monitor
+title=Audacity
 titlematch=1
 types=1
 windowrole=3pane
-wmclass=plasma-systemmonitor
+wmclass=audacity
 wmclassmatch=1
 
 [84da1fd4-2cb7-4058-8390-2b2061494c06]
@@ -470,20 +490,22 @@ wmclass=audacity
 wmclassmatch=1
 
 [9]
-Description=Application settings for ksysguard
+Description=Window settings for plasma-systemmonitor
 clientmachine=localhost
 desktops=64a12e41-2755-4c2d-91c3-c1c526d0aec6
 fsplevel=3
 noborder=true
 opacityactive=90
 opacityinactive=90
-position=118,348
+position=181,410
 positionrule=3
-size=1615,770
+size=1437,713
 sizerule=3
-title=Inbox - Gmail - Mozilla Thunderbird
+title=Processes — System Monitor
+titlematch=1
+types=1
 windowrole=3pane
-wmclass=ksysguard
+wmclass=plasma-systemmonitor
 wmclassmatch=1
 
 [9684482e-88ad-4526-8f7e-6337aa99afdb]
@@ -500,8 +522,8 @@ wmclasscomplete=true
 wmclassmatch=1
 
 [General]
-count=20
-rules=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20
+count=21
+rules=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21
 
 [a2490580-4164-4ff6-8848-c25140c7d86e]
 Description=Application settings for geany
@@ -580,6 +602,21 @@ clientmachine=localhost
 fsplevel=2
 fsplevelrule=2
 wmclass=steam
+wmclassmatch=1
+
+[bc84ec79-3a82-404d-9cba-ebca9264be62]
+Description=Window settings for firefox
+clientmachine=localhost
+position=4480,0
+positionrule=3
+size=1080,1920
+sizerule=3
+title=Developer Tools — The Mandalorian - Sonarr — https://ash.lan/sonarr/series/the-mandalorian
+types=1
+windowrole=toolbox
+windowrolematch=1
+wmclass=devtools firefox
+wmclasscomplete=true
 wmclassmatch=1
 
 [d58f7fc6-90ec-4825-a933-f0c3ab703cdc]
