@@ -39,7 +39,7 @@ alias prune='sudo paccache -ru && sudo paccache -rk2'
 alias purge='sudo pacman -Rnsu'
 alias pacdep='pacman -Sii'
 alias sdb='sudo updatedb'
-alias srb='$HOME/.local/bin/fixReboot'
+alias srb='sudo reboot'
 alias ruefi='sudo systemctl reboot --firmware-setup'
 
 alias rkde='kquitapp5 plasmashell && kstart5 plasmashell > /dev/null 2>&1 & disown'

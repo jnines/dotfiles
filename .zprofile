@@ -4,6 +4,10 @@
 export PATH=$PATH:"$HOME/.local/bin"
 export PATH=$PATH:"$HOME/.local/bin/git/bin"
 export PATH=$PATH:"$HOME/.local/share/npm/bin"
+export PATH=$PATH:"$HOME/.local/share/pnpm"
+
+# pnpm
+# pnpm end
 
 # Defaults:
 export EDITOR="lvim"
@@ -34,6 +38,7 @@ export WINEPREFIX="$XDG_DATA_HOME/wineprefixes/default"
 export NPM_CONFIG_USERCONFIG="$XDG_CONFIG_HOME/npm/npmrc"
 export NODE_REPL_HISTORY="$XDG_CACHE_HOME/.node_repl_history"
 export VSCODE_PORTABLE="$XDG_DATA_HOME/vscode"
+export PNPM_HOME="$XDG_DATA_HOME/pnpm"
 
 export GIT_DISCOVERY_ACROSS_FILESYSTEM=1
 
