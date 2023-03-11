@@ -13,6 +13,7 @@ alias nano='nano -c'
 alias shellcheck='shellcheck -x'
 alias nvset='sudo nvidia-settings --config="$HOME"/.config/nvidia/settings/.nvidia-settings-rc'
 alias podc='pcd sync && pcd ls 1 | tail -n 2 ; pcd ls 2 | tail -n 2'
+alias pn='pnpm'
 
 alias ls='ls -xsAhl --color=auto --group-directories-first'
 alias ll='ls -Alh --color=auto --group-directories-first'
