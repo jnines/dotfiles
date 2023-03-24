@@ -8,6 +8,7 @@ nvidia-uvm
 nvidia-modeset
 nvidia-peermem
 it87
+v4l2loopback
 )
 # src directory
 certDir="$HOME/.local/certs"
