@@ -61,6 +61,8 @@ alias gitup='cd "$HOME"/.local/bin/git/tkg/nvidia-all && git pull && cd "$HOME"/
 alias lconf='meld $HOME/.config/frogminer/linux-tkg.cfg $HOME/.local/bin/git/tkg/linux-tkg/customization.cfg'
 alias nconf='meld $HOME/.config/frogminer/nvidia-all.cfg $HOME/.local/bin/git/tkg/nvidia-all/customization.cfg'
 
+alias tojsx='for x in src/**/*.js; do mv "$x" "${x%.js}.jsx"; done && mv src/index.jsx src/index.js'
+
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
