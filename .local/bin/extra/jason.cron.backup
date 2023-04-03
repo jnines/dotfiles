@@ -1,7 +1,9 @@
-# @reboot /usr/bin/pactl set-default-sink alsa_output.pci-0000_0b_00.4.analog-stereo
 1 0,6,12,18 * * *  /usr/bin/rsync -aq --exclude-from=/home/jason/.local/bin/extra/rsync-exclude.txt /home/jason /data/.bak
-1 1,7,13,19 * * * sudo /usr/bin/rsync -aq /etc/ /data/.bak/jason/etc && sudo chown -R jason:users /data/.bak/jason/etc
+1 1,7,13,19 * * * sudo /usr/bin/rsync -aq /etc/ /data/.bak/jason/etc && /usr/bin/sudo /usr/bin/chown -R jason:users /data/.bak/jason/etc
 1 15 30 * * /bin/sh /home/jason/.local/bin/mrsync
-1 12 1 * * /usr/bin/pacman -Qqe > /home/jason/.local/installed_$(date +\%m.\%d.\%Y).txt
+1 12 1 * * /usr/bin/pacman -Qqe > /home/jason/.local/installed_$(/usr/bin/date +\%m.\%d.\%Y).txt
 1 12 1 * * /usr/bin/cp -f /var/spool/cron/jason /home/jason/.local/bin/extra/jason.cron.backup
+@reboot /usr/bin/sleep 30 && /bin/bash /home/jason/.local/bin/checkKernel
+@hourly /bin/bash /home/jason/.local/bin/checkKernel
 @hourly /usr/bin/sed -i '/yt/d' /home/jason/.cache/zsh/.zshistory
+@weekly /usr/bin/rate-mirrors --protocol https --disable-comments  --max-jumps 3 arch | /usr/bin/sudo /usr/bin/tee /etc/pacman.d/mirrorlist

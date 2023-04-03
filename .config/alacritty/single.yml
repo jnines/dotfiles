@@ -9,23 +9,24 @@ shell:
     - "tmuxinator start single"
 
 font:
-  normal:
-    family: Source Code Pro
-    style: Regular
+  family: "Cascadia Code"
+  # normal:
+  #   family: Source Code Pro
+  #   style: Regular
 
-  bold:
-    family: Source Code Pro
-    style: Bold
+  # bold:
+  #   family: Source Code Pro
+  #   style: Bold
 
-  italic:
-    family: Source Code Pro
-    style: Italic
+  # italic:
+  #   family: Source Code Pro
+  #   style: Italic
 
-  bold_italic:
-    family: Source Code Pro
-    style: Bold Italic
+  # bold_italic:
+  #   family: Source Code Pro
+  #   style: Bold Italic
 
-  size: 16
+  size: 15
 
 # Colors (Gruvbox dark)
 colors:
