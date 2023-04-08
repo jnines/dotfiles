@@ -7,7 +7,7 @@ RepeatDelay=200
 RepeatRate=40
 
 [Mouse]
-X11LibInputXAccelProfileFlat=false
+X11LibInputXAccelProfileFlat=true
 XLbInptAccelProfileFlat=true
 cursorSize=36
 cursorTheme=Vimix-white-cursors

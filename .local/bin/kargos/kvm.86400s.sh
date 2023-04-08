@@ -3,9 +3,9 @@
 echo "| refresh=true size=12 iconName=qemu"
 echo "---"
 
-vmdir="/1tb/vm"
+vmdir="/var/lib/libvirt/images"
 declare -a vmlist=( "${vmdir}"/*.qcow2 )
-trim=(/1tb/vm/ .qcow2)
+trim=("${vmdir}/" .qcow2)
 
 for tr in "${trim[@]}"
 do

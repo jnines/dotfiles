@@ -16,9 +16,6 @@ while true; do
     n|no|N|NO|No ) echo "Remmember to sign modules. Exiting...";
       exit;;
     *) echo "Please answer [y]es or [n]o";;
-      
+
   esac
 done
-
-
-# echo -e "\033[0;31m   *** Remmember to sign modules*** \033[0m"
