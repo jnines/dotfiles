@@ -30,7 +30,7 @@ do
         *"solus"*) echo "${i%.qcow2} | bash='/usr/bin/virsh start ${i} && /usr/bin/virt-viewer ${i}' iconName=distributor-logo-solus" ;;
         *"ubuntu"*) echo "${i%.qcow2} | bash='/usr/bin/virsh start ${i} && /usr/bin/virt-viewer ${i}' iconName=distributor-logo-ubuntu";;
         *"void"*) echo "${i%.qcow2} | bash='/usr/bin/virsh start ${i} && /usr/bin/virt-viewer ${i}' iconName=distributor-logo-void" ;;
-        *"win"*) echo "${i%.qcow2} | bash='/usr/bin/virsh start ${i} && /usr/bin/virt-viewer ${i}' iconName=distributor-logo-windows" ;;
+        *"win"*) echo "${i%.qcow2} | bash='/usr/bin/virsh start ${i} && /usr/bin/virt-viewer ${i}' iconName=windows" ;;
         *) echo "${i%.qcow2} | bash='/usr/bin/virsh start ${i} && /usr/bin/virt-viewer ${i}' iconName=qemu" ;;
     esac
 done
