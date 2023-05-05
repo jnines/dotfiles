@@ -8,9 +8,9 @@
 
 news=$(/usr/bin/yay -Pw)
 if [ -z "$news" ]; then
-    /usr/bin/yay -Syu
+    /usr/bin/yay -Syu --devel
 else
     echo "$news"
     read -rn 1 -s
-    /usr/bin/yay -Syu
+    /usr/bin/yay -Syu --devel
 fi

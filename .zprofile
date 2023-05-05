@@ -44,7 +44,7 @@ export GIT_DISCOVERY_ACROSS_FILESYSTEM=1
 
 # FF
 export LIBVA_DRIVER_NAME=nvidia
-export MOZ_DISABLE_RDD_SANDBOX=0
+export MOZ_DISABLE_RDD_SANDBOX=1
 export NVD_BACKEND=egl
 
 # Stop DDOS'ing my logs
