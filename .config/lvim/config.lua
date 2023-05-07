@@ -2,6 +2,11 @@ lvim.log.level = "warn"
 lvim.format_on_save = false
 lvim.colorscheme = "gruvbox-material"
 
+-- vim options
+vim.opt.shiftwidth = 2
+vim.opt.tabstop = 2
+vim.opt.relativenumber = true
+
 -- keymappings [view all the defaults by pressing <leader>Lk]
 lvim.leader = "space"
 -- add your own keymapping
@@ -43,12 +48,6 @@ lvim.builtin.which_key.mappings["t"] = {
   l = { "<cmd>TroubleToggle loclist<cr>", "LocationList" },
   w = { "<cmd>TroubleToggle workspace_diagnostics<cr>", "Diagnostics" },
 }
-lvim.builtin.which_key.mappings["r"] = {
-  name = "Replace",
-  r = { "<cmd>lua require('spectre').open()<cr>", "Replace" },
-  w = { "<cmd>lua require('spectre').open_visual({select_word=true})<cr>", "Replace Word" },
-  f = { "<cmd>lua require('spectre').open_file_search()<cr>", "Replace Buffer" },
-}
 lvim.builtin.which_key.mappings["m"] = { "<cmd>MinimapToggle<cr>", "Minimap" }
 
 lvim.builtin.alpha.active = true
@@ -57,26 +56,14 @@ lvim.builtin.terminal.active = true
 lvim.builtin.nvimtree.setup.view.side = "left"
 lvim.builtin.nvimtree.setup.renderer.icons.show.git = false
 
--- if you don't want all the parsers change this to a table of the ones you want
-lvim.builtin.treesitter.ensure_installed = {
-  "bash",
-  "javascript",
-  "json",
-  "lua",
-  "php",
-  "python",
-  "typescript",
-  "tsx",
-  "css",
-  "rust",
-  "yaml",
-}
+-- Automatically install missing parsers when entering buffer
+lvim.builtin.treesitter.auto_install = true
 
 lvim.builtin.treesitter.ignore_install = { "haskell" }
 lvim.builtin.treesitter.highlight.enabled = true
 
 -- generic LSP settings
-lvim.lsp.diagnostics.virtual_text = true
+vim.diagnostic.config({ virtual_text = true})
 -- vim.cmd [[autocmd! CursorHold,CursorHoldI * lua vim.diagnostic.open_float(nil, {focus=false})]]
 
 
@@ -104,7 +91,7 @@ linters.setup {
 lvim.plugins = {
   {
     'wfxr/minimap.vim',
-     run = "cargo install --locked code-minimap",
+     build = "cargo install --locked code-minimap",
      -- cmd = {"Minimap", "MinimapClose", "MinimapToggle", "MinimapRefresh", "MinimapUpdateHighlight"},
      config = function ()
       vim.cmd ("let g:minimap_width = 15")
