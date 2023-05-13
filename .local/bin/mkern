@@ -9,15 +9,3 @@ sudo /usr/bin/rm -r /tmp/makepkg &&
 
 
 "$HOME"/.local/bin/mod-sign -n "$(cat /tmp/linux-src-git/linux-tkg/linux-src-git/version)";
-# while true; do
-#   read -p "Do you wish to sign out-of-tree modules? (Y/n) " yn -r
-#   case $yn in
-#     y|yes|Y|YES|Yes|*[[:blank]]*|"" ) echo "Running mod-sign";
-#       "$HOME"/.local/bin/mod-sign -n "$(cat /tmp/linux-src-git/linux-tkg/linux-src-git/version)";
-#       break;;
-#     n|no|N|NO|No ) echo "Remmember to sign modules. Exiting...";
-#       exit;;
-#     *) echo "Please answer [y]es or [n]o";;
-
-#   esac
-# done
