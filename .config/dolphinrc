@@ -25,7 +25,7 @@ Places Icons Static Size=16
 
 [KPropertiesDialog]
 3 screens: Height=594
-3 screens: Width=529
+3 screens: Width=517
 DP-0 DP-2 DP-4 Height 2560x1440 DP-4=594
 DP-0 DP-2 DP-4 Width 2560x1440 DP-4=528
 DP-4 DP-0 DP-2 Height 2560x1440 DP-4=594

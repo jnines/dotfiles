@@ -3,6 +3,7 @@
 1 15 30 * * /bin/sh /home/jason/.local/bin/mrsync
 1 12 1 * * /usr/bin/pacman -Qqe > /home/jason/.local/installed_$(/usr/bin/date +\%m.\%d.\%Y).txt
 1 12 1 * * /usr/bin/cp -f /var/spool/cron/jason /home/jason/.local/bin/extra/jason.cron.backup
+*/5 * * * * /bin/bash /home/jason/.local/bin/temps_cron
 @reboot /usr/bin/sleep 30 && /bin/bash /home/jason/.local/bin/checkKernel
 @hourly /bin/bash /home/jason/.local/bin/checkKernel
 @hourly /usr/bin/sed -i '/yt/d' /home/jason/.cache/zsh/.zshistory
