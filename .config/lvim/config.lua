@@ -1,6 +1,7 @@
 lvim.log.level = "warn"
 lvim.format_on_save = false
 lvim.colorscheme = "gruvbox-material"
+lvim.hlsearch = false
 
 -- vim options
 vim.opt.shiftwidth = 2
@@ -80,7 +81,7 @@ formatters.setup {
 -- -- set additional linters
 local linters = require "lvim.lsp.null-ls.linters"
 linters.setup {
-  { exe = "eslint_d" },
+  { exe = "eslint" },
   { exe = "shellcheck" },
   { exe = "vale" },
   { exe = "flake8" },
