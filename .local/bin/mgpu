@@ -1,0 +1,6 @@
+#!/bin/bash
+gpuDir="$HOME/.local/bin/git/tkg/nvidia-all"
+cd "$gpuDir" || exit &&
+/usr/bin/makepkg -fsi --noconfirm &&
+  
+"$HOME"/.local/bin/mod-sign
