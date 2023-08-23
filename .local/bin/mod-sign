@@ -1,40 +1,51 @@
 #!/bin/bash
 ##########################################################
-#~ # Modules list
+# Modules list
 modules=(
-nvidia
-nvidia-drm
-nvidia-uvm
-nvidia-modeset
-nvidia-peermem
-it87
-v4l2loopback
+	nvidia
+	nvidia-drm
+	nvidia-uvm
+	nvidia-modeset
+	nvidia-peermem
+	it87
+	v4l2loopback
 )
+
 # src directory
 certDir="$HOME/.local/certs"
+kernelType="tkg"
 ###########################################################
-if [[ $1 == "-n" ]]; then
-    kTkg="$2"
-else
-    kTkg="tkg"
-fi
 /usr/bin/gpg --decrypt-files "${certDir}/kernel_key.crt.gpg" "${certDir}/kernel_key.key.gpg" &&
-alg="sha512"
+	alg="sha512"
 privKey="$certDir/kernel_key.key"
 pubKey="$certDir/kernel_key.crt"
 signFile="$certDir/sign-file"
 export PATH=$PATH:"${signFile%/sign-file}"
 echo Finding "${modules[@]}"
-for i in "${modules[@]}"; do
-    modulesW+=( "$(find /usr/lib/modules/*"$kTkg"*/updates/dkms/ -name "${i}.*")" )
 
-done
+function sign_modules() {
 
-for i in "${modulesW[@]}"; do
-    sudo /usr/bin/zstd -dq --rm "${i}" &&
-    sudo /usr/bin/strip --strip-debug "${i%.zst}" &&
-    sudo "$signFile" "$alg" "$privKey" "$pubKey" "${i%.zst}" &&
-    echo Signing "${i}"
-    sudo /usr/bin/zstd -q --rm "${i%.zst}"
-done
+	for i in "${modules[@]}"; do
+		modulesW+=("$(find "${1}"/updates/dkms/ -name "${i}.*")")
+	done
+
+	for i in "${modulesW[@]}"; do
+		sudo /usr/bin/zstd -dq --rm "${i}" &&
+			sudo /usr/bin/strip --strip-debug "${i%.zst}" &&
+			sudo "$signFile" "$alg" "$privKey" "$pubKey" "${i%.zst}" &&
+			echo Signing "${i}"
+		sudo /usr/bin/zstd -q --rm "${i%.zst}"
+	done
+}
+
+if [[ $1 == "-n" ]]; then
+	kernelLocation="/usr/lib/modules/$2"
+	sign_modules "${kernelLocation}"
+else
+	readarray -d '' kernelDirs < <(find /usr/lib/modules -maxdepth 1 -type d -name "*$kernelType*" -print0)
+	for i in "${kernelDirs[@]}"; do
+		sign_modules "${i}"
+	done
+fi
+
 /usr/bin/rm "${certDir}/kernel_key.crt" "${certDir}/kernel_key.key"

@@ -1,5 +1,5 @@
 lvim.log.level = "warn"
-lvim.format_on_save = false
+lvim.format_on_save = true
 lvim.colorscheme = "gruvbox-material"
 lvim.hlsearch = false
 
