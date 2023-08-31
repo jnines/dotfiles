@@ -19,7 +19,7 @@ correct_ignore='_*'
 # Pretties
 setopt prompt_subst
 setopt transient_rprompt
-PROMPT='%B% %F{58}┌%F{yellow}[%F{white}%~%F{yellow}] ${vcs_info_msg_0_} 
+PROMPT='%B% %F{58}┌%F{yellow}[%F{white}%~%F{yellow}] ${vcs_info_msg_0_}
 %F{58}└╼%F{166}$%b%f '
 
 if [[ $_latest_kernel != $_current_kernel ]]; then
@@ -47,6 +47,8 @@ setopt no_prompt_cr
 [ -f "$HOME/.config/.zsh/.bindings" ] && source "$HOME/.config/.zsh/.bindings"
 [ -f "$HOME/.config/.zsh/.functionsrc" ] && source "$HOME/.config/.zsh/.functionsrc"
 [ -f "$HOME/.config/.zsh/.sshrc" ] && source "$HOME/.config/.zsh/.sshrc"
+[[ -f ~/.config/tabtab/zsh/__tabtab.zsh ]] && . ~/.config/tabtab/zsh/__tabtab.zsh || true
+
 
 # mapfile
 zmodload zsh/mapfile
