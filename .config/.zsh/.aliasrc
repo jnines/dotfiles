@@ -15,9 +15,8 @@ alias nvset='sudo nvidia-settings --config="$HOME"/.config/nvidia/settings/.nvid
 alias podc='pcd sync && pcd ls 1 | tail -n 2 ; pcd ls 2 | tail -n 2'
 alias pn='pnpm'
 
-alias ls='ls -xsAhl --color=auto --group-directories-first'
-alias ll='ls -Alh --color=auto --group-directories-first'
-alias lx='ls -lXBh --color=auto'
+alias ls='eza -gAhl --group-directories-first --icons --git'
+alias lss='eza -gAhl -rs size --group-directories-first --icons --git'
 alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'

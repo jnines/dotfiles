@@ -87,3 +87,6 @@ precmd_vcs_info() { vcs_info }
 precmd_functions+=( precmd_vcs_info )
 zstyle ':vcs_info:git:*' formats '%F{223}%b %F{117}➡ %F{180}%r%f'
 zstyle ':vcs_info:*' enable git
+
+# bun completions
+[ -s "/home/jason/.bun/_bun" ] && source "/home/jason/.bun/_bun"
