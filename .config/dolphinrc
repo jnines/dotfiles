@@ -4,6 +4,9 @@ update_info=dolphin_detailsmodesettings.upd:rename-leading-padding,dolphin_detai
 [CreateDialog]
 LastMimeType=application/zip
 
+[DetailsMode]
+PreviewSize=64
+
 [General]
 BrowseThroughArchives=true
 ConfirmClosingMultipleTabs=false
@@ -24,8 +27,8 @@ Places Icons Auto-resize=false
 Places Icons Static Size=16
 
 [KPropertiesDialog]
-3 screens: Height=684
-3 screens: Width=555
+3 screens: Height=629
+3 screens: Width=591
 DP-0 DP-2 DP-4 Height 2560x1440 DP-4=594
 DP-0 DP-2 DP-4 Width 2560x1440 DP-4=528
 DP-4 DP-0 DP-2 Height 2560x1440 DP-4=594
