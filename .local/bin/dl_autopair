@@ -4,21 +4,14 @@ dir="zsh-autopair"
 temp="/tmp/$dir"
 
 git clone https://github.com/hlissner/zsh-autopair $temp &&
-
-	# if [[ -d /usr/share/zsh/plugins/$dir ]]; then
-	# fi
 	sudo mkdir -p /usr/share/zsh/plugins/$dir &&
 	sudo mv $temp/autopair.zsh /usr/share/zsh/plugins/$dir/ &&
 	sudo chmod 644 /usr/share/zsh/plugins/$dir/autopair.zsh
 
-# if [[ -d /usr/share/doc/$dir ]]; then
-# fi
 sudo mkdir -p /usr/share/doc/$dir &&
 	sudo mv $temp/README.md /usr/share/doc/$dir/ &&
 	sudo chmod 644 /usr/share/doc/$dir/README.md
 
-# if [[ -d /usr/share/licenses//$dir ]]; then
-# fi
 sudo mkdir -p /usr/share/licenses//$dir &&
 	sudo mv $temp/LICENSE /usr/share/licenses/$dir/ &&
 	sudo chmod 644 /usr/share/licenses/$dir/LICENSE
