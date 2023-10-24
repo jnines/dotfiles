@@ -47,7 +47,7 @@ setopt no_prompt_cr
 [ -f "$HOME/.config/.zsh/.bindings" ] && source "$HOME/.config/.zsh/.bindings"
 [ -f "$HOME/.config/.zsh/.functionsrc" ] && source "$HOME/.config/.zsh/.functionsrc"
 [ -f "$HOME/.config/.zsh/.sshrc" ] && source "$HOME/.config/.zsh/.sshrc"
-[[ -f ~/.config/tabtab/zsh/__tabtab.zsh ]] && . ~/.config/tabtab/zsh/__tabtab.zsh || true
+[ -f "$HOME/.config/tabtab/zsh/__tabtab.zsh" ] && source "$HOME/.config/tabtab/zsh/__tabtab.zsh" || true
 
 
 # mapfile
@@ -71,7 +71,9 @@ source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh 2>/dev
 source /usr/share/fzf/completion.zsh 2>/dev/null
 source /usr/share/fzf/key-bindings.zsh 2>/dev/null
 eval "$(zoxide init zsh)"
+source /usr/share/zsh/plugins/zsh-autopair/autopair.zsh
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
+autopair-init
 
 # Pasties
 autoload -Uz bracketed-paste-magic
@@ -89,4 +91,4 @@ zstyle ':vcs_info:git:*' formats '%F{223}%b %F{117}➡ %F{180}%r%f'
 zstyle ':vcs_info:*' enable git
 
 # bun completions
-[ -s "/home/jason/.bun/_bun" ] && source "/home/jason/.bun/_bun"
+[ -s "$HOME/.bun/_bun" ] && source "$HOME/.bun/_bun"

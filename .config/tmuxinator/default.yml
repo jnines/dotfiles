@@ -13,4 +13,4 @@ windows:
         - na:
             - ssh lapn
         - dn:
-            - ssh pi
+            - ssh kandarian
