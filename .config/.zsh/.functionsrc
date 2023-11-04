@@ -1,3 +1,4 @@
+#!/bin/zsh
 # Ctrl+o for lf
 lfcd () {
     tmp="$(mktemp)"
@@ -49,4 +50,13 @@ servercp() {
 
 zl() {
   { z "$@" && ls; }
+}
+
+gda() {
+  if [[ $1 == "-m" ]]; then 
+    message="$2"
+  else
+    message="..."
+  fi
+  gd add -u && gd commit -m $message && gd push
 }

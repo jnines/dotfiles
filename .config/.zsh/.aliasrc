@@ -55,7 +55,6 @@ alias yta='cd /1tb/Downloads; yt-dlp --no-mtime --prefer-ffmpeg --extract-audio 
 alias valh='/usr/bin/rsync -a --delete "$HOME"/.config/unity3d/IronGate/Valheim /data/.bak/'
 
 alias gd='/usr/bin/git --git-dir=$HOME/.local/bin/git/dotfiles --work-tree=$HOME'
-alias gda='gd add -u && gd commit -m "..." && gd push'
 alias gds='gd status'
 alias gitup='cd "$HOME"/.local/bin/git/tkg/nvidia-all && git pull && cd "$HOME"/.local/bin/git/tkg/linux-tkg && git pull'
 
