@@ -10,8 +10,8 @@ export PATH=$PATH:"$HOME/.local/share/pnpm"
 # pnpm end
 
 # Defaults:
-export EDITOR="lvim"
-export DIFFPROG="lvim -d"
+export EDITOR="nvim"
+export DIFFPROG="nvim -d"
 export TERMINAL="alacritty"
 export BROWSER="firefox"
 
