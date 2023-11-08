@@ -12,7 +12,7 @@ font:
   italic:
     family: 'JetBrains Mono'
     style: 'Light italic'
-  size: 16
+  size: 15
 
 # Colors (Gruvbox dark)
 colors:
