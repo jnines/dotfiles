@@ -10,21 +10,49 @@ wmclass=steamwebhelper
 wmclassmatch=1
 
 [1]
-Description=Application settings for steam
+Description=Window settings for deno
 clientmachine=localhost
 fsplevel=3
-fsplevelrule=2
-wmclass=steamwebhelper steam
-wmclasscomplete=true
+maximizehoriz=true
+maximizehorizrule=3
+maximizevert=true
+maximizevertrule=3
+position=4480,0
+positionrule=3
+size=1080,1920
+sizerule=3
+title=Peek preview
+titlematch=1
+types=1
+wmclass=deno
 wmclassmatch=1
 
 [10]
-Description=Window settings for audacity
+Description=Window settings for dolphin
 clientmachine=localhost
 desktops=64a12e41-2755-4c2d-91c3-c1c526d0aec6
 fsplevel=3
 maximizehoriz=true
 maximizevert=true
+noborder=true
+opacityactive=90
+opacityinactive=90
+position=2612,571
+positionrule=3
+size=1153,955
+sizerule=3
+title=Desktop — Dolphin
+types=1
+windowrole=dolphin#1
+windowrolematch=1
+wmclass=dolphin
+wmclassmatch=1
+
+[11]
+Description=Window settings for audacity
+clientmachine=localhost
+desktops=64a12e41-2755-4c2d-91c3-c1c526d0aec6
+fsplevel=3
 noborder=true
 opacityactive=90
 opacityinactive=90
@@ -39,7 +67,7 @@ windowrole=3pane
 wmclass=audacity
 wmclassmatch=1
 
-[11]
+[12]
 Description=Window settings for plasma-systemmonitor
 clientmachine=localhost
 desktops=64a12e41-2755-4c2d-91c3-c1c526d0aec6
@@ -58,7 +86,7 @@ windowrole=3pane
 wmclass=plasma-systemmonitor
 wmclassmatch=1
 
-[12]
+[13]
 Description=Application settings for ksysguard
 clientmachine=localhost
 desktops=64a12e41-2755-4c2d-91c3-c1c526d0aec6
@@ -75,7 +103,15 @@ windowrole=3pane
 wmclass=ksysguard
 wmclassmatch=1
 
-[13]
+[137478c1-6864-4a3d-bc2c-a8d2e686f69f]
+Description=Application settings for steamwebhelper
+clientmachine=localhost
+fsplevel=3
+fsplevelrule=2
+wmclass=steamwebhelper
+wmclassmatch=1
+
+[14]
 Description=Window settings for thunderbird
 clientmachine=localhost
 desktops=64a12e41-2755-4c2d-91c3-c1c526d0aec6
@@ -95,15 +131,18 @@ wmclass=mail thunderbird
 wmclasscomplete=true
 wmclassmatch=1
 
-[137478c1-6864-4a3d-bc2c-a8d2e686f69f]
-Description=Application settings for steamwebhelper
+[14ea46a7-d54b-4663-ae66-7bbe7e0b6ba7]
+Description=Window settings for steamwebhelper
 clientmachine=localhost
-fsplevel=3
-fsplevelrule=2
+position=4176,715
+positionrule=3
+title=Friends List
+titlematch=1
+types=1
 wmclass=steamwebhelper
 wmclassmatch=1
 
-[14]
+[15]
 Description=Application settings for smplayer
 clientmachine=localhost
 desktops=64a12e41-2755-4c2d-91c3-c1c526d0aec6
@@ -120,18 +159,7 @@ windowrole=3pane
 wmclass=smplayer
 wmclassmatch=1
 
-[14ea46a7-d54b-4663-ae66-7bbe7e0b6ba7]
-Description=Window settings for steamwebhelper
-clientmachine=localhost
-position=4176,715
-positionrule=3
-title=Friends List
-titlematch=1
-types=1
-wmclass=steamwebhelper
-wmclassmatch=1
-
-[15]
+[16]
 Description=Application settings for qimgv
 clientmachine=localhost
 desktops=64a12e41-2755-4c2d-91c3-c1c526d0aec6
@@ -148,7 +176,7 @@ windowrole=3pane
 wmclass=qimgv
 wmclassmatch=1
 
-[16]
+[17]
 Description=Application settings for plasma-systemmonitor
 clientmachine=localhost
 desktops=64a12e41-2755-4c2d-91c3-c1c526d0aec6
@@ -163,25 +191,6 @@ sizerule=3
 title=Friends List
 windowrole=3pane
 wmclass=plasma-systemmonitor
-wmclassmatch=1
-
-[17]
-Description=Window settings for geany
-clientmachine=localhost
-desktops=64a12e41-2755-4c2d-91c3-c1c526d0aec6
-fsplevel=3
-noborder=true
-opacityactive=90
-opacityinactive=90
-position=537,580
-positionrule=3
-size=701,267
-sizerule=3
-title=Find
-titlematch=1
-types=32
-windowrole=3pane
-wmclass=geany
 wmclassmatch=1
 
 [17412efd-49af-46ee-929d-c6f9db839c75]
@@ -200,6 +209,24 @@ fsplevel=3
 noborder=true
 opacityactive=95
 opacityinactive=95
+position=537,580
+positionrule=3
+size=701,267
+sizerule=3
+title=Find
+titlematch=1
+types=32
+windowrole=3pane
+wmclass=geany
+wmclassmatch=1
+
+[19]
+Description=Window settings for geany
+clientmachine=localhost
+desktops=64a12e41-2755-4c2d-91c3-c1c526d0aec6
+noborder=true
+opacityactive=95
+opacityinactive=95
 position=0,180
 positionrule=3
 size=1920,1080
@@ -207,23 +234,6 @@ sizerule=3
 title=meld-menu.desktop - /home/jason/.local/share/kservices5/ServiceMenus - Geany
 titlematch=1
 types=1
-windowrole=3pane
-wmclass=geany
-wmclassmatch=1
-
-[19]
-Description=Application settings for geany
-clientmachine=localhost
-desktops=64a12e41-2755-4c2d-91c3-c1c526d0aec6
-desktopsrule=3
-noborder=true
-opacityactive=95
-opacityactiverule=2
-opacityinactive=95
-opacityinactiverule=2
-position=1958,0
-size=2522,1404
-title=Alacritty
 windowrole=3pane
 wmclass=geany
 wmclassmatch=1
@@ -242,35 +252,33 @@ wmclass=steam
 wmclassmatch=1
 
 [2]
-Description=Window settings for gwe
+Description=Application settings for steam
 clientmachine=localhost
+fsplevel=3
+fsplevelrule=2
 position=4480,0
 size=1293,952
-sizerule=3
 title=GWE
-titlematch=1
-types=1
 windowrole=toolbox
-wmclass=gwe
+wmclass=steamwebhelper steam
+wmclasscomplete=true
 wmclassmatch=1
 
 [20]
-Description=Application settings for alacritty
+Description=Application settings for geany
 clientmachine=localhost
 desktops=64a12e41-2755-4c2d-91c3-c1c526d0aec6
+desktopsrule=3
 noborder=true
-noborderrule=3
 opacityactive=95
 opacityactiverule=2
 opacityinactive=95
 opacityinactiverule=2
 position=1958,108
-positionrule=3
 size=2522,1404
-sizerule=3
 title=Alacritty
 windowrole=3pane
-wmclass=alacritty
+wmclass=geany
 wmclassmatch=1
 
 [20cd8d1e-d5bf-40a5-bf80-d9860ea25ac7]
@@ -288,16 +296,31 @@ wmclass=mail thunderbird
 wmclasscomplete=true
 wmclassmatch=1
 
+[20f6ba66-cfd2-427b-9141-002450e39cd1]
+Description=Window settings for deno
+clientmachine=localhost
+position=4480,0
+positionrule=3
+size=1080,1920
+sizerule=3
+title=Peek preview
+titlematch=1
+types=1
+wmclass=deno
+wmclassmatch=1
+
 [21]
 Description=Application settings for alacritty
 clientmachine=localhost
+desktops=64a12e41-2755-4c2d-91c3-c1c526d0aec6
+desktopsrule=3
 noborder=true
 noborderrule=3
 opacityactive=95
 opacityactiverule=2
 opacityinactive=95
 opacityinactiverule=2
-position=1958,0
+position=1958,108
 positionrule=3
 size=2522,1404
 sizerule=3
@@ -384,20 +407,18 @@ wmclass=alacritty
 wmclassmatch=1
 
 [3]
-Description=Window settings for firefox
+Description=Window settings for gwe
 clientmachine=localhost
 maximizehoriz=true
 maximizevert=true
 position=4480,0
-positionrule=3
-size=1080,1920
+size=1293,952
 sizerule=3
-title=Developer Tools — The Mandalorian - Sonarr — https://ash.lan/sonarr/series/the-mandalorian
+title=GWE
+titlematch=1
 types=1
 windowrole=toolbox
-windowrolematch=1
-wmclass=devtools firefox
-wmclasscomplete=true
+wmclass=gwe
 wmclassmatch=1
 
 [31e0b747-0dd5-4fa8-bfc9-52a12327e7df]
@@ -417,6 +438,28 @@ wmclass=alacritty
 wmclassmatch=1
 
 [4]
+Description=Window settings for firefox
+clientmachine=localhost
+desktops=64a12e41-2755-4c2d-91c3-c1c526d0aec6
+fsplevel=3
+maximizehoriz=true
+maximizevert=true
+noborder=true
+opacityactive=90
+opacityinactive=90
+position=4480,0
+positionrule=3
+size=1080,1920
+sizerule=3
+title=Developer Tools — The Mandalorian - Sonarr — https://ash.lan/sonarr/series/the-mandalorian
+types=1
+windowrole=toolbox
+windowrolematch=1
+wmclass=devtools firefox
+wmclasscomplete=true
+wmclassmatch=1
+
+[5]
 Description=Window settings for code
 clientmachine=localhost
 desktops=64a12e41-2755-4c2d-91c3-c1c526d0aec6
@@ -435,27 +478,6 @@ types=1
 windowrole=browser-window
 windowrolematch=1
 wmclass=code
-wmclassmatch=1
-
-[5]
-Description=Window settings for meld
-clientmachine=localhost
-desktops=64a12e41-2755-4c2d-91c3-c1c526d0aec6
-fsplevel=3
-maximizehoriz=true
-maximizevert=true
-noborder=true
-opacityactive=90
-opacityinactive=90
-position=1958,0
-positionrule=3
-size=2522,1404
-sizerule=3
-title=Meld
-types=1
-windowrole=browser
-wmclass=org.gnome.meld meld
-wmclasscomplete=true
 wmclassmatch=1
 
 [56deeb8f-1a62-4900-b8c6-06e96819e9df]
@@ -478,6 +500,27 @@ wmclass=steam
 wmclassmatch=1
 
 [6]
+Description=Window settings for meld
+clientmachine=localhost
+desktops=64a12e41-2755-4c2d-91c3-c1c526d0aec6
+fsplevel=3
+maximizehoriz=true
+maximizevert=true
+noborder=true
+opacityactive=90
+opacityinactive=90
+position=1958,0
+positionrule=3
+size=2522,1404
+sizerule=3
+title=Meld
+types=1
+windowrole=browser
+wmclass=org.gnome.meld meld
+wmclasscomplete=true
+wmclassmatch=1
+
+[7]
 Description=Application settings for sol
 clientmachine=localhost
 desktops=64a12e41-2755-4c2d-91c3-c1c526d0aec6
@@ -494,28 +537,6 @@ sizerule=3
 title=rustdesk
 windowrole=browser
 wmclass=sol
-wmclassmatch=1
-
-[7]
-Description=Window settings for rustdesk
-clientmachine=localhost
-desktops=64a12e41-2755-4c2d-91c3-c1c526d0aec6
-desktopsrule=3
-fsplevel=3
-maximizehoriz=true
-maximizehorizrule=3
-maximizevert=true
-maximizevertrule=3
-noborder=true
-opacityactive=90
-opacityinactive=90
-position=1958,0
-size=893,694
-title=rustdesk
-titlematch=1
-types=1
-windowrole=browser
-wmclass=rustdesk
 wmclassmatch=1
 
 [737c20fc-c8c7-4980-ab33-9b89db5cf519]
@@ -539,9 +560,10 @@ wmclass=ksysguard
 wmclassmatch=1
 
 [8]
-Description=Window settings for firefox
+Description=Window settings for rustdesk
 clientmachine=localhost
 desktops=64a12e41-2755-4c2d-91c3-c1c526d0aec6
+desktopsrule=3
 fsplevel=3
 maximizehoriz=true
 maximizehorizrule=3
@@ -551,14 +573,12 @@ noborder=true
 opacityactive=90
 opacityinactive=90
 position=2384,231
-screenrule=3
 size=1127,955
-title=Home — Mozilla Firefox
+title=rustdesk
+titlematch=1
 types=1
 windowrole=browser
-windowrolematch=1
-wmclass=navigator firefox
-wmclasscomplete=true
+wmclass=rustdesk
 wmclassmatch=1
 
 [84da1fd4-2cb7-4058-8390-2b2061494c06]
@@ -588,24 +608,26 @@ wmclass=audacity
 wmclassmatch=1
 
 [9]
-Description=Window settings for dolphin
+Description=Window settings for firefox
 clientmachine=localhost
 desktops=64a12e41-2755-4c2d-91c3-c1c526d0aec6
 fsplevel=3
 maximizehoriz=true
+maximizehorizrule=3
 maximizevert=true
+maximizevertrule=3
 noborder=true
 opacityactive=90
 opacityinactive=90
 position=2612,571
-positionrule=3
+screenrule=3
 size=1153,955
-sizerule=3
-title=Desktop — Dolphin
+title=Home — Mozilla Firefox
 types=1
-windowrole=dolphin#1
+windowrole=browser
 windowrolematch=1
-wmclass=dolphin
+wmclass=navigator firefox
+wmclasscomplete=true
 wmclassmatch=1
 
 [91c33ecb-ec62-4a29-aaa3-e912a12d2a6c]
@@ -644,8 +666,8 @@ wmclass=steam
 wmclassmatch=1
 
 [General]
-count=20
-rules=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20
+count=21
+rules=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21
 
 [a2490580-4164-4ff6-8848-c25140c7d86e]
 Description=Application settings for geany

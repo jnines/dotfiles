@@ -1,7 +1,6 @@
 #!/bin/zsh
 alias locate='locate -i'
 alias up=''
-alias v='nvim'
 alias sv='sudoedit'
 alias sve='sudo nvim'
 alias al='nvim "$HOME"/.config/.zsh/.aliasrc'
