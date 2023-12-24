@@ -113,8 +113,13 @@ wmclassmatch=1
 
 [14]
 Description=Window settings for thunderbird
+above=true
+aboverule=1
+acceptfocusrule=2
 clientmachine=localhost
 desktops=64a12e41-2755-4c2d-91c3-c1c526d0aec6
+fpplevel=3
+fpplevelrule=2
 fsplevel=3
 noborder=true
 opacityactive=90
