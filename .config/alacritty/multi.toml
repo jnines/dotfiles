@@ -1,4 +1,4 @@
-import = ["/home/jason/.config/alacritty/main.toml"]
+import = ["~/.config/alacritty/main.toml"]
 
 [shell]
 args = ["-l", "-c", "tmuxinator start default"]

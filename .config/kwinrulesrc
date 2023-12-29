@@ -23,8 +23,10 @@ opacityactive=90
 opacityactiverule=2
 opacityinactive=90
 opacityinactiverule=2
-position=4480,0
-size=1080,1920
+position=1958,240
+positionrule=3
+size=2522,1404
+sizerule=3
 wmclass=org.wezfurlong.wezterm
 wmclassmatch=1
 

@@ -1,1 +1,1 @@
-import = ["/home/jason/.config/alacritty/main.toml"]
+import = ["~/.config/alacritty/main.toml"]
