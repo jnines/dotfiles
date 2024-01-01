@@ -66,3 +66,12 @@ v() {
 		nvim $1
 	fi
 }
+
+# Pass terminfo to remove host so alacritty doesn't crap itself
+termpass() {
+	if [ -z $1 ]; then
+		echo "Need to specify remote host, including possible '-i /sshKey' and/or '-p port#'"
+	else
+		/usr/bin/infocmp | ssh $1 'tic -x -'
+	fi
+}
