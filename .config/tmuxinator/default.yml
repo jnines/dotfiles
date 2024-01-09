@@ -10,7 +10,7 @@ windows:
         - ash:
             - ssh Ash
         - lg:
-            - ssh lapg
+            - ssh deskg
         - na:
             - ssh lapn
         - dn:
