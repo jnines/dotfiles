@@ -1,0 +1,5 @@
+import = ["~/.config/alacritty/main.toml"]
+
+[shell]
+args = ["-l", "-c", "tmuxinator start code"]
+program = "/usr/bin/zsh"
