@@ -8,7 +8,7 @@ windows:
         -  #  local
         -  #  local
         - ash:
-            - ssh Ash
+            - ssh ash
         - lg:
             - ssh deskg
         - na:

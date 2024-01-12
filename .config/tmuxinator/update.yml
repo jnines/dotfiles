@@ -1,0 +1,26 @@
+---
+name: Multi
+startup_pane: 0
+windows:
+  - :
+      layout: f23e,210x51,0,0{104x51,0,0[104x12,0,0,0,104x13,0,13{52x13,0,13,7,51x13,53,13,8},104x13,0,27,1,104x10,0,41,2],105x51,105,0[105x12,105,0,3,105x13,105,13,6,105x13,105,27,4,105x10,105,41,5]}
+      panes:
+        - local:
+            - tmux setw synchronize-panes on
+            - clear
+        - rustdesk:
+            - ssh rdesk
+        - meshcentral:
+            - ssh mesh
+        - nb:
+            - ssh nb
+        - ash:
+            - ssh ash
+        - web:
+            - ssh wserv
+        - lg:
+            - ssh deskg
+        - na:
+            - ssh lapn
+        - dn:
+            - ssh kandarian
