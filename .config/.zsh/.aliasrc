@@ -27,6 +27,7 @@ alias cat='bat --paging=never --theme=gruvbox-dark'
 alias yarn='yarn --use-yarnrc "$XDG_CONFIG_HOME/yarn/config"'
 alias pn='pnpm'
 alias px='pnpx'
+alias rest='insomnium & disown'
 
 alias SS='sudo systemctl'
 alias SSS='sudo systemctl status'

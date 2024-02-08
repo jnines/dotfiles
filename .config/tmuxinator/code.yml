@@ -3,10 +3,12 @@ name: Code
 startup_pane: 0
 windows:
   - :
-      layout: 513c,210x51,0,0[210x42,0,0,0,210x8,0,43,1]
+      layout: 0f74,210x51,0,0[210x42,0,0,0,210x8,0,43{105x8,0,43,1,104x8,106,43,2}]
       panes:
         - Editor:
             -
-        - Terminal:
+        - Terminal1:
+            -
+        - Terminal2:
             - tmux setw synchronize-panes on
             - clear
