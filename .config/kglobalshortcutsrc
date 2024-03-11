@@ -25,7 +25,7 @@ _k_friendly_name=Custom Shortcuts Service
 {309cc89b-b2c9-46b5-9ce5-7bfc4fea6a03}=none,none,Skip Back
 {34ca30c0-2317-46bc-bb93-5d0e7cbef32c}=Ctrl+Num+5,none,Play/Pause
 {3b390f1d-1cc4-4265-ae54-51de6dff4dd0}=none,none,Volume Down
-{4158bcd9-eb6e-434d-a0d7-71a4e2a04a89}=Ctrl+Alt+?,none,Firefox
+{4158bcd9-eb6e-434d-a0d7-71a4e2a04a89}=none,none,Firefox
 {462e1912-fc60-4863-af02-caca5c2c77d9}=Ctrl+Num+4,none,Skip Back
 {465ecbcc-20ac-4461-8550-9596975907c4}=none,none,Volume Up
 {4bcfaf9a-1404-402a-9fd9-41d3816ed857}=none,none,Alacrity Update
@@ -134,10 +134,6 @@ Switch to Screen to the Left=none,,Switch to Screen to the Left
 Switch to Screen to the Right=none,,Switch to Screen to the Right
 Toggle Night Color=none,none,Toggle Night Light
 Toggle Window Raise/Lower=none,,Toggle Window Raise/Lower
-Walk Through Desktop List=none,none,Walk Through Desktop List
-Walk Through Desktop List (Reverse)=none,none,Walk Through Desktop List (Reverse)
-Walk Through Desktops=none,none,Walk Through Desktops
-Walk Through Desktops (Reverse)=none,none,Walk Through Desktops (Reverse)
 Walk Through Windows=Alt+Tab,Alt+Tab,Walk Through Windows
 Walk Through Windows (Reverse)=Alt+Shift+Backtab,Alt+Shift+Tab,Walk Through Windows (Reverse)
 Walk Through Windows Alternative=none,,Walk Through Windows Alternative
@@ -270,7 +266,7 @@ activate widget 170=none,none,Activate Panel Transparency Button Widget
 activate widget 264=none,none,Activate Panel Transparency Button Widget
 activate widget 28=none,none,Activate Application Launcher Widget
 activate widget 307=none,none,Activate Task Manager Widget
-activate widget 317=,none,Activate Application Launcher Widget
+activate widget 317=none,none,Activate Application Launcher Widget
 activate widget 33=none,none,Activate System Tray Widget
 activate widget 4=Alt+F1,none,Activate Application Launcher Widget
 activate widget 49=none,none,Activate Task Manager Widget
@@ -305,6 +301,9 @@ _launch=Meta+Num++
 
 [services][alasingle-2.desktop]
 _launch=Meta+Num+Enter
+
+[services][firefox.desktop]
+_launch=Meta+F\tCtrl+Alt+?
 
 [services][killTmux.desktop]
 _launch=Meta+Num+-
