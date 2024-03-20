@@ -8,7 +8,6 @@ modules=(
 	nvidia-modeset
 	nvidia-peermem
 	it87
-	v4l2loopback
 )
 
 # src directory
