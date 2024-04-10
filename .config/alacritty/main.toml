@@ -49,3 +49,21 @@ mods = "Control"
 chars = "\u0001;"
 key = "Tab"
 mods = "Control|Shift"
+
+[[keyboard.bindings]]
+action = "ScrollLineUp"
+key = "PageUp"
+
+[[keyboard.bindings]]
+action = "ScrollLineDown"
+key = "PageDown"
+
+[[keyboard.bindings]]
+action = "ScrollPageDown"
+key = "PageDown"
+mods = "Control"
+
+[[keyboard.bindings]]
+action = "ScrollPageUp"
+key = "PageUp"
+mods = "Control"
