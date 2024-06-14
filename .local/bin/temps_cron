@@ -1,9 +1,8 @@
-#!/bin/bash -xe
+#!/bin/bash
 cpu_temp=$(sensors | awk '/Tctl:/{gsub("+","");print $2}')
 gpu_temp=$(nvidia-smi --query-gpu=temperature.gpu --format=csv,noheader)
 nvme0=$(sensors | grep -oP 'Composite.*?\+\K[0-9.]+' | head -n 1)
 nvme1=$(sensors | grep -oP 'Composite.*?\+\K[0-9.]+' | tail -n 1)
 hdd=$(nc localhost 7634 | awk -F '|' '{print $4}')
-
 
 logger "CPU: ${cpu_temp%%.*}°C GPU: ${gpu_temp}°C Drives: ${nvme0%%.*}°C | ${nvme1%%.*}°C | ${hdd%%.*}°C"
