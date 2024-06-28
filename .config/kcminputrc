@@ -6,6 +6,9 @@ NumLock=0
 RepeatDelay=200
 RepeatRate=40
 
+[Libinput][14402][9738][EVGA Corporation EVGA Z20 Elite Gaming Keyboard Mouse]
+PointerAccelerationProfile=1
+
 [Mouse]
 X11LibInputXAccelProfileFlat=true
 XLbInptAccelProfileFlat=true
