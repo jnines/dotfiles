@@ -1,0 +1,4 @@
+#!/bin/bash
+
+/usr/bin/pkill -9 plasmashell &&
+/usr/bin/kstart /usr/bin/plasmashell
