@@ -1,11 +1,6 @@
 #!/bin/bash
-certDir="$HOME/.local/certs"
 kDir="$HOME/.local/bin/git/tkg/linux-tkg"
-/usr/bin/gpg --decrypt-files "${certDir}/kernel_key.pem.gpg" &&
-cd "$kDir" || exit &&
+cd "$kDir" || exit
 /usr/bin/makepkg -fsi --noconfirm &&
-sudo /usr/bin/rm -r /tmp/makepkg &&
-/usr/bin/rm "${certDir}/kernel_key.pem" &&
-
-
-"$HOME"/.local/bin/mod-sign -n "$(cat /tmp/linux-src-git/linux-tkg/linux-src-git/version)";
+	sudo /usr/bin/rm -r /tmp/makepkg &&
+	"$HOME"/.local/bin/mod-sign -n "$(cat /tmp/linux-src-git/linux-tkg/linux-src-git/version)"

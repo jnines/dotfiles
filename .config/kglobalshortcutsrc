@@ -318,5 +318,8 @@ FullScreenScreenShot=none
 WindowUnderCursorScreenShot=none
 _launch=Meta+Ctrl+Print
 
+[services][rkde.desktop]
+_launch=Ctrl+Shift+F12
+
 [services][systemsettings.desktop]
 kcm-kscreen=Meta+Num+*
