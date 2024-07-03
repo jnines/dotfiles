@@ -1174,9 +1174,9 @@ wmclassmatch=1
 
 [b4dcfd6f-4eea-4e54-8845-db61182fc1f8]
 Description=Application settings for org.kde.plasma-systemmonitor
-position=1634,221
+position=1379,38
 positionrule=3
-size=1306,713
+size=942,1042
 sizerule=3
 wmclass=plasma-systemmonitor org.kde.plasma-systemmonitor
 wmclasscomplete=true
