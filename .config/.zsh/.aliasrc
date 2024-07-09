@@ -42,7 +42,6 @@ alias sdb='sudo updatedb'
 alias srb='sudo reboot'
 alias ruefi='sudo systemctl reboot --firmware-setup'
 
-# alias rkde='pkill -9 plasmashell && kstart plasmashell > /dev/null 2>&1 & disown'
 alias fkde='cp "$HOME"/.local/bin/extra/tasks.svg "$HOME"/.local/share/plasma/desktoptheme/Aritim-Dark-Rounded-Blur/widgets/tasks.svg && rkde'
 alias kcache='rm "$HOME"/.config/Trolltech.conf && kbuildsycoca5 --noincremental'
 alias rnet='/usr/bin/nmcli con up br1 && /usr/bin/nmcli con up br0'
