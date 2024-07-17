@@ -42,8 +42,6 @@ alias sdb='sudo updatedb'
 alias srb='sudo reboot'
 alias ruefi='sudo systemctl reboot --firmware-setup'
 
-alias fkde='cp "$HOME"/.local/bin/extra/tasks.svg "$HOME"/.local/share/plasma/desktoptheme/Aritim-Dark-Rounded-Blur/widgets/tasks.svg && rkde'
-alias kcache='rm "$HOME"/.config/Trolltech.conf && kbuildsycoca5 --noincremental'
 alias rnet='/usr/bin/nmcli con up br1 && /usr/bin/nmcli con up br0'
 
 alias yte='cd /data/.sla/.empty/temp/ex; yt-dlp --no-mtime --embed-subs --external-downloader aria2c --external-downloader-args "-c -j 5 -x 10 --summary-interval=0" $1'
@@ -64,6 +62,3 @@ alias tojsx='for x in src/**/*.js; do mv "$x" "${x%.js}.jsx"; done && mv src/ind
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
-
-alias wclass='xprop WM_CLASS'
-alias myphone='scrcpy -s e43a8543'
