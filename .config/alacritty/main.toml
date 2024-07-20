@@ -50,6 +50,11 @@ chars = "\u0001;"
 key = "Tab"
 mods = "Control|Shift"
 
+[[keyboard.bindings]]
+chars = "zi\n"
+key = "f"
+mods = "Control"
+
 # [[keyboard.bindings]]
 # action = "ScrollLineUp"
 # key = "PageUp"
