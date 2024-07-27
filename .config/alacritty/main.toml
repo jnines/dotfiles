@@ -10,8 +10,10 @@ WINIT_X11_SCALE_FACTOR = "1"
 size = 15
 
 [window]
-padding = {x = 3, y = 3}
+padding = {x = 0, y = 3}
+decorations = "None"
 blur = true
+dynamic_title = false
 
 [font.bold]
 family = "JetBrainsMono Nerd Font"
@@ -25,3 +27,5 @@ style = "Light italic"
 family = "JetBrainsMono Nerd Font"
 style = "Light"
 
+[cursor]
+vi_mode_style = {shape = "Underline", blinking = "On"}
