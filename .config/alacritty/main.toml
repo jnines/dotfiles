@@ -1,5 +1,6 @@
 import = [
-  "~/.config/alacritty/alacritty-theme/themes/gruvbox_material_medium_dark.toml"
+  "~/.config/alacritty/alacritty-theme/themes/gruvbox_material_medium_dark.toml",
+  "~/.config/alacritty/bindings.toml"
 ]
 
 [env]
@@ -7,6 +8,10 @@ WINIT_X11_SCALE_FACTOR = "1"
 
 [font]
 size = 15
+
+[window]
+padding = {x = 3, y = 3}
+blur = true
 
 [font.bold]
 family = "JetBrainsMono Nerd Font"
@@ -20,55 +25,3 @@ style = "Light italic"
 family = "JetBrainsMono Nerd Font"
 style = "Light"
 
-[[keyboard.bindings]]
-action = "Quit"
-key = "Q"
-mods = "Control|Shift"
-
-[[keyboard.bindings]]
-chars = "\u0001\""
-key = "O"
-mods = "Control|Shift"
-
-[[keyboard.bindings]]
-chars = "\u0001%"
-key = "E"
-mods = "Control|Shift"
-
-[[keyboard.bindings]]
-chars = "\u0001x"
-key = "W"
-mods = "Control|Shift"
-
-[[keyboard.bindings]]
-chars = "\u0001o"
-key = "Tab"
-mods = "Control"
-
-[[keyboard.bindings]]
-chars = "\u0001;"
-key = "Tab"
-mods = "Control|Shift"
-
-[[keyboard.bindings]]
-chars = "zi\n"
-key = "f"
-mods = "Control"
-
-# [[keyboard.bindings]]
-# action = "ScrollLineUp"
-# key = "PageUp"
-# 
-# [[keyboard.bindings]]
-# action = "ScrollLineDown"
-# key = "PageDown"
-# 
-# [[keyboard.bindings]]
-# action = "ScrollPageDown"
-# key = "PageDown"
-# mods = "Control"
-# 
-# [[keyboard.bindings]]
-# action = "ScrollPageUp"
-# key = "PageUp"
-# mods = "Control"

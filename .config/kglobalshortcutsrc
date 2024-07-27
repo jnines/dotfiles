@@ -309,6 +309,9 @@ _launch=Meta+F\tCtrl+Alt+?
 [services][killTmux.desktop]
 _launch=Meta+Num+-
 
+[services][org.kde.konsole.desktop]
+_launch=Meta+Ctrl+Return\tCtrl+Alt+T
+
 [services][org.kde.krunner.desktop]
 _launch=Search\tMeta+Space\tAlt+F2
 

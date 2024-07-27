@@ -1,0 +1,10 @@
+[keyboard]
+bindings = [
+{key = "Q", mods = "Control|Shift", action = "Quit"},
+{key = "O", mods = "Control|Shift", chars = "\u0001\""},
+{key = "E", mods = "Control|Shift", chars = "\u0001%"},
+{key = "W", mods = "Control|Shift", chars = "\u0001x"},
+{key = "Tab", mods = "Control", chars = "\u0001o"},
+{key = "Tab", mods = "Control|Shift", chars = "\u0001"},
+{key = "f", mods = "Control|Shift", chars = "zi\n"},
+]
