@@ -43,6 +43,8 @@ alias sdb='sudo updatedb'
 alias srb='sudo reboot'
 alias ruefi='sudo systemctl reboot --firmware-setup'
 
+alias cooler='sudo cp /lib/systemd/system/coolercontrold.service.bak /lib/systemd/system/coolercontrold.service '
+
 alias rnet='/usr/bin/nmcli con up br1 && /usr/bin/nmcli con up br0'
 
 alias yte='cd /data/.sla/.empty/temp/ex; yt-dlp --no-mtime --embed-subs --external-downloader aria2c --external-downloader-args "-c -j 5 -x 10 --summary-interval=0" $1'
