@@ -1,8 +1,10 @@
 #!/bin/bash
-cpu_temp=$(sensors | awk '/Tctl:/{gsub("+","");print $2}')
-gpu_temp=$(nvidia-smi --query-gpu=temperature.gpu --format=csv,noheader)
-nvme0=$(sensors | grep -oP 'Composite.*?\+\K[0-9.]+' | head -n 1)
-nvme1=$(sensors | grep -oP 'Composite.*?\+\K[0-9.]+' | tail -n 1)
-hdd=$(nc localhost 7634 | awk -F '|' '{print $4}')
 
-logger "CPU: ${cpu_temp%%.*}°C GPU: ${gpu_temp}°C Drives: ${nvme0%%.*}°C | ${nvme1%%.*}°C | ${hdd%%.*}°C"
+sensor_data=$(sensors)
+cpu_temp=$(awk '/Tctl:/{gsub("+","");print $2}' <<<"$sensor_data")
+gpu_temp=$(nvidia-smi --query-gpu=temperature.gpu --format=csv,noheader)
+nvme0=$(grep -oP 'Composite.*?\+\K[0-9.]+' <<<"$sensor_data" | head -n 1)
+nvme1=$(grep -oP 'Composite.*?\+\K[0-9.]+' <<<"$sensor_data" | tail -n 1)
+ssd=$(awk '/drivetemp-scsi-5-0/,/^$/' <<<"$sensor_data" | grep 'temp1' | awk '{print $2}' | tr -d '+')
+
+logger "CPU: ${cpu_temp%%.*}°C GPU: ${gpu_temp}°C Drives: ${nvme0%%.*}°C | ${nvme1%%.*}°C | ${ssd%%.*}°C"
