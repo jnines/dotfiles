@@ -12,7 +12,7 @@ size = 15
 [window]
 padding = {x = 0, y = 3}
 decorations = "None"
-blur = true
+blur = false
 dynamic_title = false
 
 [font.bold]

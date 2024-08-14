@@ -9,6 +9,9 @@ RepeatRate=40
 [Libinput][14402][9738][EVGA Corporation EVGA Z20 Elite Gaming Keyboard Mouse]
 PointerAccelerationProfile=1
 
+[Libinput][9639][64009][Compx 2.4G Wireless Receiver]
+PointerAccelerationProfile=2
+
 [Mouse]
 X11LibInputXAccelProfileFlat=true
 XLbInptAccelProfileFlat=true

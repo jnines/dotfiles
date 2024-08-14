@@ -29,6 +29,8 @@ alias pn='pnpm'
 alias px='pnpx'
 alias rest='insomnium & disown'
 alias m4s='rename .m4s .mp4 *.m4s'
+alias rand='nvim $HOME/.local/random.txt'
+alias l='locate'
 
 alias SS='sudo systemctl'
 alias SSS='sudo systemctl status'

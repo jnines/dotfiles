@@ -19,6 +19,7 @@ node_modules
 *backup-crashrecovery*
 *default-release-backup
 pnpm
+.npm
 
 # .config
 .config/discord
@@ -51,6 +52,7 @@ pnpm
 .local/share/npm
 .local/share/lunarvim/site/
 .local/share/vscode
+.local/state/
 
 
 # .mozilla
@@ -72,4 +74,4 @@ pnpm
 .mozilla/firefox/*/compreg.dat
 .mozilla/firefox/*/pluginreg.dat
 
-Desktop/Dev
+Desktop
