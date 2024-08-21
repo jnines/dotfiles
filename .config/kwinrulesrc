@@ -1321,7 +1321,7 @@ wmclassmatch=1
 
 [da51b145-5eaf-44cc-8da1-bed23d94cdda]
 Description=Window settings for thunderbird
-position=1380,1294
+position=1299,1274
 positionrule=3
 size=1890,1080
 sizerule=3
