@@ -6,4 +6,4 @@ echo "${gpu_temp}°  | size=13 color=green iconName=nvidia-gpu bash='sudo nvidia
 echo "---"
 
 echo "High Performance | refresh=true iconName=temperature-warm size=14 bash='sudo nvidia-smi -rgc && sudo nvidia-smi -rmc' onclick=bash"
-echo "Low Performance| refresh=true iconName=temperature-cold size=14 bash='sudo nvidia-smi -lgc 210,600 && sudo nvidia-smi -lmc 405,810' onclick=bash"
+echo "Low Performance | refresh=true iconName=temperature-cold size=14 bash='sudo nvidia-smi -lgc 210,600 && sudo nvidia-smi -lmc 405,810' onclick=bash"
