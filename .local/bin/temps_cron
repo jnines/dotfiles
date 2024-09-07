@@ -7,4 +7,4 @@ nvme0=$(grep -oP 'Composite.*?\+\K[0-9.]+' <<<"$sensor_data" | head -n 1)
 nvme1=$(grep -oP 'Composite.*?\+\K[0-9.]+' <<<"$sensor_data" | tail -n 1)
 ssd=$(awk '/drivetemp-scsi-5-0/,/^$/' <<<"$sensor_data" | grep 'temp1' | awk '{print $2}' | tr -d '+')
 
-logger "CPU: ${cpu_temp%%.*}°C GPU: ${gpu_temp}°C Drives: ${nvme0%%.*}°C | ${nvme1%%.*}°C | ${ssd%%.*}°C"
+logger -p 4 "CPU: ${cpu_temp%%.*}°C GPU: ${gpu_temp}°C Drives: ${nvme0%%.*}°C | ${nvme1%%.*}°C | ${ssd%%.*}°C"
