@@ -11,4 +11,4 @@ else
 fi
 
 gpu_temp=$(nvidia-smi --query-gpu=temperature.gpu --format=csv,noheader)
-echo "${gpu_temp}°  | size=13 color=$color iconName=nvidia-gpu bash='sudo systemctl start nvperfmode@$setting.service' onclick=bash"
+echo "${gpu_temp}°  | size=13 color=$color iconName=nvidia-gpu bash='nv_perf_mode $setting' onclick=bash"

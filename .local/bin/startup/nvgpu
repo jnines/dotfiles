@@ -9,4 +9,5 @@
 # sudo nvidia-smi -lgc 210,600 &&
 # sudo nvidia-smi -lmc 405,810
 
-sudo systemctl start nvperfmode@low.service
+# sudo systemctl start nvperfmode@low.service
+nv_perf_mode low
