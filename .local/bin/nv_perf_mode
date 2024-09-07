@@ -1,0 +1,12 @@
+#!/bin/bash
+
+if [ "$1" == "high" ]; then
+  nvidia-smi -rgc && nvidia-smi -rmc
+  echo "high" >/tmp/nv_mode
+elif [ "$1" == "low" ]; then
+  nvidia-smi -lgc 210,600 && nvidia-smi -lmc 405,810
+  echo "low" >/tmp/nv_mode
+else
+  # echo "Failed setting GPU mode: $1" | systemd-cat -p 3
+  logger -p 3 "Failed setting GPU mode: $1"
+fi
