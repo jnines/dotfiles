@@ -1,9 +1,14 @@
 #!/bin/bash
 #shellcheck disable=SC2086
 
-gpu_temp=$(nvidia-smi --query-gpu=temperature.gpu --format=csv,noheader)
-echo "${gpu_temp}°  | size=13 color=green iconName=nvidia-gpu bash='sudo nvidia-settings --config="$HOME/.config/nvidia/settings/.nvidia-settings-rc"' onclick=bash"
-echo "---"
+state=$(cat /tmp/nv_mode 2>/dev/null)
+if [[ -z "$state" ]] || [[ "$state" == "low" ]]; then
+  color="#0087af"
+  setting="high"
+else
+  color="#af0054"
+  setting="low"
+fi
 
-echo "High Performance | refresh=true iconName=temperature-warm size=14 bash='sudo nvidia-smi -rgc && sudo nvidia-smi -rmc' onclick=bash"
-echo "Low Performance | refresh=true iconName=temperature-cold size=14 bash='sudo nvidia-smi -lgc 210,600 && sudo nvidia-smi -lmc 405,810' onclick=bash"
+gpu_temp=$(nvidia-smi --query-gpu=temperature.gpu --format=csv,noheader)
+echo "${gpu_temp}°  | size=13 color=$color iconName=nvidia-gpu bash='sudo systemctl start nvperfmode@$setting.service' onclick=bash"

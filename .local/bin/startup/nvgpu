@@ -6,6 +6,7 @@
 # Memory OC and Enable Fan control
 # nvidia-settings -a '[gpu:0]/GPUMemoryTransferRateOffsetAllPerformanceLevels=800' -a '[gpu:0]/GPUFanControlState=1'
 #
-sudo nvidia-smi -lgc 210,600 &&
-  sudo nvidia-smi -lmc 405,810
+# sudo nvidia-smi -lgc 210,600 &&
+# sudo nvidia-smi -lmc 405,810
 
+sudo systemctl start nvperfmode@low.service
