@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Service
+ServiceTypes=KonqPopupMenu/Plugin
+MimeType=inode/directory
+Actions=M4sToMp4
+X-KDE-Priority=TopLevel
+X-KDE-StartupNotify=false
+
+[Desktop Action M4sToMp4]
+Icon=video-mp4
+Exec=bash -c 'for f in "$1"/*.m4s; do mv "$f" "${f%.m4s}.mp4"; done' bash %U
+Name=Rename M4s

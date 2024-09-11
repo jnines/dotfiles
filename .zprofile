@@ -16,7 +16,7 @@ export TERMINAL="alacritty"
 export BROWSER="firefox"
 
 # rg fzf
-export FZF_DEFAULT_COMMAND='rg --hidden --no-ignore --files'
+export FZF_DEFAULT_COMMAND='rg --hidden --no-ignore-vcs --files --follow -g "!{node_modules,.git}'
 # Get Out:
 export XDG_CONFIG_HOME="$HOME/.config"
 export XDG_DATA_HOME="$HOME/.local/share"
