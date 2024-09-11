@@ -11,12 +11,12 @@ X-KDE-Submenu=Meld
 [Desktop Action 2setArg1]
 Icon=arrow-left
 Exec=echo "%U" > /tmp/meld-menu-arg1
-Name=Set file/folder
+Name=Set file/folder left
 
 [Desktop Action 3diff]
 Icon=arrow-right
 Exec=ARG1=$(cat /tmp/meld-menu-arg1);meld "$ARG1" %U; rm /tmp/meld-menu-arg1;
-Name=Compare with file/folder
+Name=Set file/folder right/Compare
 
 [Desktop Action 1selected]
 Icon=page-2sides
