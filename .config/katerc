@@ -163,6 +163,9 @@ Word Completion=true
 Word Completion Minimal Word Length=3
 Word Completion Remove Tail=true
 
+[KTextEditor::Search]
+Search History=width,Tab
+
 [Konsole]
 AutoSyncronize=true
 AutoSyncronizeMode=0

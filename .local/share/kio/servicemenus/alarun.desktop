@@ -8,7 +8,7 @@ X-KDE-Priority=TopLevel
 
 [Desktop Action RunInAlaSingle]
 TryExec=alacritty
-Exec=alasingle --working-directory %f
+Exec=cd %f && alasingle
 Icon=com.alacritty.Alacritty
 Name=Open in Alacritty
 Comment=Open in Alacritty
