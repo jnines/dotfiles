@@ -99,6 +99,7 @@ Line Height Multiplier=1
 Show Indentation Lines=false
 Show Whole Bracket Expression=true
 Text Font=Cascadia Code,12,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
+Text Font Features=
 Word Wrap Marker=false
 
 [KTextEditor View]

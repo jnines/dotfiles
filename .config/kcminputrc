@@ -10,7 +10,8 @@ RepeatRate=40
 PointerAccelerationProfile=1
 
 [Libinput][9639][64009][Compx 2.4G Wireless Receiver]
-PointerAccelerationProfile=2
+PointerAccelerationProfile=1
+ScrollFactor=0.75
 
 [Mouse]
 X11LibInputXAccelProfileFlat=true
