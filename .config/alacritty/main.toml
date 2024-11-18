@@ -1,7 +1,3 @@
-import = [
-  "~/.config/alacritty/alacritty-theme/themes/gruvbox_material_medium_dark.toml",
-  "~/.config/alacritty/bindings.toml"
-]
 
 [env]
 WINIT_X11_SCALE_FACTOR = "1"
@@ -29,3 +25,9 @@ style = "Light"
 
 [cursor]
 vi_mode_style = {shape = "Underline", blinking = "On"}
+
+[general]
+import = [
+  "~/.config/alacritty/alacritty-theme/themes/gruvbox_material_medium_dark.toml",
+  "~/.config/alacritty/bindings.toml"
+]
