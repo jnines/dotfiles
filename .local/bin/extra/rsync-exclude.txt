@@ -20,16 +20,25 @@ node_modules
 *default-release-backup
 pnpm
 .npm
+*.mp4
+*.mkv
 
 # .config
 .config/discord
 .config/BraveSoftware
 .config/heroic
 .config/steamtinkerlaunch
+.config/chromium
 .config/chromium-backup
+.config/Code
+.config/gnome-games
+.config/gtk-2.0
+.config/gtk-3.0
+.config/gtk-4.0
 
 # .local
 .local/code
+.local/share/.bun
 .local/share/icons
 .local/share/Steam
 .local/share/steam-home
@@ -41,6 +50,7 @@ pnpm
 .local/share/akonadi
 .local/share/cargo
 .local/share/go
+.local/share/klipper
 .local/share/lutris
 .local/share/syncthing
 .local/bin/git/headset
@@ -50,6 +60,7 @@ pnpm
 .local/share/flatpak
 .local/share/wineprefixes
 .local/share/npm
+.local/share/nvim
 .local/share/lunarvim/site/
 .local/share/vscode
 .local/state/

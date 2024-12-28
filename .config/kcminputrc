@@ -13,6 +13,9 @@ PointerAccelerationProfile=1
 PointerAccelerationProfile=1
 ScrollFactor=0.75
 
+[Libinput][9639][64010][Compx 2.4G Dual Mode Mouse]
+PointerAccelerationProfile=1
+
 [Mouse]
 X11LibInputXAccelProfileFlat=true
 XLbInptAccelProfileFlat=true

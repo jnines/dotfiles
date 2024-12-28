@@ -1391,6 +1391,10 @@ sizerule=3
 wmclass=qimgv
 wmclassmatch=1
 
+[ea926524-6849-4620-8a3f-23910d4d6e6e]
+maximizehorizrule=3
+maximizevertrule=3
+
 [eb773796-bfd9-4393-8a3b-6b30732abfee]
 Description=Application settings for Meld
 clientmachine=localhost

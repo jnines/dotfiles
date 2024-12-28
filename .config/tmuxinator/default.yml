@@ -1,5 +1,6 @@
 ---
-name: Multi
+# name: Multi
+name: Multi <%= rand(65536) %>
 startup_pane: 0
 windows:
   - ✖:
