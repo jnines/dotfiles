@@ -291,17 +291,8 @@ switch to next activity=none,,Switch to Next Activity
 switch to previous activity=none,,Switch to Previous Activity
 toggle do not disturb=none,,Toggle do not disturb
 
-[services][Alacritty.desktop]
-New=Meta+Return
-
-[services][alacode.desktop]
-_launch=Meta+Ctrl+Num+Enter
-
-[services][alamulti.desktop]
-_launch=Meta+Num++
-
-[services][alasingle-2.desktop]
-_launch=Meta+Num+Enter
+[services][com.mitchellh.ghostty.desktop]
+new-window=Meta+Return
 
 [services][firefox.desktop]
 _launch=Meta+F\tCtrl+Alt+?
@@ -310,10 +301,13 @@ _launch=Meta+F\tCtrl+Alt+?
 _launch=Meta+Num+-
 
 [services][net.local.ghostty-2.desktop]
-_launch=Meta+Alt+Num+Enter
+_launch=Meta+Num+Enter
+
+[services][net.local.ghostty-3.desktop]
+_launch=Meta+Ctrl+Num+Enter
 
 [services][net.local.ghostty.desktop]
-_launch=Meta+Alt+Num++
+_launch=Meta+Num++
 
 [services][org.kde.konsole.desktop]
 _launch=Meta+Ctrl+Return\tCtrl+Alt+T

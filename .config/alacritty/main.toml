@@ -10,6 +10,7 @@ padding = {x = 0, y = 3}
 decorations = "None"
 blur = false
 dynamic_title = false
+opacity = 0.95
 
 [font.bold]
 family = "JetBrainsMono Nerd Font"

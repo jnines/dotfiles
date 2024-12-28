@@ -1,0 +1,48 @@
+theme = gruvbox-material
+background-opacity = 0.85
+background =           #141617
+foreground =           #d4be98
+selection-background = #2b2c3f
+selection-foreground = #333e34
+cursor-color =         #fff8dc
+palette = 0=#141617
+palette = 1=#ea6962
+palette = 2=#a9b665
+palette = 3=#d8a657
+palette = 4=#7daea3
+palette = 5=#d3869b
+palette = 6=#89b482
+palette = 7=#ddc7a1
+palette = 8=#928374
+palette = 9=#ea6962
+palette = 10=#a9b665
+palette = 11=#d8a657
+palette = 12=#7daea3
+palette = 13=#d3869b
+palette = 14=#89b482
+palette = 15=#ddc7a1
+
+window-padding-x = 2
+window-padding-y = 2
+window-height = 69
+window-width = 210
+window-decoration = false
+
+# gtk-adwaita = false
+copy-on-select = true
+quit-after-last-window-closed = true
+
+font-size = 15
+# font-family = JetBrainsMono Nerd Font # Base font
+font-feature = calt
+font-feature = liga
+font-feature = zero
+font-feature = case
+
+keybind = ctrl+shift+e=text:\x01\x25
+keybind = ctrl+shift+o=text:\x01\x22
+keybind = ctrl+tab=text:\x01\x6f
+keybind = ctrl+shift+tab=text:\x01\x3b
+keybind = ctrl+shift+w=text:\x01\x78
+
+# vim:ft=conf
