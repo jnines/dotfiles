@@ -28,9 +28,14 @@ window-height = 69
 window-width = 210
 window-decoration = false
 
-# gtk-adwaita = false
+gtk-titlebar = false
+gtk-tabs-location = hidden
+gtk-adwaita = false
 copy-on-select = true
 quit-after-last-window-closed = true
+mouse-hide-while-typing = true
+
+shell-integration-features = no-cursor, sudo, no-title
 
 font-size = 15
 # font-family = JetBrainsMono Nerd Font # Base font
