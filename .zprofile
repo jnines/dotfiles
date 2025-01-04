@@ -12,7 +12,7 @@ export PATH=$PATH:"$HOME/.local/share/pnpm"
 # Defaults:
 export EDITOR="nvim"
 export DIFFPROG="nvim -d"
-export TERMINAL="alacritty"
+export TERMINAL="ghostty"
 export BROWSER="firefox"
 
 # rg fzf

@@ -20,8 +20,8 @@ PointerAccelerationProfile=1
 X11LibInputXAccelProfileFlat=true
 XLbInptAccelProfileFlat=true
 XLbInptPointerAcceleration=0.4
-cursorSize=36
-cursorTheme=Vimix-white-cursors
+cursorSize=40
+cursorTheme=BreezeX-Light
 
 [Tmp]
 update_info=delete_cursor_old_default_size.upd:DeleteCursorOldDefaultSize

@@ -82,3 +82,12 @@ termpass() {
     /usr/bin/infocmp | ssh $1 'tic -x -'
   fi
 }
+
+# Build Arch pkgs when the source is updated but the pkg hasn't | Requires devtools
+oodpkg() {
+  cd /tmp || exit
+  sudo pacman -S --needed devtools &&
+    pkgctl repo clone --protocol=https $1 &&
+    cd $1 &&
+    makepkg -srci --noconfirm
+}
