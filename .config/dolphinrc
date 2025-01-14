@@ -10,6 +10,11 @@ LastMimeType=application/zip
 [DetailsMode]
 PreviewSize=64
 
+[ExtractDialog]
+3 screens: Height=720
+3 screens: Width=1661
+DirHistory[$e]=$HOME/Desktop/
+
 [General]
 BrowseThroughArchives=true
 ConfirmClosingMultipleTabs=false
