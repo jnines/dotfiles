@@ -2,5 +2,5 @@
 
 loc="/usr/share/plasma/plasmoids/org.kde.plasma.taskmanager/contents/ui/"
 
-sudo cp "$loc/Task.qml" "$loc/Task.qml.$(date +%F)" &&
-  sudo sed -i -e 's/LayoutMetrics.preferredMaxWidth())/(LayoutMetrics.preferredMaxWidth() * 0.4))/' "$loc/Task.qml"
+sudo /usr/bin/cp -f "$loc/Task.qml" "$loc/Task.qml.distro" \
+	&& sudo sed -i -e 's/LayoutMetrics.preferredMaxWidth())/(LayoutMetrics.preferredMaxWidth() * 0.4))/' "$loc/Task.qml"
