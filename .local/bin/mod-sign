@@ -10,38 +10,35 @@ modules=(
 	it87
 )
 
-# src directory
-certDir="/root/certs"
-kernelType="tkg"
+# Directory certs are stored
+_cert_dir="/root/certs"
 ###########################################################
-alg="sha512"
-privKey="$certDir/kernel_key.key"
-pubKey="$certDir/kernel_key.crt"
-signFile="$certDir/sign-file"
-export PATH=$PATH:"${signFile%/sign-file}"
 echo Finding "${modules[@]}"
 
 function sign_modules() {
 
+	local alg="sha512"
+	local priv_key="$_cert_dir/kernel_key.key"
+	local pub_key="$_cert_dir/kernel_key.crt"
+	local sign_file="$_cert_dir/sign-file"
+	export PATH=$PATH:"${sign_file%/sign-file}"
+
 	for i in "${modules[@]}"; do
-		modulesW+=("$(find "${1}"/updates/dkms/ -name "${i}.*")")
+		local modules_w+=("$(find "${1}"/updates/dkms/ -name "${i}.*")")
 	done
 
-	for i in "${modulesW[@]}"; do
-		sudo /usr/bin/zstd -dq --rm "${i}" &&
-			sudo /usr/bin/strip --strip-debug "${i%.zst}" &&
-			sudo "$signFile" "$alg" "$privKey" "$pubKey" "${i%.zst}" &&
-			echo Signing "${i}"
+	for i in "${modules_w[@]}"; do
+		sudo /usr/bin/zstd -dq --rm "${i}" \
+			&& sudo /usr/bin/strip --strip-debug "${i%.zst}" \
+			&& sudo "$sign_file" "$alg" "$priv_key" "$pub_key" "${i%.zst}" \
+			&& echo Signing "${i}"
 		sudo /usr/bin/zstd -q --rm "${i%.zst}"
 	done
 }
 
 if [[ $1 == "-n" ]]; then
-	kernelLocation="/usr/lib/modules/$2"
-	sign_modules "${kernelLocation}"
+	kernel_location="/usr/lib/modules/$2"
+	sign_modules "${kernel_location}"
 else
-	readarray -d '' kernelDirs < <(find /usr/lib/modules -maxdepth 1 -type d -name "*$kernelType*" -print0)
-	for i in "${kernelDirs[@]}"; do
-		sign_modules "${i}"
-	done
+	echo "Must choose a kernel, one of $(/usr/bin/dir /usr/lib/modules)"
 fi
