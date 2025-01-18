@@ -1082,7 +1082,7 @@ size=1890,1156
 sizerule=3
 title=Alacritty
 windowrole=toolbox
-wmclass=Mail thunderbird
+wmclass=thunderbird thunderbird
 wmclasscomplete=true
 wmclassmatch=1
 

@@ -14,7 +14,7 @@ pull_me() {
 			echo "$repo doesn't exist"
 		else
 			echo "Cleaning local changes"
-			git -C "$git_dir/$repo" -f clean \
+			git -C "$git_dir/$repo" reset --hard \
 				&& echo -n "Pulling $repo : "
 			git -C "$git_dir/$repo" pull
 		fi
