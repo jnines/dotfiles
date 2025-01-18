@@ -13,10 +13,10 @@ modules=(
 # Directory certs are stored
 _cert_dir="/root/certs"
 ###########################################################
-echo Finding "${modules[@]}"
 
 function sign_modules() {
 
+	echo Finding "${modules[@]}"
 	local alg="sha512"
 	local priv_key="$_cert_dir/kernel_key.key"
 	local pub_key="$_cert_dir/kernel_key.crt"
@@ -40,5 +40,8 @@ if [[ $1 == "-n" ]]; then
 	kernel_location="/usr/lib/modules/$2"
 	sign_modules "${kernel_location}"
 else
-	echo "Must choose a kernel, one of $(/usr/bin/dir /usr/lib/modules)"
+	mapfile -t kernel_dirs <<<"$(/usr/bin/dir --format=single-column /usr/lib/modules | sed '/arch1/d')"
+	for dir in "${kernel_dirs[@]}"; do
+		sign_modules "/usr/lib/modules/$dir"
+	done
 fi
