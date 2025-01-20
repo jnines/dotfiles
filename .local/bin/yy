@@ -5,5 +5,5 @@ if [ -z "$news" ]; then
 else
 	echo "$news"
 	read -rn 1 -s
-	/usr/bin/yay -Syu --devel
+	/usr/bin/yay -Syu --devel --ignore linux-cachyos --ignore linux-cachyos-headers
 fi
