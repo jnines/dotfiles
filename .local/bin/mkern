@@ -33,11 +33,11 @@ _cachy() {
 case "$1" in
 "cachy")
 	echo "Compiling Cachy..."
-	_cachy
+	time _cachy
 	;;
 "tkg")
 	echo "Compiling TKG..."
-	_tkg
+	time _tkg
 	;;
 *)
 	echo "Pick a kernel type"

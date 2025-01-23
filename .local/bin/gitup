@@ -4,6 +4,7 @@ git_dir="$HOME"/.local/bin/git
 
 git_repos=(
 	"linux-cachyos"
+	"nvidia-cachyos"
 	"tkg/linux-tkg"
 	"tkg/nvidia-all"
 )

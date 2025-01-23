@@ -1,6 +1,45 @@
-#!/bin/bash
-gpuDir="$HOME/.local/bin/git/tkg/nvidia-all"
-cd "$gpuDir" || exit &&
-/usr/bin/makepkg -fsi --noconfirm &&
-  
-"$HOME"/.local/bin/mod-sign
+#!/bin/bash -x
+
+__git_repo="$HOME/.local/bin/git/nvidia-cachyos/nvidia"
+__c_tmp="/tmp/nvidia-cachyos"
+__m_tmp="/tmp/makepkg"
+__line="pkgname=('nvidia-utils' 'opencl-nvidia' 'nvidia-dkms' 'nvidia-open-dkms')"
+__replace="pkgname=('nvidia-utils' 'opencl-nvidia' 'nvidia-dkms')"
+
+_prepare() {
+	/usr/bin/rm -rf "$__c_tmp" "$__m_tmp"
+	/usr/bin/cp -r "$__git_repo" "$__c_tmp"
+}
+
+_nv_utils() {
+	builtin cd "$__c_tmp"/nvidia-utils || exit \
+		&& /usr/bin/find "$__c_tmp"/nvidia-utils -type f -name "PKGBUILD" \
+			-exec /usr/bin/sed -i "/^package_nvidia-open-dkms()/,/^}/d" {} + \
+			-exec /usr/bin/sed -i "s/$__line/$__replace/" {} + \
+		&& /usr/bin/makepkg -fsi --noconfirm
+}
+
+_lib32_nv_utils() {
+	builtin cd "$__c_tmp"/lib32-nvidia-utils || exit \
+		&& /usr/bin/rm -rf "$__m_tmp" \
+		&& /usr/bin/cp "$__c_tmp"/nvidia-utils/NVIDIA-Linux-x86_64-*.run $__c_tmp/lib32-nvidia-utils/ \
+		&& /usr/bin/find "$__c_tmp"/lib32-nvidia-utils -type f -name "PKGBUILD" \
+			-exec /usr/bin/sed -Ei 's#\("https://us.download.nvidia.com/XFree86/Linux-x86_64/\$\{pkgver\}/#("##; s#"\)#")#' {} + \
+		&& /usr/bin/makepkg -fsi --noconfirm
+}
+
+_nv_settings() {
+	builtin cd "$__c_tmp"/nvidia-settings || exit \
+		&& /usr/bin/makepkg -fsi --noconfirm
+}
+
+_finish() {
+	/usr/bin/rm -rf "$__c_tmp" "$__m_tmp" \
+		&& "$HOME"/.local/bin/mod-sign
+}
+
+_prepare \
+	&& _nv_utils \
+	&& _lib32_nv_utils \
+	&& _nv_settings \
+	&& _finish
