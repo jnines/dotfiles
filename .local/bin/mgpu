@@ -1,4 +1,4 @@
-#!/bin/bash -x
+#!/bin/bash
 
 __git_repo="$HOME/.local/bin/git/nvidia-cachyos/nvidia"
 __c_tmp="/tmp/nvidia-cachyos"
@@ -38,8 +38,17 @@ _finish() {
 		&& "$HOME"/.local/bin/mod-sign
 }
 
-_prepare \
-	&& _nv_utils \
-	&& _lib32_nv_utils \
-	&& _nv_settings \
-	&& _finish
+case "$1" in
+"utils")
+	_prepare \
+		&& _nv_utils \
+		&& _finish
+	;;
+*)
+	_prepare \
+		&& _nv_utils \
+		&& _lib32_nv_utils \
+		&& _nv_settings \
+		&& _finish
+	;;
+esac
