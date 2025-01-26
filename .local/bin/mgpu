@@ -2,6 +2,9 @@
 
 __git_repo="$HOME/.local/bin/git/nvidia-cachyos/nvidia"
 __c_tmp="/tmp/nvidia-cachyos"
+__lib32="$__c_tmp/lib32-nvidia-utils"
+__utils="$__c_tmp/nvidia-utils"
+__settings="$__c_tmp/nvidia-settings"
 __m_tmp="/tmp/makepkg"
 __line="pkgname=('nvidia-utils' 'opencl-nvidia' 'nvidia-dkms' 'nvidia-open-dkms')"
 __replace="pkgname=('nvidia-utils' 'opencl-nvidia' 'nvidia-dkms')"
@@ -12,25 +15,31 @@ _prepare() {
 }
 
 _nv_utils() {
-	builtin cd "$__c_tmp"/nvidia-utils || exit \
-		&& /usr/bin/find "$__c_tmp"/nvidia-utils -type f -name "PKGBUILD" \
-			-exec /usr/bin/sed -i "/^package_nvidia-open-dkms()/,/^}/d" {} + \
-			-exec /usr/bin/sed -i "s/$__line/$__replace/" {} + \
-		&& /usr/bin/makepkg -fsi --noconfirm
+	builtin cd "$__utils" || exit \
+		&& /usr/bin/sed -i -e "/^package_nvidia-open-dkms()/,/^}/d" \
+			-e "s/$__line/$__replace/" $__utils/PKGBUILD \
+		&& /usr/bin/makepkg -s
 }
 
 _lib32_nv_utils() {
-	builtin cd "$__c_tmp"/lib32-nvidia-utils || exit \
-		&& /usr/bin/rm -rf "$__m_tmp" \
-		&& /usr/bin/cp "$__c_tmp"/nvidia-utils/NVIDIA-Linux-x86_64-*.run $__c_tmp/lib32-nvidia-utils/ \
-		&& /usr/bin/find "$__c_tmp"/lib32-nvidia-utils -type f -name "PKGBUILD" \
-			-exec /usr/bin/sed -Ei 's#\("https://us.download.nvidia.com/XFree86/Linux-x86_64/\$\{pkgver\}/#("##; s#"\)#")#' {} + \
-		&& /usr/bin/makepkg -fsi --noconfirm
+	builtin cd "$__lib32" || exit \
+		&& /usr/bin/cp "$__utils"/NVIDIA-Linux-x86_64-*.run $__lib32/ \
+		&& sed -Ei 's/source=(.*)/source=("${_pkg}.run")/' $__lib32/PKGBUILD \
+		&& /usr/bin/makepkg -s
 }
 
 _nv_settings() {
-	builtin cd "$__c_tmp"/nvidia-settings || exit \
-		&& /usr/bin/makepkg -fsi --noconfirm
+	builtin cd "$__settings" || exit \
+		&& /usr/bin/makepkg -s
+}
+
+_install_pkgs() {
+	mapfile -t _PKGS < <(find "$__c_tmp" -type f -name "*.pkg.tar.zst")
+	if [ ${#_PKGS[@]} -eq 0 ]; then
+		echo "No package files found in $__c_tmp!"
+		exit 1
+	fi
+	sudo pacman -U "${_PKGS[@]}"
 }
 
 _finish() {
@@ -42,6 +51,8 @@ case "$1" in
 "utils")
 	_prepare \
 		&& _nv_utils \
+		&& _lib32_nv_utils \
+		&& _install_pkgs \
 		&& _finish
 	;;
 *)
@@ -49,6 +60,7 @@ case "$1" in
 		&& _nv_utils \
 		&& _lib32_nv_utils \
 		&& _nv_settings \
+		&& _install_pkgs \
 		&& _finish
 	;;
 esac
