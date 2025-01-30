@@ -39,7 +39,7 @@ _install_pkgs() {
 		echo "No package files found in $__c_tmp!"
 		exit 1
 	fi
-	sudo pacman -U "${_PKGS[@]}"
+	yes | sudo pacman -U "${_PKGS[@]}"
 }
 
 _finish() {
