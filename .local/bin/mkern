@@ -15,15 +15,16 @@ _cachy() {
 	/usr/bin/cp -r "$HOME"/.local/bin/git/linux-cachyos/linux-cachyos/ /tmp/cachyos \
 		&& builtin cd /tmp/cachyos || exit
 
-	/usr/bin/find /tmp/cachyos -type f -name "PKGBUILD" \
-		-exec /usr/bin/sed -i "s/_localmodcfg:=no/_localmodcfg:=yes/" {} + \
-		-exec /usr/bin/sed -i "s/_processor_opt:=/_processor_opt:=zen3/" {} + \
-		-exec /usr/bin/sed -i \
-		'/scripts\/config -e USER_NS/a\    echo "Disabling Nags"\
+	/usr/bin/sed \
+		-e 's/_localmodcfg:=no/_localmodcfg:=yes/g' \
+		-e 's/_processor_opt:=/_processor_opt:=zen3/g' \
+		-e '/scripts\/config -e USER_NS/a\
+    echo "Disabling Nags"\
     scripts\/config -d GPIO_BT8XX -d SND_SE6X\
     echo "Adding Key"\
     scripts\/config --set-str CONFIG_SYSTEM_TRUSTED_KEYS "/root/certs/kernel_key.pem"\
-    echo "${_kernver}-cachyos" > /tmp/cachy_ver' {} +
+    echo "${_kernver}-cachyos" > /tmp/cachy_ver' \
+		/tmp/cachyos/PKGBUILD
 
 	/usr/bin/makepkg -fsi --noconfirm \
 		&& /usr/bin/rm -r /tmp/makepkg \
