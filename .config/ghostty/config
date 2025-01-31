@@ -30,7 +30,6 @@ window-decoration = false
 
 gtk-titlebar = false
 gtk-tabs-location = hidden
-# gtk-adwaita = false
 copy-on-select = true
 quit-after-last-window-closed = true
 mouse-hide-while-typing = true
@@ -40,10 +39,7 @@ shell-integration-features = no-cursor, sudo, no-title
 
 font-size = 15
 # font-family = JetBrainsMono Nerd Font # Base font
-font-feature = calt
-font-feature = liga
-font-feature = zero
-font-feature = case
+font-feature = calt,liga,zero,case
 
 keybind = ctrl+shift+e=text:\x01\x25
 keybind = ctrl+shift+o=text:\x01\x22
@@ -52,8 +48,8 @@ keybind = ctrl+shift+tab=text:\x01\x3b
 keybind = ctrl+shift+w=text:\x01\x78
 
 # testing
-keybind = ctrl+shift+[=new_split:right
-keybind = ctrl+shift+]=new_split:down
-keybind = ctrl+shift+-=equalize_splits
+# keybind = ctrl+shift+[=new_split:right
+# keybind = ctrl+shift+]=new_split:down
+# keybind = ctrl+shift+-=equalize_splits
 
 # vim:ft=conf
