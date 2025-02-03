@@ -1,13 +1,11 @@
 #!/bin/bash
-
+#
 __git_repo="$HOME/.local/bin/git/nvidia-cachyos/nvidia"
 __c_tmp="/tmp/nvidia-cachyos"
 __lib32="$__c_tmp/lib32-nvidia-utils"
 __utils="$__c_tmp/nvidia-utils"
 __settings="$__c_tmp/nvidia-settings"
 __m_tmp="/tmp/makepkg"
-__line="pkgname=('nvidia-utils' 'opencl-nvidia' 'nvidia-dkms' 'nvidia-open-dkms')"
-__replace="pkgname=('nvidia-utils' 'opencl-nvidia' 'nvidia-dkms')"
 
 _prepare() {
 	/usr/bin/rm -rf "$__c_tmp" "$__m_tmp"
@@ -16,20 +14,70 @@ _prepare() {
 
 _nv_utils() {
 	builtin cd "$__utils" || exit \
-		&& /usr/bin/sed -i -e "/^package_nvidia-open-dkms()/,/^}/d" \
-			-e "s/$__line/$__replace/" $__utils/PKGBUILD \
+		&& /usr/bin/mv $__utils/nvidia-utils.install $__utils/nvidia-utils-c.install \
+		&& /usr/bin/sed -i -e 's/package_opencl-nvidia/package_opencl-nvidia-c/' \
+			-e 's/package_nvidia-dkms/package_nvidia-dkms-c/' \
+			-e 's/package_nvidia-utils/package_nvidia-utils-c/' \
+			-e "s/pkgname=('nvidia-utils' 'opencl-nvidia' 'nvidia-dkms' 'nvidia-open-dkms')/\
+pkgname=('nvidia-utils-c' 'opencl-nvidia-c' 'nvidia-dkms-c')/" \
+			-e "s/provides=('opencl-driver')/\
+provides=(\"opencl-nvidia=\$pkgver\" \"opencl-nvidia-c=\$pkgver\" \"opencl-driver\")\n\
+    conflicts=(\"opencl-nvidia\")/" \
+			-e "s/depends=('dkms' \"nvidia-utils=\$pkgver\" 'libglvnd')/\
+    depends=('dkms' \"nvidia-utils-c=\$pkgver\"  'libglvnd')/" \
+			-e "s/provides=('NVIDIA-MODULE' 'nvidia')/\
+provides=(\"nvidia=\$pkgver\" \"nvidia-dkms\" \"nvidia-dkms-c=\$pkgver\" \"NVIDIA-MODULE\")/" \
+			-e "s/conflicts=('NVIDIA-MODULE' 'nvidia')/conflicts=('NVIDIA-MODULE' 'nvidia' 'nvidia-dkms')/" \
+			-e "s/conflicts=('nvidia-libgl')/conflicts=('nvidia-libgl' 'nvidia-utils')/" \
+			-e "s/provides=('vulkan-driver' 'opengl-driver' 'nvidia-libgl')/\
+provides=(\"nvidia-utils=\$pkgver\" \"nvidia-utils-c=\$pkgver\"\
+ 'vulkan-driver' 'opengl-driver' 'nvidia-libgl')/" \
+			-e '/^package_nvidia-open-dkms()/,/^}/d' \
+			$__utils/PKGBUILD \
+		&& rm "$__utils"/.SRCINFO \
+		&& /usr/bin/makepkg --printsrcinfo >.SRCINFO \
 		&& /usr/bin/makepkg -s
 }
 
 _lib32_nv_utils() {
 	builtin cd "$__lib32" || exit \
 		&& /usr/bin/cp "$__utils"/NVIDIA-Linux-x86_64-*.run $__lib32/ \
-		&& sed -Ei 's/source=(.*)/source=("${_pkg}.run")/' $__lib32/PKGBUILD \
+		&& /usr/bin/sed -i -e 's/package_lib32-opencl-nvidia/package_lib32-opencl-nvidia-c/' \
+			-e 's/package_lib32-nvidia-utils/package_lib32-nvidia-utils-c/' \
+			-e "s/pkgname=('lib32-nvidia-utils' 'lib32-opencl-nvidia')/\
+pkgname=('lib32-nvidia-utils-c' 'lib32-opencl-nvidia-c')/" \
+			-e 's/source=(.*)/source=("${_pkg}.run")/' \
+			-e "s/provides=('lib32-opencl-driver')/\
+provides=(\"lib32-opencl-nvidia=\$pkgver\" \"lib32-opencl-nvidia-c=\$pkgver\" 'lib32-opencl-driver')\n\
+    conflicts=('lib32-opencl-nvidia')/" \
+			-e "s/depends=('lib32-zlib' 'lib32-gcc-libs' 'lib32-libglvnd' \"nvidia-utils=\$pkgver\")/\
+depends=('lib32-zlib' 'lib32-gcc-libs' 'lib32-libglvnd' \"nvidia-utils=\$pkgver\" \"nvidia-utils-c=\$pkgver\")/" \
+			-e "s/conflicts=('lib32-nvidia-libgl')/conflicts=('lib32-nvidia-utils' 'lib32-nvidia-libgl')/" \
+			-e "s/provides=('lib32-vulkan-driver' 'lib32-opengl-driver' 'lib32-nvidia-libgl')/\
+provides=(\"lib32-nvidia-utils=\$pkgver\" \"lib32-nvidia-utils-c=\$pkgver\" 'lib32-vulkan-driver'\
+ 'lib32-opengl-driver' 'lib32-nvidia-libgl')/" \
+			$__lib32/PKGBUILD \
+		&& rm "$__lib32"/.SRCINFO \
+		&& /usr/bin/makepkg --printsrcinfo >.SRCINFO \
 		&& /usr/bin/makepkg -s
 }
 
 _nv_settings() {
 	builtin cd "$__settings" || exit \
+		&& /usr/bin/sed -i -e "s/pkgname=('nvidia-settings' 'libxnvctrl')/\
+pkgname=('nvidia-settings-c' 'libxnvctrl-c')/" \
+			-e 's/package_nvidia-settings/package_nvidia-settings-c/' \
+			-e 's/package_libxnvctrl/package_libxnvctrl-c/' \
+			-e "s/pkgname=('nvidia-settings' 'libxnvctrl')/pkgname=('nvidia-settings-c' 'libxnvctrl')/" \
+			-e "s/depends=('jansson' 'gtk3' 'libxv' 'libvdpau' 'nvidia-utils' 'libxnvctrl')/\
+provides=(\"nvidia-settings=\$pkgver\" \"nvidia-settings-c=\$pkgver\")\n\
+  depends=('jansson' 'gtk3' 'libxv' 'libvdpau' \"nvidia-utils-c=\$pkgver\" 'libxnvctrl-c')\n\
+  conflicts=('nvidia-settings')/" \
+			-e "s/provides=('libXNVCtrl.so')/\
+provides=('libXNVCtrl.so' 'libxnvctrl' 'libxnvctrl-c')\n  conflicts=('libxnvctrl')/" \
+			$__settings/PKGBUILD \
+		&& rm "$__settings"/.SRCINFO \
+		&& /usr/bin/makepkg --printsrcinfo >.SRCINFO \
 		&& /usr/bin/makepkg -s
 }
 
