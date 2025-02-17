@@ -46,6 +46,7 @@ keybind = ctrl+shift+o=text:\x01\x22
 keybind = ctrl+tab=text:\x01\x6f
 keybind = ctrl+shift+tab=text:\x01\x3b
 keybind = ctrl+shift+w=text:\x01\x78
+keybind = ctrl+f=text:\x79\x61\x7A\x69\r
 
 # testing
 # keybind = ctrl+shift+[=new_split:right

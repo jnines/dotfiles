@@ -48,9 +48,6 @@ DP-4 DP-2 DP-0 Width 2560x1440 DP-4=591
 DP-4 DP-2 Height 2560x1440 DP-4=594
 DP-4 DP-2 Width 2560x1440 DP-4=556
 
-[MainWindow]
-ToolBarsMovable=Disabled
-
 [PlacesPanel]
 IconSize=16
 

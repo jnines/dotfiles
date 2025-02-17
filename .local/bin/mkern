@@ -42,5 +42,3 @@ case "$1" in
 	echo "Pick a kernel type"
 	;;
 esac
-
-# -e '/"\${_patchsource}\/all\/0001-cachyos-base-all.patch"/i "001-clear.patch"'
