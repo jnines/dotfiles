@@ -7,7 +7,6 @@ modules=(
 	nvidia-uvm
 	nvidia-modeset
 	nvidia-peermem
-	it87
 )
 
 # Directory certs are stored

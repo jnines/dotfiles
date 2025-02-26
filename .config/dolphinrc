@@ -8,7 +8,9 @@ ShowOpenTerminal=false
 LastMimeType=application/zip
 
 [DetailsMode]
+ExpandableFolders=false
 PreviewSize=64
+SidePadding=35
 
 [ExtractDialog]
 3 screens: Height=720
@@ -18,6 +20,7 @@ DirHistory[$e]=$HOME/Desktop/
 [General]
 BrowseThroughArchives=true
 ConfirmClosingMultipleTabs=false
+DoubleClickViewAction=none
 GlobalViewProps=false
 RememberOpenedTabs=false
 ShowFullPath=true
@@ -27,7 +30,7 @@ ViewPropsTimestamp=2023,1,18,16,8,3.418
 [IconsMode]
 IconSize=112
 MaximumTextLines=5
-PreviewSize=144
+PreviewSize=128
 TextWidthIndex=0
 
 [KFileDialog Settings]

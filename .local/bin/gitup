@@ -1,6 +1,6 @@
 #!/bin/bash
 
-git_dir="$HOME"/.local/bin/git
+git_dir="$HOME"/git
 
 git_repos=(
 	"linux-cachyos"

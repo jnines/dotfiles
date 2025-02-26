@@ -22,6 +22,7 @@ pnpm
 .npm
 *.mp4
 *.mkv
+git
 
 # .config
 .config/discord
@@ -86,3 +87,4 @@ pnpm
 .mozilla/firefox/*/pluginreg.dat
 
 Desktop
+mnt

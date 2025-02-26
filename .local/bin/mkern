@@ -3,7 +3,7 @@
 
 _tkg() {
 	/usr/bin/rm -rf /tmp/linux-src-git /tmp/makepkg/
-	builtin cd "$HOME/.local/bin/git/tkg/linux-tkg" || exit
+	builtin cd "$HOME/git/tkg/linux-tkg" || exit
 	/usr/bin/makepkg -fsi --noconfirm \
 		&& /usr/bin/rm -r /tmp/makepkg \
 		&& "$HOME"/.local/bin/mod-sign -n "$(cat /tmp/linux-src-git/linux-tkg/linux-src-git/version)"
@@ -12,11 +12,11 @@ _tkg() {
 _cachy() {
 	/usr/bin/rm -rf /tmp/cachyos /tmp/makepkg
 
-	/usr/bin/cp -r "$HOME"/.local/bin/git/linux-cachyos/linux-cachyos/ /tmp/cachyos \
+	/usr/bin/cp -r "$HOME"/git/linux-cachyos/linux-cachyos/ /tmp/cachyos \
 		&& builtin cd /tmp/cachyos || exit
 
 	/usr/bin/sed -i -e 's/_localmodcfg:=no/_localmodcfg:=yes/g' \
-		-e 's/_processor_opt:=/_processor_opt:=zen3/g' \
+		-e 's/_processor_opt:=/_processor_opt:=zen4/g' \
 		-e '/scripts\/config -e USER_NS/a\
     echo "Disabling Nags"\
     scripts\/config -d GPIO_BT8XX -d SND_SE6X\

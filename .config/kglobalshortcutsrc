@@ -1,6 +1,6 @@
 [ActivityManager]
 _k_friendly_name=Activity Manager
-switch-to-activity-f64a1f38-b698-46ae-b6b0-0991f6238aa1=none,none,Switch to activity "Default"
+switch-to-activity-3e87e101-7048-40ff-9fd6-c59c9966d229=none,none,Switch to activity "Default"
 
 [KDE Keyboard Layout Switcher]
 Switch to Last-Used Keyboard Layout=Meta+Alt+L,Meta+Alt+L,Switch to Last-Used Keyboard Layout
@@ -12,34 +12,10 @@ Toggle Screen Reader On and Off=Meta+Alt+S,Meta+Alt+S,Toggle Screen Reader On an
 _k_friendly_name=Accessibility
 
 [kcm_touchpad]
-Disable Touchpad=Touchpad Off,Touchpad Off,Disable Touchpad
-Enable Touchpad=Touchpad On,Touchpad On,Enable Touchpad
-Toggle Touchpad=Touchpad Toggle,Touchpad Toggle\tMeta+Ctrl+Zenkaku Hankaku,Toggle Touchpad
+Disable Touchpad=Touchpad Off,Touchpad Off,
+Enable Touchpad=Touchpad On,Touchpad On,
+Toggle Touchpad=Touchpad Toggle,Touchpad Toggle\tMeta+Ctrl+Zenkaku Hankaku,
 _k_friendly_name=Touchpad
-
-[khotkeys]
-_k_friendly_name=Custom Shortcuts Service
-{07e4e54a-64c3-44c4-b14b-08929f87865b}=none,none,Skip forward
-{081cc7dd-9bad-4a16-b2b7-87d3f76a988c}=Ctrl+Num+8,none,Volume Up
-{1ca9bc12-580e-4f6f-8620-c2aef161c654}=Ctrl+Num+2,none,Volume Down
-{309cc89b-b2c9-46b5-9ce5-7bfc4fea6a03}=none,none,Skip Back
-{34ca30c0-2317-46bc-bb93-5d0e7cbef32c}=Ctrl+Num+5,none,Play/Pause
-{3b390f1d-1cc4-4265-ae54-51de6dff4dd0}=none,none,Volume Down
-{4158bcd9-eb6e-434d-a0d7-71a4e2a04a89}=none,none,Firefox
-{462e1912-fc60-4863-af02-caca5c2c77d9}=Ctrl+Num+4,none,Skip Back
-{465ecbcc-20ac-4461-8550-9596975907c4}=none,none,Volume Up
-{4bcfaf9a-1404-402a-9fd9-41d3816ed857}=none,none,Alacrity Update
-{5afe61a8-9c44-418a-a347-bf1af891b050}=Ctrl+Alt+{,none,sfQsave
-{5b2a7f53-e223-4c8d-a5e2-f70cddc59398}=none,none,AlacS
-{64c08a8d-bb4e-40cd-8221-98cb28808461}=none,none,Alacrity Multi
-{71f3e654-22bb-4a2d-a2b4-a2e6c1c3b353}=none,none,KSysGuard
-{7b386ff7-6316-4a27-a072-cbddddb20111}=none,none,Play/Pause
-{b7810751-2139-4daa-ac81-3fa7e1473e62}=none,none,Alacritty Code
-{ba06da6f-e9e5-46c0-9e1f-ceb4dd80d8c7}=none,none,System Settings
-{c3855e64-ac8f-4374-a822-b8d3be0ac619}=Ctrl+Num+6,none,Skip forward
-{ca68164c-0e4a-481e-9037-0cafaf67b6f3}=none,none,Kill Tmux
-{d03619b6-9b3c-48cc-9d9c-a2aadb485550}=none,none,Search
-{fa1099d9-0b66-4756-9658-5fe55fba744a}=none,none,AlacrittyS
 
 [kmix]
 _k_friendly_name=Audio Volume
@@ -75,7 +51,6 @@ ExposeClass=Ctrl+F7,Ctrl+F7,Toggle Present Windows (Window class)
 ExposeClassCurrentDesktop=none,none,Toggle Present Windows (Window class on current desktop)
 Grid View=Meta+G,Meta+G,Toggle Grid View
 Increase Opacity=none,,Increase Opacity of Active Window by 5%
-Invert Screen Colors=none,none,Invert Screen Colors
 Kill Window=Ctrl+Alt+Esc,Meta+Ctrl+Esc,Kill Window
 Move Tablet to Next Output=none,none,Move the tablet to the next output
 MoveMouseToCenter=Meta+F6,Meta+F6,Move Mouse to Center
@@ -87,7 +62,6 @@ MoveZoomUp=none,none,Move Zoomed Area Upwards
 Overview=Meta+W,Meta+W,Toggle Overview
 Setup Window Shortcut=none,,Setup Window Shortcut
 Show Desktop=Meta+D,Meta+D,Peek at Desktop
-Suspend Compositing=Alt+Shift+F12,Alt+Shift+F12,Suspend Compositing
 Switch One Desktop Down=none,Meta+Ctrl+Down,Switch One Desktop Down
 Switch One Desktop Up=none,Meta+Ctrl+Up,Switch One Desktop Up
 Switch One Desktop to the Left=none,Meta+Ctrl+Left,Switch One Desktop to the Left
@@ -153,10 +127,10 @@ Window Fullscreen=none,,Make Window Fullscreen
 Window Grow Horizontal=none,,Expand Window Horizontally
 Window Grow Vertical=none,,Expand Window Vertically
 Window Lower=none,,Lower Window
-Window Maximize=Meta+PgUp\tMeta+U,Meta+PgUp,Maximize Window
+Window Maximize=Meta+U\tMeta+PgUp,Meta+PgUp,Maximize Window
 Window Maximize Horizontal=none,,Maximize Window Horizontally
 Window Maximize Vertical=none,,Maximize Window Vertically
-Window Minimize=Meta+PgDown\tMeta+Ctrl+U,Meta+PgDown,Minimize Window
+Window Minimize=Meta+Ctrl+U\tMeta+PgDown,Meta+PgDown,Minimize Window
 Window Move=none,,Move Window
 Window Move Center=none,,Move Window to the Center
 Window No Border=none,,Toggle Window Titlebar and Frame
@@ -174,11 +148,11 @@ Window Pack Down=none,,Move Window Down
 Window Pack Left=none,,Move Window Left
 Window Pack Right=none,,Move Window Right
 Window Pack Up=none,,Move Window Up
-Window Quick Tile Bottom=Meta+Down\tMeta+J,Meta+Down,Quick Tile Window to the Bottom
+Window Quick Tile Bottom=Meta+J\tMeta+Down,Meta+Down,Quick Tile Window to the Bottom
 Window Quick Tile Bottom Left=none,,Quick Tile Window to the Bottom Left
 Window Quick Tile Bottom Right=none,,Quick Tile Window to the Bottom Right
-Window Quick Tile Left=Meta+Left\tMeta+H,Meta+Left,Quick Tile Window to the Left
-Window Quick Tile Right=Meta+Right\tMeta+L,Meta+Right,Quick Tile Window to the Right
+Window Quick Tile Left=Meta+H\tMeta+Left,Meta+Left,Quick Tile Window to the Left
+Window Quick Tile Right=Meta+L\tMeta+Right,Meta+Right,Quick Tile Window to the Right
 Window Quick Tile Top=Meta+Up\tMeta+K,Meta+Up,Quick Tile Window to the Top
 Window Quick Tile Top Left=none,,Quick Tile Window to the Top Left
 Window Quick Tile Top Right=none,,Quick Tile Window to the Top Right
@@ -265,25 +239,17 @@ activate task manager entry 6=Meta+6,Meta+6,Activate Task Manager Entry 6
 activate task manager entry 7=Meta+7,Meta+7,Activate Task Manager Entry 7
 activate task manager entry 8=Meta+8,Meta+8,Activate Task Manager Entry 8
 activate task manager entry 9=Meta+9,Meta+9,Activate Task Manager Entry 9
-activate widget 105=none,none,Activate Event Calendar Widget
-activate widget 106=none,none,Activate Task Manager Widget
-activate widget 128=none,none,Activate Application Launcher Widget
-activate widget 170=none,none,Activate Panel Transparency Button Widget
-activate widget 264=none,none,Activate Panel Transparency Button Widget
-activate widget 28=none,none,Activate Application Launcher Widget
-activate widget 317=none,none,Activate Application Launcher Widget
-activate widget 33=none,none,Activate System Tray Widget
-activate widget 379=none,none,Activate Icons-and-Text Task Manager Widget
-activate widget 4=Alt+F1,none,Activate Application Launcher Widget
-activate widget 49=none,none,Activate Task Manager Widget
-activate widget 53=none,none,Activate Event Calendar Widget
-activate widget 59=none,none,Activate Application Launcher Widget
+activate widget 108=none,none,Activate Panel Transparency Button Widget
+activate widget 211=Ctrl+Alt+{,none,Activate Panel Widget
+activate widget 28=none,none,Activate Icons-and-Text Task Manager Widget
+activate widget 31=none,none,Activate Panel Transparency Button Widget
+activate widget 59=none,none,Activate Panel Transparency Button Widget
+activate widget 62=none,none,Activate Application Launcher Widget
 clear-history=none,,Clear Clipboard History
 clipboard_action=Ctrl+Alt+X,Meta+Ctrl+X,Automatic Action Popup Menu
 cycle-panels=Meta+Alt+P,Meta+Alt+P,Move keyboard focus between panels
 cycleNextAction=none,,Next History Item
 cyclePrevAction=none,,Previous History Item
-edit_clipboard=none,none,Edit Contents…
 manage activities=Meta+Q,Meta+Q,Show Activity Switcher
 next activity=Meta+A,none,Walk through activities
 previous activity=Meta+Shift+A,none,Walk through activities (Reverse)
@@ -296,14 +262,8 @@ switch to next activity=none,,Switch to Next Activity
 switch to previous activity=none,,Switch to Previous Activity
 toggle do not disturb=none,,Toggle do not disturb
 
-[services][com.mitchellh.ghostty.desktop]
-new-window=Meta+Return
-
 [services][firefox.desktop]
-_launch=Meta+F\tCtrl+Alt+?
-
-[services][killTmux.desktop]
-_launch=Meta+Num+-
+_launch=Ctrl+Alt+?
 
 [services][net.local.ghostty-2.desktop]
 _launch=Meta+Num+Enter
@@ -314,20 +274,26 @@ _launch=Meta+Ctrl+Num+Enter
 [services][net.local.ghostty.desktop]
 _launch=Meta+Num++
 
+[services][net.local.killTmux.desktop]
+_launch=Meta+Num+-
+
+[services][net.local.krunner.desktop]
+_launch=Meta+Space
+
+[services][net.local.rkde.desktop]
+_launch=Ctrl+Shift+F12
+
 [services][org.kde.konsole.desktop]
-_launch=Meta+Ctrl+Return\tCtrl+Alt+T
+_launch=Ctrl+Alt+T\tMeta+Ctrl+Return
 
 [services][org.kde.krunner.desktop]
-_launch=Search\tMeta+Space\tAlt+F2
+_launch=Search\tAlt+F2
 
 [services][org.kde.spectacle.desktop]
 CurrentMonitorScreenShot=Ctrl+Shift+Print
 FullScreenScreenShot=none
 WindowUnderCursorScreenShot=none
 _launch=Meta+Ctrl+Print
-
-[services][rkde.desktop]
-_launch=Ctrl+Shift+F12
 
 [services][systemsettings.desktop]
 kcm-kscreen=Meta+Num+*

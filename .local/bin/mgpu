@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-__git_repo="$HOME/.local/bin/git/nvidia-cachyos/nvidia"
+__git_repo="$HOME/git/nvidia-cachyos/nvidia"
 __c_tmp="/tmp/nvidia-cachyos"
 __lib32="$__c_tmp/lib32-nvidia-utils"
 __utils="$__c_tmp/nvidia-utils"

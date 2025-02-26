@@ -57,12 +57,11 @@ alias yta='cd /1tb/Downloads; yt-dlp --no-mtime --prefer-ffmpeg --extract-audio 
 
 alias valh='/usr/bin/rsync -a --delete "$HOME"/.config/unity3d/IronGate/Valheim /data/.bak/'
 
-alias gd='/usr/bin/git --git-dir=$HOME/.local/bin/git/dotfiles --work-tree=$HOME'
+alias gd='/usr/bin/git --git-dir=$HOME/git/dotfiles --work-tree=$HOME'
 alias gds='gd status'
-# alias gitup='cd "$HOME"/.local/bin/git/tkg/nvidia-all && git pull && cd "$HOME"/.local/bin/git/tkg/linux-tkg && git pull'
 
-alias lconf='meld $HOME/.config/frogminer/linux-tkg.cfg $HOME/.local/bin/git/tkg/linux-tkg/customization.cfg'
-alias nconf='meld $HOME/.config/frogminer/nvidia-all.cfg $HOME/.local/bin/git/tkg/nvidia-all/customization.cfg'
+alias lconf='meld $HOME/.config/frogminer/linux-tkg.cfg $HOME/git/tkg/linux-tkg/customization.cfg'
+alias nconf='meld $HOME/.config/frogminer/nvidia-all.cfg $HOME/git/tkg/nvidia-all/customization.cfg'
 
 alias tojsx='for x in src/**/*.js; do mv "$x" "${x%.js}.jsx"; done && mv src/index.jsx src/index.js'
 
