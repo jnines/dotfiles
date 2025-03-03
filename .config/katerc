@@ -181,9 +181,8 @@ RunPrefix=
 SetEditor=false
 
 [MainWindow]
-3 screens: Height=954
-3 screens: Width=1118
-3 screens: Window-Maximized=true
+3 screens: Height=648
+3 screens: Width=1152
 DP-4 DP-0 Window-Maximized 1920x1080 DP-0=true
 DP-4 DP-0 Window-Maximized 2560x1440 DP-4=true
 

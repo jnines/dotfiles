@@ -239,7 +239,7 @@ activate task manager entry 6=Meta+6,Meta+6,Activate Task Manager Entry 6
 activate task manager entry 7=Meta+7,Meta+7,Activate Task Manager Entry 7
 activate task manager entry 8=Meta+8,Meta+8,Activate Task Manager Entry 8
 activate task manager entry 9=Meta+9,Meta+9,Activate Task Manager Entry 9
-activate widget 108=none,none,Activate Panel Transparency Button Widget
+activate widget 108=Ctrl+Num+5,none,Activate Panel Transparency Button Widget
 activate widget 211=Ctrl+Alt+{,none,Activate Panel Widget
 activate widget 28=none,none,Activate Icons-and-Text Task Manager Widget
 activate widget 31=none,none,Activate Panel Transparency Button Widget
@@ -261,6 +261,9 @@ stop current activity=Meta+S,Meta+S,Stop Current Activity
 switch to next activity=none,,Switch to Next Activity
 switch to previous activity=none,,Switch to Previous Activity
 toggle do not disturb=none,,Toggle do not disturb
+
+[services][firefox-2.desktop]
+_launch=
 
 [services][firefox.desktop]
 _launch=Ctrl+Alt+?
