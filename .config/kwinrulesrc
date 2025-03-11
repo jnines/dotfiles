@@ -202,9 +202,9 @@ wmclassmatch=1
 [419a9d19-657e-43b4-afc7-f7988ebc32e2]
 Description=Application settings for smplayer
 clientmachine=localhost
-position=2787,1087
+position=2787,1080
 positionrule=3
-size=853,1397
+size=853,1404
 sizerule=3
 wmclass=smplayer
 wmclassmatch=1
@@ -358,8 +358,8 @@ position=1385,1236
 positionrule=2
 size=1890,1080
 sizerule=2
-title=Inbox - Gmail - Mozilla Thunderbird
-titlematch=1
+title=Mozilla Thunderbird
+titlematch=2
 types=1
 wmclass=thunderbird
 wmclassmatch=1
@@ -388,7 +388,7 @@ wmclassmatch=1
 
 [6dfb6fd8-072f-4dac-a355-38da15eaba39]
 Description=Application settings for org.kde.plasma-systemmonitor
-position=1379,38
+position=1175,32
 positionrule=3
 size=960,1042
 sizerule=3
@@ -412,7 +412,7 @@ wmclassmatch=1
 Description=Window settings for org.kde.kpat
 position=1119,1080
 positionrule=3
-size=907,708
+size=907,747
 sizerule=3
 title=KPatience
 types=1
@@ -711,9 +711,9 @@ wmclassmatch=1
 
 [fa18f6dc-f22d-4397-9861-bcc5a4afc697]
 Description=Window settings for com.ghostty.multi
-position=1120,1080
+position=1122,1080
 positionrule=3
-size=2520,1404
+size=2518,1404
 sizerule=3
 title=Ghostty
 types=1

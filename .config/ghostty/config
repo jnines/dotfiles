@@ -35,6 +35,7 @@ quit-after-last-window-closed = true
 mouse-hide-while-typing = true
 confirm-close-surface = false
 
+shell-integration = zsh
 shell-integration-features = no-cursor, sudo, no-title
 
 font-size = 15

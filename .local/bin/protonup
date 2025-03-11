@@ -20,11 +20,10 @@ done \
 	&& echo "Moving and decompressing"
 /usr/bin/tar -xzf "${pgev}" \
 	&& /usr/bin/mv "${pgev%.tar.gz}" "$HOME"/.local/share/Steam/compatibilitytools.d \
-	&& sleep 3
-if [[ $steamRunning == 1 ]]; then
-	echo "Restarting Steam"
-	/usr/bin/steam-runtime %U -console >/dev/null 2>&1 &
-	disown
-fi
-/usr/bin/dolphin "$HOME"/.local/share/Steam/compatibilitytools.d/ \
+	&& /usr/bin/dolphin "$HOME"/.local/share/Steam/compatibilitytools.d/ \
+	&& if [[ $steamRunning == 1 ]]; then
+		echo "Restarting Steam"
+		/usr/bin/steam-runtime %U -console >/dev/null 2>&1 &
+		disown
+	fi \
 	&& exit
