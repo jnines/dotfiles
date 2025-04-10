@@ -2,7 +2,7 @@
 
 # $PATH:$PATH=HTAP$
 export PATH=$PATH:"$HOME/.local/bin"
-export PATH=$PATH:"$HOME/.local/bin/git/bin"
+export PATH=$PATH:"$HOME/git/bin"
 export PATH=$PATH:"$HOME/.local/share/npm/bin"
 export PATH=$PATH:"$HOME/.local/share/pnpm"
 
@@ -49,14 +49,14 @@ export MOZ_DISABLE_RDD_SANDBOX=1
 export NVD_BACKEND=direct
 
 # Stop DDOS'ing my logs
-export QT_LOGGING_RULES="*=false"
+# export QT_LOGGING_RULES="*=false"
 
 export WINEFSYNC=1
 export VKD3D_CONFIG=upload_hvv
 
 # Nvidia Caches
 export __GL_SHADER_DISK_CACHE=1
-export __GL_SHADER_DISK_CACHE_PATH="/1tb/.nvcache"
+export __GL_SHADER_DISK_CACHE_PATH="/data/.nvcache"
 export __GL_SHADER_DISK_CACHE_SKIP_CLEANUP=1
 export __GL_SHADER_DISK_CACHE_SIZE=10737418240
 

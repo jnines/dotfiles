@@ -7,6 +7,64 @@ Switch to Last-Used Keyboard Layout=Meta+Alt+L,Meta+Alt+L,Switch to Last-Used Ke
 Switch to Next Keyboard Layout=Meta+Alt+K,Meta+Alt+K,Switch to Next Keyboard Layout
 _k_friendly_name=Keyboard Layout Switcher
 
+[chromium]
+_k_friendly_name=chromium
+addSite=Alt+Shift+A,Alt+Shift+A,Toggle current site
+autofill_card=none,none,Autofill the last used card for the current website
+autofill_identity=none,none,Autofill the last used identity for the current website
+autofill_login=Ctrl+Shift+L,Ctrl+Shift+L,Autofill the last used login for the current website
+c000-options-page=none,none,Open the options page
+c020-theme-youtube-dark=none,none,Theme: YouTube™ (Dark)
+c025-theme-enhanced-dark=none,none,Theme: Enhancer for YouTube™
+c030-theme-youtube-deep-dark=none,none,Theme: YouTube-DeepDark
+c040-theme-youtube-deep-dark-custom=none,none,Theme: YouTube-DeepDark (Custom)
+c050-theme-custom-theme=none,none,Theme: Custom theme
+c060-focus-video-player=none,none,Set focus on the video player
+c070-toggle-loop=none,none,Toggle the loop mode
+c080-stop-video=none,none,Stop the video
+c090-reverse-playlist=none,none,Reverse the playlist order
+c100-toggle-volume-booster=none,none,Toggle the volume booster
+c130-toggle-annotations=none,none,Toggle info cards and end screens visibility
+c140-toggle-cinema-mode=none,none,Toggle the cinema mode
+c150-toggle-player-size=none,none,Expand or shrink the video player
+c160-center-video-player=none,none,Center the video player within the viewport
+c170-pop-up-player=none,none,Watch with the pop-up player
+c180-decrease-speed=none,none,Decrease the playback speed
+c190-increase-speed=none,none,Increase the playback speed
+c200-default-speed=none,none,Select the default playback speed
+c210-normal-speed=none,none,Select the normal playback speed
+c220-toggle-video-filters=none,none,Toggle the video filters
+c230-flip-horizontally=none,none,Flip the video horizontally
+c240-flip-vertically=none,none,Flip the video vertically
+c250-take-screenshot=none,none,Take a screenshot of the video
+c260-keyboard-shortcuts=none,none,Display all the keyboard shortcuts for YouTube
+c270-custom-script=none,none,Execute the custom script
+c280-picture-in-picture=none,none,Toggle the Picture-in-Picture mode
+c290-quality-highres=none,none,Select the playback quality “4320p”
+c300-quality-hd2880=none,none,Select the playback quality “2880p”
+c310-quality-hd2160=none,none,Select the playback quality “2160p”
+c320-quality-hd1440=none,none,Select the playback quality “1440p”
+c330-quality-hd1080=none,none,Select the playback quality “1080p”
+c340-quality-hd720=none,none,Select the playback quality “720p”
+c350-quality-large=none,none,Select the playback quality “480p”
+c360-quality-medium=none,none,Select the playback quality “360p”
+c370-quality-small=none,none,Select the playback quality “240p”
+c380-quality-tiny=none,none,Select the playback quality “144p”
+c390-quality-auto=none,none,Select the playback quality “Auto”
+c400-comments-visibility=none,none,Toggle comments visibility
+c410-related-videos-visibility=none,none,Toggle related videos visibility
+generate_password=Ctrl+Shift+9,Ctrl+Shift+9,Generate and copy a new random password to the clipboard
+launch-element-picker=none,none,Enter element picker mode
+launch-element-zapper=none,none,Enter element zapper mode
+launch-logger=none,none,Open the logger
+lock_vault=none,none,Lock the vault
+open-dashboard=none,none,Open the dashboard
+relax-blocking-mode=none,none,Relax blocking mode
+switchEngine=none,none,Theme generation mode
+toggle=Alt+Shift+D,Alt+Shift+D,Toggle extension
+toggle-cosmetic-filtering=none,none,Toggle cosmetic filtering
+toggle-javascript=none,none,Toggle JavaScript
+
 [kaccess]
 Toggle Screen Reader On and Off=Meta+Alt+S,Meta+Alt+S,Toggle Screen Reader On and Off
 _k_friendly_name=Accessibility
@@ -14,7 +72,7 @@ _k_friendly_name=Accessibility
 [kcm_touchpad]
 Disable Touchpad=Touchpad Off,Touchpad Off,
 Enable Touchpad=Touchpad On,Touchpad On,
-Toggle Touchpad=Touchpad Toggle,Touchpad Toggle\tMeta+Ctrl+Zenkaku Hankaku,
+Toggle Touchpad=Touchpad Toggle,Touchpad Toggle\tTouchpad Toggle\tMeta+Ctrl+Touchpad Toggle\tMeta+Ctrl+Zenkaku Hankaku,
 _k_friendly_name=Touchpad
 
 [kmix]
@@ -288,9 +346,6 @@ _launch=Ctrl+Shift+F12
 
 [services][org.kde.konsole.desktop]
 _launch=Ctrl+Alt+T\tMeta+Ctrl+Return
-
-[services][org.kde.krunner.desktop]
-_launch=Search\tAlt+F2
 
 [services][org.kde.spectacle.desktop]
 CurrentMonitorScreenShot=Ctrl+Shift+Print

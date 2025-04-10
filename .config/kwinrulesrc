@@ -388,7 +388,7 @@ wmclassmatch=1
 
 [6dfb6fd8-072f-4dac-a355-38da15eaba39]
 Description=Application settings for org.kde.plasma-systemmonitor
-position=1175,32
+position=1391,38
 positionrule=3
 size=960,1042
 sizerule=3
