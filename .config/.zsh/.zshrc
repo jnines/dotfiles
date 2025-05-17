@@ -3,6 +3,9 @@ _current_kernel=$(/usr/bin/uname -r | /usr/bin/awk -F '-' '{print $1}')
 # Changing mode takes too long
 export KEYTIMEOUT=1
 
+# Preload a couple keys
+eval $(keychain --eval --quiet --dir "$HOME"/.local/share/keychain nines nines.rsa)
+
 # De-Highlight paste
 zle_highlight=('paste:none')
 
