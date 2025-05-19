@@ -23,7 +23,7 @@ done \
 	&& /usr/bin/dolphin "$HOME"/.local/share/Steam/compatibilitytools.d/ \
 	&& if [[ $steamRunning == 1 ]]; then
 		echo "Restarting Steam"
-		/usr/bin/steam-runtime %U -console >/dev/null 2>&1 &
+		/usr/bin/steam %U -console >/dev/null 2>&1 &
 		disown
 	fi \
 	&& exit
