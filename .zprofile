@@ -63,3 +63,6 @@ export __GL_SHADER_DISK_CACHE_SIZE=10737418240
 export MOZ_ENABLE_WAYLAND=1
 # CHANGE ME!
 export POWERDEVIL_NO_DDCUTIL=1
+
+# Preload a couple keys
+eval $(keychain --eval --quiet --dir "$HOME"/.local/share/keychain nines nines.rsa)
