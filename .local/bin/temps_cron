@@ -2,7 +2,7 @@
 
 sensor_data=$(sensors)
 cpu_temp=$(awk '/Tctl:/{gsub("+","");print $2}' <<<"$sensor_data")
-gpu_temp=$(nvidia-smi --query-gpu=temperature.gpu --format=csv,noheader)
+gpu_temp=$(grep -oP 'junction.*?\+\K[0-9.]+' <<<"$sensor_data" | head -n 1)
 nvme0=$(grep -oP 'SN850X.*?\+\K[0-9.]+' <<<"$sensor_data" | head -n 1)
 nvme1=$(grep -oP 'SHPP41-2000GM.*?\+\K[0-9.]+' <<<"$sensor_data" | head -n 1)
 nvme2=$(grep -oP 'Sabrent.*?\+\K[0-9.]+' <<<"$sensor_data" | head -n 1)
