@@ -1,0 +1,17 @@
+---
+session_name: Multi ${_RAND}
+windows:
+  - window_name: "\u2716"
+    layout: tiled
+    panes:
+      - null:
+        focus: true
+      - shell_command:
+          - ssh deskg
+      - null
+      - shell_command:
+          - ssh lapn
+      - shell_command:
+          - ssh ash
+      - shell_command:
+          - ssh kandarian
