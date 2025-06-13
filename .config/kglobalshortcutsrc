@@ -284,6 +284,9 @@ _launch=Meta+Num+Enter
 [services][net.local.ghostty-6.desktop]
 _launch=Meta+Ctrl+Num+Enter
 
+[services][net.local.ghostty-7.desktop]
+_launch=Ctrl+Shift+Num+Up
+
 [services][net.local.killTmux.desktop]
 _launch=Meta+Num+-
 
@@ -303,7 +306,7 @@ _launch=Alt+F2\tMeta+Space\tAlt+Space\tSearch
 CurrentMonitorScreenShot=Ctrl+Shift+Print
 FullScreenScreenShot=none
 WindowUnderCursorScreenShot=none
-_launch=Meta+Ctrl+Print
+_launch=Print
 
 [services][systemsettings.desktop]
 kcm-kscreen=Meta+Num+*

@@ -44,21 +44,13 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 export GIT_DISCOVERY_ACROSS_FILESYSTEM=1
 
 # FF
-export LIBVA_DRIVER_NAME=nvidia
 export MOZ_DISABLE_RDD_SANDBOX=1
-export NVD_BACKEND=direct
 
 # Stop DDOS'ing my logs
 # export QT_LOGGING_RULES="*=false"
 
 export WINEFSYNC=1
 export VKD3D_CONFIG=upload_hvv
-
-# Nvidia Caches
-export __GL_SHADER_DISK_CACHE=1
-export __GL_SHADER_DISK_CACHE_PATH="/data/.nvcache"
-export __GL_SHADER_DISK_CACHE_SKIP_CLEANUP=1
-export __GL_SHADER_DISK_CACHE_SIZE=10737418240
 
 export MOZ_ENABLE_WAYLAND=1
 # CHANGE ME!

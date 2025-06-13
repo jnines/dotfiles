@@ -9,5 +9,5 @@ X-KDE-Priority=TopLevel
 [Desktop Action RunGhosttyDir]
 Name=Open Ghostty Here
 Icon=com.mitchellh.ghostty
-Exec=ghostty --working-directory=%F --title="S" -e tmuxinator start single
+Exec=ghostty --working-directory=%F --title="S" -e _RAND=$RANDOM tmuxp load ~/.config/tmuxp/single.yaml
 
