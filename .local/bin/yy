@@ -1,10 +1,4 @@
 #!/bin/bash
-/usr/bin/paru -Syu --ignoredevel linux-cachyos --ignoredevel linux-cachyos-headers
-# news=$(/usr/bin/yay -Pw)
-# if [ -z "$news" ]; then
-# 	/usr/bin/yay -Syu --devel --ignore linux-cachyos --ignore linux-cachyos-headers
-# else
-# 	echo "$news"
-# 	read -rn 1 -s
-# 	/usr/bin/yay -Syu --devel --ignore linux-cachyos --ignore linux-cachyos-headers
-# fi
+# /usr/bin/paru -Syu --ignoredevel linux-cachyos --ignoredevel linux-cachyos-headers
+/usr/bin/paru -Syu \
+	&& /usr/bin/flatpak update
