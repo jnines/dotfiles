@@ -5,7 +5,6 @@ layout = "tiled"
 [[hooks]]
   command = 'run-shell -t multi:0 "tmux select-pane -t 0 && tmux rename-session \"Multi $((RANDOM))\""' 
   name = "client-attached"
-  # command = 'run-shell -t multi:0 "tmux rename-session \"Multi $((RANDOM))\""' 
 
 [[windows]]
   name = "✖"
