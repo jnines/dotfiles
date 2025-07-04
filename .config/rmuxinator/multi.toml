@@ -1,0 +1,28 @@
+attached = true
+name = "multi"
+layout = "tiled"
+
+[[hooks]]
+  command = 'run-shell -t multi:0 "tmux select-pane -t 0 && tmux rename-session \"Multi $((RANDOM))\""' 
+  name = "client-attached"
+  # command = 'run-shell -t multi:0 "tmux rename-session \"Multi $((RANDOM))\""' 
+
+[[windows]]
+  name = "✖"
+  [[windows.panes]]
+  commands = []
+
+  [[windows.panes]]
+  commands = ["ssh deskg"]
+
+  [[windows.panes]]
+  commands = []
+
+  [[windows.panes]]
+  commands = ["ssh lapn"]
+
+  [[windows.panes]]
+  commands = ["ssh ash"]
+
+  [[windows.panes]]
+  commands = ["ssh kandarian"]
