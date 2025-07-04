@@ -270,17 +270,14 @@ _launch=
 [services][firefox.desktop]
 _launch=Ctrl+Alt+?
 
-[services][net.local.ghostty-4.desktop]
+[services][net.local.ghostty-2.desktop]
 _launch=Meta+Num++
 
-[services][net.local.ghostty-5.desktop]
+[services][net.local.ghostty-3.desktop]
 _launch=Meta+Num+Enter
 
-[services][net.local.ghostty-6.desktop]
+[services][net.local.ghostty.desktop]
 _launch=Meta+Ctrl+Num+Enter
-
-[services][net.local.ghostty-7.desktop]
-_launch=Ctrl+Shift+Num+Up
 
 [services][net.local.killTmux.desktop]
 _launch=Meta+Num+-

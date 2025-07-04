@@ -16,5 +16,5 @@ layout = "main-horizontal"
   start_directory = "~/.local/code"
 
   [[windows.panes]]
-  commands = ["tmux resize-pane -D 15 && clear"]
+  commands = ["tmux resize-pane -t 1 -y 15% && clear"]
   start_directory = "~/.local/code"
