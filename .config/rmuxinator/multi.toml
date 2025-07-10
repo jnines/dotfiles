@@ -1,6 +1,7 @@
 attached = true
 name = "multi"
-layout = "tiled"
+layout = "92fd,168x42,0,0{83x42,0,0[83x13,0,0,0,83x13,0,14,1,83x14,0,28,2],84x42,84,0[84x13,84,0,3,84x13,84,14,4,84x14,84,28,5]}"
+# layout = "tiled"
 
 [[hooks]]
   command = 'run-shell -t multi:0 "tmux select-pane -t 0 && tmux rename-session \"Multi $((RANDOM))\""' 
@@ -12,16 +13,16 @@ layout = "tiled"
   commands = []
 
   [[windows.panes]]
-  commands = ["ssh deskg"]
-
-  [[windows.panes]]
   commands = []
 
   [[windows.panes]]
-  commands = ["ssh lapn"]
+  commands = ["ssh ash"]
 
   [[windows.panes]]
-  commands = ["ssh ash"]
+  commands = ["ssh deskg"]
+
+  [[windows.panes]]
+  commands = ["ssh lapn"]
 
   [[windows.panes]]
   commands = ["ssh kandarian"]
