@@ -1,6 +1,8 @@
 attached = true
 name = "code"
 layout = "main-horizontal"
+# terminal_multiplexer = "tmux-rs"
+
 [[hooks]]
   command = 'run-shell -t code:0 "tmux select-pane -t 0 && tmux rename-session \"Code $((RANDOM))\" && tmux setw synchronize-panes on"' 
   name = "client-attached"

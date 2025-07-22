@@ -5,6 +5,7 @@ export PATH=$PATH:"$HOME/.local/bin"
 export PATH=$PATH:"$HOME/git/bin"
 export PATH=$PATH:"$HOME/.local/share/npm/bin"
 export PATH=$PATH:"$HOME/.local/share/pnpm"
+export PATH=$PATH:"$HOME/.local/share/cargo/bin"
 
 # pnpm
 # pnpm end
@@ -44,7 +45,7 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 export GIT_DISCOVERY_ACROSS_FILESYSTEM=1
 
 # FF
-export MOZ_DISABLE_RDD_SANDBOX=1
+# export MOZ_DISABLE_RDD_SANDBOX=1
 
 # Stop DDOS'ing my logs
 # export QT_LOGGING_RULES="*=false"

@@ -1,5 +1,7 @@
 attached = true
 name = "single"
+# terminal_multiplexer = "tmux-rs"
+
 [[hooks]]
   command = 'run-shell -t single:0 "tmux rename-session \"S $((RANDOM))\""' 
   name = "client-attached"
