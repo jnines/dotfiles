@@ -1,0 +1,12 @@
+bin=/home/jason/.local/bin=w0=1=1753657283
+.local=/home/jason/.local=w0=0
+code=/home/jason/.local/code=w0=1
+git=/home/jason/git=w0=1
+rmuxinator=/home/jason/git/rmuxinator=w0=1
+servermon=/home/jason/git/servermon=w0=1
+data=/data=w0=1
+Ash=/data/Ash=w0=1
+Ash bin=/data/Ash/bin=w0=1=1753657309
+Ash Data=/data/Ash/Data=w0=1=1753657373
+nvim=/home/jason/.config/nvim=w0=1=1753720278
+tmux=/home/jason/.config/tmux=w0=1
