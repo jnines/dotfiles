@@ -33,6 +33,7 @@ alias rand='nvim $HOME/.local/random.txt'
 alias todo='nvim $HOME/.local/todo'
 alias eliquid='nvim /data/shhtuff/E-Liquid.txt'
 alias l='locate'
+alias kbres='usbreset 3842:260a'
 
 alias SS='sudo systemctl'
 alias SSS='sudo systemctl status'
