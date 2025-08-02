@@ -8,6 +8,6 @@ data=/data=w0=1
 Ash=/data/Ash=w0=1
 Ash bin=/data/Ash/bin=w0=1=1753657309
 Ash Data=/data/Ash/Data=w0=1=1753657373
-nvim=/home/jason/.config/nvim=w0=1=1753823215
-tmux=/home/jason/.config/tmux=w0=1
+nvim=/home/jason/.config/nvim=w0=1=1753921440
+tmux=/home/jason/.config/tmux=w0=1=1753921748
 nvim_lite=/home/jason/git/nvim_lite=w0=1
