@@ -1,4 +1,0 @@
-#!/bin/sh
-
-export HOME="${XDG_DATA_HOME:-$HOME/.local/share}/steam-home"
-exec /usr/bin/steam "$@" 
