@@ -1,5 +1,0 @@
-#!/bin/bash
-
-rm "$HOME"/.gtkrc-2.0
-rm -r "$HOME"/.kde4
-rm -r "$HOME"/.pki
