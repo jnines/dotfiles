@@ -1,5 +1,0 @@
----
-name: <%= rand(65536) %>
-# name: Single
-windows:
-  - ☝:

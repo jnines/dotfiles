@@ -1,6 +1,0 @@
----
-session_name: S ${_RAND}
-windows:
-  - window_name: "\u261D"
-    panes:
-      - null

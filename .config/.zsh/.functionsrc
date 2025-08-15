@@ -76,7 +76,7 @@ gdr() {
 	local _files
 	_files=($(gd ls-tree -r --name-only --full-name master | sort | fzf -m))
 	_files=("${_files[@]/#/$HOME/}")
-	echo "gd rm --cached ${_files[*]}"
+	gd rm -r --cached ${_files[*]}
 }
 
 v() {
