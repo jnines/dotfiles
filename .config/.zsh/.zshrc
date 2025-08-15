@@ -26,7 +26,7 @@ else
 fi
 setopt prompt_subst
 setopt transient_rprompt
-PROMPT='%B% %F{58}┌%F{$_phc}$_name%f %F{yellow}[%F{white}%~%F{yellow}] ${vcs_info_msg_0_}
+PROMPT='%B% %F{58}┌%F{$_phc}$_name%f%F{yellow}[%F{white}%~%F{yellow}] ${vcs_info_msg_0_}
 %F{58}└╼%F{166}$%b%f '
 
 if [[ $_latest_kernel != $_current_kernel ]]; then
