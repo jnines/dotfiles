@@ -1,13 +1,14 @@
-bin=/home/jason/.local/bin=w0=1=1753657283
+bin=/home/jason/.local/bin=w0=1=1755046898
 .local=/home/jason/.local=w0=0
 code=/home/jason/.local/code=w0=1=1754418323
 git=/home/jason/git=w0=1
-rmuxinator=/home/jason/git/rmuxinator=w0=1
+rmuxinator=/home/jason/git/rmuxinator=w0=0=1755206216
 servermon=/home/jason/git/servermon=w0=1
 data=/data=w0=1
 Ash=/data/Ash=w0=1
 Ash bin=/data/Ash/bin=w0=1=1753657309
 Ash Data=/data/Ash/Data=w0=1=1753657373
-nvim=/home/jason/.config/nvim=w0=1=1754599282
+nvim=/home/jason/.config/nvim=w0=1=1754766457
 tmux=/home/jason/.config/tmux=w0=1=1753921748
 nvim_lite=/home/jason/git/nvim_lite=w0=1=1754515095
+rmuxinator=/home/jason/.config/rmuxinator=w0=1=1755209261

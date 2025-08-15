@@ -268,7 +268,7 @@ _launch=Meta+Return
 _launch=
 
 [services][firefox.desktop]
-_launch=Ctrl+Alt+?
+_launch=Meta+F
 
 [services][net.local.ghostty-2.desktop]
 _launch=Meta+Num++
