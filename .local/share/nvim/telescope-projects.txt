@@ -1,4 +1,4 @@
-bin=/home/jason/.local/bin=w0=1=1755046898
+bin=/home/jason/.local/bin=w0=1=1755376779
 .local=/home/jason/.local=w0=0
 code=/home/jason/.local/code=w0=1=1754418323
 git=/home/jason/git=w0=1

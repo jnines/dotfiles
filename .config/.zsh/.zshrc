@@ -26,8 +26,8 @@ else
 fi
 setopt prompt_subst
 setopt transient_rprompt
-PROMPT='%B% %F{58}┌%F{$_phc}$_name%f%F{yellow}[%F{white}%~%F{yellow}] ${vcs_info_msg_0_}
-%F{58}└╼%F{166}$%b%f '
+PROMPT='%B% %F{$_phc}$_name%f%F{yellow}[%F{white}%~%F{yellow}] %(?..%B(%?%)%b) ${vcs_info_msg_0_}
+%F{$_phc} %(!.#.⮚)%b%f '
 
 if [[ $_latest_kernel != $_current_kernel ]]; then
 	kColor="red"
@@ -35,7 +35,7 @@ else
 	kColor="white"
 fi
 
-RPROMPT='%F{yellow}Latest Stable: %U%F{$kColor}v$_latest_kernel%u %F{166}%@'
+RPROMPT='%F{yellow}Latest: %U%F{$kColor}v$_latest_kernel%u %F{166}%@'
 # Tab Completion
 autoload -U compinit
 setopt menucomplete

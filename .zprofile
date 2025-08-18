@@ -16,8 +16,10 @@ export DIFFPROG="nvim -d"
 export TERMINAL="ghostty"
 export BROWSER="firefox"
 
-# rg fzf
-export FZF_DEFAULT_COMMAND='rg --hidden --no-ignore-vcs --files --follow -g "!{node_modules,.git,.snapshots}"'
+# fd fzf
+# export FZF_DEFAULT_COMMAND='rg --smart-case --sort path --hidden --no-ignore-vcs --files --follow -g "!{node_modules,.git,.snapshots}"'
+export FZF_DEFAULT_COMMAND='fd --hidden --color=always --type file --no-ignore -E node_modules -E .git -E .snapshots'
+export FZF_DEFAULT_OPTS='--ansi'
 # Get Out:
 export XDG_CONFIG_HOME="$HOME/.config"
 export XDG_DATA_HOME="$HOME/.local/share"

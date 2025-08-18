@@ -56,3 +56,6 @@ IconSize=16
 
 [PreviewSettings]
 Plugins=appimagethumbnail,audiothumbnail,avif,comicbookthumbnail,cursorthumbnail,djvuthumbnail,ebookthumbnail,exrthumbnail,directorythumbnail,fontthumbnail,heif,imagethumbnail,jpegthumbnail,jxl,kraorathumbnail,windowsexethumbnail,windowsimagethumbnail,opendocumentthumbnail,svgthumbnail,ffmpegthumbs,gdk-pixbuf-thumbnailer
+
+[KDE]
+WheelScrollLines=7
