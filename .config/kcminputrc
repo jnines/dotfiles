@@ -3,6 +3,9 @@ NumLock=0
 RepeatDelay=200
 RepeatRate=40
 
+[Libinput][13364][2400][Keychron Keychron V6 Max Mouse]
+ScrollFactor=1
+
 [Libinput][14402][9738][EVGA Corporation EVGA Z20 Elite Gaming Keyboard Mouse]
 PointerAccelerationProfile=1
 
