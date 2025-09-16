@@ -2,6 +2,7 @@
 
 # $PATH:$PATH=HTAP$
 export PATH=$PATH:"$HOME/.local/bin"
+export PATH=$PATH:"$HOME/.local/bin/tests"
 export PATH=$PATH:"$HOME/git/bin"
 export PATH=$PATH:"$HOME/.local/share/npm/bin"
 export PATH=$PATH:"$HOME/.local/share/pnpm"

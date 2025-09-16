@@ -4,7 +4,7 @@
 1 12 1 * * /usr/bin/pacman -Qqe > /home/jason/.local/installed_$(/usr/bin/date +\%m.\%d.\%Y).txt
 1 12 1 * * /usr/bin/cp -f /var/spool/cron/jason /home/jason/.local/bin/extra/jason.cron.backup
 */5 * * * * /bin/bash /home/jason/.local/bin/temps_cron
+* */6 * * * /bin/bash /home/jason/.local/bin/checkKernel
 @reboot /usr/bin/sleep 30 && /bin/bash /home/jason/.local/bin/checkKernel
-@hourly /bin/bash /home/jason/.local/bin/checkKernel
 @hourly /usr/bin/sed -i '/yt/d' /home/jason/.cache/zsh/.zshistory
 @weekly /usr/bin/rate-mirrors --protocol https --disable-comments  --max-jumps 3 arch | /usr/bin/sudo /usr/bin/tee /etc/pacman.d/mirrorlist
