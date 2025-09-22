@@ -18,15 +18,9 @@ correct_ignore='_*'
 
 # Pretties
 _phc=$(hostname | cksum | awk '{print $1%256}')
-local _name
-if [[ $HOST != "archbox" ]]; then
-	_name=$HOST
-else
-	_name=""
-fi
 setopt prompt_subst
 setopt transient_rprompt
-PROMPT='%B% %F{$_phc}$_name%f%F{yellow}[%F{white}%~%F{yellow}] %(?..%B(%?%)%b) ${vcs_info_msg_0_}
+PROMPT='%B% %F{yellow}[%F{white}%~%F{yellow}] %(?..%B(%?%)%b) ${vcs_info_msg_0_}
 %F{$_phc} %(!.#.⮚)%b%f '
 
 if [[ $_latest_kernel != $_current_kernel ]]; then

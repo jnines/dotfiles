@@ -1,4 +1,4 @@
-theme = gruvbox-material
+theme = Gruvbox Material
 background-opacity = 0.85
 background =           #141617
 foreground =           #d4be98
@@ -28,8 +28,10 @@ window-height = 69
 window-width = 210
 window-decoration = false
 
+custom-shader = shaders/cursor_smear.glsl
+
 gtk-titlebar = false
-gtk-tabs-location = hidden
+window-show-tab-bar = never
 copy-on-select = true
 quit-after-last-window-closed = true
 mouse-hide-while-typing = true
@@ -48,10 +50,5 @@ keybind = ctrl+tab=text:\x01\x6f
 keybind = ctrl+shift+tab=text:\x01\x3b
 keybind = ctrl+shift+w=text:\x01\x78
 keybind = ctrl+f=text:\x79\x61\x7A\x69\r
-
-# testing
-# keybind = ctrl+shift+[=new_split:right
-# keybind = ctrl+shift+]=new_split:down
-# keybind = ctrl+shift+-=equalize_splits
 
 # vim:ft=conf

@@ -11,15 +11,15 @@ echo "Downloading"
 for i in "${pge[@]}"; do
 	wget -Nq $i
 done \
-	&& if [[ $steamRunning == 1 ]]; then
-		echo "Killing Steam"
-		/usr/bin/pkill steam
-	fi \
 	&& echo "Comparing sha512sum"
 /usr/bin/sha512sum -c "${pgev%.tar.gz}.sha512sum" >/dev/null \
 	&& echo "Moving and decompressing"
 /usr/bin/tar -xzf "${pgev}" \
 	&& /usr/bin/mv "${pgev%.tar.gz}" "$HOME"/.local/share/Steam/compatibilitytools.d \
+	&& if [[ $steamRunning == 1 ]]; then
+		echo "Killing Steam"
+		/usr/bin/pkill steam
+	fi \
 	&& /usr/bin/dolphin "$HOME"/.local/share/Steam/compatibilitytools.d/ \
 	&& if [[ $steamRunning == 1 ]]; then
 		echo "Restarting Steam"

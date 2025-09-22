@@ -60,6 +60,7 @@ alias valh='/usr/bin/rsync -a --delete "$HOME"/.config/unity3d/IronGate/Valheim 
 
 alias gd='/usr/bin/git --git-dir=$HOME/git/dotfiles --work-tree=$HOME'
 alias gds='gd status'
+alias lgd='lazygit --git-dir=$HOME/git/dotfiles --work-tree=$HOME'
 
 alias lconf='meld $HOME/.config/frogminer/linux-tkg.cfg $HOME/git/tkg/linux-tkg/customization.cfg'
 alias nconf='meld $HOME/.config/frogminer/nvidia-all.cfg $HOME/git/tkg/nvidia-all/customization.cfg'

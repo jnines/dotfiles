@@ -1,3 +1,17 @@
+[067a22b8-34d4-4c4c-b60d-51d74b2fc881]
+Description=Window settings for com.mitchellh.ghostty Multi
+ignoregeometry=true
+ignoregeometryrule=2
+positionrule=3
+screenrule=2
+sizerule=3
+title=Multi
+titlematch=1
+types=1
+wmclass=ghostty com.mitchellh.ghostty
+wmclasscomplete=true
+wmclassmatch=1
+
 [19ff5e83-9a7e-40da-991f-753fa2221cef]
 Description=Window settings for systemsettings
 acceptfocus=true
@@ -17,19 +31,6 @@ titlematch=1
 types=32
 windowrole=toolbox
 wmclass=systemsettings
-wmclassmatch=1
-
-[1bfda546-c94e-49a6-b414-dbfbeaad6847]
-Description=Window settings for SatisfactoryModManager
-clientmachine=localhost
-position=1569,1351
-positionrule=2
-size=956,988
-sizerule=3
-title=SatisfactoryModManager
-titlematch=1
-types=1
-wmclass=SatisfactoryModManager
 wmclassmatch=1
 
 [1e3ab378-161b-4d80-95f5-7b8dda551194]
@@ -161,66 +162,6 @@ title=Developer Tools
 titlematch=2
 wmclass=zen
 wmclassmatch=2
-
-[35b56267-f1c0-44ae-a964-c6695162a08f]
-Description=Window settings for geany
-clientmachine=localhost
-desktops=64a12e41-2755-4c2d-91c3-c1c526d0aec6
-maximizehoriz=true
-maximizevert=true
-noborder=true
-opacityactive=95
-opacityinactive=95
-position=0,180
-positionrule=3
-size=1920,1080
-sizerule=3
-title=meld-menu.desktop - /home/jason/.local/share/kservices5/ServiceMenus - Geany
-titlematch=1
-types=1
-windowrole=3pane
-wmclass=geany
-wmclassmatch=1
-
-[3801cbf2-4c9e-4211-afa8-07fb90ac8804]
-Description=Window settings for Gwe
-acceptfocus=true
-clientmachine=localhost
-fpplevel=3
-fsplevel=3
-maximizehoriz=true
-maximizevert=true
-noborder=true
-opacityactive=92
-opacityinactive=92
-position=0,778
-size=1238,954
-sizerule=3
-title=GWE
-types=1
-windowrole=toolbox
-wmclass=gwe Gwe
-wmclasscomplete=true
-wmclassmatch=1
-
-[3a63969b-10f0-4e13-aff6-eebd580eccb6]
-Description=Application settings for insomnium
-clientmachine=localhost
-desktops=64a12e41-2755-4c2d-91c3-c1c526d0aec6
-fsplevel=3
-maximizehoriz=true
-maximizevert=true
-noborder=true
-opacityactive=90
-opacityinactive=90
-position=4480,0
-positionrule=3
-size=1080,1920
-sizerule=3
-title=Peek preview
-windowrole=toolbox
-wmclass=insomnium
-wmclassmatch=1
 
 [419a9d19-657e-43b4-afc7-f7988ebc32e2]
 Description=Application settings for smplayer
@@ -387,28 +328,6 @@ types=1
 wmclass=thunderbird
 wmclassmatch=1
 
-[6ccb2b2f-536e-45f7-a8d7-cfde8f7f2222]
-Description=Window settings for gwe
-above=true
-clientmachine=localhost
-desktops=64a12e41-2755-4c2d-91c3-c1c526d0aec6
-fpplevel=3
-fsplevel=3
-maximizehoriz=true
-maximizevert=true
-noborder=true
-opacityactive=95
-opacityinactive=95
-position=0,778
-size=1293,952
-sizerule=3
-title=GWE
-titlematch=1
-types=1
-windowrole=toolbox
-wmclass=gwe
-wmclassmatch=1
-
 [6dfb6fd8-072f-4dac-a355-38da15eaba39]
 Description=Application settings for org.kde.plasma-systemmonitor
 position=1391,38
@@ -416,18 +335,6 @@ positionrule=3
 size=960,1042
 sizerule=3
 wmclass=plasma-systemmonitor org.kde.plasma-systemmonitor
-wmclasscomplete=true
-wmclassmatch=1
-
-[6f18304f-9e43-4d48-a267-697c38348179]
-Description=Window settings for org.kde.drkonqi
-position=1457,1327
-positionrule=3
-size=1614,958
-sizerule=3
-title=plasmashell — Crash Handler
-types=1
-wmclass=drkonqi org.kde.drkonqi
 wmclasscomplete=true
 wmclassmatch=1
 
@@ -441,23 +348,6 @@ title=KPatience
 types=1
 wmclass=kpat org.kde.kpat
 wmclasscomplete=true
-wmclassmatch=1
-
-[84eca90a-e22f-4ed8-a722-e74c125aa613]
-Description=Application settings for geany
-clientmachine=localhost
-desktops=64a12e41-2755-4c2d-91c3-c1c526d0aec6
-desktopsrule=3
-maximizehoriz=true
-maximizevert=true
-noborder=true
-opacityactive=95
-opacityactiverule=2
-opacityinactive=95
-opacityinactiverule=2
-title=Alacritty
-windowrole=3pane
-wmclass=geany
 wmclassmatch=1
 
 [87707dd7-9842-40af-858f-ceea1f31c662]
@@ -545,33 +435,8 @@ wmclass=chromium
 wmclassmatch=1
 
 [General]
-count=46
-rules=33598e4a-3e43-4f31-ae82-d633d0773793,3482e5fc-ead7-46cc-bbae-899523350657,acae0841-9fd8-4715-9532-98aca33dbf4d,2900e95c-da60-46d7-a53c-aa48ee548351,1bfda546-c94e-49a6-b414-dbfbeaad6847,73369839-adc8-4880-a398-730aaa08a40c,a6bfbf91-74e1-43ac-9063-a24460ce38f4,bb2eeb02-ad63-46af-bc5e-ab5c10a3e6d1,2cbb8782-740e-4b74-86f6-18eac3cae86d,35b56267-f1c0-44ae-a964-c6695162a08f,5e51ed3a-c306-4ed7-8ef3-58ac40a362e3,6555a2d5-1a88-4989-a9f8-c24482c71f39,a455f146-fb39-4f6f-afc5-04c98bde9c17,6f18304f-9e43-4d48-a267-697c38348179,4b6a5a6c-7c2c-4fc4-908c-590d6328f816,e82174a8-3a4a-4f51-81f0-0b3aca6001da,8c945789-d7c8-410e-9804-8a221d167cc0,4a858c20-b762-4560-920d-cc04fa706732,3a63969b-10f0-4e13-aff6-eebd580eccb6,cc074532-f7d6-4366-9ded-5d8748ab217f,3801cbf2-4c9e-4211-afa8-07fb90ac8804,ee712cc4-b194-4967-887b-025465d60882,340bf441-ce6a-484b-8f88-fd83fe2a981d,1e3ab378-161b-4d80-95f5-7b8dda551194,419a9d19-657e-43b4-afc7-f7988ebc32e2,fa18f6dc-f22d-4397-9861-bcc5a4afc697,63248e0e-ca16-4120-8d11-293c1b49adb1,4ff75c34-08db-48b2-baa0-811397afd3ad,8d1bed7e-0cce-429a-b106-fa8211394d7d,6dfb6fd8-072f-4dac-a355-38da15eaba39,25be81ef-022b-46aa-842a-c74b913343a7,ec78cddf-965f-4bb4-a485-833acba909e9,84eca90a-e22f-4ed8-a722-e74c125aa613,467bc3f3-4e09-4d8a-8dec-ca5eab3b993c,ffa8b6a1-cc05-4b7f-85dc-5785042c23e3,a7359275-c319-4e3b-a512-e67403110c9d,c0796d37-f4f8-4cbe-8d5d-1b21f4add5d5,24753188-a526-4e4f-8cda-ca0000670994,2d877725-17e9-43c4-a0a5-b7178c5c8180,4ffe8e4b-62fe-43ab-beb6-03c7c3fe435d,6ccb2b2f-536e-45f7-a8d7-cfde8f7f2222,87707dd7-9842-40af-858f-ceea1f31c662,8a7b4e74-818c-469e-8e08-5550b3876fa4,f23e1b72-345e-4f5e-ad79-dd30052ebb5a,999908f2-5e7f-461f-9047-c395e99efad8,19ff5e83-9a7e-40da-991f-753fa2221cef
-
-[a455f146-fb39-4f6f-afc5-04c98bde9c17]
-Description=Window settings for deno
-above=true
-clientmachine=localhost
-desktops=64a12e41-2755-4c2d-91c3-c1c526d0aec6
-fpplevel=3
-fsplevel=3
-maximizehoriz=true
-maximizehorizrule=3
-maximizevert=true
-maximizevertrule=3
-noborder=true
-opacityactive=90
-opacityinactive=90
-position=4480,0
-positionrule=3
-size=1080,1920
-sizerule=3
-title=Peek preview
-titlematch=1
-types=1
-windowrole=toolbox
-wmclass=deno
-wmclassmatch=1
+count=35
+rules=c335f1fe-b44b-46e1-aa0a-5eeadf6d2c17,067a22b8-34d4-4c4c-b60d-51d74b2fc881,33598e4a-3e43-4f31-ae82-d633d0773793,3482e5fc-ead7-46cc-bbae-899523350657,acae0841-9fd8-4715-9532-98aca33dbf4d,2900e95c-da60-46d7-a53c-aa48ee548351,73369839-adc8-4880-a398-730aaa08a40c,a6bfbf91-74e1-43ac-9063-a24460ce38f4,2cbb8782-740e-4b74-86f6-18eac3cae86d,5e51ed3a-c306-4ed7-8ef3-58ac40a362e3,6555a2d5-1a88-4989-a9f8-c24482c71f39,4b6a5a6c-7c2c-4fc4-908c-590d6328f816,e82174a8-3a4a-4f51-81f0-0b3aca6001da,8c945789-d7c8-410e-9804-8a221d167cc0,4a858c20-b762-4560-920d-cc04fa706732,ee712cc4-b194-4967-887b-025465d60882,340bf441-ce6a-484b-8f88-fd83fe2a981d,1e3ab378-161b-4d80-95f5-7b8dda551194,419a9d19-657e-43b4-afc7-f7988ebc32e2,63248e0e-ca16-4120-8d11-293c1b49adb1,4ff75c34-08db-48b2-baa0-811397afd3ad,8d1bed7e-0cce-429a-b106-fa8211394d7d,6dfb6fd8-072f-4dac-a355-38da15eaba39,25be81ef-022b-46aa-842a-c74b913343a7,467bc3f3-4e09-4d8a-8dec-ca5eab3b993c,ffa8b6a1-cc05-4b7f-85dc-5785042c23e3,c0796d37-f4f8-4cbe-8d5d-1b21f4add5d5,24753188-a526-4e4f-8cda-ca0000670994,2d877725-17e9-43c4-a0a5-b7178c5c8180,4ffe8e4b-62fe-43ab-beb6-03c7c3fe435d,87707dd7-9842-40af-858f-ceea1f31c662,8a7b4e74-818c-469e-8e08-5550b3876fa4,f23e1b72-345e-4f5e-ad79-dd30052ebb5a,999908f2-5e7f-461f-9047-c395e99efad8,19ff5e83-9a7e-40da-991f-753fa2221cef
 
 [a6bfbf91-74e1-43ac-9063-a24460ce38f4]
 Description=Application settings for Meld
@@ -584,28 +449,6 @@ wmclass=org.gnome.Meld Meld
 wmclasscomplete=true
 wmclassmatch=1
 
-[a7359275-c319-4e3b-a512-e67403110c9d]
-Description=Window settings for code
-above=true
-clientmachine=localhost
-desktops=64a12e41-2755-4c2d-91c3-c1c526d0aec6
-fpplevel=3
-maximizehoriz=true
-maximizehorizrule=3
-maximizevert=true
-maximizevertrule=3
-noborder=true
-opacityactive=95
-opacityinactive=95
-position=1958,0
-size=2522,1404
-title=Welcome
-types=1
-windowrole=browser-window
-windowrolematch=1
-wmclass=code
-wmclassmatch=1
-
 [acae0841-9fd8-4715-9532-98aca33dbf4d]
 Description=Window settings for steam
 clientmachine=localhost
@@ -615,32 +458,6 @@ title=Steam
 types=1
 wmclass=steamwebhelper steam
 wmclasscomplete=true
-wmclassmatch=1
-
-[bb2eeb02-ad63-46af-bc5e-ab5c10a3e6d1]
-Description=Application settings for org.wezfurlong.wezterm
-above=true
-clientmachine=localhost
-desktops=64a12e41-2755-4c2d-91c3-c1c526d0aec6
-fpplevel=3
-fsplevel=3
-maximizehoriz=true
-maximizehorizrule=3
-maximizevert=true
-maximizevertrule=3
-noborder=true
-noborderrule=2
-opacityactive=90
-opacityactiverule=2
-opacityinactive=90
-opacityinactiverule=2
-position=1958,240
-positionrule=3
-size=2522,1404
-sizerule=3
-title=Peek preview
-windowrole=toolbox
-wmclass=org.wezfurlong.wezterm
 wmclassmatch=1
 
 [c0796d37-f4f8-4cbe-8d5d-1b21f4add5d5]
@@ -664,24 +481,16 @@ windowrole=toolbox
 wmclass=kcmshell6
 wmclassmatch=1
 
-[cc074532-f7d6-4366-9ded-5d8748ab217f]
-Description=Application settings for sol
-above=true
-clientmachine=localhost
-desktops=64a12e41-2755-4c2d-91c3-c1c526d0aec6
-fpplevel=3
+[c335f1fe-b44b-46e1-aa0a-5eeadf6d2c17]
+Description=Window settings for com.mitchellh.ghostty
 maximizehoriz=true
+maximizehorizrule=3
 maximizevert=true
-noborder=true
-opacityactive=95
-opacityinactive=95
-position=1118,1080
-positionrule=3
-size=869,706
-sizerule=3
-title=rustdesk
-windowrole=browser
-wmclass=sol
+maximizevertrule=3
+title=Ghostty
+types=1
+wmclass=ghostty com.mitchellh.ghostty
+wmclasscomplete=true
 wmclassmatch=1
 
 [e82174a8-3a4a-4f51-81f0-0b3aca6001da]
@@ -694,27 +503,6 @@ sizerule=3
 title=Alacritty M
 types=1
 wmclass=alacritty multi
-wmclasscomplete=true
-wmclassmatch=1
-
-[ec78cddf-965f-4bb4-a485-833acba909e9]
-Description=Application settings for Sol
-acceptfocus=true
-clientmachine=localhost
-desktops=64a12e41-2755-4c2d-91c3-c1c526d0aec6
-fpplevel=3
-maximizehoriz=true
-maximizevert=true
-noborder=true
-opacityactive=92
-opacityinactive=92
-position=1120,1080
-positionrule=3
-size=891,708
-sizerule=3
-title=Home — Mozilla Firefox
-windowrole=browser
-wmclass=sol Sol
 wmclasscomplete=true
 wmclassmatch=1
 
@@ -744,16 +532,10 @@ wmclass=qimgv
 wmclassmatch=1
 
 [fa18f6dc-f22d-4397-9861-bcc5a4afc697]
-Description=Window settings for com.ghostty.multi
 position=1122,1080
 positionrule=3
 size=2518,1404
 sizerule=3
-title=Ghostty
-types=1
-wmclass=ghostty com.ghostty.multi
-wmclasscomplete=true
-wmclassmatch=1
 
 [ffa8b6a1-cc05-4b7f-85dc-5785042c23e3]
 Description=Window settings for Alacritty
