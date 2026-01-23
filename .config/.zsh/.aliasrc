@@ -54,7 +54,7 @@ alias rnet='/usr/bin/nmcli con up br1 && /usr/bin/nmcli con up br0'
 
 alias yte='cd /data/.sla/.empty/temp/ex; yt-dlp --no-mtime --embed-subs --external-downloader aria2c --external-downloader-args "-c -j 5 -x 10 --summary-interval=0" $1'
 alias yt='cd /data/Downloads; yt-dlp -f "bv*[height=1080]+ba" --no-mtime --embed-subs --external-downloader aria2c --external-downloader-args "-c -j 5 -x 10 --summary-interval=0" $1'
-alias yta='cd /data/Downloads; yt-dlp --no-mtime --prefer-ffmpeg --extract-audio --audio-format mp3 --external-downloader aria2c --external-downloader-args "-c -j 5 -x 10 --summary-interval=0" "$@"'
+alias yta='cd /data/Downloads; yt-dlp --no-mtime --extract-audio --audio-format mp3 --external-downloader aria2c --external-downloader-args "-c -j 5 -x 10 --summary-interval=0" "$@"'
 
 alias valh='/usr/bin/rsync -a --delete "$HOME"/.config/unity3d/IronGate/Valheim /data/.bak/'
 

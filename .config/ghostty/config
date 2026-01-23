@@ -28,6 +28,8 @@ window-height = 69
 window-width = 210
 window-decoration = false
 
+bell-features = no-system, no-audio, no-title
+
 custom-shader = shaders/cursor_smear.glsl
 
 gtk-titlebar = false
