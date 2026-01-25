@@ -93,3 +93,12 @@ oodpkg() {
 		&& cd $1 \
 		&& makepkg -srci --noconfirm
 }
+
+# Modify backup from main router for backup router
+pfback() {
+	sed -e 's/igb0/em0/g' \
+		-e 's/igb1/em1/g' \
+		-e 's/igb3/em3/g' \
+		-e 's/coretemp/amdtemp/g' \
+		config-pfSense.* >amd-config-pfSense.xml
+}
