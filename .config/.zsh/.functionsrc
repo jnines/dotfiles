@@ -57,8 +57,10 @@ gdp() {
 gda() {
 	local _files
 	_files=($(gd ls-files -o | sort | fzf -m))
-	gd add "${_files[*]}"
-	echo "File(s) added"
+	if [[ -n "${_files[@]}" ]]; then
+		gd add "${_files[*]}"
+		echo "${#_files[@]} File(s) added"
+	fi
 }
 
 gdr() {
