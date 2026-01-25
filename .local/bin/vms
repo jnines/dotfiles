@@ -1,7 +1,5 @@
 #!/usr/bin/env sh
 
-_image_path="/var/lib/libvirt/images/"
-_format=".qcow2"
 _image=$(virsh -c qemu:///system list --all | awk 'NR>2 {print $2}' | fzf)
 
 if [ -n "$_image" ]; then
