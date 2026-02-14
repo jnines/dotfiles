@@ -15,7 +15,8 @@ setopt correct
 correct_ignore='_*'
 
 # Pretties
-_phc=$(hostname | cksum | awk '{print $1%256}')
+# _phc=$(hostname | cksum | awk '{print $1%256}')
+_phc=$(cat /etc/hostname | cksum | awk '{print $1%256}')
 setopt prompt_subst
 setopt transient_rprompt
 PROMPT='%B% %F{yellow}[%F{white}%~%F{yellow}] %(?..%B(%?%)%b) ${vcs_info_msg_0_}
