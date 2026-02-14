@@ -15,7 +15,6 @@ setopt correct
 correct_ignore='_*'
 
 # Pretties
-# _phc=$(hostname | cksum | awk '{print $1%256}')
 _phc=$(cat /etc/hostname | cksum | awk '{print $1%256}')
 setopt prompt_subst
 setopt transient_rprompt
@@ -87,22 +86,16 @@ setopt share_history
 setopt hist_ignore_all_dups
 
 # zsh-autosuggestions
-_source_me "/usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh" # arch & alp
-_source_me "/usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh"             # deb
+_source_me "/usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh"
 # fzf completion
-_source_me "/usr/share/fzf/completion.zsh"              # arch
-_source_me "/usr/share/doc/fzf/examples/completion.zsh" # deb
-_source_me "/usr/share/zsh/plugins/fzf/completion.zsh"  # alp
+_source_me "/usr/share/fzf/completion.zsh"
 # fzf keybindings
-_source_me "/usr/share/fzf/key-bindings.zsh"              # arch
-_source_me "/usr/share/doc/fzf/examples/key-bindings.zsh" # deb
-_source_me "/usr/share/zsh/plugins/fzf/key-bindings.zsh"  # alp
+_source_me "/usr/share/fzf/key-bindings.zsh"
 # autopair
 _source_me "/usr/share/zsh/plugins/zsh-autopair/autopair.zsh" \
 	&& autopair-init
 # zsh-syntax-highlighting
-_source_me "/usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" # arch & alp
-_source_me "/usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"             # deb
+_source_me "/usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
 eval "$(zoxide init zsh)"
 
 # Pasties
