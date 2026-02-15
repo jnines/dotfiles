@@ -1,0 +1,10 @@
+#!/bin/bash
+
+ptree="$(/usr/bin/pacman -Qdtq)"
+ptree=($ptree)
+
+for i in "${ptree[@]}";
+do
+    temp=$(/usr/bin/pacman -Qi "$i" | grep -oP "(?<=Installed Size  : ).*")
+    echo "$i" ":" "$temp"
+done | column -s ":" -t

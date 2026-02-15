@@ -1,0 +1,46 @@
+#!/bin/bash
+##########################################################
+# Modules list
+modules=(
+	nvidia
+	nvidia-drm
+	nvidia-uvm
+	nvidia-modeset
+	nvidia-peermem
+)
+
+# Directory certs are stored
+_cert_dir="/root/certs"
+###########################################################
+
+function sign_modules() {
+
+	echo Finding "${modules[@]}"
+	local alg="sha512"
+	local priv_key="$_cert_dir/kernel_key.key"
+	local pub_key="$_cert_dir/kernel_key.crt"
+	local sign_file="$_cert_dir/sign-file"
+	export PATH=$PATH:"${sign_file%/sign-file}"
+
+	for i in "${modules[@]}"; do
+		local modules_w+=("$(find "${1}"/updates/dkms/ -name "${i}.*")")
+	done
+
+	for i in "${modules_w[@]}"; do
+		sudo /usr/bin/zstd -dq --rm "${i}" \
+			&& sudo /usr/bin/strip --strip-debug "${i%.zst}" \
+			&& sudo "$sign_file" "$alg" "$priv_key" "$pub_key" "${i%.zst}" \
+			&& echo Signing "${i}"
+		sudo /usr/bin/zstd -q --rm "${i%.zst}"
+	done
+}
+
+if [[ $1 == "-n" ]]; then
+	kernel_location="/usr/lib/modules/$2"
+	sign_modules "${kernel_location}"
+else
+	mapfile -t kernel_dirs <<<"$(/usr/bin/dir --format=single-column /usr/lib/modules | sed '/arch1/d')"
+	for dir in "${kernel_dirs[@]}"; do
+		sign_modules "/usr/lib/modules/$dir"
+	done
+fi

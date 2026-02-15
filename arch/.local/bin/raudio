@@ -1,0 +1,7 @@
+#!/bin/bash
+
+systemctl --user stop easyeffects.service &&
+  systemctl --user stop wireplumber.service &&
+  rm -rf "$HOME"/.local/state/wireplumber/ &&
+  systemctl --user restart wireplumber.service pipewire.service pipewire-pulse.service &&
+  systemctl --user restart easyeffects.service

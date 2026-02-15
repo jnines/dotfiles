@@ -1,0 +1,10 @@
+#!/bin/bash
+
+kernelVer=$(/usr/bin/curl -Ls https://www.kernel.org/releases.json | /usr/bin/jq -r '.latest_stable.version')
+minorVer=$(/usr/bin/echo "$kernelVer" | /usr/bin/grep -o "\." | /usr/bin/wc -l)
+
+if [[ $minorVer == 1 ]]; then
+  /usr/bin/echo "${kernelVer}.0" >"$HOME"/.local/share/kver
+else
+  /usr/bin/echo "${kernelVer}" >"$HOME"/.local/share/kver
+fi

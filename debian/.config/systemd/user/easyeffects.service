@@ -1,0 +1,13 @@
+[Unit]
+Description=Keep EasyEffects Up
+StartLimitIntervalSec=500
+StartLimitBurst=5
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/easyeffects --gapplication-service
+Restart=on-failure
+RestartSec=5s
+
+[Install]
+WantedBy=default.target

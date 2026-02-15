@@ -1,0 +1,11 @@
+[general]
+import = ["~/.config/alacritty/main.toml"]
+
+[terminal.shell]
+args = ["-l", "-c", "tmuxinator start default"]
+program = "/usr/bin/zsh"
+
+[window]
+title = "Alacritty M"
+class = {general = "multi"}
+

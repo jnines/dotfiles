@@ -1,0 +1,44 @@
+#!/bin/bash
+# shellcheck disable=2016
+
+_tkg() {
+	/usr/bin/rm -rf /tmp/linux-src-git /tmp/makepkg/
+	builtin cd "$HOME/git/tkg/linux-tkg" || exit
+	/usr/bin/makepkg -fsi --noconfirm \
+		&& /usr/bin/rm -r /tmp/makepkg \
+		&& "$HOME"/.local/bin/mod-sign -n "$(cat /tmp/linux-src-git/linux-tkg/linux-src-git/version)"
+}
+
+_cachy() {
+	/usr/bin/rm -rf /tmp/cachyos /tmp/makepkg
+
+	/usr/bin/cp -r "$HOME"/git/linux-cachyos/linux-cachyos/ /tmp/cachyos \
+		&& builtin cd /tmp/cachyos || exit
+
+	/usr/bin/sed -i -e 's/_localmodcfg:=no/_localmodcfg:=yes/g' \
+		-e 's/_processor_opt:=/_processor_opt:=zen4/g' \
+		-e '/scripts\/config -e USER_NS/a\
+    echo "Disabling Nags"\
+    scripts\/config -d GPIO_BT8XX -d SND_SE6X\
+    echo "Adding Key"\
+    scripts\/config --set-str CONFIG_SYSTEM_TRUSTED_KEYS "/root/certs/kernel_key.pem"\
+    echo "${_kernver}-cachyos" > /tmp/cachy_ver' \
+		/tmp/cachyos/PKGBUILD \
+		&& /usr/bin/makepkg -fsi --noconfirm \
+		&& /usr/bin/rm -r /tmp/makepkg \
+		&& "$HOME"/.local/bin/mod-sign -n "$(cat /tmp/cachy_ver)"
+}
+
+case "$1" in
+"cachy")
+	echo "Compiling Cachy..."
+	time _cachy
+	;;
+"tkg")
+	echo "Compiling TKG..."
+	time _tkg
+	;;
+*)
+	echo "Pick a kernel type"
+	;;
+esac

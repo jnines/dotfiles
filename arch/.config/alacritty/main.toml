@@ -1,0 +1,34 @@
+
+[env]
+WINIT_X11_SCALE_FACTOR = "1"
+
+[font]
+size = 15
+
+[window]
+padding = {x = 0, y = 3}
+decorations = "None"
+blur = false
+dynamic_title = false
+opacity = 0.95
+
+[font.bold]
+family = "JetBrainsMono Nerd Font"
+style = "Regular"
+
+[font.italic]
+family = "JetBrainsMono Nerd Font"
+style = "Light italic"
+
+[font.normal]
+family = "JetBrainsMono Nerd Font"
+style = "Light"
+
+[cursor]
+vi_mode_style = {shape = "Underline", blinking = "On"}
+
+[general]
+import = [
+  "~/.config/alacritty/alacritty-theme/themes/gruvbox_material_medium_dark.toml",
+  "~/.config/alacritty/bindings.toml"
+]

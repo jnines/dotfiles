@@ -1,0 +1,106 @@
+#!/bin/zsh
+# z and ls
+cd() {
+	if [ -z "$@" ]; then
+		z
+	else
+		z "$@"
+	fi
+	if [ $? -eq 0 ]; then
+		ls
+	fi
+}
+
+# Make and cd to
+mkcd() {
+	mkdir -pv "$1" \
+		&& eval cd "\"\$$#\""
+}
+
+# Rsync diffs
+rdiff() {
+	rsync -naivh --delete "$1" "$2" >"$HOME"/diffs.txt
+}
+
+# FZF cd including hidden directories
+cf() {
+
+	file="$(locate -Ai -0 $@ | grep -z -vE '~$' | fzf --read0 -0 -1)"
+
+	if [[ -n $file ]]; then
+		if [[ -d $file ]]; then
+			cd $file
+		else
+			cd ${file:h}
+		fi
+	fi
+}
+
+# Like scp, but not
+servercp() {
+	rsync -vaPz -e ssh "$@" "$srvurl"
+}
+
+zl() {
+	{ z "$@" && ls; }
+}
+
+gdp() {
+	if [[ $1 == "-m" ]]; then
+		message="$2"
+	else
+		message="..."
+	fi
+	gd add -u && gd commit -m $message && gd push
+}
+
+gda() {
+	local _files
+	_files=($(gd ls-files -o | sort | fzf -m))
+	if [[ -n "${_files[@]}" ]]; then
+		gd add "${_files[*]}"
+		echo "${#_files[@]} File(s) added"
+	fi
+}
+
+gdr() {
+	local _files
+	_files=($(gd ls-tree -r --name-only --full-name master | sort | fzf -m))
+	_files=("${_files[@]/#/$HOME/}")
+	gd rm -r --cached ${_files[*]}
+}
+
+v() {
+	if [ -z $1 ]; then
+		nvim .
+	else
+		nvim $1
+	fi
+}
+
+# Pass terminfo to remote host so alacritty doesn't crap itself
+termpass() {
+	if [ -z $1 ]; then
+		echo "Need to specify remote host, including possible '-i /sshKey' and/or '-p port#'"
+	else
+		/usr/bin/infocmp | ssh $1 'tic -x -'
+	fi
+}
+
+# Build Arch pkgs when the source is updated but the pkg hasn't | Requires devtools
+oodpkg() {
+	cd /tmp || exit
+	sudo pacman -S --needed devtools \
+		&& pkgctl repo clone --protocol=https $1 \
+		&& cd $1 \
+		&& makepkg -srci --noconfirm
+}
+
+# Modify backup from main router for backup router
+pfback() {
+	sed -e 's/igb0/em0/g' \
+		-e 's/igb1/em1/g' \
+		-e 's/igb3/em3/g' \
+		-e 's/coretemp/amdtemp/g' \
+		config-pfSense.* >amd-config-pfSense.xml
+}

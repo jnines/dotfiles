@@ -1,0 +1,13 @@
+#!/bin/bash
+
+cd /tmp || exit 1
+echo "Downloading yazi"
+wget -q https://github.com/sxyazi/yazi/releases/latest/download/yazi-x86_64-unknown-linux-gnu.zip \
+	&& echo "Extracting files" \
+	&& unzip "yazi-x86_64-unknown-linux-gnu.zip" \
+	&& cd "yazi-x86_64-unknown-linux-gnu" || exit
+echo "Moving files"
+sudo mv yazi ya /usr/local/bin/
+cd "completions" || exit
+sudo mv _yazi _ya /usr/share/zsh/vendor-completions/
+echo "Yazi Installed"

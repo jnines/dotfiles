@@ -1,0 +1,25 @@
+#!/bin/bash
+current=$(nvim -v | sed -n 's/^NVIM v//p')
+newest=$(curl -s https://api.github.com/repos/neovim/neovim/releases/latest | jq -r '.tag_name' | cut -c2-)
+
+update_nvim() {
+	cd /tmp || exit
+	echo "Downloading"
+	/usr/bin/wget "https://github.com/neovim/neovim/releases/download/stable/nvim-linux-x86_64.appimage" \
+		&& echo "Moving and setting permissions"
+	sudo /usr/bin/mv nvim-linux-x86_64.appimage /usr/local/bin/nvim.appimage \
+		&& sudo /usr/bin/chmod +x /usr/local/bin/nvim.appimage \
+		&& if [ ! -L /usr/local/bin/nvim ]; then
+			sudo ln -s /usr/local/bin/nvim.appimage /usr/local/bin/nvim
+		fi
+
+	echo "Done"
+}
+
+if [ "$current" != "$newest" ]; then
+	echo "updating to $newest"
+	update_nvim
+else
+	echo "No update needed"
+	exit
+fi

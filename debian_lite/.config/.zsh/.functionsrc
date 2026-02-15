@@ -1,0 +1,109 @@
+#!/bin/zsh
+# z and ls
+cd() {
+	if [ -z "$@" ]; then
+		z
+	else
+		z "$@"
+	fi
+	if [ $? -eq 0 ]; then
+		ls
+	fi
+}
+
+# Make and cd to
+mkcd() {
+	mkdir -pv "$1" \
+		&& eval cd "\"\$$#\""
+}
+
+# Rsync diffs
+rdiff() {
+	rsync -naivh --delete "$1" "$2" >"$HOME"/diffs.txt
+}
+
+# FZF cd including hidden directories
+cf() {
+
+	file="$(locate -Ai -0 $@ | grep -z -vE '~$' | fzf --read0 -0 -1)"
+
+	if [[ -n $file ]]; then
+		if [[ -d $file ]]; then
+			cd $file
+		else
+			cd ${file:h}
+		fi
+	fi
+}
+
+# Like scp, but not
+servercp() {
+	rsync -vaPz -e ssh "$@" "$srvurl"
+}
+
+zl() {
+	{ z "$@" && ls; }
+}
+
+v() {
+	if [ -z $1 ]; then
+		nvim .
+	else
+		nvim $1
+	fi
+}
+
+# Get a list of contiainer
+function dockc() {
+	containers=$(docker ps | awk '{if(NR>1) print $NF}')
+	for container in $containers; do
+		echo "$container"
+	done
+}
+
+# Docker bash
+function dockb() {
+	if [ -z "$1" ]; then
+		dockc
+	else
+		docker exec -it "$1" bash
+	fi
+}
+
+# Docker sh
+function docksh() {
+	if [ -z "$1" ]; then
+		dockc
+	else
+		docker exec -it "$1" sh
+	fi
+}
+# Docker logs
+function dockl() {
+	dc
+	if [ -z "$1" ]; then
+		dockc
+	else
+		docker-compose logs -f "$1"
+	fi
+}
+
+# Docker container health
+function dci() {
+	if [ -z "$1" ]; then
+		dockc
+	else
+		docker inspect "$1" | jq '.' | jq '.[0].State.Health.Status'
+	fi
+}
+
+# Dc ps
+function dps() {
+	dc
+	docker-compose $(find *.yml | sed -e 's/^/-f /') ps
+}
+
+# Check vpn ip
+function vpnip() {
+	curl -s ash.lan:8000/v1/publicip/ip | sed -e 's/{"public_ip":"//' -e 's/"\,"region.*}//'
+}

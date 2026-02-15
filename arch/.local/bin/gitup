@@ -1,0 +1,25 @@
+#!/bin/bash
+
+git_dir="$HOME"/git
+
+git_repos=(
+	"linux-cachyos"
+	"nvidia-cachyos"
+	"tkg/linux-tkg"
+	"tkg/nvidia-all"
+)
+
+pull_me() {
+	for repo in "${git_repos[@]}"; do
+		if [[ ! -d $git_dir/$repo/.git ]]; then
+			echo "$repo doesn't exist"
+		else
+			echo "Cleaning local changes"
+			git -C "$git_dir/$repo" reset --hard \
+				&& echo -n "Pulling $repo : "
+			git -C "$git_dir/$repo" pull
+		fi
+	done
+}
+
+pull_me

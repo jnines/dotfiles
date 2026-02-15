@@ -1,0 +1,11 @@
+#!/bin/bash
+
+if [ "$1" == "high" ]; then
+  sudo nvidia-smi -rgc && sudo nvidia-smi -rmc
+  echo "high" >/tmp/nv_mode
+elif [ "$1" == "low" ]; then
+  sudo nvidia-smi -lgc 210,600 && sudo nvidia-smi -lmc 405,810
+  echo "low" >/tmp/nv_mode
+else
+  logger -p 3 "Failed setting GPU mode: $1"
+fi

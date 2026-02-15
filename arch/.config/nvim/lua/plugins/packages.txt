@@ -1,0 +1,6 @@
+npm
+python-venv
+ripgrep
+fd-find
+python3-neovim
+npm install -g neovim

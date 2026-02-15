@@ -1,0 +1,8 @@
+attached = true
+name = "single"
+# terminal_multiplexer = "tmux-rs"
+
+[[windows]]
+  name = "☝"
+  [[windows.panes]]
+  commands = ["tmux rename-session \"s $((RANDOM))\" && clear"]

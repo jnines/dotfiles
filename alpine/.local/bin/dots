@@ -1,0 +1,60 @@
+#!/usr/bin/env zsh
+DOTS_DIR="$HOME/git/dots"
+
+help() {
+  echo "-h: This help message"
+  echo "-a: Fzf picker to add files"
+  echo "-u: Update dotfiles to latest"
+}
+
+add() {
+	source "${DOTS_DIR}/.spec"
+	local files stow_files stow_dirs 
+
+  files=("${(@f)$(fzf -m | xargs -I{} realpath -- {})}")
+
+  if [ -z "${files[1]}" ]; then 
+    echo "No files chosen, exiting"
+    exit; 
+  fi
+
+	stow_dirs=("${files[@]/${HOME}\//}")
+	stow_dirs=("${stow_dirs[@]%/*}")
+  
+	echo "Creating directories if needed"
+	for dir in "${stow_dirs[@]}"; do
+		mkdir -p "${DOTS_DIR}/${_SPEC}/${dir}"
+	done
+	
+	for file in "${files[@]}"; do
+		strip_file="${file#"${HOME}"/}"
+		echo -e "Moving and stowing ${file}"
+		mv "$file" "${DOTS_DIR}/${_SPEC}/${strip_file}" 
+	done
+  
+	stow --no-folding --dir="${DOTS_DIR}" --target="${HOME_DIR}" "${_SPEC}"
+}
+
+update() {
+	echo -e "Pulling updates..."
+	git -C "${DOTS_DIR}" pull
+	stow --no-folding --dir="${DOTS_DIR}" --target="${HOME}" "${_SPEC}"
+  echo "Dotfiles updated"
+}
+
+main() {
+	if [ $# -eq 0 ]; then
+		help
+		exit 1
+	fi
+	while getopts "auh" flag; do
+		case "${flag}" in
+		h) help ;;
+		u) update ;;
+		a) add ;;
+		*) help ;;
+
+		esac
+	done
+}
+main "$@"

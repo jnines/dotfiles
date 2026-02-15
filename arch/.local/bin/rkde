@@ -1,0 +1,6 @@
+#!/bin/bash
+
+if [[ $(/usr/bin/pgrep plasmashell) ]]; then
+	/usr/bin/pkill -9 plasmashell
+fi
+/usr/bin/kstart /usr/bin/plasmashell

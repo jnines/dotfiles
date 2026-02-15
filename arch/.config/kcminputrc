@@ -1,0 +1,24 @@
+[Keyboard]
+NumLock=0
+RepeatDelay=200
+RepeatRate=40
+
+[Libinput][13364][2400][Keychron Keychron V6 Max Mouse]
+ScrollFactor=1
+
+[Libinput][14402][9738][EVGA Corporation EVGA Z20 Elite Gaming Keyboard Mouse]
+PointerAccelerationProfile=1
+
+[Libinput][6940][6980][Corsair Corsair STRAFE Gaming Keyboard]
+ScrollFactor=1
+
+[Libinput][9639][64009][Compx 2.4G Wireless Receiver]
+PointerAccelerationProfile=1
+ScrollFactor=1
+
+[Libinput][9639][64010][Compx 2.4G Dual Mode Mouse]
+PointerAccelerationProfile=1
+
+[Mouse]
+cursorSize=48
+cursorTheme=BreezeX-Light

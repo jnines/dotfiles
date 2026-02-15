@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=Service
+ServiceTypes=KonqPopupMenu/Plugin
+MimeType=inode/directory
+Actions=RunGhosttyDir
+X-KDE-AuthorizeAction=shell_access
+X-KDE-Priority=TopLevel
+
+[Desktop Action RunGhosttyDir]
+Name=Open Ghostty Here
+Icon=com.mitchellh.ghostty
+Exec=ghostty --working-directory=%F --title="S" -e rmuxinator start ~/.config/rmuxinator/single.toml
+

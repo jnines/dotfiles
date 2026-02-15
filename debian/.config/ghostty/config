@@ -1,0 +1,56 @@
+theme = Gruvbox Material
+background-opacity = 0.85
+background =           #141617
+foreground =           #d4be98
+selection-background = #d8a657
+selection-foreground = #333e34
+cursor-color =         #fff8dc
+palette = 0=#141617
+palette = 1=#ea6962
+palette = 2=#a9b665
+palette = 3=#d8a657
+palette = 4=#7daea3
+palette = 5=#d3869b
+palette = 6=#89b482
+palette = 7=#ddc7a1
+palette = 8=#928374
+palette = 9=#ea6962
+palette = 10=#a9b665
+palette = 11=#d8a657
+palette = 12=#7daea3
+palette = 13=#d3869b
+palette = 14=#89b482
+palette = 15=#ddc7a1
+
+window-padding-x = 2
+window-padding-y = 2
+window-height = 69
+window-width = 210
+window-decoration = false
+
+bell-features = no-system, no-audio, no-title
+
+custom-shader = shaders/cursor_smear.glsl
+
+gtk-titlebar = false
+window-show-tab-bar = never
+copy-on-select = true
+quit-after-last-window-closed = true
+mouse-hide-while-typing = true
+confirm-close-surface = false
+
+shell-integration = zsh
+shell-integration-features = no-cursor, sudo, no-title
+
+font-size = 15
+# font-family = JetBrainsMono Nerd Font # Base font
+font-feature = calt,liga,zero,case
+
+keybind = ctrl+shift+e=text:\x01\x25
+keybind = ctrl+shift+o=text:\x01\x22
+keybind = ctrl+tab=text:\x01\x6f
+keybind = ctrl+shift+tab=text:\x01\x3b
+keybind = ctrl+shift+w=text:\x01\x78
+keybind = ctrl+f=text:\x79\x61\x7A\x69\r
+
+# vim:ft=conf

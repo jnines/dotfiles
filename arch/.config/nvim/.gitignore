@@ -1,0 +1,7 @@
+lazy-lock.json
+spell/ 
+testFile.*
+min-init.lua
+*.bak
+.full
+.lite

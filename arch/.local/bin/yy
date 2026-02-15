@@ -1,0 +1,4 @@
+#!/bin/bash
+# /usr/bin/paru -Syu --ignoredevel linux-cachyos --ignoredevel linux-cachyos-headers
+/usr/bin/paru -Syu \
+	&& /usr/bin/flatpak update
