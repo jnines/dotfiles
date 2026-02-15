@@ -63,6 +63,11 @@ install() {
 	echo "Creating zsh history file..."
 	touch "$HOME/.cache/.zshistory"
 
+	echo "Backing up any existing dots dir..."
+	if [ -d "${DOTS_DIR}" ]; then
+		mv "${DOTS_DIR}" "${DOTS_DIR}.${DATE}"
+	fi
+
 	echo "Creating dots dir..."
 	mkdir -p "${DOTS_DIR}"
 
