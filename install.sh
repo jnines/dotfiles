@@ -45,7 +45,7 @@ backup() {
 	while IFS= read -r file; do
 		if [ -f "${HOME}/${file}" ]; then
 			mv "${HOME}/${file}" "${HOME}/${file}._dotsb_.${DATE}"
-			echo "${file} exists and has been backed up as ${file}.${DATE}"
+			echo "${file} exists and has been backed up as ${file}._dotsb_.${DATE}"
 		fi
 	done <<EOF
 $($_f -H --type f . --base-directory "${DOTS_DIR}/${_SPEC}")
