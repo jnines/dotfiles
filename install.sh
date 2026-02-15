@@ -44,7 +44,7 @@ backup() {
 	_f=$(for finder in "fd" "fdfind"; do command -v "$finder"; done)
 	while IFS= read -r file; do
 		if [ -f "${HOME}/${file}" ]; then
-			mv "${HOME}/${file}" "${HOME}/${file}.${DATE}"
+			mv "${HOME}/${file}" "${HOME}/${file}._dotsb_.${DATE}"
 			echo "${file} exists and has been backed up as ${file}.${DATE}"
 		fi
 	done <<EOF
