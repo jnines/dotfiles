@@ -58,9 +58,7 @@ alias yta='cd /data/Downloads; yt-dlp --no-mtime --extract-audio --audio-format 
 
 alias valh='/usr/bin/rsync -a --delete "$HOME"/.config/unity3d/IronGate/Valheim /data/.bak/'
 
-alias gd='/usr/bin/git --git-dir=$HOME/git/dotfiles --work-tree=$HOME'
-alias gds='gd status'
-alias lgd='lazygit --git-dir=$HOME/git/dotfiles --work-tree=$HOME'
+alias gds='lazygit -p "$HOME"/git/dots'
 
 alias lconf='meld $HOME/.config/frogminer/linux-tkg.cfg $HOME/git/tkg/linux-tkg/customization.cfg'
 alias nconf='meld $HOME/.config/frogminer/nvidia-all.cfg $HOME/git/tkg/nvidia-all/customization.cfg'

@@ -45,29 +45,8 @@ zl() {
 	{ z "$@" && ls; }
 }
 
-gdp() {
-	if [[ $1 == "-m" ]]; then
-		message="$2"
-	else
-		message="..."
-	fi
-	gd add -u && gd commit -m $message && gd push
-}
-
 gda() {
-	local _files
-	_files=($(gd ls-files -o | sort | fzf -m))
-	if [[ -n "${_files[@]}" ]]; then
-		gd add "${_files[*]}"
-		echo "${#_files[@]} File(s) added"
-	fi
-}
-
-gdr() {
-	local _files
-	_files=($(gd ls-tree -r --name-only --full-name master | sort | fzf -m))
-	_files=("${_files[@]/#/$HOME/}")
-	gd rm -r --cached ${_files[*]}
+	dots -a
 }
 
 v() {
