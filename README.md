@@ -13,13 +13,13 @@ These are mine, unlikely to be useful for you, but you do you.
 ## General Install
 
 ```sh
-wget -qO - https://raw.githubusercontent.com/jnines/dots-test/refs/heads/main/install.sh | sh
+wget -qO - https://raw.githubusercontent.com/jnines/dotfiles/refs/heads/main/install.sh | sh
 ```
 
 or...
 
 ```sh
-curl -sL https://raw.githubusercontent.com/jnines/dots-test/refs/heads/main/install.sh | sh
+curl -sL https://raw.githubusercontent.com/jnines/dotfiles/refs/heads/main/install.sh | sh
 ```
 
 ### If wanted toss in a ENV to specify which files to use
