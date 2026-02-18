@@ -83,3 +83,6 @@ pfback() {
 		-e 's/coretemp/amdtemp/g' \
 		config-pfSense.* >amd-config-pfSense.xml
 }
+bman() {
+	man $1 | bat -l man --style=numbers --theme=gruvbox-dark
+}
