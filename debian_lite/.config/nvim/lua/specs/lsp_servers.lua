@@ -1,3 +1,4 @@
+local schemastore = require('schemastore')
 local M = {}
 M.core = {}
 M.lite = {
@@ -6,9 +7,7 @@ M.lite = {
   jsonls = {
     settings = {
       json = {
-        schemas = function()
-          require('schemastore').json.schemas()
-        end,
+        schemas = schemastore.json.schemas(),
         validate = { enable = true },
       },
     },
@@ -18,9 +17,7 @@ M.lite = {
     settings = {
       yaml = {
         schemaStore = { enable = false, url = '' },
-        schemas = function()
-          require('schemastore').yaml.schemas()
-        end,
+        schemas = schemastore.yaml.schemas(),
       },
     },
   },
@@ -38,9 +35,7 @@ M.full = {
   jsonls = {
     settings = {
       json = {
-        schemas = function()
-          require('schemastore').json.schemas()
-        end,
+        schemas = schemastore.json.schemas(),
         validate = { enable = true },
       },
     },
@@ -50,9 +45,7 @@ M.full = {
     settings = {
       yaml = {
         schemaStore = { enable = false, url = '' },
-        schemas = function()
-          require('schemastore').yaml.schemas()
-        end,
+        schemas = schemastore.yaml.schemas(),
       },
     },
   },
