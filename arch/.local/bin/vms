@@ -1,0 +1,11 @@
+#!/usr/bin/env zsh
+
+_image=$(virsh -c qemu:///system list --all | awk 'NR>2 {print $2}' | fzf)
+
+if [ -n "$_image" ]; then
+	virsh -c qemu:///system start "$_image" \
+		&& sleep 1 \
+		&& nohup virt-viewer -c qemu:///system --auto-resize=always "$_image" >/dev/null 2>&1 &
+	disown \
+		&& sleep 1
+fi
