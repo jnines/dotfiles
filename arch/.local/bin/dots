@@ -32,7 +32,7 @@ add() {
 		mv "$file" "${DOTS_DIR}/${_SPEC}/${strip_file}" 
 	done
   
-	stow --no-folding --dir="${DOTS_DIR}" --target="${HOME_DIR}" "${_SPEC}"
+	stow --no-folding --dir="${DOTS_DIR}" --target="${HOME}" "${_SPEC}"
 }
 
 update() {
