@@ -2,7 +2,7 @@
 ### sh as Alpine uses Ash by default ###
 
 ALP_PKGS="git stow ncurses shadow yazi zsh zsh-autosuggestions zsh-syntax-highlighting zsh-vcs jq fd ripgrep fzf zoxide neovim"
-ARCH_PKGS="git stow zsh zsh-autosuggestions zsh-syntax-highlighting eza bat jq fd ripgrep fzf zoxide python-pynvim neovim which"
+ARCH_PKGS="git stow zsh zsh-autosuggestions zsh-syntax-highlighting eza bat jq fd ripgrep fzf zoxide python-pynvim neovim which npm unzip"
 DEB_PKGS="git stow zsh zsh-autosuggestions zsh-syntax-highlighting eza bat npm python3-venv ffmpeg 7zip jq unzip curl fuse poppler-utils fd-find ripgrep fzf zoxide imagemagick python3-pynvim"
 DEB_LITE_PKGS="git stow zsh zsh-autosuggestions zsh-syntax-highlighting jq fd-find ripgrep fzf zoxide unzip curl fuse"
 
