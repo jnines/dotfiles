@@ -82,7 +82,7 @@ local M = {
   { 'nvim-mini/mini.surround', enabled = true },
   { 'folke/noice.nvim', enabled = true },
   { 'willothy/nvim-cokeline', enabled = true },
-  { 'NvChad/nvim-colorizer.lua', enabled = true },
+  { 'catgoose/nvim-colorizer.lua', enabled = true },
   {
     'mfussenegger/nvim-lint',
     opts = {

@@ -43,7 +43,7 @@ local M = {
   },
   { 'nvim-mini/mini.ai', enabled = true },
   { 'nvim-mini/mini.surround', enabled = true },
-  { 'NvChad/nvim-colorizer.lua', enabled = true },
+  { 'catgoose/nvim-colorizer.lua', enabled = true },
   {
     'mfussenegger/nvim-lint',
     opts = {
