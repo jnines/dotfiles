@@ -1,6 +1,28 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
-loc="/usr/share/plasma/plasmoids/org.kde.plasma.taskmanager/contents/ui/"
+if [[ ! -d "$HOME/git/plasma-desktop" ]]; then
+	cd "$HOME/git" || exit
+	git clone https://invent.kde.org/plasma/plasma-desktop.git
+fi
 
-sudo /usr/bin/cp -f "$loc/Task.qml" "$loc/Task.qml.distro" \
-	&& sudo sed -i -e 's/LayoutMetrics.preferredMaxWidth())/(LayoutMetrics.preferredMaxWidth() * 0.4))/' "$loc/Task.qml"
+cd "$HOME/git/plasma-desktop/" || exit
+git pull
+git apply "$HOME/git/patches/plasma-desktop/0001-Compact-tasks.patch"
+mkdir build
+cd build || exit
+
+cmake .. -G Ninja \
+	-DCMAKE_BUILD_TYPE=Release \
+	-DCMAKE_INSTALL_PREFIX=. \
+	-DBUILD_KCM_TOUCHPAD_X11=OFF
+
+ninja org.kde.plasma.taskmanager.compact
+ninja applets/taskmanager_compact/install/strip
+sudo cp -f "$HOME/git/plasma-desktop/build/lib/plugins/plasma/applets/org.kde.plasma.taskmanager.compact.so" \
+	/usr/lib/qt6/plugins/plasma/applets/
+
+sudo chmod root:root /usr/lib/qt6/plugins/plasma/applets/org.kde.plasma.taskmanager.compact.so
+cd "$HOME/git/plasma-desktop/" || exit
+rm -rf "$HOME/git/plasma-desktop/build"
+git reset --hard origin/master
+rkde
