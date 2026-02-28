@@ -83,6 +83,18 @@ pfback() {
 		-e 's/coretemp/amdtemp/g' \
 		config-pfSense.* >amd-config-pfSense.xml
 }
+
+# Syntax-highlighted man pages
 bman() {
 	man $1 | bat -l man --style=numbers --theme=gruvbox-dark
+}
+
+# Cat script
+wcat() {
+  if (( ${+aliases[$1]} )) || \
+    (( ${+builtins[$1]} )); then
+    which "$1"
+  else
+	cat "$(which $1)"
+  fi
 }
