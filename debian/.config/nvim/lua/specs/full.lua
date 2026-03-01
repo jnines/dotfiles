@@ -155,7 +155,6 @@ local M = {
   },
   { 'hedyhli/outline.nvim', enabled = true },
   { 'HiPhish/rainbow-delimiters.nvim', enabled = true },
-  { 'christoomey/vim-tmux-navigator', enabled = true },
   {
     'folke/which-key.nvim',
     opts = {

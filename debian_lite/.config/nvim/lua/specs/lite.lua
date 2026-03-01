@@ -84,7 +84,6 @@ local M = {
       },
     },
   },
-  { 'christoomey/vim-tmux-navigator', enabled = true },
   { 'natecraddock/workspaces.nvim', enabled = true },
 }
 
