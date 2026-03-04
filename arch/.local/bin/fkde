@@ -24,7 +24,7 @@ ninja applets/taskmanager_compact/install/strip
 sudo cp -f "$HOME/git/plasma-desktop/build/lib/plugins/plasma/applets/org.kde.plasma.taskmanager.compact.so" \
 	/usr/lib/qt6/plugins/plasma/applets/
 
-sudo chmod root:root /usr/lib/qt6/plugins/plasma/applets/org.kde.plasma.taskmanager.compact.so
+sudo chown root:root /usr/lib/qt6/plugins/plasma/applets/org.kde.plasma.taskmanager.compact.so
 cd "$HOME/git/plasma-desktop/" || exit
 rm -rf "$HOME/git/plasma-desktop/build"
 git reset --hard origin/master
