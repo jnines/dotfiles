@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+if [[ ! -d "$HOME/git" ]]; then
+	mkdir -p "$HOME/git"
+fi
 if [[ ! -d "$HOME/git/plasma-desktop" ]]; then
 	cd "$HOME/git" || exit
 	git clone https://invent.kde.org/plasma/plasma-desktop.git
