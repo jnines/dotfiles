@@ -120,13 +120,6 @@ autoload edit-command-line
 zle -N edit-command-line
 bindkey -M vicmd ' ' edit-command-line
 
-# ?
-# _latest_kernel="$(/usr/bin/cat $HOME/.local/share/kver)"
-# _current_kernel=$(/usr/bin/uname -r | /usr/bin/awk -F '-' '{print $1}')
-# if [[ $_latest_kernel != $_current_kernel ]]; then
-# 	kColor="red"
-# else
-# 	kColor="white"
-# fi
-#
-# RPROMPT='%F{yellow}Latest: %U%F{$kColor}v$_latest_kernel%u %F{166}%@'
+# Load help for zsh builtins
+autoload -Uz run-help
+(( ${+aliases[run-help]} )) && unalias run-help

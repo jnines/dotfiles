@@ -115,3 +115,7 @@ zstyle ':vcs_info:*' enable git
 autoload edit-command-line
 zle -N edit-command-line
 bindkey -M vicmd ' ' edit-command-line
+
+# Load help for zsh builtins
+autoload -Uz run-help
+(( ${+aliases[run-help]} )) && unalias run-help

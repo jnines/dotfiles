@@ -9,6 +9,7 @@ alias funcrc='nvim "$HOME"/.config/.zsh/.functionsrc'
 alias sshrc='nvim "$HOME"/.config/.zsh/.sshrc'
 alias nano='nano -c'
 alias shellcheck='shellcheck -x'
+alias help='run-help'
 
 alias ls='ls -alh --color=always'
 alias grep='grep --color=auto'
