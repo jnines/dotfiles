@@ -36,6 +36,7 @@ add() {
 }
 
 update() {
+	source "${DOTS_DIR}/.spec"
 	echo -e "Pulling updates..."
 	git -C "${DOTS_DIR}" pull
 	stow --no-folding --dir="${DOTS_DIR}" --target="${HOME}" "${_SPEC}"
