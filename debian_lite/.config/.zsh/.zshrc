@@ -46,6 +46,7 @@ _source_me "$HOME/.config/.zsh/.aliasrc"
 _source_me "$HOME/.config/.zsh/.bindings"
 _source_me "$HOME/.config/.zsh/.functionsrc"
 _source_me "$HOME/.config/.zsh/.sshrc"
+_source_me "$HOME/.extended"
 
 # mapfile
 zmodload zsh/mapfile
