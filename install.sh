@@ -1,10 +1,10 @@
 #!/bin/sh
 ### sh as Alpine uses Ash by default ###
 
-ALP_PKGS="git stow ncurses shadow yazi zsh zsh-autosuggestions zsh-syntax-highlighting zsh-vcs jq fd ripgrep fzf zoxide neovim"
-ARCH_PKGS="git stow zsh zsh-autosuggestions zsh-syntax-highlighting eza bat jq fd ripgrep fzf zoxide python-pynvim neovim which npm unzip"
-DEB_PKGS="git stow zsh zsh-autosuggestions zsh-syntax-highlighting eza bat npm python3-venv ffmpeg 7zip jq unzip curl fuse poppler-utils fd-find ripgrep fzf zoxide imagemagick python3-pynvim"
-DEB_LITE_PKGS="git stow zsh zsh-autosuggestions zsh-syntax-highlighting jq fd-find ripgrep fzf zoxide unzip curl fuse"
+ALP_PKGS="git stow ncurses shadow yazi zsh zsh-autosuggestions zsh-syntax-highlighting zsh-vcs jq fd ripgrep fzf zoxide neovim plocate"
+ARCH_PKGS="git stow zsh zsh-autosuggestions zsh-syntax-highlighting eza bat jq fd ripgrep fzf zoxide python-pynvim neovim which npm unzip plocate"
+DEB_PKGS="git stow zsh zsh-autosuggestions zsh-syntax-highlighting eza bat npm python3-venv ffmpeg 7zip jq unzip curl fuse poppler-utils fd-find ripgrep fzf zoxide imagemagick python3-pynvim plocate"
+DEB_LITE_PKGS="git stow zsh zsh-autosuggestions zsh-syntax-highlighting jq fd-find ripgrep fzf zoxide unzip curl fuse plocate"
 
 DOT_URL="https://github.com/jnines/dotfiles"
 YAZI_URL="https://github.com/sxyazi/yazi/releases/latest/download/yazi-x86_64-unknown-linux-gnu.zip"
