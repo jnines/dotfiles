@@ -1,4 +1,5 @@
 #!/bin/zsh
+alias locate='locate -i'
 alias up='apk update && apk upgrade --no-cache'
 alias al='nvim "$HOME"/.config/.zsh/.aliasrc'
 alias zshrc='nvim "$HOME"/.config/.zsh/.zshrc'
@@ -16,6 +17,7 @@ alias mv='mv -iv'
 alias cp='cp -Rvi --preserve=timestamps'
 alias mkdir='mkdir -pv'
 alias less='less -R'
+alias l='locate'
 
 alias ..='cd ..'
 alias ...='cd ../..'
