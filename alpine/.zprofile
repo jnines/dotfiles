@@ -18,3 +18,8 @@ export XDG_CACHE_HOME="$HOME/.cache"
 export LESSHISTFILE="-"
 export ZDOTDIR="$XDG_CONFIG_HOME/.zsh"
 export PYTHONHISTORY="$XDG_CACHE_HOME/python/history"
+
+# Preload keys
+if command -v keychain; then
+	eval $(keychain --confallhosts --quiet)
+fi

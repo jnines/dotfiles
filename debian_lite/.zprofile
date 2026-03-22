@@ -27,4 +27,6 @@ export NODE_REPL_HISTORY="$XDG_CACHE_HOME/.node_repl_history"
 export GIT_DISCOVERY_ACROSS_FILESYSTEM=1
 
 # Preload keys
-eval $(keychain --confallhosts --quiet)
+if command -v keychain; then
+	eval $(keychain --confallhosts --quiet)
+fi
