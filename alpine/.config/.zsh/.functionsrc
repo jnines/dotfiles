@@ -79,7 +79,7 @@ function dockl() {
 	if [ -z "$1" ]; then
 		dockc
 	else
-		docker-compose logs -f "$1"
+		docker compose logs -f "$1"
 	fi
 }
 
@@ -95,7 +95,7 @@ function dci() {
 # Dc ps
 function dps() {
 	dc
-	docker-compose $(find *.yml | sed -e 's/^/-f /') ps
+	docker compose $(find *.yml | sed -e 's/^/-f /') ps
 }
 
 # Check vpn ip
