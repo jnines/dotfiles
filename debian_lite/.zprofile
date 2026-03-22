@@ -22,13 +22,9 @@ export LESSHISTFILE="-"
 export ZDOTDIR="$XDG_CONFIG_HOME/.zsh"
 export PARALLEL_HOME="$XDG_CONFIG_HOME/parallel"
 export PYTHONHISTORY="$XDG_CACHE_HOME/python/history"
-# export NPM_CONFIG_USERCONFIG="$XDG_CONFIG_HOME/npm/npmrc"
 export NODE_REPL_HISTORY="$XDG_CACHE_HOME/.node_repl_history"
 
 export GIT_DISCOVERY_ACROSS_FILESYSTEM=1
 
-# export MOZ_ENABLE_WAYLAND=1
-# CHANGE ME!
-
-# Preload a couple keys
-# eval $(keychain --eval --quiet ash gry nlaptop)
+# Preload keys
+eval $(keychain --confallhosts --quiet)

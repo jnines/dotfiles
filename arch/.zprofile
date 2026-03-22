@@ -60,5 +60,5 @@ export MOZ_ENABLE_WAYLAND=1
 # CHANGE ME!
 export POWERDEVIL_NO_DDCUTIL=1
 
-# Preload a couple keys
-eval $(keychain --eval --quiet --dir "$HOME"/.local/share/keychain nines nines.rsa)
+# Preload keys
+eval $(keychain --confallhosts --quiet)
