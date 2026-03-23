@@ -36,10 +36,6 @@ cf() {
 	fi
 }
 
-zl() {
-	{ z "$@" && ls; }
-}
-
 v() {
 	if [ -z $1 ]; then
 		nvim .
@@ -61,16 +57,7 @@ function dockb() {
 	if [ -z "$1" ]; then
 		dockc
 	else
-		docker exec -it "$1" bash
-	fi
-}
-
-# Docker sh
-function docksh() {
-	if [ -z "$1" ]; then
-		dockc
-	else
-		docker exec -it "$1" sh
+		docker exec -it "$1" bash >/dev/null 2>&1 || docker exec -it "$1" sh
 	fi
 }
 # Docker logs
@@ -83,6 +70,15 @@ function dockl() {
 	fi
 }
 
+# Docker inspect
+function di() {
+	if [ -z "$1" ]; then
+		dockc
+	else
+		docker inspect "$1" | less
+	fi
+}
+
 # Docker container health
 function dci() {
 	if [ -z "$1" ]; then
@@ -92,13 +88,7 @@ function dci() {
 	fi
 }
 
-# Dc ps
-function dps() {
-	dc
-	docker compose $(find *.yml | sed -e 's/^/-f /') ps
-}
-
 # Check vpn ip
 function vpnip() {
-	curl -s ash.lan:8000/v1/publicip/ip | sed -e 's/{"public_ip":"//' -e 's/"\,"region.*}//'
+	curl -fsS --max-time 5 ash.lan:8000/v1/publicip/ip | jq -r '.public_ip' 2>/dev/null
 }

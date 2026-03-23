@@ -41,10 +41,6 @@ servercp() {
 	rsync -vaPz -e ssh "$@" "$srvurl"
 }
 
-zl() {
-	{ z "$@" && ls; }
-}
-
 gda() {
 	dots -a
 }
