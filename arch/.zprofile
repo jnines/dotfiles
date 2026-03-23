@@ -61,6 +61,6 @@ export MOZ_ENABLE_WAYLAND=1
 export POWERDEVIL_NO_DDCUTIL=1
 
 # Preload keys
-if command -v keychain; then
-	eval $(keychain --confallhosts --quiet)
+if command -v keychain >/dev/null 2>&1; then
+	eval "$(keychain --eval --quiet)"
 fi
