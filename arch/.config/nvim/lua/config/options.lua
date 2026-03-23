@@ -59,7 +59,10 @@ o.foldlevel = 99
 o.foldmethod = 'expr'
 o.foldexpr = 'v:lua.vim.lsp.foldexpr()'
 
-if vim.env.SSH_CLIENT or vim.env.SSH_TTY then
+local has_native_clipboard = (vim.fn.executable('xclip') == 1 and vim.env.DISPLAY)
+  or (vim.fn.executable('xsel') == 1 and vim.env.DISPLAY)
+  or (vim.fn.executable('wl-copy') == 1 and vim.env.WAYLAND_DISPLAY)
+if not has_native_clipboard then
   local _, osc52 = pcall(require, 'vim.ui.clipboard.osc52')
   vim.g.clipboard = {
     name = 'OSC 52',
