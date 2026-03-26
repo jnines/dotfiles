@@ -1,6 +1,6 @@
 #!/bin/zsh
 alias locate='locate -i'
-alias up='sudo apt-get update; sudo apt-get dist-upgrade -y && sudo apt-get autoremove -y && sudo apt-get autoclean -y'
+alias up='sudo apt-get update; sudo apt-get dist-upgrade -y && sudo apt-get autoremove -y && sudo apt-get autoclean -y sudo systemctl restart update-check.service'
 alias sv='sudoedit'
 alias sve='sudo nvim'
 alias al='nvim "$HOME"/.config/.zsh/.aliasrc'
