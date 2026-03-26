@@ -27,7 +27,7 @@ local M = {
 
       formatters = {
         prettier = {
-          prepend_args = { '--single-quote', '--jsx-single-quote' },
+          prepend_args = { '--single-quote', '--jsx-single-quote', '--no-semi' },
         },
       },
     },
