@@ -18,7 +18,6 @@ export TERMINAL="ghostty"
 export BROWSER="firefox"
 
 # fd fzf
-# export FZF_DEFAULT_COMMAND='rg --smart-case --sort path --hidden --no-ignore-vcs --files --follow -g "!{node_modules,.git,.snapshots}"'
 export FZF_DEFAULT_COMMAND='fd --hidden --color=always --type file --no-ignore -E node_modules -E .git -E .snapshots'
 export FZF_DEFAULT_OPTS='--ansi'
 # Get Out:
@@ -59,6 +58,33 @@ export VKD3D_CONFIG=upload_hvv
 export MOZ_ENABLE_WAYLAND=1
 # CHANGE ME!
 export POWERDEVIL_NO_DDCUTIL=1
+
+export GIT_DISCOVERY_ACROSS_FILESYSTEM=1
+
+# Gruvbox Material-ish less
+export MANROFFOPT=-c
+# export GROFF_NO_SGR=1
+# Bold
+export LESS_TERMCAP_md=$'\e[1;38;2;215;153;33m'
+# End bold
+export LESS_TERMCAP_me=$'\e[0m'
+# Blink
+export LESS_TERMCAP_mb=$'\e[1;38;2;234;105;98m'
+# Search / Standout
+export LESS_TERMCAP_so=$'\e[48;2;153;68;68;38;2;212;190;152m'
+export LESS_TERMCAP_se=$'\e[0m'
+# Underline
+export LESS_TERMCAP_us=$'\e[4;38;2;122;162;247m'
+export LESS_TERMCAP_ue=$'\e[0m'
+# Reverse
+export LESS_TERMCAP_mr=$'\e[7m'
+# Dim
+export LESS_TERMCAP_mh=$'\e[2;38;2;146;131;116m'
+# Don't know, just reset
+export LESS_TERMCAP_ZN=$'\e[0m'
+export LESS_TERMCAP_ZV=$'\e[0m'
+export LESS_TERMCAP_ZO=$'\e[0m'
+export LESS_TERMCAP_ZW=$'\e[0m'
 
 # Preload keys
 if command -v keychain >/dev/null 2>&1; then
