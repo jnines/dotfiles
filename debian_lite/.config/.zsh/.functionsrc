@@ -62,7 +62,7 @@ function dockb() {
 	if [ -z "$1" ]; then
 		dockc
 	else
-		docker exec -it "$1" bash >/dev/null 2>&1 || docker exec -it "$1" sh
+		docker exec -it "$1" bash 2>/dev/null || docker exec -it "$1" sh
 	fi
 }
 
