@@ -37,10 +37,14 @@ add() {
 
 update() {
 	source "${DOTS_DIR}/.spec"
-	echo -e "Pulling updates..."
+	echo "Stashing changes"
+	git -C "${DOTS_DIR}" stash
+	echo "Pulling updates..."
 	git -C "${DOTS_DIR}" pull
 	stow --restow --no-folding --dir="${DOTS_DIR}" --target="${HOME}" "${_SPEC}"
 	echo "Dotfiles updated"
+	echo "Stashed changes: "
+	git -C "${DOTS_DIR}" stash list
 }
 
 main() {
