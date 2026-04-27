@@ -36,6 +36,7 @@ export GIT_DISCOVERY_ACROSS_FILESYSTEM=1
 # Gruvbox Material-ish less
 export MANROFFOPT=-c
 # export GROFF_NO_SGR=1
+export LESS='-INSJj.5'
 # Bold
 export LESS_TERMCAP_md=$'\e[1;38;2;215;153;33m'
 # End bold
