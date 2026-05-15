@@ -44,6 +44,7 @@ alias pacdep='pacman -Sii'
 alias sdb='sudo updatedb'
 alias srb='sudo reboot'
 alias ruefi='sudo systemctl reboot --firmware-setup'
+alias pl='sudo patch -b /usr/share/plasmalogin/scripts/wayland-session "$HOME"/.local/bin/extra/wayland-session.patch'
 
 alias cooler='sudo cp /lib/systemd/system/coolercontrold.service.bak /lib/systemd/system/coolercontrold.service '
 
