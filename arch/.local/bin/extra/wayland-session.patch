@@ -1,0 +1,10 @@
+--- /usr/share/plasmalogin/scripts/wayland-session	2026-05-15 08:50:21.518386890 -0500
++++ /home/jason/Desktop/wayland-session.changed	2026-05-06 17:15:08.474738508 -0500
+@@ -45,5 +45,6 @@
+ 
+ # Restore user shell setting that may have been clobbered by setting environment
+ export SHELL=$PLASMALOGIN_USER_SHELL
+-
++sleep 0.4
++ydotool mousemove 5 5
+ exec $@
