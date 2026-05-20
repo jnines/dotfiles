@@ -6,6 +6,8 @@ washer=$(/usr/bin/curl -s -X GET -H "Authorization: Bearer $token" -H "Content-T
 
 if [[ -z $washer ]]; then
 	wash_img="󰜪 "
+elif [[ $washer == u* ]]; then
+	wash_img="󰜪 -- "
 else
 	wash_time=$(awk -F ':' '{print " 0"$1":"$2}' <<<"$washer")
 	wash_img="󰜪 $wash_time "
@@ -13,6 +15,8 @@ fi
 
 if [[ -z $dryer ]]; then
 	dry_img="󰤗"
+elif [[ $dryer == u* ]]; then
+	dry_img="󰤗 --"
 else
 	dryer_time=$(awk -F ':' '{print " 0"$1":"$2}' <<<"$dryer")
 	dry_img="󰤗 $dryer_time"
