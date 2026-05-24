@@ -361,6 +361,7 @@ activate widget 211=Ctrl+Alt+{,none,Activate Panel Widget
 activate widget 28=none,none,Activate Icons-and-Text Task Manager Widget
 activate widget 31=none,none,Activate Panel Transparency Button Widget
 activate widget 417=,none,Activate Icons-and-Text Task Manager (Compact) Widget
+activate widget 425=,none,Activate Digital Clock Widget
 activate widget 59=none,none,Activate Panel Transparency Button Widget
 activate widget 62=none,none,Activate Application Launcher Widget
 clear-history=none,,Clear Clipboard History
@@ -416,7 +417,6 @@ _launch=Alt+F2\tMeta+Space\tAlt+Space\tSearch
 [services][org.kde.spectacle.desktop]
 CurrentMonitorScreenShot=Ctrl+Shift+Print
 FullScreenScreenShot=none
-OpenWithoutScreenshot=
 WindowUnderCursorScreenShot=none
 _launch=Print
 

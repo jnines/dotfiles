@@ -1,36 +1,36 @@
-#!/bin/bash
+#!/usr/bin/env bash
+_status=$(wpctl status)
 
-speakers=$(pactl list short sinks | awk '/pci/ && /analog-stereo/{print $1}')
-aInterface=$(pactl list short sinks | awk '/Burr/{print $1}')
-dSink=$(pactl info | grep "Default Sink")
+_speakers=$(awk '
+    /Sinks:/ { sink=1; next }
+    /Sources:/ { sink=0 }
+    sink && /Ryzen/ {
+      gsub(/\.|\*|/,"")
+      print $2
+      exit
+    }
+  ' <<<"$_status")
+#
+_interface=$(awk '
+    /Sinks:/ { sink=1; next }
+    /Sources:/ { sink=0 }
+    sink && /PCM2902/ {
+      gsub(/\.|\*|/,"")
+      print $2
+      exit
+    }
+  ' <<<"$_status")
 
-_speakers() {
-	pactl set-default-sink "$speakers"
-}
-_interface() {
-	pactl set-default-sink "$aInterface"
-}
-_check() {
-	if [[ "$dSink" =~ "pci" ]]; then
-		return 0
-	elif [[ "$dSink" =~ "Burr" ]]; then
-		return 1
-	else
-		exit
-	fi
-}
-
-case $1 in
+case "$1" in
 check)
-	_check
+	wpctl inspect @DEFAULT_AUDIO_SINK@ | grep -q Ryzen
 	;;
+
 speakers)
-	_speakers
+	wpctl set-default "$_speakers"
 	;;
+
 interface)
-	_interface
-	;;
-*)
-	exit
+	wpctl set-default "$_interface"
 	;;
 esac
