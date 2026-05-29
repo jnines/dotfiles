@@ -52,6 +52,8 @@ km('n', '<leader>L', '<ESC>wbywoconsole.log()<ESC>hp', { desc = 'Log under curso
 
 km('n', '<leader>/', ':normal gcc<CR>', { desc = 'Line comment' })
 km('v', '<leader>/', '<ESC>:normal gvgc<CR>', { desc = 'Block comment' })
+km('v', '<', '<gv', { desc = 'Indent left/reselect' })
+km('v', '>', '>gv', { desc = 'Indent right/reselect' })
 
 km('n', '[d', function()
   vim.diagnostic.jump({ count = -1, float = true })
