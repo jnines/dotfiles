@@ -9,8 +9,8 @@ km({ 'n', 'i', 'v' }, '<C-s>', '<Esc>:w<CR>', { desc = 'Save Buffer' })
 km({ 'n', 'x', 'o' }, 'H', '^', { desc = 'Start of line' })
 km({ 'n', 'x', 'o' }, 'L', 'g_', { desc = 'End of line' })
 
-km({ 'n', 'i' }, '<M-K>', ':m .-2<CR>==', { desc = 'Move line up' })
-km({ 'n', 'i' }, '<M-J>', ':m .+1<CR>==', { desc = 'Move line down' })
+km({ 'n', 'i' }, '<M-k>', ':m .-2<CR>==', { desc = 'Move line up' })
+km({ 'n', 'i' }, '<M-j>', ':m .+1<CR>==', { desc = 'Move line down' })
 km({ 'n', 'i' }, '<C-Y>', '<ESC><S-v>yp', { desc = 'Copy line down' })
 
 km('n', 'Y', 'Yg_', { desc = 'Yank line without whitespace' })
