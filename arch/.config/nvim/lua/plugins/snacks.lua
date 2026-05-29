@@ -27,6 +27,7 @@ return {
       ignored = true,
       exclude = { '.git', 'node_modules' },
       layout = 'telescope',
+      follow = true,
       matcher = {
         frecency = true,
       },
