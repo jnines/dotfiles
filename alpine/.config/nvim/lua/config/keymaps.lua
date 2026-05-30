@@ -5,6 +5,7 @@ local km = vim.keymap.set
 
 km({ 'n', 'i', 'v' }, '<C-q>', vim.cmd.q, { desc = 'exit' })
 km({ 'n', 'i', 'v' }, '<C-s>', '<Esc>:w<CR>', { desc = 'Save Buffer' })
+km('n', '<leader>X', ':!chmod +x %<CR>', { desc = 'Set executable bit' })
 
 km({ 'n', 'x', 'o' }, 'H', '^', { desc = 'Start of line' })
 km({ 'n', 'x', 'o' }, 'L', 'g_', { desc = 'End of line' })
