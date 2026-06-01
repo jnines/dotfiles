@@ -1,13 +1,13 @@
 [Unit]
-Description=Keep EasyEffects Up
-StartLimitIntervalSec=500
-StartLimitBurst=5
+Description=EasyEffects
+Requires=pipewire.service
+After=pipewire.service
 
 [Service]
 Type=simple
-ExecStart=/usr/bin/easyeffects --gapplication-service
+ExecStartPre=/usr/bin/sleep 3
+ExecStart=easyeffects --service-mode --hide-window
 Restart=on-failure
-RestartSec=5s
 
 [Install]
-WantedBy=default.target
+WantedBy=pipewire.service
