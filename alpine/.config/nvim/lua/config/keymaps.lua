@@ -41,6 +41,8 @@ km('i', '?', '?<C-g>u', { desc = 'Create undo breakpoint at ?' })
 km('i', '{', '{<C-g>u', { desc = 'Create undo breakpoint at {' })
 km('i', '[', '[<C-g>u', { desc = 'Create undo breakpoint at [' })
 
+km('i', '<S-Tab>', '<Esc>/[[{(\'")}\\]]<CR>:nohlsearch<CR>a', { desc = 'Exit brackets', silent = true })
+
 km('x', 'p', [["_dP]], { desc = 'Keep copied text in register' })
 
 km({ 'n', 'v' }, '<leader>ca', vim.lsp.buf.code_action, { desc = 'Code actions' })
