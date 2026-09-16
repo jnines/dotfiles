@@ -15,7 +15,7 @@ done \
 /usr/bin/sha512sum -c "${pgev%.tar.gz}.sha512sum" >/dev/null \
 	&& echo "Moving and decompressing"
 /usr/bin/tar -xzf "${pgev}" \
-	&& /usr/bin/mv "${pgev%.tar.gz}" "$HOME"/.local/share/Steam/compatibilitytools.d \
+	&& /usr/bin/mv "${pgev%.tar.gz}" "$HOME"/.local/share/Steam/compatibilitytools.d/"${pgev%-x86_64.tar.gz}" \
 	&& if [[ $steam_running == 1 ]]; then
 		echo "Killing Steam"
 		/usr/bin/pkill steam

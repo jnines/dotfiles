@@ -422,6 +422,7 @@ _launch=Search\tAlt+Space\tAlt+F2\tMeta+Space
 [services][org.kde.spectacle.desktop]
 CurrentMonitorScreenShot=Ctrl+Shift+Print
 FullScreenScreenShot=none
+OpenWithoutScreenshot=none
 WindowUnderCursorScreenShot=none
 _launch=Print
 

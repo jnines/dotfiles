@@ -5,6 +5,6 @@
  # Restore user shell setting that may have been clobbered by setting environment
  export SHELL=$PLASMALOGIN_USER_SHELL
 -
-+sleep 0.4
++sleep 0.6
 +ydotool mousemove 5 5
  exec $@
