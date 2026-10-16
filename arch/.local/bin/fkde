@@ -1,29 +1,52 @@
 #!/usr/bin/env bash
+set -e
 
-if [[ ! -d "$HOME/git" ]]; then
-	mkdir -p "$HOME/git"
-fi
-if [[ ! -d "$HOME/git/plasma-desktop" ]]; then
-	cd "$HOME/git" || exit
-	git clone https://invent.kde.org/plasma/plasma-desktop.git
-fi
+rebuild() {
+	local repo="$HOME/git/plasma-desktop"
+	local patch="$HOME/git/patches/plasma-desktop/0001-Compact-tasks.patch"
+	local dest="/usr/lib/qt6/plugins/plasma/applets/org.kde.plasma.taskmanager.so"
+	local built="$HOME/git/plasma-desktop/build/lib/plugins/plasma/applets/org.kde.plasma.taskmanager.so"
+	local backup="${dest}.distro"
 
-cd "$HOME/git/plasma-desktop/" || exit
-git pull
-git apply "$HOME/git/patches/plasma-desktop/0001-Compact-tasks.patch"
-mkdir build
-cd build || exit
+	if [[ ! -d "$repo" ]]; then
+		mkdir -p "$HOME/git"
+		git clone https://invent.kde.org/plasma/plasma-desktop.git "$repo"
+	fi
 
-cmake .. -G Ninja \
-	-DCMAKE_BUILD_TYPE=Release \
-	-DCMAKE_INSTALL_PREFIX=. \
-	-DBUILD_KCM_TOUCHPAD_X11=OFF
+	cd "$repo" || exit 1
+	read -r _pkg version < <(pacman -Q plasma-desktop)
+	local tag="v${version%%-*}"
+	git fetch --tags
 
-ninja org.kde.plasma.taskmanager.compact
-ninja applets/taskmanager_compact/install/strip
-sudo cp -f "$HOME/git/plasma-desktop/build/lib/plugins/plasma/applets/org.kde.plasma.taskmanager.compact.so" \
-	/usr/lib/qt6/plugins/plasma/applets/
+	if ! git rev-parse --verify --quiet "refs/tags/$tag" >/dev/null; then
+		printf 'ERROR: Tag %s not found %s\n' \
+			"$tag" "$version" >&2
+		exit 1
+	fi
 
-sudo chown root:root /usr/lib/qt6/plugins/plasma/applets/org.kde.plasma.taskmanager.compact.so
-rm -rf "$HOME/git/plasma-desktop"
+	if [[ ! -f "$patch" ]]; then
+		printf 'ERROR: Patch missing: %s\n' "$patch" >&2
+		exit 1
+	fi
+
+	git switch --detach --force "$tag"
+	git apply --check "$patch"
+	git apply "$patch"
+	rm -rf build
+	mkdir build
+	cd build || exit 1
+
+	cmake .. -G Ninja \
+		-DCMAKE_BUILD_TYPE=Release \
+		-DCMAKE_INSTALL_PREFIX=.
+
+	ninja org.kde.plasma.taskmanager
+	ninja applets/taskmanager/install/strip
+
+	sudo mv "$dest" "$backup"
+	sudo cp -f "$built" "$dest"
+
+	sudo chown root:root "$dest"
+}
+rebuild
 rkde

@@ -96,46 +96,21 @@ windowrole=3pane
 wmclass=plasma-systemmonitor
 wmclassmatch=1
 
-[2888553b-4616-4609-b952-0e234ba29a34]
-position=0,867
-positionrule=2
-size=1080,1884
-sizerule=2
-
-[2900e95c-da60-46d7-a53c-aa48ee548351]
-maximizehoriz=true
-maximizehorizrule=2
-maximizevert=true
-maximizevertrule=2
-position=0,867
-positionrule=2
-size=1080,1884
-sizerule=2
-types=1
-
 [2cbb8782-740e-4b74-86f6-18eac3cae86d]
 Description=Application settings for alacritty
 clientmachine=localhost
+decorationpolicy=none
+decorationpolicyrule=3
 desktops=64a12e41-2755-4c2d-91c3-c1c526d0aec6
 desktopsrule=3
 maximizehoriz=true
 maximizehorizrule=3
 maximizevert=true
 maximizevertrule=3
-noborder=true
-noborderrule=3
 title=Alacritty
 windowrole=3pane
 wmclass=alacritty
 wmclassmatch=1
-
-[33598e4a-3e43-4f31-ae82-d633d0773793]
-ignoregeometry=true
-ignoregeometryrule=3
-position=0,867
-positionrule=3
-size=1080,1884
-sizerule=3
 
 [340bf441-ce6a-484b-8f88-fd83fe2a981d]
 Description=Application settings for discord
@@ -225,20 +200,6 @@ types=1
 windowrole=browser
 windowrolematch=1
 wmclass=navigator firefox
-wmclasscomplete=true
-wmclassmatch=1
-
-[49f23421-87aa-440b-b18b-3dd83928032c]
-Description=Window settings for org.mozilla.Thunderbird
-ignoregeometry=true
-ignoregeometryrule=3
-position=1385,1236
-positionrule=2
-size=1890,1080
-sizerule=2
-title=Inbox - Gmail - Mozilla Thunderbird
-types=1
-wmclass=thunderbird org.mozilla.Thunderbird
 wmclasscomplete=true
 wmclassmatch=1
 
@@ -466,8 +427,7 @@ wmclass=chromium
 wmclassmatch=1
 
 [General]
-count=34
-rules=093186a5-3b83-4bcc-a8a3-2b2d8a52f845,4329c38c-3a8f-4407-b370-5e1a97bdc89c,44479044-af99-427d-a5ef-2411b97d8429,10075d49-91f9-42ca-8bd4-203460f0e431,c335f1fe-b44b-46e1-aa0a-5eeadf6d2c17,067a22b8-34d4-4c4c-b60d-51d74b2fc881,3482e5fc-ead7-46cc-bbae-899523350657,acae0841-9fd8-4715-9532-98aca33dbf4d,73369839-adc8-4880-a398-730aaa08a40c,a6bfbf91-74e1-43ac-9063-a24460ce38f4,2cbb8782-740e-4b74-86f6-18eac3cae86d,5e51ed3a-c306-4ed7-8ef3-58ac40a362e3,4b6a5a6c-7c2c-4fc4-908c-590d6328f816,e82174a8-3a4a-4f51-81f0-0b3aca6001da,8c945789-d7c8-410e-9804-8a221d167cc0,4a858c20-b762-4560-920d-cc04fa706732,ee712cc4-b194-4967-887b-025465d60882,340bf441-ce6a-484b-8f88-fd83fe2a981d,419a9d19-657e-43b4-afc7-f7988ebc32e2,63248e0e-ca16-4120-8d11-293c1b49adb1,4ff75c34-08db-48b2-baa0-811397afd3ad,8d1bed7e-0cce-429a-b106-fa8211394d7d,6dfb6fd8-072f-4dac-a355-38da15eaba39,25be81ef-022b-46aa-842a-c74b913343a7,467bc3f3-4e09-4d8a-8dec-ca5eab3b993c,ffa8b6a1-cc05-4b7f-85dc-5785042c23e3,c0796d37-f4f8-4cbe-8d5d-1b21f4add5d5,24753188-a526-4e4f-8cda-ca0000670994,4ffe8e4b-62fe-43ab-beb6-03c7c3fe435d,87707dd7-9842-40af-858f-ceea1f31c662,8a7b4e74-818c-469e-8e08-5550b3876fa4,f23e1b72-345e-4f5e-ad79-dd30052ebb5a,999908f2-5e7f-461f-9047-c395e99efad8,19ff5e83-9a7e-40da-991f-753fa2221cef
+Order=steam,093186a5-3b83-4bcc-a8a3-2b2d8a52f845,4329c38c-3a8f-4407-b370-5e1a97bdc89c,44479044-af99-427d-a5ef-2411b97d8429,10075d49-91f9-42ca-8bd4-203460f0e431,c335f1fe-b44b-46e1-aa0a-5eeadf6d2c17,067a22b8-34d4-4c4c-b60d-51d74b2fc881,3482e5fc-ead7-46cc-bbae-899523350657,acae0841-9fd8-4715-9532-98aca33dbf4d,73369839-adc8-4880-a398-730aaa08a40c,a6bfbf91-74e1-43ac-9063-a24460ce38f4,2cbb8782-740e-4b74-86f6-18eac3cae86d,5e51ed3a-c306-4ed7-8ef3-58ac40a362e3,4b6a5a6c-7c2c-4fc4-908c-590d6328f816,e82174a8-3a4a-4f51-81f0-0b3aca6001da,8c945789-d7c8-410e-9804-8a221d167cc0,4a858c20-b762-4560-920d-cc04fa706732,ee712cc4-b194-4967-887b-025465d60882,340bf441-ce6a-484b-8f88-fd83fe2a981d,419a9d19-657e-43b4-afc7-f7988ebc32e2,63248e0e-ca16-4120-8d11-293c1b49adb1,4ff75c34-08db-48b2-baa0-811397afd3ad,8d1bed7e-0cce-429a-b106-fa8211394d7d,6dfb6fd8-072f-4dac-a355-38da15eaba39,25be81ef-022b-46aa-842a-c74b913343a7,467bc3f3-4e09-4d8a-8dec-ca5eab3b993c,ffa8b6a1-cc05-4b7f-85dc-5785042c23e3,c0796d37-f4f8-4cbe-8d5d-1b21f4add5d5,24753188-a526-4e4f-8cda-ca0000670994,4ffe8e4b-62fe-43ab-beb6-03c7c3fe435d,87707dd7-9842-40af-858f-ceea1f31c662,8a7b4e74-818c-469e-8e08-5550b3876fa4,f23e1b72-345e-4f5e-ad79-dd30052ebb5a,999908f2-5e7f-461f-9047-c395e99efad8,19ff5e83-9a7e-40da-991f-753fa2221cef
 
 [a6bfbf91-74e1-43ac-9063-a24460ce38f4]
 Description=Application settings for Meld
@@ -562,21 +522,15 @@ windowrole=3pane
 wmclass=qimgv
 wmclassmatch=1
 
-[fa18f6dc-f22d-4397-9861-bcc5a4afc697]
-position=1122,1080
-positionrule=3
-size=2518,1404
-sizerule=3
-
 [ffa8b6a1-cc05-4b7f-85dc-5785042c23e3]
 Description=Window settings for Alacritty
 clientmachine=localhost
+decorationpolicy=none
+decorationpolicyrule=2
 desktops=64a12e41-2755-4c2d-91c3-c1c526d0aec6
 fsplevel=3
 maximizehoriz=true
 maximizevert=true
-noborder=true
-noborderrule=2
 opacityactive=90
 opacityinactive=90
 position=0,1698
