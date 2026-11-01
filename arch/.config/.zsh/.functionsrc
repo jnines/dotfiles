@@ -89,3 +89,13 @@ wcat() {
 		cat "$(which $1)"
 	fi
 }
+
+# When pkg installed as dependency but req pkg uninstalled, find in pacman.log
+luseless() {
+	less "+/\[ALPM\] installed $1 \(" /var/log/pacman.log
+}
+
+# List functions from this
+funcs() {
+	grep -B2 --no-group-separator \(\) ${(%):-%x}
+}

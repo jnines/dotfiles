@@ -34,7 +34,7 @@ custom-shader = shaders/cursor_smear.glsl
 
 gtk-titlebar = false
 window-show-tab-bar = never
-copy-on-select = true
+copy-on-select = primary
 quit-after-last-window-closed = true
 mouse-hide-while-typing = true
 confirm-close-surface = false
@@ -56,6 +56,5 @@ keybind = ctrl+x=text:\x01\x5b
 
 clipboard-read = allow
 clipboard-write = allow
-copy-on-select = clipboard
 
 # vim:ft=conf

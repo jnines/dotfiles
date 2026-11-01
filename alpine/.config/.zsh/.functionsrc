@@ -92,3 +92,8 @@ function dci() {
 function vpnip() {
 	curl -fsS --max-time 5 ash.lan:8000/v1/publicip/ip | jq -r '.public_ip' 2>/dev/null
 }
+
+# List functions from this
+funcs() {
+	grep -B2 --no-group-separator \(\) ${(%):-%x}
+}
